@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>twofactor_u2f</id>
+	<name>Two Factor U2F</name>
+	<description>A two factor provider for U2F devices</description>
+	<licence>agpl</licence>
+	<author>Christoph Wurst</author>
+	<version>0.0.1</version>
+	<namespace>TwoFactor_U2F</namespace>
+	<category>tools</category>
+	<dependencies>
+		<owncloud min-version="9.0" />
+	</dependencies>
+</info>
