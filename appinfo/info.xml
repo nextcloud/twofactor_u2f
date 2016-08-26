@@ -8,6 +8,11 @@
 	<version>0.0.1</version>
 	<namespace>TwoFactor_U2F</namespace>
 	<category>tools</category>
+	
+	<two-factor-providers>
+		<provider>OCA\TwoFactor_U2F\Provider\U2FProvider</provider>
+	</two-factor-providers>
+	
 	<dependencies>
 		<owncloud min-version="9.0" />
 	</dependencies>

@@ -89,11 +89,17 @@ class U2FManager {
 
 	public function startAuthenticate() {
 		$u2f = $this->getU2f();
-		$u2f->getAuthenticateData($registrations);
+		$reqs = $u2f->getAuthenticateData($this->getRegs());
+		$this->session->set('twofactor_u2f_authReq', json_encode($reqs));
+		return $reqs;
 	}
 
-	public function finishAuthenticate() {
-		
+	public function finishAuthenticate($challenge) {
+		$u2f = $this->getU2f();
+
+		$authReq = json_decode($this->session->get('twofactor_u2f_authReq'));
+		$reg = $u2f->doAuthenticate($authReq, $this->getRegs(), json_decode($challenge));
+		$this->setReg($reg);
 	}
 
 }
