@@ -1,0 +1,15 @@
+{
+    "name": "christophwurst/twofactor_u2f",
+    "description": "A two factor provider for U2F devices for Nextcloud",
+    "type": "project",
+    "license": "agplv3",
+    "authors": [
+        {
+            "name": "Christoph Wurst",
+            "email": "christoph@winzerhof-wurst.at"
+        }
+    ],
+    "require": {
+        "yubico/u2flib-server": "^1.0"
+    }
+}

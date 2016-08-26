@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * Nextcloud - U2F 2FA
  *
@@ -9,4 +10,5 @@
  * @author Christoph Wurst <christoph@winzerhof-wurst.at>
  * @copyright Christoph Wurst 2016
  */
-require_once __DIR__ . '/../vendor/autoload.php';
+
+OC_App::registerPersonal('twofactor_u2f', 'settings/personal');
