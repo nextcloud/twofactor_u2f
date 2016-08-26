@@ -50,7 +50,7 @@ class U2FProvider implements IProvider {
 	 * @return string
 	 */
 	public function getDisplayName() {
-		return 'U2F Device';
+		return 'U2F device';
 	}
 
 	/**
