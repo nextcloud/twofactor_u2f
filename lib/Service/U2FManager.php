@@ -14,10 +14,12 @@ namespace OCA\TwoFactor_U2F\Service;
 
 require_once(__DIR__ . '/../../vendor/yubico/u2flib-server/src/u2flib_server/U2F.php');
 
+use InvalidArgumentException;
 use OC;
 use OCP\ILogger;
 use OCP\ISession;
 use OCP\IUser;
+use u2flib_server\Error;
 use u2flib_server\U2F;
 
 class U2FManager {
@@ -98,8 +100,17 @@ class U2FManager {
 		$u2f = $this->getU2f();
 
 		$authReq = json_decode($this->session->get('twofactor_u2f_authReq'));
-		$reg = $u2f->doAuthenticate($authReq, $this->getRegs(), json_decode($challenge));
+		try {
+			$reg = $u2f->doAuthenticate($authReq, $this->getRegs(), json_decode($challenge));
+		} catch (InvalidArgumentException $ex) {
+			$this->logger->warning('U2F auth failed: ' . $ex->getMessage());
+			return false;
+		} catch (Error $ex) {
+			$this->logger->warning('U2F auth failed: ' . $ex->getMessage());
+			return false;
+		}
 		$this->setReg($reg);
+		return true;
 	}
 
 }
