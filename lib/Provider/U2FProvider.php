@@ -69,7 +69,7 @@ class U2FProvider implements IProvider {
 	 * @return Template
 	 */
 	public function getTemplate(IUser $user) {
-		$reqs = $this->manager->startAuthenticate();
+		$reqs = $this->manager->startAuthenticate($user);
 
 		$tmpl = new Template('twofactor_u2f', 'challenge');
 		$tmpl->assign('reqs', $reqs);
@@ -83,7 +83,7 @@ class U2FProvider implements IProvider {
 	 * @param string $challenge
 	 */
 	public function verifyChallenge(IUser $user, $challenge) {
-		return $this->manager->finishAuthenticate($challenge);
+		return $this->manager->finishAuthenticate($user, $challenge);
 	}
 
 	/**

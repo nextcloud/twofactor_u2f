@@ -28,14 +28,16 @@
 				method: 'POST'
 			}).done(function (data) {
 				this.doRegister(data.req, data.sigs);
-			}.bind(this));
+			}.bind(this)).fail(function() {
+				OC.Notification.showTemporary('server error while trying to add U2F device');
+			});
 		},
 		doRegister: function (req, sigs) {
 			console.log('doRegister', req, sigs);
 			u2f.register([req], sigs, function (data) {
 				console.log(data.errorCode);
 				if (data.errorCode && data.errorCode !== 0) {
-					alert("registration failed with errror: " + data.errorCode);
+					OC.Notification.showTemporary('U2F device registration failed (error code ' + data.errorCode + ')');
 					return;
 				}
 				this.finishRegister(data);
@@ -50,6 +52,8 @@
 			}).then(function() {
 				OC.Notification.showTemporary('U2F device successfully registered');
 				console.log('registration finished');
+			}).fail(function() {
+				OC.Notification.showTemporary('server error while trying to complete U2F device registration');
 			});
 		}
 	});

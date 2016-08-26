@@ -15,14 +15,19 @@ namespace OCA\TwoFactor_U2F\Service;
 require_once(__DIR__ . '/../../vendor/yubico/u2flib-server/src/u2flib_server/U2F.php');
 
 use InvalidArgumentException;
-use OC;
+use OCA\TwoFactor_U2F\Db\Registration;
+use OCA\TwoFactor_U2F\Db\RegistrationMapper;
 use OCP\ILogger;
 use OCP\ISession;
+use OCP\IURLGenerator;
 use OCP\IUser;
 use u2flib_server\Error;
 use u2flib_server\U2F;
 
 class U2FManager {
+
+	/** @var RegistrationMapper */
+	private $mapper;
 
 	/** @var ISession */
 	private $session;
@@ -30,34 +35,36 @@ class U2FManager {
 	/** @var ILogger */
 	private $logger;
 
-	public function __construct(ISession $session, ILogger $logger) {
+	/** @var IURLGenerator */
+	private $urlGenerator;
+
+	public function __construct(RegistrationMapper $mapper, ISession $session, ILogger $logger, IURLGenerator $urlGenerator) {
+		$this->mapper = $mapper;
 		$this->session = $session;
 		$this->logger = $logger;
+		$this->urlGenerator = $urlGenerator;
 	}
 
 	private function getU2f() {
-		return new U2F(OC::$server->getURLGenerator()->getAbsoluteURL('/'));
+		return new U2F($this->urlGenerator->getAbsoluteURL('/'));
+	}
+
+	private function getRegistrations(IUser $user) {
+		$registrations = $this->mapper->findRegistrations($user);
+		$registrationObjects = array_map(function (Registration $registration) {
+			return (object) $registration->jsonSerialize();
+		}, $registrations);
+		return $registrationObjects;
 	}
 
 	public function isEnabled(IUser $user) {
-		// TODO: save in DB
-		return file_exists('/tmp/yubi');
+		$registrations = $this->mapper->findRegistrations($user);
+		return count($registrations) > 0;
 	}
 
-	private function getRegs() {
-		if (!file_exists('/tmp/yubi')) {
-			return [];
-		}
-		return [json_decode(file_get_contents('/tmp/yubi'))];
-	}
-
-	private function setReg($data) {
-		file_put_contents('/tmp/yubi', json_encode($data));
-	}
-
-	public function startRegistration(IUser $user = null) {
+	public function startRegistration(IUser $user) {
 		$u2f = $this->getU2f();
-		$data = $u2f->getRegisterData($this->getRegs());
+		$data = $u2f->getRegisterData($this->getRegistrations($user));
 		list($req, $sigs) = $data;
 
 		$this->logger->debug(json_encode($req));
@@ -66,42 +73,48 @@ class U2FManager {
 		$this->session->set('twofactor_u2f_regReq', json_encode($req));
 
 		return [
-		    'req' => $req,
-		    'sigs' => $sigs,
-		    'username' => 'user', // TODO
+			'req' => $req,
+			'sigs' => $sigs,
 		];
 	}
 
-	public function finishRegistration($registrationData, $clientData) {
+	public function finishRegistration(IUser $user, $registrationData, $clientData) {
 		$this->logger->debug($registrationData);
 		$this->logger->debug($clientData);
 
 		$u2f = $this->getU2f();
 		$regReq = json_decode($this->session->get('twofactor_u2f_regReq'));
 		$regResp = [
-		    'registrationData' => $registrationData,
-		    'clientData' => $clientData,
+			'registrationData' => $registrationData,
+			'clientData' => $clientData,
 		];
 		$reg = $u2f->doRegister($regReq, (object) $regResp);
 
-		$this->setReg($reg);
+		$registration = new Registration();
+		$registration->setUserId($user->getUID());
+		$registration->setKeyHandle($reg->keyHandle);
+		$registration->setPublicKey($reg->publicKey);
+		$registration->setCertificate($reg->certificate);
+		$registration->setCounter($reg->counter);
+		$this->mapper->insert($registration);
 
 		$this->logger->debug(json_encode($reg));
 	}
 
-	public function startAuthenticate() {
+	public function startAuthenticate(IUser $user) {
 		$u2f = $this->getU2f();
-		$reqs = $u2f->getAuthenticateData($this->getRegs());
+		$reqs = $u2f->getAuthenticateData($this->getRegistrations($user));
 		$this->session->set('twofactor_u2f_authReq', json_encode($reqs));
 		return $reqs;
 	}
 
-	public function finishAuthenticate($challenge) {
+	public function finishAuthenticate(IUser $user, $challenge) {
 		$u2f = $this->getU2f();
 
+		$registrations = $this->getRegistrations($user);
 		$authReq = json_decode($this->session->get('twofactor_u2f_authReq'));
 		try {
-			$reg = $u2f->doAuthenticate($authReq, $this->getRegs(), json_decode($challenge));
+			$reg = $u2f->doAuthenticate($authReq, $registrations, json_decode($challenge));
 		} catch (InvalidArgumentException $ex) {
 			$this->logger->warning('U2F auth failed: ' . $ex->getMessage());
 			return false;
@@ -109,7 +122,10 @@ class U2FManager {
 			$this->logger->warning('U2F auth failed: ' . $ex->getMessage());
 			return false;
 		}
-		$this->setReg($reg);
+
+		$registration = $this->mapper->findRegistration($user, $reg->id);
+		$registration->setCounter($reg->counter);
+		$this->mapper->update($registration);
 		return true;
 	}
 

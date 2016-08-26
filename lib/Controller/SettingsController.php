@@ -17,15 +17,20 @@ require_once(__DIR__ . '/../../vendor/yubico/u2flib-server/src/u2flib_server/U2F
 use OCA\TwoFactor_U2F\Service\U2FManager;
 use OCP\AppFramework\Controller;
 use OCP\IRequest;
+use OCP\IUserSession;
 
 class SettingsController extends Controller {
 
 	/** @var U2FManager */
 	private $manager;
 
-	public function __construct($appName, IRequest $request, U2FManager $manager) {
+	/** @var IUserSession */
+	private $userSession;
+
+	public function __construct($appName, IRequest $request, U2FManager $manager, IUserSession $userSession) {
 		parent::__construct($appName, $request);
 		$this->manager = $manager;
+		$this->userSession = $userSession;
 	}
 
 	/**
@@ -33,7 +38,7 @@ class SettingsController extends Controller {
 	 * @UseSession
 	 */
 	public function startRegister() {
-		return $this->manager->startRegistration($user);
+		return $this->manager->startRegistration($this->userSession->getUser());
 	}
 
 	/**
@@ -43,7 +48,7 @@ class SettingsController extends Controller {
 	 * @param string $clientData
 	 */
 	public function finishRegister($registrationData, $clientData) {
-		$this->manager->finishRegistration($registrationData, $clientData);
+		$this->manager->finishRegistration($this->userSession->getUser(), $registrationData, $clientData);
 	}
 
 }

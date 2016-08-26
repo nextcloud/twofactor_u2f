@@ -5,7 +5,7 @@
 	<description>A two factor provider for U2F devices</description>
 	<licence>agpl</licence>
 	<author>Christoph Wurst</author>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<namespace>TwoFactor_U2F</namespace>
 	<category>tools</category>
 	
