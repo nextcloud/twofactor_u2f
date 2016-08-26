@@ -6,7 +6,6 @@
 	OCA.TwoFactor_U2F = OCA.TwoFactor_U2F || {};
 
 	$(function () {
-		return;
 		var req = JSON.parse($('#u2f-auth').val());
 		console.log("sign: ", req);
 		u2f.sign(req, function (data) {
