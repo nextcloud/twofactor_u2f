@@ -62,6 +62,13 @@ class U2FManager {
 		return count($registrations) > 0;
 	}
 
+	public function disableU2F(IUser $user) {
+		// TODO: use single query instead
+		foreach ($this->mapper->findRegistrations($user) as $registration) {
+			$this->mapper->delete($registration);
+		}
+	}
+
 	public function startRegistration(IUser $user) {
 		$u2f = $this->getU2f();
 		$data = $u2f->getRegisterData($this->getRegistrations($user));

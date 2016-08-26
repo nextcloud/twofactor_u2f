@@ -27,10 +27,32 @@ class SettingsController extends Controller {
 	/** @var IUserSession */
 	private $userSession;
 
+	/**
+	 * @param string $appName
+	 * @param IRequest $request
+	 * @param U2FManager $manager
+	 * @param IUserSession $userSession
+	 */
 	public function __construct($appName, IRequest $request, U2FManager $manager, IUserSession $userSession) {
 		parent::__construct($appName, $request);
 		$this->manager = $manager;
 		$this->userSession = $userSession;
+	}
+
+	/**
+	 * @NoAdminRequired
+	 */
+	public function state() {
+		return [
+			'enabled' => $this->manager->isEnabled($this->userSession->getUser())
+		];
+	}
+
+	/**
+	 * @NoAdminRequired
+	 */
+	public function disable() {
+		$this->manager->disableU2F($this->userSession->getUser());
 	}
 
 	/**

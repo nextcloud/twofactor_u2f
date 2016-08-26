@@ -19,16 +19,26 @@
  *
  */
 return [
-    'routes' => [
-        [
-            'name' => 'settings#startRegister',
-            'url' => '/settings/startregister',
-            'verb' => 'POST'
-        ],
-	[
-            'name' => 'settings#finishRegister',
-            'url' => '/settings/finishregister',
-            'verb' => 'POST'
-        ],
-    ]
+	'routes' => [
+		[
+			'name' => 'settings#state',
+			'url' => '/settings/state',
+			'verb' => 'GET'
+		],
+		[
+			'name' => 'settings#disable',
+			'url' => '/settings/disable',
+			'verb' => 'POST'
+		],
+		[
+			'name' => 'settings#startRegister',
+			'url' => '/settings/startregister',
+			'verb' => 'POST'
+		],
+		[
+			'name' => 'settings#finishRegister',
+			'url' => '/settings/finishregister',
+			'verb' => 'POST'
+		],
+	]
 ];
