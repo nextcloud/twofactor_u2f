@@ -11,8 +11,6 @@
 		u2f.sign(req, function (data) {
 			var $form = $('#u2f-form');
 			var $auth = $('#challenge');
-			console.log($form);
-			console.log($auth);
 			console.log("Authenticate callback", data);
 			$auth.val(JSON.stringify(data));
 			$form.submit();
