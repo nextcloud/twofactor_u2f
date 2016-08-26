@@ -1,8 +1,8 @@
 <?php
 
+script('twofactor_u2f', 'vendor/u2f-api');
 script('twofactor_u2f', 'settings');
 script('twofactor_u2f', 'settingsview');
-script('twofactor_u2f', 'vendor/u2f-api');
 
 ?>
 
