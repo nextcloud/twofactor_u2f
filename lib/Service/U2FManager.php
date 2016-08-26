@@ -15,9 +15,11 @@ namespace OCA\TwoFactor_U2F\Service;
 require_once(__DIR__ . '/../../vendor/yubico/u2flib-server/src/u2flib_server/U2F.php');
 
 use InvalidArgumentException;
+use OC;
 use OCA\TwoFactor_U2F\Db\Registration;
 use OCA\TwoFactor_U2F\Db\RegistrationMapper;
 use OCP\ILogger;
+use OCP\IRequest;
 use OCP\ISession;
 use OCP\IURLGenerator;
 use OCP\IUser;
@@ -35,18 +37,19 @@ class U2FManager {
 	/** @var ILogger */
 	private $logger;
 
-	/** @var IURLGenerator */
-	private $urlGenerator;
+	/** @var IRequest */
+	private $request;
 
-	public function __construct(RegistrationMapper $mapper, ISession $session, ILogger $logger, IURLGenerator $urlGenerator) {
+	public function __construct(RegistrationMapper $mapper, ISession $session, ILogger $logger, IRequest $request) {
 		$this->mapper = $mapper;
 		$this->session = $session;
 		$this->logger = $logger;
-		$this->urlGenerator = $urlGenerator;
+		$this->request = $request;
 	}
 
 	private function getU2f() {
-		return new U2F($this->urlGenerator->getAbsoluteURL('/'));
+		$url = $this->request->getServerProtocol() . '://' . $this->request->getServerHost();
+		return new U2F($url);
 	}
 
 	private function getRegistrations(IUser $user) {
