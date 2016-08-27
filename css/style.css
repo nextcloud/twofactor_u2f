@@ -12,3 +12,10 @@
 	width: 100px;
 	margin-left: 80px;
 }
+
+.u2f-loading {
+	display: inline-block;
+	vertical-align: sub;
+	margin-left: -2px;
+	margin-right: 3px;
+}
