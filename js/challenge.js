@@ -12,6 +12,10 @@
 			var $form = $('#u2f-form');
 			var $auth = $('#challenge');
 			console.log("Authenticate callback", data);
+			if (data.errorCode) {
+				console.error('U2F auth failed: ' + data.errorCode);
+				return;
+			}
 			$auth.val(JSON.stringify(data));
 			$form.submit();
 		});
