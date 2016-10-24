@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit bootstrap="bootstrap.php"
+		 verbose="true"
+		 timeoutForSmallTests="900"
+		 timeoutForMediumTests="900"
+		 timeoutForLargeTests="900"
+		>
+	<testsuite name="U2F app tests">
+		<directory suffix="test.php">.</directory>
+	</testsuite>
+</phpunit>
+
