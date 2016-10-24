@@ -26,21 +26,21 @@
                 <name>key_handle</name>
                 <type>text</type>
                 <notnull>true</notnull>
-		<length>255</length>
+                <length>255</length>
             </field>
-	    <field>
+            <field>
                 <name>public_key</name>
                 <type>text</type>
                 <notnull>true</notnull>
-		<length>255</length>
+                <length>255</length>
             </field>
-	    <field>
+            <field>
                 <name>certificate</name>
                 <type>text</type>
                 <notnull>true</notnull>
-		<length>255</length>
+                <length>4000</length>
             </field>
-	    <field>
+            <field>
                 <name>counter</name>
                 <type>integer</type>
                 <notnull>true</notnull>
