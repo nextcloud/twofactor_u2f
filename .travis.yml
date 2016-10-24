@@ -61,7 +61,7 @@ script:
   - find . -name \*.php -not -path './vendor/*' -exec php -l "{}" \;
 
   # Run server's app code checker
-  - php ../../occ app:check-code twofactor_u2f
+  #- php ../../occ app:check-code twofactor_u2f
 
   # Run PHP tests
   - cd tests
