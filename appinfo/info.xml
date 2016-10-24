@@ -8,12 +8,13 @@
 	<version>0.0.3</version>
 	<namespace>TwoFactor_U2F</namespace>
 	<category>tools</category>
-	
+
 	<two-factor-providers>
 		<provider>OCA\TwoFactor_U2F\Provider\U2FProvider</provider>
 	</two-factor-providers>
-	
+
 	<dependencies>
+		<php min-version="5.5" max-version="7.0"></php>
 		<owncloud min-version="9.2" max-version="9.2" />
 	</dependencies>
 </info>
