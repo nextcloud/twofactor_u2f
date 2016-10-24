@@ -23,12 +23,6 @@ env:
   matrix:
   - DB=sqlite
 
-branches:
-  only:
-  - master
-  - "/^stable\\d+(\\.\\d+)?$/"
-  - /^v\d++(\.\d+)?+(\.\d+)?+(\.\d+)?$/
-
 cache:
   directories:
   - "$HOME/.composer/cache/files"
