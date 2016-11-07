@@ -10,7 +10,7 @@
  * @copyright Christoph Wurst 2016
  */
 
-namespace OCA\TwoFactor_U2F\Db;
+namespace OCA\TwoFactorU2F\Db;
 
 use OCP\AppFramework\Db\Mapper;
 use OCP\DB\QueryBuilder\IQueryBuilder;

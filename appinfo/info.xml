@@ -6,11 +6,11 @@
 	<licence>agpl</licence>
 	<author>Christoph Wurst</author>
 	<version>0.0.3</version>
-	<namespace>TwoFactor_U2F</namespace>
+	<namespace>TwoFactorU2F</namespace>
 	<category>tools</category>
 
 	<two-factor-providers>
-		<provider>OCA\TwoFactor_U2F\Provider\U2FProvider</provider>
+		<provider>OCA\TwoFactorU2F\Provider\U2FProvider</provider>
 	</two-factor-providers>
 
 	<dependencies>

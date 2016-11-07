@@ -3,7 +3,7 @@
 (function (OCA, u2f) {
 	'use strict';
 
-	OCA.TwoFactor_U2F = OCA.TwoFactor_U2F || {};
+	OCA.TwoFactorU2F = OCA.TwoFactorU2F || {};
 
 	$(function () {
 		var req = JSON.parse($('#u2f-auth').val());

@@ -10,14 +10,14 @@
  * @copyright Christoph Wurst 2016
  */
 
-namespace OCA\TwoFactor_U2F\Service;
+namespace OCA\TwoFactorU2F\Service;
 
 require_once(__DIR__ . '/../../vendor/yubico/u2flib-server/src/u2flib_server/U2F.php');
 
 use InvalidArgumentException;
 use OC;
-use OCA\TwoFactor_U2F\Db\Registration;
-use OCA\TwoFactor_U2F\Db\RegistrationMapper;
+use OCA\TwoFactorU2F\Db\Registration;
+use OCA\TwoFactorU2F\Db\RegistrationMapper;
 use OCP\ILogger;
 use OCP\IRequest;
 use OCP\ISession;
