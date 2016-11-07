@@ -10,9 +10,9 @@
  * @copyright Christoph Wurst 2016
  */
 
-namespace OCA\TwoFactor_U2F\Provider;
+namespace OCA\TwoFactorU2F\Provider;
 
-use OCA\TwoFactor_U2F\Service\U2FManager;
+use OCA\TwoFactorU2F\Service\U2FManager;
 use OCP\Authentication\TwoFactorAuth\IProvider;
 use OCP\IL10N;
 use OCP\IUser;

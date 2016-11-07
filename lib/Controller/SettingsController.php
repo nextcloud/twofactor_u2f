@@ -10,11 +10,11 @@
  * @copyright Christoph Wurst 2016
  */
 
-namespace OCA\TwoFactor_U2F\Controller;
+namespace OCA\TwoFactorU2F\Controller;
 
 require_once(__DIR__ . '/../../vendor/yubico/u2flib-server/src/u2flib_server/U2F.php');
 
-use OCA\TwoFactor_U2F\Service\U2FManager;
+use OCA\TwoFactorU2F\Service\U2FManager;
 use OCP\AppFramework\Controller;
 use OCP\IRequest;
 use OCP\IUserSession;
