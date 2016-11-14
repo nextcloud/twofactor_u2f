@@ -1,0 +1,35 @@
+[
+    {
+        "name": "yubico/u2flib-server",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Yubico/php-u2flib-server.git",
+            "reference": "407eb21da24150aad30bcd8cc0ee72963eac5e9d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Yubico/php-u2flib-server/zipball/407eb21da24150aad30bcd8cc0ee72963eac5e9d",
+            "reference": "407eb21da24150aad30bcd8cc0ee72963eac5e9d",
+            "shasum": ""
+        },
+        "require": {
+            "ext-openssl": "*"
+        },
+        "time": "2016-02-19 09:47:51",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-2-Clause"
+        ],
+        "description": "Library for U2F implementation",
+        "homepage": "https://developers.yubico.com/php-u2flib-server"
+    }
+]
