@@ -2,3 +2,4 @@
 /vendor/yubico/u2flib-server/examples/*
 /vendor/yubico/u2flib-server/tests/
 /vendor/yubico/u2flib-server/do-source-release.sh
+composer.phar
