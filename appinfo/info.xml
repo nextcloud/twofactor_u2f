@@ -5,7 +5,7 @@
 	<description>A two factor provider for U2F devices</description>
 	<licence>agpl</licence>
 	<author>Christoph Wurst</author>
-	<version>0.0.3</version>
+	<version>0.0.4</version>
 	<namespace>TwoFactorU2F</namespace>
 	<category>tools</category>
 
@@ -14,7 +14,7 @@
 	</two-factor-providers>
 
 	<dependencies>
-		<php min-version="5.5" max-version="7.0"></php>
+		<php min-version="5.6" max-version="7.0"></php>
 		<nextcloud min-version="11" max-version="11" />
 	</dependencies>
 </info>
