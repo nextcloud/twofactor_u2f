@@ -15,13 +15,12 @@ namespace OCA\TwoFactorU2F\Service;
 require_once(__DIR__ . '/../../vendor/yubico/u2flib-server/src/u2flib_server/U2F.php');
 
 use InvalidArgumentException;
-use OC;
 use OCA\TwoFactorU2F\Db\Registration;
 use OCA\TwoFactorU2F\Db\RegistrationMapper;
+use OCP\Activity\IManager;
 use OCP\ILogger;
 use OCP\IRequest;
 use OCP\ISession;
-use OCP\IURLGenerator;
 use OCP\IUser;
 use u2flib_server\Error;
 use u2flib_server\U2F;
@@ -40,11 +39,15 @@ class U2FManager {
 	/** @var IRequest */
 	private $request;
 
-	public function __construct(RegistrationMapper $mapper, ISession $session, ILogger $logger, IRequest $request) {
+	/** @var IManager */
+	private $activityManager;
+
+	public function __construct(RegistrationMapper $mapper, ISession $session, ILogger $logger, IRequest $request, IManager $activityManager) {
 		$this->mapper = $mapper;
 		$this->session = $session;
 		$this->logger = $logger;
 		$this->request = $request;
+		$this->activityManager = $activityManager;
 	}
 
 	private function getU2f() {
@@ -69,6 +72,7 @@ class U2FManager {
 		// TODO: use single query instead
 		foreach ($this->mapper->findRegistrations($user) as $registration) {
 			$this->mapper->delete($registration);
+			$this->publishEvent($user, 'u2f_device_removed');
 		}
 	}
 
@@ -107,8 +111,25 @@ class U2FManager {
 		$registration->setCertificate($reg->certificate);
 		$registration->setCounter($reg->counter);
 		$this->mapper->insert($registration);
+		$this->publishEvent($user, 'u2f_device_added');
 
 		$this->logger->debug(json_encode($reg));
+	}
+
+	/**
+	 * Push an U2F event the user's activity stream
+	 *
+	 * @param IUser $user
+	 * @param string $event
+	 */
+	private function publishEvent(IUser $user, $event) {
+		$activity = $this->activityManager->generateEvent();
+		$activity->setApp('twofactor_u2f')
+			->setType('twofactor')
+			->setAuthor($user->getUID())
+			->setAffectedUser($user->getUID());
+		$activity->setSubject($event);
+		$this->activityManager->publish($activity);
 	}
 
 	public function startAuthenticate(IUser $user) {
