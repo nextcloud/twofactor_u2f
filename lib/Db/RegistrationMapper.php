@@ -14,12 +14,12 @@ namespace OCA\TwoFactorU2F\Db;
 
 use OCP\AppFramework\Db\Mapper;
 use OCP\DB\QueryBuilder\IQueryBuilder;
-use OCP\IDb;
+use OCP\IDBConnection;
 use OCP\IUser;
 
 class RegistrationMapper extends Mapper {
 
-	public function __construct(IDb $db) {
+	public function __construct(IDBConnection $db) {
 		parent::__construct($db, 'twofactor_u2f_registrations');
 	}
 
