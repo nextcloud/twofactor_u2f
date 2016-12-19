@@ -24,4 +24,13 @@
 	<two-factor-providers>
 		<provider>OCA\TwoFactorU2F\Provider\U2FProvider</provider>
 	</two-factor-providers>
+	
+	<activity>
+		<settings>
+			<setting>OCA\TwoFactorU2F\Activity\Setting</setting>
+		</settings>
+		<providers>
+			<provider>OCA\TwoFactorU2F\Activity\Provider</provider>
+		</providers>
+	</activity>
 </info>

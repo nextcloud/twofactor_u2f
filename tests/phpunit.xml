@@ -6,7 +6,7 @@
 		 timeoutForLargeTests="900"
 		>
 	<testsuite name="U2F app tests">
-		<directory suffix="test.php">.</directory>
+		<directory suffix="Test.php">.</directory>
 	</testsuite>
 </phpunit>
 
