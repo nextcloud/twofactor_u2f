@@ -42,6 +42,13 @@ class U2FManager {
 	/** @var IManager */
 	private $activityManager;
 
+	/**
+	 * @param RegistrationMapper $mapper
+	 * @param ISession $session
+	 * @param ILogger $logger
+	 * @param IRequest $request
+	 * @param IManager $activityManager
+	 */
 	public function __construct(RegistrationMapper $mapper, ISession $session, ILogger $logger, IRequest $request, IManager $activityManager) {
 		$this->mapper = $mapper;
 		$this->session = $session;
@@ -127,8 +134,8 @@ class U2FManager {
 		$activity->setApp('twofactor_u2f')
 			->setType('twofactor')
 			->setAuthor($user->getUID())
-			->setAffectedUser($user->getUID());
-		$activity->setSubject($event);
+			->setAffectedUser($user->getUID())
+			->setSubject($event);
 		$this->activityManager->publish($activity);
 	}
 
