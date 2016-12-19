@@ -40,12 +40,24 @@ class Provider implements IProvider {
 	/** @var ILogger */
 	private $logger;
 
+	/**
+	 * @param L10nFactory $l10n
+	 * @param IURLGenerator $urlGenerator
+	 * @param ILogger $logger
+	 */
 	public function __construct(L10nFactory $l10n, IURLGenerator $urlGenerator, ILogger $logger) {
 		$this->logger = $logger;
 		$this->urlGenerator = $urlGenerator;
 		$this->l10n = $l10n;
 	}
 
+	/**
+	 * @param string $language
+	 * @param IEvent $event
+	 * @param IEvent $previousEvent
+	 * @return IEvent
+	 * @throws InvalidArgumentException
+	 */
 	public function parse($language, IEvent $event, IEvent $previousEvent = null) {
 		if ($event->getApp() !== 'twofactor_u2f') {
 			throw new InvalidArgumentException();

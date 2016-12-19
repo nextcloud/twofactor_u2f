@@ -30,34 +30,58 @@ class Setting implements ISetting {
 	/** @var IL10N */
 	private $l10n;
 
+	/**
+	 * @param IL10N $l10n
+	 */
 	public function __construct(IL10N $l10n) {
 		$this->l10n = $l10n;
 	}
 
+	/**
+	 * @return boolean
+	 */
 	public function canChangeMail() {
 		return false;
 	}
 
+	/**
+	 * @return boolean
+	 */
 	public function canChangeStream() {
 		return false;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getIdentifier() {
 		return 'twofactor_u2f';
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getName() {
 		return $this->l10n->t('U2F device');
 	}
 
+	/**
+	 * @return int
+	 */
 	public function getPriority() {
 		return 30;
 	}
 
+	/**
+	 * @return boolean
+	 */
 	public function isDefaultEnabledMail() {
 		return true;
 	}
 
+	/**
+	 * @return boolean
+	 */
 	public function isDefaultEnabledStream() {
 		return true;
 	}
