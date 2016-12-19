@@ -10,7 +10,7 @@
  * @copyright Christoph Wurst 2016
  */
 
-namespace OCA\TwoFactorU2F\Test\Unit\Service;
+namespace OCA\TwoFactorU2F\Tests\Unit\Service;
 
 use OCA\TwoFactorU2F\Db\Registration;
 use OCA\TwoFactorU2F\Db\RegistrationMapper;
@@ -48,9 +48,7 @@ class U2FManagerTest extends TestCase {
 	protected function setUp() {
 		parent::setUp();
 
-		$this->mapper = $this->getMockBuilder(RegistrationMapper::class)
-			->disableOriginalConstructor()
-			->getMock();
+		$this->mapper = $this->createMock(RegistrationMapper::class);
 		$this->session = $this->createMock(ISession::class);
 		$this->logger = $this->createMock(ILogger::class);
 		$this->request = $this->createMock(IRequest::class);

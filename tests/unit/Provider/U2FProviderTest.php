@@ -10,7 +10,7 @@
  * @copyright Christoph Wurst 2016
  */
 
-namespace OCA\TwoFactorU2F\Test\Unit\Provider;
+namespace OCA\TwoFactorU2F\Tests\Unit\Provider;
 
 use OCA\TwoFactorU2F\Provider\U2FProvider;
 use OCA\TwoFactorU2F\Service\U2FManager;
@@ -35,9 +35,7 @@ class U2FProviderTest extends TestCase {
 		parent::setUp();
 
 		$this->l10n = $this->createMock(IL10N::class);
-		$this->manager = $this->getMockBuilder(U2FManager::class)
-			->disableOriginalConstructor()
-			->getMock();
+		$this->manager = $this->createMock(U2FManager::class);
 
 		$this->provider = new U2FProvider($this->l10n, $this->manager);
 	}
@@ -54,7 +52,7 @@ class U2FProviderTest extends TestCase {
 		$this->l10n->expects($this->once())
 			->method('t')
 			->with('Authenticate with an U2F device')
-			->will($this->returnValue('translated'));
+			->willReturn('translated');
 
 		$this->assertSame('translated', $this->provider->getDescription());
 	}
@@ -79,7 +77,7 @@ class U2FProviderTest extends TestCase {
 
 		$this->manager->expects($this->once())
 			->method('finishAuthenticate')
-			->will($this->returnValue(false));
+			->willReturn(false);
 
 		$this->assertFalse($this->provider->verifyChallenge($user, $val));
 	}
@@ -89,7 +87,7 @@ class U2FProviderTest extends TestCase {
 
 		$this->manager->expects($this->once())
 			->method('isEnabled')
-			->will($this->returnValue(false));
+			->willReturn(false);
 
 		$this->assertFalse($this->provider->isTwoFactorAuthEnabledForUser($user));
 	}

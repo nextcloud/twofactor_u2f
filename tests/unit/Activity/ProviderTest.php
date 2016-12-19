@@ -20,7 +20,7 @@
  *
  */
 
-namespace OCA\TwoFactorU2F\Test\Unit\Activity;
+namespace OCA\TwoFactorU2F\Tests\Unit\Activity;
 
 use InvalidArgumentException;
 use OCA\TwoFactorU2F\Activity\Provider;
@@ -55,7 +55,7 @@ class ProviderTest extends TestCase {
 		$event = $this->createMock(IEvent::class);
 		$event->expects($this->once())
 			->method('getApp')
-			->will($this->returnValue('comments'));
+			->willReturn('comments');
 		$this->setExpectedException(InvalidArgumentException::class);
 
 		$this->provider->parse($lang, $event);
@@ -79,25 +79,25 @@ class ProviderTest extends TestCase {
 
 		$event->expects($this->once())
 			->method('getApp')
-			->will($this->returnValue('twofactor_u2f'));
+			->willReturn('twofactor_u2f');
 		$this->l10n->expects($this->once())
 			->method('get')
 			->with('twofactor_u2f', $lang)
-			->will($this->returnValue($l));
+			->willReturn($l);
 		$this->urlGenerator->expects($this->once())
 			->method('imagePath')
 			->with('core', 'actions/password.svg')
-			->will($this->returnValue('path/to/image'));
+			->willReturn('path/to/image');
 		$this->urlGenerator->expects($this->once())
 			->method('getAbsoluteURL')
 			->with('path/to/image')
-			->will($this->returnValue('absolute/path/to/image'));
+			->willReturn('absolute/path/to/image');
 		$event->expects($this->once())
 			->method('setIcon')
 			->with('absolute/path/to/image');
 		$event->expects($this->once())
 			->method('getSubject')
-			->will($this->returnValue($subject));
+			->willReturn($subject);
 		if (is_null($subject)) {
 			$event->expects($this->never())
 				->method('setSubject');

@@ -20,7 +20,7 @@
  *
  */
 
-namespace OCA\TwoFactorU2F\Test\Unit\Activity;
+namespace OCA\TwoFactorU2F\Tests\Unit\Activity;
 
 use OCA\TwoFactorU2F\Activity\Setting;
 use OCP\IL10N;
@@ -48,7 +48,7 @@ class SettingTest extends TestCase {
 		$this->l10n->expects($this->once())
 			->method('t')
 			->with('U2F device')
-			->will($this->returnValue('U2F Gerät'));
+			->willReturn('U2F Gerät');
 		$this->assertEquals('U2F Gerät', $this->setting->getName());
 		$this->assertEquals(30, $this->setting->getPriority());
 		$this->assertEquals(true, $this->setting->isDefaultEnabledMail());

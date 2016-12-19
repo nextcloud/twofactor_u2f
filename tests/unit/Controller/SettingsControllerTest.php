@@ -10,7 +10,7 @@
  * @copyright Christoph Wurst 2016
  */
 
-namespace OCA\TwoFactorU2F\Test\Unit\Controller;
+namespace OCA\TwoFactorU2F\Tests\Unit\Controller;
 
 use OCA\TwoFactorU2F\Controller\SettingsController;
 use OCA\TwoFactorU2F\Service\U2FManager;
@@ -38,9 +38,7 @@ class SettingsControllerTest extends TestCase {
 		parent::setUp();
 
 		$this->request = $this->createMock(IRequest::class);
-		$this->u2fManager = $this->getMockBuilder(U2FManager::class)
-			->disableOriginalConstructor()
-			->getMock();
+		$this->u2fManager = $this->createMock(U2FManager::class);
 		$this->userSession = $this->createMock(IUserSession::class);
 
 		$this->controller = new SettingsController('twofactor_u2f', $this->request, $this->u2fManager, $this->userSession);
@@ -50,11 +48,11 @@ class SettingsControllerTest extends TestCase {
 		$user = $this->createMock(IUser::class);
 		$this->userSession->expects($this->once())
 			->method('getUser')
-			->will($this->returnValue($user));
+			->willReturn($user);
 		$this->u2fManager->expects($this->once())
 			->method('isEnabled')
 			->with($this->equalTo($user))
-			->will($this->returnValue(true));
+			->willReturn(true);
 
 		$expected = [
 		    'enabled' => true,
@@ -66,7 +64,7 @@ class SettingsControllerTest extends TestCase {
 		$user = $this->createMock(IUser::class);
 		$this->userSession->expects($this->once())
 			->method('getUser')
-			->will($this->returnValue($user));
+			->willReturn($user);
 		$this->u2fManager->expects($this->once())
 			->method('disableU2F')
 			->with($this->equalTo($user));
@@ -78,12 +76,12 @@ class SettingsControllerTest extends TestCase {
 		$user = $this->createMock(IUser::class);
 		$this->userSession->expects($this->once())
 			->method('getUser')
-			->will($this->returnValue($user));
+			->willReturn($user);
 
 		$this->u2fManager->expects($this->once())
 			->method('startRegistration')
 			->with($this->equalTo($user))
-			->will($this->returnValue([]));
+			->willReturn([]);
 
 		$this->assertEquals([], $this->controller->startRegister());
 	}
@@ -92,7 +90,7 @@ class SettingsControllerTest extends TestCase {
 		$user = $this->createMock(IUser::class);
 		$this->userSession->expects($this->once())
 			->method('getUser')
-			->will($this->returnValue($user));
+			->willReturn($user);
 		$registrationData = 'regData';
 		$data = 'some data';
 
