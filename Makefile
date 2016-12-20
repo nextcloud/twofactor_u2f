@@ -46,6 +46,7 @@ appstore:
 	--exclude=phpunit*xml \
 	--exclude=tests \
 	--exclude=vendor/bin \
+	--exclude=vendor/yubico/u2flib-server/examples \
 	$(project_dir) $(sign_dir)
 	@echo "Signing…"
 	php ../../occ integrity:sign-app \
