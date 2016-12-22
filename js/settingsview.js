@@ -101,8 +101,12 @@
 		doRegister: function(req, sigs) {
 			console.log('doRegister', req, sigs);
 			$('.utf-register-info').slideDown();
-			u2f.register([req], sigs, function(data) {
-				console.log(data.errorCode);
+			var pathArray = location.href.split('/');
+			var protocol = pathArray[0];
+			var host = pathArray[2];
+			var url = protocol + '//' + host;
+			u2f.register(url, [req], sigs, function(data) {
+				console.log(data);
 				if (data.errorCode && data.errorCode !== 0) {
 					OC.Notification.showTemporary('U2F device registration failed (error code ' + data.errorCode + ')');
 					this._enabled = false;
