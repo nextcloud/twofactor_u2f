@@ -1,5 +1,8 @@
 { "translations": {
-    "Use U2F device" : "Используется U2F устройство",
+    "Use U2F device" : "Использовать устройство U2F ",
+    "You added an U2F hardware token" : "Вы добавили аппаратный токен U2F",
+    "You removed an U2F hardware token" : "Вы удалили аппаратный токен U2F",
+    "U2F device" : "Устройство U2F",
     "Authenticate with an U2F device" : "Аутентификация с помощью U2F устройства",
     "Please plug in your U2F device and press the device button to authorize." : "Пожалуйста, подключите своё U2F устройство и нажмите на нем кнопку для авторизации.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome единственный браузер поддерживающий U2F устройства. Для использования U2F в Firefox необходимо установить дополнение \"U2F Support Add-on\".",
