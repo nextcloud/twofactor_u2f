@@ -17,11 +17,6 @@ clean:
 composer.phar:
 	curl -sS https://getcomposer.org/installer | php
 
-install-deps: install-composer-deps
-
-install-composer-deps: composer.phar
-	php composer.phar install
-
 update-composer: composer.phar
 	rm -f composer.lock
 	php composer.phar install --prefer-dist
@@ -46,6 +41,7 @@ appstore:
 	--exclude=phpunit*xml \
 	--exclude=tests \
 	--exclude=vendor/bin \
+	--exclude=vendor/yubico/u2flib-server/examples \
 	$(project_dir) $(sign_dir)
 	@echo "Signing…"
 	php ../../occ integrity:sign-app \
