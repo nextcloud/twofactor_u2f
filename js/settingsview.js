@@ -27,7 +27,7 @@
 			return this._template(data);
 		},
 		events: {
-			'change #u2f-enabled': '_onToggleEnabled',
+			'change #u2f-enabled': '_onToggleEnabled'
 		},
 		initialize: function() {
 			this._load();
@@ -41,7 +41,7 @@
 		_load: function() {
 			var url = OC.generateUrl('/apps/twofactor_u2f/settings/state');
 			$.ajax(url, {
-				method: 'GET',
+				method: 'GET'
 			}).done(function(data) {
 				this._enabled = data.enabled;
 				this.render();
@@ -58,7 +58,6 @@
 			var enabled = this.$('#u2f-enabled').is(':checked');
 
 			if (enabled === this._enabled) {
-				console.log('ign');
 				return;
 			}
 			this._enabled = enabled;
