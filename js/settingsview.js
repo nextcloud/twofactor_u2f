@@ -1,4 +1,4 @@
-/* global Backbone, Handlebars, OC, u2f */
+/* global Backbone, Handlebars, OC, u2f, Promise */
 
 (function (OC, Backbone, Handlebars, $, u2f) {
 	'use strict';
@@ -72,12 +72,13 @@
 		 */
 		_load: function () {
 			var url = OC.generateUrl('/apps/twofactor_u2f/settings/state');
-			$.ajax(url, {
+			Promise.resolve($.ajax(url, {
 				method: 'GET'
-			}).done(function (data) {
+			})).then(function (data) {
 				this._enabled = data.enabled;
 				this.render();
-			}.bind(this)).fail(function () {
+			}.bind(this)).catch(function (e) {
+				console.error(e);
 				OC.Notification.showTemporary('Could not get U2F enabled/disabled state.');
 			});
 		},
@@ -111,17 +112,21 @@
 		_onRegister: function () {
 			this._loading = true;
 			this.render();
+
 			console.log('start register…');
+
 			var url = OC.generateUrl('apps/twofactor_u2f/settings/startregister');
-			$.ajax(url, {
+			var self = this;
+			Promise.resolve($.ajax(url, {
 				method: 'POST'
-			}).done(function (data) {
-				this.doRegister(data.req, data.sigs);
-			}.bind(this)).fail(function () {
+			})).then(function (data) {
+				self.doRegister(data.req, data.sigs);
+			}).catch(function (e) {
+				console.error(e);
 				OC.Notification.showTemporary('server error while trying to add U2F device');
-				this._loading = false;
-				this.render();
-			}.bind(this));
+				self._loading = false;
+				self.render();
+			});
 		},
 
 		/**
@@ -131,15 +136,17 @@
 			this._loading = true;
 			this.render();
 			console.log('disabling U2F…');
+
 			var url = OC.generateUrl('apps/twofactor_u2f/settings/disable');
-			$.ajax(url, {
+			var self = this;
+			Promise.resolve($.ajax(url, {
 				method: 'POST'
-			}).fail(function () {
+			})).done(function () {
 				OC.Notification.showTemporary('Could not disable U2F');
-			}.bind(this)).always(function () {
-				this._loading = false;
-				this.render();
-			}.bind(this));
+			}).catch(console.error.bind(this)).then(function () {
+				self._loading = false;
+				self.render();
+			});
 		},
 
 		/**
@@ -186,17 +193,19 @@
 		 */
 		finishRegister: function (data) {
 			console.log('finish register…', data);
+
 			var url = OC.generateUrl('apps/twofactor_u2f/settings/finishregister');
-			$.ajax(url, {
+			var self = this;
+			Promise.resolve($.ajax(url, {
 				method: 'POST',
 				data: data
-			}).fail(function () {
+			})).catch(function () {
 				OC.Notification.showTemporary('server error while trying to complete U2F device registration');
-			}).always(function () {
+			}).then(function () {
 				$('.utf-register-info').slideUp();
-				this._loading = false;
-				this.render();
-			}.bind(this));
+				self._loading = false;
+				self.render();
+			});
 		}
 	});
 
