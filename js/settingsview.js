@@ -142,7 +142,7 @@
 			return Promise.resolve($.ajax(url, {
 				method: 'POST'
 			})).catch(function () {
-				throw new Error('Server error while trying to add U2F device');
+				throw new Error(t('twofactor_u2f', 'Server error while trying to add U2F device'));
 			});
 		},
 
@@ -175,7 +175,7 @@
 			return Promise.resolve($.ajax(url, {
 				method: 'POST'
 			})).catch(function () {
-				throw new Error('Server error while disabling U2F');
+				throw new Error(t('twofactor_u2f', 'Server error while disabling U2F'));
 			});
 		},
 
@@ -203,13 +203,16 @@
 			var host = pathArray[2];
 			var url = protocol + '//' + host;
 
-			return new Promise(function (resolve) {
+			return new Promise(function (resolve, reject) {
 				console.log('doRegister', req, sigs);
 				u2f.register(url, [req], sigs, function (data) {
 					console.log(data);
 					if (data.errorCode && data.errorCode !== 0) {
 						$('.utf-register-info').slideUp();
-						throw new Error('U2F device registration failed (error code ' + data.errorCode + ')');
+						reject(new Error(t('twofactor_u2f', 'U2F device registration failed (error code {errorCode})', {
+							errorCode: data.errorCode
+						})));
+						return;
 					}
 					resolve(data);
 				});
@@ -228,7 +231,7 @@
 				method: 'POST',
 				data: data
 			})).catch(function () {
-				throw new Error('Server error while trying to complete U2F device registration');
+				throw new Error(t('twofactor_u2f', 'Server error while trying to complete U2F device registration'));
 			}).then(function () {
 				$('.utf-register-info').slideUp();
 			});
