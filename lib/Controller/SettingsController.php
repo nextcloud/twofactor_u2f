@@ -50,6 +50,7 @@ class SettingsController extends Controller {
 
 	/**
 	 * @NoAdminRequired
+	 * @PasswordConfirmationRequired
 	 */
 	public function disable() {
 		$this->manager->disableU2F($this->userSession->getUser());
@@ -57,6 +58,7 @@ class SettingsController extends Controller {
 
 	/**
 	 * @NoAdminRequired
+	 * @PasswordConfirmationRequired
 	 * @UseSession
 	 */
 	public function startRegister() {
@@ -65,6 +67,7 @@ class SettingsController extends Controller {
 
 	/**
 	 * @NoAdminRequired
+	 * @PasswordConfirmationRequired
 	 *
 	 * @param string $registrationData
 	 * @param string $clientData
