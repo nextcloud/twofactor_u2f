@@ -1,5 +1,9 @@
 { "translations": {
     "Use U2F device" : "Gebruik U2F apparaat",
+    "Server error while trying to add U2F device" : "Server fout tijdens het toevoegen van U2F hulpmiddel",
+    "Server error while disabling U2F" : "Server fout tijden uitschakelen U2F",
+    "U2F device registration failed (error code {errorCode})" : "U2F hulpmiddel registratie mislukt (fout code {errorCode})",
+    "Server error while trying to complete U2F device registration" : "Server fout tijdens registratie van het U2F hulpmiddel",
     "You added an U2F hardware token" : "Je hebt een U2F hardware token toegevoegd",
     "You removed an U2F hardware token" : "Je verwijderde een U2F hardware token",
     "U2F device" : "U2F device",

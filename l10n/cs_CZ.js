@@ -2,6 +2,10 @@ OC.L10N.register(
     "twofactor_u2f",
     {
     "Use U2F device" : "Použít U2F přístroj",
+    "Server error while trying to add U2F device" : "Serverová chyba během pokusu o přidání U2F zařízení",
+    "Server error while disabling U2F" : "Serverová chyba během zakazování U2F",
+    "U2F device registration failed (error code {errorCode})" : "registrace U2F zařízení selhala (kód chyby {errorCode})",
+    "Server error while trying to complete U2F device registration" : "Serverová chyba během pokusu o dokončení registrace U2F zařízení",
     "You added an U2F hardware token" : "Přidal(a) jste U2F hardwarový token",
     "You removed an U2F hardware token" : "Odebral(a) jste U2F hardwarový token",
     "U2F device" : "Zařízení U2F",
