@@ -1,12 +1,12 @@
 /* global Backbone, Handlebars, OC, u2f, Promise */
 
-(function (OC, Backbone, Handlebars, $, u2f) {
+(function (OC, OCA, Backbone, Handlebars, $, u2f) {
 	'use strict';
 
-	OC.Settings = OC.Settings || {};
-	OC.Settings.TwoFactorU2F = OC.Settings.TwoFactorU2F || {};
+	OCA.TwoFactorU2F = OCA.TwoFactorU2F || {};
 
-	var TEMPLATE = '<div>'
+	var TEMPLATE = ''
+		+ '<div>'
 		+ '	{{#unless loading}}'
 		+ '	<input type="checkbox" class="checkbox" id="u2f-enabled" {{#if enabled}}checked{{/if}}>'
 		+ '	<label for="u2f-enabled">' + t('twofactor_u2f', 'Use U2F device') + '</label>'
@@ -17,9 +17,9 @@
 		+ '</div>';
 
 	/**
-	 * @class OC.Settings.TwoFactorU2F.View
+	 * @class 
 	 */
-	var View = Backbone.View.extend({
+	var SettingsView = Backbone.View.extend({
 
 		/**
 		 * @type {function|undefined}
@@ -29,7 +29,7 @@
 		/**
 		 * @type {boolean}
 		 */
-		_enabled: undefined,
+		_enabled: false,
 
 		/**
 		 * @type {boolean}
@@ -54,13 +54,6 @@
 		/**
 		 * @returns {undefined}
 		 */
-		initialize: function () {
-			this._load();
-		},
-
-		/**
-		 * @returns {undefined}
-		 */
 		render: function () {
 			this.$el.html(this.template({
 				enabled: this._enabled,
@@ -69,19 +62,19 @@
 		},
 
 		/**
-		 * @returns {undefined}
+		 * @returns {Promise}
 		 */
-		_load: function () {
+		load: function () {
 			var url = OC.generateUrl('/apps/twofactor_u2f/settings/state');
-			Promise.resolve($.ajax(url, {
+			return Promise.resolve($.ajax(url, {
 				method: 'GET'
 			})).then(function (data) {
 				this._enabled = data.enabled;
 				this.render();
 			}.bind(this)).catch(function (e) {
-				console.error(e);
+				throw e;
 				OC.Notification.showTemporary('Could not get U2F enabled/disabled state.');
-			});
+			}).catch(console.error.bind(this));
 		},
 
 		/**
@@ -238,6 +231,6 @@
 		}
 	});
 
-	OC.Settings.TwoFactorU2F.View = View;
+	OCA.TwoFactorU2F.SettingsView = SettingsView;
 
-})(OC, Backbone, Handlebars, $, u2f);
+})(OC, OCA, Backbone, Handlebars, $, u2f);
