@@ -2,6 +2,7 @@
 
 ![Downloads](https://img.shields.io/github/downloads/nextcloud/twofactor_u2f/total.svg)
 [![Build Status](https://api.travis-ci.org/nextcloud/twofactor_u2f.svg?branch=master)](https://travis-ci.org/nextcloud/twofactor_u2f)
+[![JavaScript Coverage Status](https://coveralls.io/repos/github/nextcloud/twofactor_u2f/badge.svg?branch=master)](https://coveralls.io/github/nextcloud/twofactor_u2f?branch=master)
 
 ![](screenshots/challenge.png)
 
