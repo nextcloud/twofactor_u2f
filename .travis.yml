@@ -46,7 +46,7 @@ before_install:
   - if [[ "$DB" == 'mysql' ]]; then mysql -u root -e "CREATE USER 'nc_autotest'@'localhost' IDENTIFIED BY '';"; fi
   - if [[ "$DB" == 'mysql' ]]; then mysql -u root -e "GRANT ALL ON nc_autotest.* TO 'nc_autotest'@'localhost';"; fi
 
-  - composer self-update
+  - npm install
 
   - cd ..
   - git clone https://github.com/nextcloud/server.git --recursive --depth 1 -b $CORE_BRANCH core
@@ -67,6 +67,9 @@ script:
 
   # Run server's app code checker
   #- php ../../occ app:check-code twofactor_u2f
+
+  # Run JS tests
+  - ./node_modules/karma/bin/karma start --single-run
 
   # Run PHP tests
   - cd tests
