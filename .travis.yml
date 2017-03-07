@@ -20,6 +20,7 @@ services:
 env:
   global:
   - CORE_BRANCH=master
+  - PHP_COVERAGE=TRUE
   matrix:
   - DB=sqlite
 
@@ -71,6 +72,10 @@ script:
   # Run PHP tests
   - cd tests
   - phpunit --configuration phpunit.xml
+
+  # Publish PHP coverage to scrutinizer
+  - if [[ "$PHP_COVERAGE" = "TRUE" ]]; then wget https://scrutinizer-ci.com/ocular.phar; fi
+  - if [[ "$PHP_COVERAGE" = "TRUE" ]]; then php ocular.phar code-coverage:upload --format=php-clover clover.xml; fi
 
 matrix:
   include:
