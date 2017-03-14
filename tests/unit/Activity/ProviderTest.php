@@ -29,9 +29,9 @@ use OCP\IL10N;
 use OCP\ILogger;
 use OCP\IURLGenerator;
 use OCP\L10N\IFactory;
-use Test\TestCase;
+use PHPUnit_Framework_TestCase;
 
-class ProviderTest extends TestCase {
+class ProviderTest extends PHPUnit_Framework_TestCase {
 
 	private $l10n;
 	private $urlGenerator;

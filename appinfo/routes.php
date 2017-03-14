@@ -26,11 +26,6 @@ return [
 			'verb' => 'GET'
 		],
 		[
-			'name' => 'settings#disable',
-			'url' => '/settings/disable',
-			'verb' => 'POST'
-		],
-		[
 			'name' => 'settings#startRegister',
 			'url' => '/settings/startregister',
 			'verb' => 'POST'
@@ -38,6 +33,11 @@ return [
 		[
 			'name' => 'settings#finishRegister',
 			'url' => '/settings/finishregister',
+			'verb' => 'POST'
+		],
+		[
+			'name' => 'settings#remove',
+			'url' => '/settings/remove',
 			'verb' => 'POST'
 		],
 	]

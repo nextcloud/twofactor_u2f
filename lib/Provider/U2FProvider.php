@@ -93,7 +93,7 @@ class U2FProvider implements IProvider {
 	 * @return boolean
 	 */
 	public function isTwoFactorAuthEnabledForUser(IUser $user) {
-		return $this->manager->isEnabled($user);
+		return count($this->manager->getDevices($user)) > 0;
 	}
 
 }

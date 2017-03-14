@@ -6,7 +6,10 @@
 		return url;
 	};
 	global.OC.Notification = {};
-	global.OC.Notification.showTemporary = function () {
+	global.OC.Notification.showTemporary = function (txt) {
+		console.error('temporary notification', txt)
+	};
+	global.OC.registerMenu = function () {
 
 	};
 	global.OCA = {};
