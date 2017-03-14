@@ -1,0 +1,19 @@
+
+(function (global) {
+	// Global variable stubs
+	global.OC = {};
+	global.OC.generateUrl = function (url) {
+		return url;
+	};
+	global.OC.Notification = {};
+	global.OC.Notification.showTemporary = function () {
+
+	};
+	global.OCA = {};
+	global.t = function (app, txt) {
+		if (app !== 'twofactor_u2f') {
+			throw Error('wrong app used for translatoin');
+		}
+		return txt;
+	};
+})(window);

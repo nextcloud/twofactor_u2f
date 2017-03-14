@@ -6,8 +6,8 @@
 	OCA.TwoFactorU2F = OCA.TwoFactorU2F || {};
 
 	function toggleError(state) {
-		const $info = $('#u2f-info');
-		const $error = $('#u2f-error');
+		var $info = $('#u2f-info');
+		var $error = $('#u2f-error');
 		if (state) {
 			$info.hide();
 			$error.show();
@@ -18,8 +18,8 @@
 	}
 
 	function signCallback(data) {
-		const $form = $('#u2f-form');
-		const $auth = $('#challenge');
+		var $form = $('#u2f-form');
+		var $auth = $('#challenge');
 		console.log("Authenticate callback", data);
 		if (data.errorCode) {
 			console.error('U2F auth failed: ' + data.errorCode);
@@ -33,7 +33,7 @@
 	}
 
 	function sign() {
-		const req = JSON.parse($('#u2f-auth').val());
+		var req = JSON.parse($('#u2f-auth').val());
 
 		toggleError(false);
 		var pathArray = location.href.split('/');
