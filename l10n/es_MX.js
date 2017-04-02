@@ -8,6 +8,8 @@ OC.L10N.register(
     "Server error while trying to complete U2F device registration" : "Se presentó un error del servidor al tratar de completar el registro del dispositivo U2F",
     "U2F device" : "dispositivo U2F",
     "Authenticate with an U2F device" : "Autenticar con un dispositivo U2F",
-    "An error occurred. Please try again." : "Se presentó un erorr. Favor de volver a intentar. "
+    "An error occurred. Please try again." : "Se presentó un erorr. Favor de volver a intentar. ",
+    "U2F second-factor auth" : "Segundo factor de autenticación  U2F",
+    "U2F device successfully registered." : "El dispositivo U2F ha sido registrado exitosamente. "
 },
 "nplurals=2; plural=(n != 1);");
