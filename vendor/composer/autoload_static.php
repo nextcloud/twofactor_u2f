@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit135f220d4958b656c3111e7413e2c032
+class ComposerStaticInitd5289176fb4b3e86997c3313bff1b499
 {
     public static $classMap = array (
         'u2flib_server\\Error' => __DIR__ . '/..' . '/yubico/u2flib-server/src/u2flib_server/U2F.php',
@@ -17,7 +17,7 @@ class ComposerStaticInit135f220d4958b656c3111e7413e2c032
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit135f220d4958b656c3111e7413e2c032::$classMap;
+            $loader->classMap = ComposerStaticInitd5289176fb4b3e86997c3313bff1b499::$classMap;
 
         }, null, ClassLoader::class);
     }

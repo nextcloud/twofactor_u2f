@@ -17,7 +17,7 @@
         "require": {
             "ext-openssl": "*"
         },
-        "time": "2016-02-19 09:47:51",
+        "time": "2016-02-19T09:47:51+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

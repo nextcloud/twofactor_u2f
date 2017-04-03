@@ -24,6 +24,7 @@ update-composer: composer.phar
 appstore:
 	mkdir -p $(sign_dir)
 	rsync -a \
+	--delete \
 	--exclude=.git \
 	--exclude=build \
 	--exclude=.gitignore \
@@ -37,6 +38,7 @@ appstore:
 	--exclude=l10n/no-php \
 	--exclude=Makefile \
 	--exclude=nbproject \
+	--exclude=node_modules \
 	--exclude=screenshots \
 	--exclude=phpunit*xml \
 	--exclude=tests \
