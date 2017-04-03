@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.2.0 – 2017-04-03
+### Added
+- Settings icon (NC12 only)
+### Changed
+- New and updated translations
+
 ## 1.1.0 – 2017-02-06
 ### Added
 - Password confirmation when enabling/disabling the provider
