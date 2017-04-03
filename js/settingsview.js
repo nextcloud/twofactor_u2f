@@ -242,4 +242,4 @@
 
 	OCA.TwoFactorU2F.SettingsView = SettingsView;
 
-})(OC, OCA, Backbone, Handlebars, $, u2f);
+})(OC, OCA, OC.Backbone, Handlebars, $, u2f);
