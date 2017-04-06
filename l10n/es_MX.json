@@ -4,6 +4,8 @@
     "Server error while disabling U2F" : "Se presentó un error del servidor al deshabilitar U2F",
     "U2F device registration failed (error code {errorCode})" : "Se presentó una falla en el registro del dispositivo U2F (código de error {errorCode})",
     "Server error while trying to complete U2F device registration" : "Se presentó un error del servidor al tratar de completar el registro del dispositivo U2F",
+    "You added an U2F hardware token" : "Usted ha agregado una ficha U2F física",
+    "You removed an U2F hardware token" : "Usted ha eliminado una ficha U2F física",
     "U2F device" : "dispositivo U2F",
     "Authenticate with an U2F device" : "Autenticar con un dispositivo U2F",
     "Please plug in your U2F device and press the device button to authorize." : "Favor de conectar su dispositivo U2F y presione el botón del dispositivo para autorizar. ",
