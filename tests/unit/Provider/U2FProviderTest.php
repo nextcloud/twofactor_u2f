@@ -18,9 +18,9 @@ use OCP\IL10N;
 use OCP\IUser;
 use OCP\Template;
 use PHPUnit_Framework_MockObject_MockObject;
-use Test\TestCase;
+use PHPUnit_Framework_TestCase;
 
-class U2FProviderTest extends TestCase {
+class U2FProviderTest extends PHPUnit_Framework_TestCase {
 
 	/** @var IL10N|PHPUnit_Framework_MockObject_MockObject */
 	private $l10n;
@@ -84,10 +84,24 @@ class U2FProviderTest extends TestCase {
 
 	public function testIsTwoFactorAuthEnabledForUser() {
 		$user = $this->createMock(IUser::class);
+		$devices = [
+			'dev1',
+		];
 
 		$this->manager->expects($this->once())
-			->method('isEnabled')
-			->willReturn(false);
+			->method('getDevices')
+			->willReturn($devices);
+
+		$this->assertTrue($this->provider->isTwoFactorAuthEnabledForUser($user));
+	}
+
+	public function testIsTwoFactorAuthDisabledForUser() {
+		$user = $this->createMock(IUser::class);
+		$devices = [];
+
+		$this->manager->expects($this->once())
+			->method('getDevices')
+			->willReturn($devices);
 
 		$this->assertFalse($this->provider->isTwoFactorAuthEnabledForUser($user));
 	}

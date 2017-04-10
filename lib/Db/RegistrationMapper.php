@@ -32,7 +32,7 @@ class RegistrationMapper extends Mapper {
 		/* @var $qb IQueryBuilder */
 		$qb = $this->db->getQueryBuilder();
 
-		$qb->select('id', 'user_id', 'key_handle', 'public_key', 'certificate', 'counter')
+		$qb->select('id', 'user_id', 'key_handle', 'public_key', 'certificate', 'counter', 'name')
 			->from('twofactor_u2f_registrations')
 			->where($qb->expr()->eq('user_id', $qb->createNamedParameter($user->getUID())))
 			->andWhere($qb->expr()->eq('id', $qb->createNamedParameter($id)));
@@ -52,7 +52,7 @@ class RegistrationMapper extends Mapper {
 		/* @var $qb IQueryBuilder */
 		$qb = $this->db->getQueryBuilder();
 
-		$qb->select('id', 'user_id', 'key_handle', 'public_key', 'certificate', 'counter')
+		$qb->select('id', 'user_id', 'key_handle', 'public_key', 'certificate', 'counter', 'name')
 			->from('twofactor_u2f_registrations')
 			->where($qb->expr()->eq('user_id', $qb->createNamedParameter($user->getUID())));
 		$result = $qb->execute();

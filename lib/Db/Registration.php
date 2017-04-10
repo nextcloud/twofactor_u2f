@@ -26,6 +26,8 @@ use OCP\AppFramework\Db\Entity;
  * @method void setCertificate(string $Certificate)
  * @method int getCounter()
  * @method void setCounter(int $counter)
+ * @method string getName()
+ * @method void setName(string $name)
  */
 class Registration extends Entity implements JsonSerializable {
 
@@ -34,6 +36,7 @@ class Registration extends Entity implements JsonSerializable {
 	protected $publicKey;
 	protected $certificate;
 	protected $counter;
+	protected $name;
 
 	public function jsonSerialize() {
 		return [
@@ -43,6 +46,7 @@ class Registration extends Entity implements JsonSerializable {
 			'publicKey' => $this->getPublicKey(),
 			'certificate' => $this->getCertificate(),
 			'counter' => $this->getCounter(),
+			'name' => $this->getName(),
 		];
 	}
 

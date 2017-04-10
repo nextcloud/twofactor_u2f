@@ -21,6 +21,33 @@
 }
 
 /** icons for personal page settings **/
-.nav-icon-u2f-second-factor-auth {
+.nav-icon-u2f-second-factor-auth, .icon-u2f-device {
 	background-image: url('../img/app-dark.svg?v=1');
+}
+
+.u2f-device {
+	line-height: 300%;
+	display: flex;
+}
+.u2f-device .more {
+	position: relative;
+}
+.u2f-device .more .icon-more {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding-left: 20px;
+	vertical-align: middle;
+	opacity: .7;
+}
+.u2f-device .popovermenu {
+	right: -5px;
+	top: 42px;
+}
+
+.icon-u2f-device {
+	display: inline-block;
+	background-size: 100%;
+	padding: 3px;
+	margin: 3px;
 }

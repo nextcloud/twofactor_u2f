@@ -22,10 +22,10 @@ use OCP\IRequest;
 use OCP\ISession;
 use OCP\IUser;
 use PHPUnit_Framework_MockObject_MockObject;
-use Test\TestCase;
+use PHPUnit_Framework_TestCase;
 use u2flib_server\U2F;
 
-class U2FManagerTest extends TestCase {
+class U2FManagerTest extends PHPUnit_Framework_TestCase {
 
 	/** @var RegistrationMapper|PHPUnit_Framework_MockObject_MockObject */
 	private $mapper;
@@ -86,27 +86,32 @@ class U2FManagerTest extends TestCase {
 			->willReturn($regs);
 	}
 
-	public function testIsEnabled() {
+	public function testGetDevices() {
 		$user = $this->createMock(IUser::class);
 		$this->mockRegistrations($user, 2);
 
-		$this->assertTrue($this->manager->isEnabled($user));
+		$this->assertCount(2, $this->manager->getDevices($user));
 	}
 
-	public function testIsEnabledDisabled() {
+	public function testGetNoDevices() {
 		$user = $this->createMock(IUser::class);
 		$this->mockRegistrations($user, 0);
 
-		$this->assertFalse($this->manager->isEnabled($user));
+		$this->assertEmpty($this->manager->getDevices($user));
 	}
 
 	public function testDisableU2F() {
 		$user = $this->createMock(IUser::class);
-		$this->mockRegistrations($user, 1);
 		$event = $this->createMock(IEvent::class);
+		$reg = $this->createMock(Registration::class);
 
 		$this->mapper->expects($this->once())
-			->method('delete');
+			->method('findRegistration')
+			->with($user, 13)
+			->willReturn($reg);
+		$this->mapper->expects($this->once())
+			->method('delete')
+			->with($reg);
 		$this->activityManager->expects($this->once())
 			->method('generateEvent')
 			->willReturn($event);
@@ -137,7 +142,7 @@ class U2FManagerTest extends TestCase {
 			->method('publish')
 			->with($this->equalTo($event));
 
-		$this->manager->disableU2F($user);
+		$this->manager->removeDevice($user, 13);
 	}
 
 	public function testStartRegistrationFirstDevice() {
