@@ -1,10 +1,11 @@
 
-(function (global) {
+(function (global, Backbone) {
 	// Global variable stubs
 	global.OC = {};
 	global.OC.generateUrl = function (url) {
 		return url;
 	};
+	global.OC.Backbone = Backbone;
 	global.OC.Notification = {};
 	global.OC.Notification.showTemporary = function (txt) {
 		console.error('temporary notification', txt)
@@ -19,4 +20,4 @@
 		}
 		return txt;
 	};
-})(window);
+})(window, Backbone);
