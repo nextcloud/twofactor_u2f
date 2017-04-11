@@ -14,10 +14,18 @@ style('twofactor_u2f', 'style');
 
 <img src="<?php print_unescaped(image_path('twofactor_u2f', 'app.svg')); ?>">
 <p id="u2f-info">
-	<?php p($l->t('Please plug in your U2F device and press the device button to authorize.')) ?>
+<?php p($l->t('Please plug in your U2F device and press the device button to authorize.')) ?>
 </p>
 <p id="u2f-error"
    style="display: none">
 	<strong><?php p($l->t('An error occurred. Please try again.')) ?></strong>
 </p>
-<p><em><?php p($l->t('Chrome is the only browser that supports U2F devices. You need to install the "U2F Support Add-on" on Firefox to use U2F.')) ?></em></p>
+<p>
+	<em>
+		<?php p($l->t('Chrome is the only browser that supports U2F devices. You need to install the "U2F Support Add-on" on Firefox to use U2F.')) ?>
+		<p id="u2f-http-warning"
+		      style="display: none">
+			<?php p($l->t('You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication.')) ?>
+		</p>
+	</em>
+</p>

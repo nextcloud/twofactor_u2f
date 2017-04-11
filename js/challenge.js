@@ -1,6 +1,6 @@
 /* global OCA, u2f */
 
-(function(OCA, u2f) {
+(function(OCA, u2f, document) {
 	'use strict';
 
 	OCA.TwoFactorU2F = OCA.TwoFactorU2F || {};
@@ -32,7 +32,14 @@
 		$form.submit();
 	}
 
+	function checkHTTPS() {
+		if (document.location.protocol !== 'https:') {
+			$('#u2f-http-warning').show();
+		}
+	}
+
 	function sign() {
+		checkHTTPS();
 		var req = JSON.parse($('#u2f-auth').val());
 
 		toggleError(false);
@@ -46,4 +53,4 @@
 
 	$(sign);
 
-})(OCA || {}, u2f);
+})(OCA || {}, u2f, document);
