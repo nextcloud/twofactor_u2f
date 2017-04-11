@@ -1,7 +1,5 @@
 { "translations": {
-    "Use U2F device" : "Përdor pajisje U2F",
     "Server error while trying to add U2F device" : "Gabim serveri gjatë përpjekjes për të shtuar pajisjen U2F",
-    "Server error while disabling U2F" : "Gabim serveri gjatë çaktivizimit të U2F",
     "U2F device" : "Pajisje U2F",
     "Authenticate with an U2F device" : "Verifikoni me një pajisje U2F",
     "An error occurred. Please try again." : "Ndodhi një problem.Ju lutem provoni përsëri.",

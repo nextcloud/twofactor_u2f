@@ -1,7 +1,6 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
-    "Use U2F device" : "Använd U2F-enhet",
     "You added an U2F hardware token" : "Du la till en U2F enhets-token",
     "You removed an U2F hardware token" : "Du tog bort en U2F enhets-token",
     "U2F device" : "U2F-enhet",

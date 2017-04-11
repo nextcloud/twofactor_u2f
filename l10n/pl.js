@@ -1,9 +1,7 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
-    "Use U2F device" : "Użyj urządzenia U2F",
     "Server error while trying to add U2F device" : "Błąd serwera podczas próby dodania urządzenie U2F",
-    "Server error while disabling U2F" : "Błąd serwera podczas wyłączania U2F",
     "U2F device registration failed (error code {errorCode})" : "Rejestracja urządzenia U2F nie powiodła się (kod błędu {errorCode})",
     "Server error while trying to complete U2F device registration" : "Błąd serwera podczas próby zakończenia rejestracji urządzenia U2F",
     "You added an U2F hardware token" : "Dodano token sprzętowy U2F",

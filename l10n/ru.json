@@ -1,7 +1,5 @@
 { "translations": {
-    "Use U2F device" : "Использовать устройство U2F ",
     "Server error while trying to add U2F device" : "Ошибка сервера при добавлении U2F устройства",
-    "Server error while disabling U2F" : "Ошибка сервера при отключении U2F",
     "U2F device registration failed (error code {errorCode})" : "Регистрация U2F устройства не удалась (код ошибки {errorCode})",
     "Server error while trying to complete U2F device registration" : "Ошибка сервера при завершении регистрации U2F устройства",
     "You added an U2F hardware token" : "Вы добавили аппаратный токен U2F",

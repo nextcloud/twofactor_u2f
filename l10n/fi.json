@@ -1,7 +1,5 @@
 { "translations": {
-    "Use U2F device" : "Käytä U2F-laitetta",
     "Server error while trying to add U2F device" : "Tapahtui palvelinvirhe yritettäessä lisätä U2F-laitetta",
-    "Server error while disabling U2F" : "Tapahtui palvelinvirhe U2F-laitetta poistettaessa",
     "U2F device registration failed (error code {errorCode})" : "U2F-laitteen rekisteröinti epäonnistui (virhekoodi {errorCode})",
     "Server error while trying to complete U2F device registration" : "Tapahtui palvelinvirhe yritettäessä viimeistellä U2F-laitteen rekisteröinti",
     "You added an U2F hardware token" : "Lisäsit U2F-laitteen valtuuden",
