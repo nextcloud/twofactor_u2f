@@ -1,4 +1,12 @@
 { "translations": {
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Aucun périphérique U2F configuré. Vous n'utilisez pas actuellement l'authentification en deux facteurs U2F.",
+    "The following devices are configured for U2F second-factor authentication:" : "Les périphériques suivants sont configurés en tant que second facteur d'authentification pour l'U2F",
+    "Unnamed device" : "Appareil sans nom",
+    "Remove" : "Supprimer",
+    "Add U2F device" : "Ajouter un périphérique U2F",
+    "You can add as many devices as you like. It is recommended to give each device a distinct name." : "Vous pouvez ajouter autant de périphériques que vous le souhaitez. Il est recommandé de donner à chacun un nom distinct.",
+    "Adding a new device …" : "Ajout d'un nouvel appareil...",
+    "Could not remove your U2F device" : "Impossible de retirer votre périphérique U2F",
     "Server error while trying to add U2F device" : "Erreur lors de la tentative d'ajout du périphérique U2F",
     "U2F device registration failed (error code {errorCode})" : "L'enregistrement du périphérique U2F a échoué (code d'erreur {errorCode})",
     "Server error while trying to complete U2F device registration" : "Erreur du serveur lors de la tentative de terminer l'enregistrement du périphérique U2F",
@@ -10,6 +18,7 @@
     "An error occurred. Please try again." : "Une erreur est survenue. Veuillez réessayer.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome est le seul navigateur supportant les appareils U2F. Vous devez installer l'extension \"U2F Support Add-on\" de firefox pour l'utiliser.",
     "U2F second-factor auth" : "Second facteur d'authentification pour l'U2F",
+    "Loading your devices …" : "Chargement de vos appareils...",
     "U2F device successfully registered." : "L'appareil U2F a été enregistré avec succès."
 },"pluralForm" :"nplurals=2; plural=(n > 1);"
 }

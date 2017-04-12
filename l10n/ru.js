@@ -1,6 +1,14 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Нетни одного настроенного устройства U2F. Вы сейчас не используете U2F в качестве второго фактора.",
+    "The following devices are configured for U2F second-factor authentication:" : "Следующие устройства настроены как второй фактор подтверждения подлинности U2F:",
+    "Unnamed device" : "Устройство без имени",
+    "Remove" : "Удалить",
+    "Add U2F device" : "Добавить устройство U2F",
+    "You can add as many devices as you like. It is recommended to give each device a distinct name." : "Вы можете добавить любое количество устройств. Рекомендуется присваивать каждому из устройств неповоторяющееся имя.",
+    "Adding a new device …" : "Добавить новое устройство…",
+    "Could not remove your U2F device" : "Невозможно удалить устройство U2F",
     "Server error while trying to add U2F device" : "Ошибка сервера при добавлении U2F устройства",
     "U2F device registration failed (error code {errorCode})" : "Регистрация U2F устройства не удалась (код ошибки {errorCode})",
     "Server error while trying to complete U2F device registration" : "Ошибка сервера при завершении регистрации U2F устройства",
@@ -12,6 +20,7 @@ OC.L10N.register(
     "An error occurred. Please try again." : "Произошла ошибка. Попробуйте ещё раз.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome единственный браузер поддерживающий U2F устройства. Для использования U2F в Firefox необходимо установить дополнение \"U2F Support Add-on\".",
     "U2F second-factor auth" : "U2F - протокол двуфакторной аутентификации",
+    "Loading your devices …" : "Загружаются ваши устройства…",
     "U2F device successfully registered." : "Устройство U2F успешно зарегистрировано."
 },
 "nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);");
