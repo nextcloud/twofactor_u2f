@@ -1,6 +1,7 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
+    "Remove" : "Αφαίρεση",
     "Server error while trying to add U2F device" : "Σφάλμα του διακομιστή κατά την προσπάθεια προσθήκης συσκευής U2F ",
     "U2F device registration failed (error code {errorCode})" : "Εγγραφή συσκευής απέτυχε U2F (κωδικός σφάλματος {errorCode})",
     "Server error while trying to complete U2F device registration" : "Σφάλμα του διακομιστή κατά την προσπάθεια ολοκλήρωσης εγγραφής της συσκευής U2F",
