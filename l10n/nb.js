@@ -7,6 +7,7 @@ OC.L10N.register(
     "Adding a new device …" : "Legger til ny enhet…",
     "Could not remove your U2F device" : "Kunne ikke fjerne din U2F-enhet",
     "Server error while trying to add U2F device" : "Tjenerfeil ved forsøk på tillegging av U2F-enhet",
+    "U2F device registration failed (error code {errorCode})" : "U2F-enhetsregistrering mislyktes (feilkode {errorCode})",
     "You added an U2F hardware token" : "Du la til et U2F-maskinvaresymbol",
     "You removed an U2F hardware token" : "Du fjernet et U2F-maskinvaresymbol",
     "U2F device" : "U2F enhet",
