@@ -1,9 +1,11 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Ingen U2F-adresser satt opp. Du bruker ikke U2F som andrefaktor for øyeblikket.",
     "Unnamed device" : "Ikke navngitt enhet",
     "Remove" : "Fjern",
     "Add U2F device" : "Legg til U2F-enhet",
+    "You can add as many devices as you like. It is recommended to give each device a distinct name." : "Du kan legge til så mange enheter du vil. Det anbefales å gi hver nye enhet et eget navn.",
     "Adding a new device …" : "Legger til ny enhet…",
     "Could not remove your U2F device" : "Kunne ikke fjerne din U2F-enhet",
     "Server error while trying to add U2F device" : "Tjenerfeil ved forsøk på tillegging av U2F-enhet",
