@@ -1,6 +1,7 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
+    "Remove" : "Eltávolítás",
     "U2F device" : "U2F eszköz",
     "Authenticate with an U2F device" : "Hitelesítés U2F eszköz segítségével",
     "Please plug in your U2F device and press the device button to authorize." : "Kérjük, dugja be az U2F eszközt, majd kattintson az eszköz gombra a hitelesítéshez.",
