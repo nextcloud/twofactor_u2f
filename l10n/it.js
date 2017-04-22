@@ -1,6 +1,9 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
+    "Unnamed device" : "Dispositivo senza nome",
+    "Remove" : "Rimuovi",
+    "Add U2F device" : "Aggiungi dispositivo U2F",
     "Server error while trying to add U2F device" : "Errore del server durante il tentativo di aggiungere il dispositivo U2F",
     "U2F device registration failed (error code {errorCode})" : "Registrazione del dispositivo U2F non riuscita (codice di errore {errorCode})",
     "Server error while trying to complete U2F device registration" : "Errore del server durante il tentativo di completare la registrazione del dispositivo U2F",
