@@ -1,5 +1,6 @@
 { "translations": {
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Ingen U2F-adresser satt opp. Du bruker ikke U2F som andrefaktor for øyeblikket.",
+    "The following devices are configured for U2F second-factor authentication:" : "Følgende enheter er konfigurert for U2F tofaktorautentisering:",
     "Unnamed device" : "Ikke navngitt enhet",
     "Remove" : "Fjern",
     "Add U2F device" : "Legg til U2F-enhet",
