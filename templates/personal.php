@@ -6,7 +6,7 @@ style('twofactor_u2f', 'style');
 ?>
 
 <div class="section">
-	<h2><?php p($l->t('U2F second-factor auth')); ?></h2>
+	<h2 data-anchor-name="u2f-second-factor-auth"><?php p($l->t('U2F second-factor auth')); ?></h2>
 	<div id="twofactor-u2f-settings">
 		<span class="icon-loading-small u2f-loading"></span>
 		<span><?php p($l->t('Loading your devices …')); ?></span>
