@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.3.0 – 2017-05-02
+### Added
+- Support for multiple U2F devices
+- Translations
+### Fixed
+- Personal settings icon on NC12
+
 ## 1.2.0 – 2017-04-03
 ### Added
 - Settings icon (NC12 only)
