@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.3.1 – 2017-05-04
+### Fixed
+- Login fails when using multiple U2F devices
+
 ## 1.3.0 – 2017-05-02
 ### Added
 - Support for multiple U2F devices
