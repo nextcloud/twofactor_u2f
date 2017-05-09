@@ -36,8 +36,12 @@
 		var req = JSON.parse($('#u2f-auth').val());
 
 		toggleError(false);
+		var pathArray = location.href.split('/');
+		var protocol = pathArray[0];
+		var host = pathArray[2];
+		var url = protocol + '//' + host;
 		console.log("sign: ", req);
-		u2f.sign(req, signCallback);
+		u2f.sign(url, req[0].challenge, req, signCallback);
 	}
 
 	$(sign);
