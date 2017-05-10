@@ -14,6 +14,7 @@
     "You removed an U2F hardware token" : "U2F aygıtını sildiniz",
     "U2F device" : "U2F aygıtı",
     "Authenticate with an U2F device" : "U2F aygıtı ile kimlik doğrulama",
+    "Two Factor U2F" : "İki Aşamalı Kimlik Doğrulama U2F",
     "Please plug in your U2F device and press the device button to authorize." : "Lütfen U2F aygıtınızı takın ve kimliğinizi doğrulamak için aygıt üzerindeki düğmeye tıklayın.",
     "An error occurred. Please try again." : "Bir sorun çıktı. Lütfen yeniden deneyin.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "U2F aygıtı yalnız Chrome web tarayıcısı tarafından desteklenir. Firefox üzerinde U2F kullanabilmek için \"U2F Support eklentisini\" kurmalısınız.",
