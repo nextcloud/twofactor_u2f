@@ -1,7 +1,10 @@
 { "translations": {
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "没有设置 U2F 设备。你现在无法使用 U2F 作为双重验证。",
+    "The following devices are configured for U2F second-factor authentication:" : "下列设备设置了 U2F 双重验证：",
     "Unnamed device" : "未命名的设备",
     "Remove" : "移除",
     "Add U2F device" : "添加 U2F 设备",
+    "You can add as many devices as you like. It is recommended to give each device a distinct name." : "你可以添加任何数量的设备。推荐给每个设备一个确切的名字",
     "Adding a new device …" : "添加一个新的设备",
     "Could not remove your U2F device" : "无法移除你的 U2F 设备",
     "Server error while trying to add U2F device" : "尝试添加 U2F 设备时服务器错误",
@@ -11,6 +14,7 @@
     "You removed an U2F hardware token" : "你已经移除了U2F 硬件标识",
     "U2F device" : "U2F 设备",
     "Authenticate with an U2F device" : "U2F 设备认证",
+    "Two Factor U2F" : "双重 U2F",
     "Please plug in your U2F device and press the device button to authorize." : "请插入 U2F 设备按下设备键来认证.",
     "An error occurred. Please try again." : "发生错误.请重试.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome 是唯一支持 U2F 设备的浏览器. 你需要在 Firefox 中安装 \"U2F 支持扩展\" 来使用 U2F.",
