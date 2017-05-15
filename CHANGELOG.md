@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## 1.3.2 – unreleased
+## 1.3.2 – 2017-05-15
 ### Fixed
 - Login fails when using multiple U2F devices
 
