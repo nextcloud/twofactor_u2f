@@ -1,6 +1,8 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
+    "Unnamed device" : "Paisje pa emër",
+    "Remove" : "Hiq",
     "Server error while trying to add U2F device" : "Gabim serveri gjatë përpjekjes për të shtuar pajisjen U2F",
     "U2F device" : "Pajisje U2F",
     "Authenticate with an U2F device" : "Verifikoni me një pajisje U2F",
