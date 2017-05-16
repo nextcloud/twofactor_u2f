@@ -121,7 +121,7 @@ class U2FManagerTest extends PHPUnit_Framework_TestCase {
 			->willReturnSelf();
 		$event->expects($this->once())
 			->method('setType')
-			->with($this->equalTo('twofactor'))
+			->with($this->equalTo('security'))
 			->willReturnSelf();
 		$user->expects($this->any())
 			->method('getUID')
