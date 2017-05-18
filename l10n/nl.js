@@ -16,6 +16,7 @@ OC.L10N.register(
     "You removed an U2F hardware token" : "Je verwijderde een U2F hardware token",
     "U2F device" : "U2F hulpmiddel",
     "Authenticate with an U2F device" : "Authenticeren met een U2F hulpmiddel",
+    "Two Factor U2F" : "Twee-factor U2F",
     "Please plug in your U2F device and press the device button to authorize." : "Steek je U2F hulpmiddel in de plug en druk op de knop om te autoriseren.",
     "An error occurred. Please try again." : "Er trad een fout op. Probeer het opnieuw",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome is de enige browser die U2F apparaten ondersteunt. Je moet de \"U2F Support Add-on\" in Firefox installeren om U2F te kunnen gebruiken.",
