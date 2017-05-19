@@ -14,6 +14,7 @@
     "You removed an U2F hardware token" : "Du fjernet et U2F-maskinvaresymbol",
     "U2F device" : "U2F enhet",
     "Authenticate with an U2F device" : "Autentiser med en U2F-enhet",
+    "Two Factor U2F" : "Tofaktors U2F",
     "Please plug in your U2F device and press the device button to authorize." : "Vennligst koble til din U2F enhet og trykk på dens knapp for autentisering.",
     "An error occurred. Please try again." : "Det oppstod en feil. Prøv igjen",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome er den eneste nettleseren som støtter U2F-enheter av seg selv. Du må installere \"U2F Support add-on\" på Firefox for å bruke U2F.",

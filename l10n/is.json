@@ -6,6 +6,8 @@
     "Could not remove your U2F device" : "Gat ekki eytt U2F-tækinu þínu",
     "Server error while trying to add U2F device" : "Villa á þjóni við að bæta við U2F-tæki",
     "U2F device registration failed (error code {errorCode})" : "Skráning U2F-tækis mistókst (villukóði {errorCode})",
+    "Server error while trying to complete U2F device registration" : "Villa á þjóni við að ljúka skráningu U2F-tækis",
+    "You added an U2F hardware token" : "Þú bættir við teikni fyrir U2F-vélbúnað",
     "U2F device" : "U2F-tæki",
     "Authenticate with an U2F device" : "Auðkenna með U2F-tæki",
     "Two Factor U2F" : "Tveggja-þrepa U2F",
