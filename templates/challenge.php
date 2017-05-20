@@ -20,4 +20,4 @@ style('twofactor_u2f', 'style');
    style="display: none">
 	<strong><?php p($l->t('An error occurred. Please try again.')) ?></strong>
 </p>
-<p><em><?php p($l->t('Chrome is the only browser that supports U2F devices. You need to install the "U2F Support Add-on" on Firefox to use U2F.')) ?></em></p>
+<p><em><?php p($l->t('Install the "U2F Support Add-on" on Firefox to use U2F, this is not needed on Chrome.')) ?></em></p>
