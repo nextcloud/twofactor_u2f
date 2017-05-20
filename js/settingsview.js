@@ -1,4 +1,4 @@
-/* global Backbone, Handlebars, OC, u2f, Promise, _ */
+/* global Backbone, Handlebars, OC, U2F, Promise, _ */
 
 (function (OC, OCA, Backbone, Handlebars, $, _, u2f) {
 	'use strict';
@@ -36,7 +36,7 @@
 		+ '     <span><small>' + t('twofactor_u2f', 'You can add as many devices as you like. It is recommended to give each device a distinct name.') + '</small></span>'
 		+ '	{{else}}'
 		+ '     <span class="icon-loading-small u2f-loading"></span>'
-		+ '	<span>' + t('twofactor_u2f', 'Adding a new device …') + '</span>'
+		+ '	<span>' + t('twofactor_u2f', 'Adding a new device…') + '</span>'
 		+ '	{{/unless}}'
 		+ '</div>';
 
@@ -156,8 +156,8 @@
 				return device.id === deviceId;
 			}, this);
 			if (!device) {
-				console.error('Cannot remove u2f device: unkown');
-				return Promise.reject('Unknown u2f device');
+				console.error('Cannot remove U2F device: unkown');
+				return Promise.reject('Unknown U2F device');
 			}
 
 			return this._requirePasswordConfirmation().then(function () {
@@ -172,9 +172,9 @@
 				this.render();
 				console.error(e);
 				OC.Notification.showTemporary(t('twofactor_u2f', 'Could not remove your U2F device'));
-				throw new Error('Could not remove u2f device on server');
+				throw new Error('Could not remove U2F device on server');
 			}.bind(this)).catch(function (e) {
-				console.error('Unexpected error while removing the u2f device', e);
+				console.error('Unexpected error while removing the U2F device', e);
 				throw e;
 			});
 		},
