@@ -14,8 +14,8 @@
     "Authenticate with an U2F device" : "Godkend med en U2F enhed",
     "Please plug in your U2F device and press the device button to authorize." : "Sæt venligst din U2F enhed i og tryk på enhedsknappen for at godkende.",
     "An error occurred. Please try again." : "En fejl opstod. Prøv venligst igen.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome er den eneste browser der understøtter U2F enheder. Du er nød til at installere \"U2F Support Add-on\" i Firefox for at bruge U2F.",
     "Loading your devices …" : "Indlæser dine enheder ...",
+    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome er den eneste browser der understøtter U2F enheder. Du er nød til at installere \"U2F Support Add-on\" i Firefox for at bruge U2F.",
     "U2F device successfully registered." : "U2F enhed succesfuldt registreret."
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

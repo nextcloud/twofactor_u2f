@@ -17,9 +17,9 @@
     "Two Factor U2F" : "Tveggja-þrepa U2F",
     "Please plug in your U2F device and press the device button to authorize." : "Stingdu U2F-tækinu þínu í samband og ýttu á tækishnappinn til að auðkenna.",
     "An error occurred. Please try again." : "Villa kom upp. Endilega reyndu aftur.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome er eini vafrinn sem styður U2F-tæki beint. Á Firefox verður þú að setja upp viðbótina \"U2F Support Add-on\" til að geta notað U2F.",
     "U2F second-factor auth" : "U2F tveggja-þrepa auðkenning",
     "Loading your devices …" : "Hleð inn tækjunum þínum ...",
+    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome er eini vafrinn sem styður U2F-tæki beint. Á Firefox verður þú að setja upp viðbótina \"U2F Support Add-on\" til að geta notað U2F.",
     "U2F device successfully registered." : "Það tókst að kerfisskrá U2F-tæki."
 },"pluralForm" :"nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);"
 }

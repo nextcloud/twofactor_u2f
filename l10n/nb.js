@@ -19,9 +19,9 @@ OC.L10N.register(
     "Two Factor U2F" : "Tofaktors U2F",
     "Please plug in your U2F device and press the device button to authorize." : "Vennligst koble til din U2F enhet og trykk på dens knapp for autentisering.",
     "An error occurred. Please try again." : "Det oppstod en feil. Prøv igjen",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome er den eneste nettleseren som støtter U2F-enheter av seg selv. Du må installere \"U2F Support add-on\" på Firefox for å bruke U2F.",
     "U2F second-factor auth" : "U2F to-faktor autentisering",
     "Loading your devices …" : "Laster inn dine enheter…",
+    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome er den eneste nettleseren som støtter U2F-enheter av seg selv. Du må installere \"U2F Support add-on\" på Firefox for å bruke U2F.",
     "U2F device successfully registered." : "U2F enheten ble registrert."
 },
 "nplurals=2; plural=(n != 1);");
