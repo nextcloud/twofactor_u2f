@@ -17,6 +17,7 @@
     "Two Factor U2F" : "Второй фактор — устройство U2F",
     "Please plug in your U2F device and press the device button to authorize." : "Пожалуйста, подключите своё U2F устройство и нажмите на нем кнопку для авторизации.",
     "An error occurred. Please try again." : "Произошла ошибка. Попробуйте ещё раз.",
+    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Для использования U2F в Firefox установите дополнение «U2F Support Add-on». Для Chrome  установка расширений не требуется.",
     "U2F second-factor auth" : "U2F - протокол двуфакторной аутентификации",
     "Loading your devices …" : "Загружаются ваши устройства…",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome единственный браузер поддерживающий U2F устройства. Для использования U2F в Firefox необходимо установить дополнение \"U2F Support Add-on\".",
