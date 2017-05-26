@@ -19,6 +19,7 @@ OC.L10N.register(
     "Two Factor U2F" : "Twee-factor U2F",
     "Please plug in your U2F device and press the device button to authorize." : "Steek je U2F hulpmiddel in de plug en druk op de knop om te autoriseren.",
     "An error occurred. Please try again." : "Er trad een fout op. Probeer het opnieuw",
+    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Installeer de \"U2F Support Add-on\" in Firefox om U2F te gebruiken, dit is niet nodig in Chrome.",
     "U2F second-factor auth" : "U2F tweede factor autentificatie",
     "Loading your devices …" : "Je hulpmiddel wordt geladen",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome is de enige browser die U2F apparaten ondersteunt. Je moet de \"U2F Support Add-on\" in Firefox installeren om U2F te kunnen gebruiken.",
