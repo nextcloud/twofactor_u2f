@@ -1,6 +1,8 @@
 { "translations": {
     "Unnamed device" : "Paisje pa emër",
     "Remove" : "Hiq",
+    "You can add as many devices as you like. It is recommended to give each device a distinct name." : "Mund të shtoni aq pajisje sa dëshironi. Rekomandohet ti jepni cdo pajisjeje nje emër të veçantë",
+    "Adding a new device …" : "Një pajisje e re po shtohet ...",
     "Server error while trying to add U2F device" : "Gabim serveri gjatë përpjekjes për të shtuar pajisjen U2F",
     "U2F device" : "Pajisje U2F",
     "Authenticate with an U2F device" : "Verifikoni me një pajisje U2F",
