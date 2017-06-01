@@ -7,7 +7,7 @@ OC.L10N.register(
     "Remove" : "Löschen",
     "Add U2F device" : "U2F-Gerät hinzufügen",
     "You can add as many devices as you like. It is recommended to give each device a distinct name." : "Du kannst beliebig viele Geräte hinzufügen. Es wird empfohlen jedem Gerät einen einzigartigen Namen zu geben.",
-    "Adding a new device …" : "Füge neues Gerät hinzu ...",
+    "Adding a new device …" : "Füge neues Gerät hinzu…",
     "Could not remove your U2F device" : "U2F-Gerät konnte nicht gelöscht werden",
     "Server error while trying to add U2F device" : "Server-Fehler beim Versuch ein U2F-Gerät hinzuzufügen",
     "U2F device registration failed (error code {errorCode})" : "Registrierung des U2F-Gerätes fehlgeschlagen (Fehler-Code  {errorCode})",
@@ -21,7 +21,7 @@ OC.L10N.register(
     "An error occurred. Please try again." : "Es ist ein Fehler aufgetreten. Bitte versuche es noch einmal.",
     "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Installiere das \"U2F Support Add-on\" im Firefox, um U2F benutzen zu können. Dies ist in Chrome nicht erforderlich.",
     "U2F second-factor auth" : "U2F-Zweifaktorauthentifizierung",
-    "Loading your devices …" : "Lade deine Geräte ...",
+    "Loading your devices …" : "Lade deine Geräte…",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome ist der einzige Browser, der U2F-Geräte unterstützt. Für Firefox wird das \"U2F Support Add-on\" benötigt, um U2F zu verwenden.",
     "U2F device successfully registered." : "U2F-Gerät erfolgreich registriert."
 },
