@@ -3,10 +3,12 @@
     "Remove" : "Hiq",
     "You can add as many devices as you like. It is recommended to give each device a distinct name." : "Mund të shtoni aq pajisje sa dëshironi. Rekomandohet ti jepni cdo pajisjeje nje emër të veçantë",
     "Adding a new device …" : "Një pajisje e re po shtohet ...",
+    "Could not remove your U2F device" : "Nuk mund të hiqet pajisja juaj U2F",
     "Server error while trying to add U2F device" : "Gabim serveri gjatë përpjekjes për të shtuar pajisjen U2F",
     "U2F device" : "Pajisje U2F",
     "Authenticate with an U2F device" : "Verifikoni me një pajisje U2F",
     "An error occurred. Please try again." : "Ndodhi një problem.Ju lutem provoni përsëri.",
+    "Loading your devices …" : "Duke ngarkuar pajisjet tuaja ...",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome është i vetmi shfletues që suporton paisjet UF2. Do t'ju duhet të instaloni shtesën \"U2F Support Add-on\" në Firefox që të përdorni U2F.",
     "U2F device successfully registered." : "Pajisja U2F u regjistrua me sukses."
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
