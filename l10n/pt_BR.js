@@ -8,7 +8,7 @@ OC.L10N.register(
     "Add U2F device" : "Adicionar um dispositivo U2F",
     "You can add as many devices as you like. It is recommended to give each device a distinct name." : "Você pode adicionar quantos dispositivos quiser. É recomendado dar um nome diferente a cada um deles.",
     "Adding a new device …" : "Adicionando um novo dispositivo...",
-    "Could not remove your U2F device" : "Não foi possível excluir o dispositivo U2F",
+    "Could not remove your U2F device" : "Não foi possível excluir seu dispositivo U2F",
     "Server error while trying to add U2F device" : "Erro de servidor ao tentar adicionar o dispositivo U2F",
     "U2F device registration failed (error code {errorCode})" : "Falha no registro do dispositivo U2F (código de erro {errorCode})",
     "Server error while trying to complete U2F device registration" : "Erro do servidor ao tentar completar o registro do dispositivo U2F",
