@@ -2,11 +2,11 @@ OC.L10N.register(
     "twofactor_u2f",
     {
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Nenhum dispositivos U2F configurado. Você não está usando U2F como segundo fator de autenticação no momento.",
-    "The following devices are configured for U2F second-factor authentication:" : "Os seguintes dispositivos estão configurados como segundo fator de autenticação :",
+    "The following devices are configured for U2F second-factor authentication:" : "Os seguintes dispositivos estão configurados para U2F segundo-factor de autenticação :",
     "Unnamed device" : "Dispositivo sem nome",
     "Remove" : "Excluir",
     "Add U2F device" : "Adicionar um dispositivo U2F",
-    "You can add as many devices as you like. It is recommended to give each device a distinct name." : "Você pode adicionar quantos dispositivos quiser. É recomendado dar um nome diferente a cada um deles.",
+    "You can add as many devices as you like. It is recommended to give each device a distinct name." : "Você pode adicionar quantos dispositivos quiser. É recomendado dar um nome diferente para cada um deles.",
     "Adding a new device …" : "Adicionando um novo dispositivo...",
     "Could not remove your U2F device" : "Não foi possível excluir seu dispositivo U2F",
     "Server error while trying to add U2F device" : "Erro de servidor ao tentar adicionar o dispositivo U2F",
