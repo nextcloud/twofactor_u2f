@@ -22,5 +22,5 @@
     "Loading your devices …" : "Ładuję twoje urządzenia...",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome jest jedyną przeglądarką obsługującą urządzenia U2F. Aby używać U2F w przeglądarce Firefox należy zainstalować dodatek \"U2F Support Add-on\".",
     "U2F device successfully registered." : "Urządzenie U2F zostało zarejestrowane."
-},"pluralForm" :"nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>=14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);"
+},"pluralForm" :"nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);"
 }
