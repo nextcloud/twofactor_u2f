@@ -1,6 +1,8 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Ingen U2F enheder konfigureret. Du benytter ikke U2F som anden faktor i øjeblikket.",
+    "The following devices are configured for U2F second-factor authentication:" : "De følgende enheder er konfigureret for U2F anden faktor login.",
     "Unnamed device" : "Unavngiven enhed",
     "Remove" : "Fjern",
     "Add U2F device" : "Tilføj U2F enhed",
