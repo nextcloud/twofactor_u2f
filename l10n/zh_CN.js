@@ -19,6 +19,7 @@ OC.L10N.register(
     "Two Factor U2F" : "双重 U2F",
     "Please plug in your U2F device and press the device button to authorize." : "请插入 U2F 设备按下设备键来认证.",
     "An error occurred. Please try again." : "发生错误.请重试.",
+    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "在Firefox中安装“U2F支持扩展”来使用U2F，Chrome浏览器不需要。",
     "U2F second-factor auth" : "U2F 二因子认证",
     "Loading your devices …" : "正在加载你的设备...",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome 是唯一支持 U2F 设备的浏览器. 你需要在 Firefox 中安装 \"U2F 支持扩展\" 来使用 U2F.",
