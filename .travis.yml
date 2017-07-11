@@ -24,11 +24,12 @@ env:
   - PHP_COVERAGE=TRUE
   - TEST_JS=FALSE
   matrix:
-  - CORE_BRANCH=master
-  - CORE_BRANCH=stable12
-  - DB=sqlite
-  - DB=pgsql
-  - DB=mysql
+  - CORE_BRANCH=master   DB=sqlite
+  - CORE_BRANCH=master   DB=mysql
+  - CORE_BRANCH=master   DB=pgsql
+  - CORE_BRANCH=stable12 DB=sqlite
+  - CORE_BRANCH=stable12 DB=mysql
+  - CORE_BRANCH=stable12 DB=pgsql
 
 branches:
   only:
@@ -92,5 +93,5 @@ script:
 
 matrix:
   include:
-    - env: "DB=mysql TEST_JS=TRUE"
+    - env: "CORE_BRANCH=master DB=mysql TEST_JS=TRUE"
   fast_finish: true
