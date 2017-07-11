@@ -1,5 +1,7 @@
 sudo: required
 dist: trusty
+matrix:
+  fast_finish: true
 language: php
 php:
   - 5.6
@@ -19,13 +21,15 @@ services:
 
 env:
   global:
-  - CORE_BRANCH=master
+  - CORE_BRANCH=stable12
   - PHP_COVERAGE=TRUE
   matrix:
   - DB=sqlite
+  - DB=pgsql
 
 branches:
   only:
+  - release
   - master
   - "/^stable\\d+(\\.\\d+)?$/"
   - /^v\d++(\.\d+)?+(\.\d+)?+(\.\d+)?$/
@@ -83,13 +87,3 @@ script:
   # Publish PHP coverage to scrutinizer
   - if [[ "$PHP_COVERAGE" = "TRUE" ]]; then wget https://scrutinizer-ci.com/ocular.phar; fi
   - if [[ "$PHP_COVERAGE" = "TRUE" ]]; then php ocular.phar code-coverage:upload --format=php-clover clover.xml; fi
-
-matrix:
-  include:
-    - php: 7
-      env: "DB=sqlite CORE_BRANCH=stable11"
-    - php: 5.6
-      env: "DB=mysql TEST_JS=TRUE"
-    - php: 7.0
-      env: "DB=pgsql"
-  fast_finish: true
