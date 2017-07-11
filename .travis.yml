@@ -1,5 +1,7 @@
 sudo: required
 dist: trusty
+matrix:
+  fast_finish: true
 language: php
 php:
   - 5.6
@@ -19,10 +21,14 @@ services:
 
 env:
   global:
-  - CORE_BRANCH=master
   - PHP_COVERAGE=TRUE
+  - TEST_JS=FALSE
   matrix:
+  - CORE_BRANCH=master
+  - CORE_BRANCH=stable12
   - DB=sqlite
+  - DB=pgsql
+  - DB=mysql
 
 branches:
   only:
@@ -86,10 +92,5 @@ script:
 
 matrix:
   include:
-    - php: 7
-      env: "DB=sqlite CORE_BRANCH=stable11"
-    - php: 5.6
-      env: "DB=mysql TEST_JS=TRUE"
-    - php: 7.0
-      env: "DB=pgsql"
+    - env: "DB=mysql TEST_JS=TRUE"
   fast_finish: true
