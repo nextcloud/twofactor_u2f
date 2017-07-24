@@ -2,7 +2,7 @@ OC.L10N.register(
     "twofactor_u2f",
     {
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Καμία συσκευή U2F διαμορφωμένη. Αυτή τη στιγμή δεν χρησιμοποιείτε U2F ως δεύτερο παράγοντα.",
-    "The following devices are configured for U2F second-factor authentication:" : "Οι ακόλουθες συσκευές είναι διαμορφωμένες για U2F δεύτερο παράγοντα αυθεντικοποίησης",
+    "The following devices are configured for U2F second-factor authentication:" : "Οι ακόλουθες συσκευές είναι διαμορφωμένες για U2F δεύτερο παράγοντα επαλήθευσης:",
     "Unnamed device" : "Ανώνυμη συσκευή",
     "Remove" : "Αφαίρεση",
     "Add U2F device" : "Προσθέστε U2F συσκευή",
