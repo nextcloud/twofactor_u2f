@@ -1,6 +1,7 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Asnjë pajisje U2F e konfiguruar. Ju nuk po përdorni U2F si faktor të dytë në këtë moment.",
     "The following devices are configured for U2F second-factor authentication:" : "Pajisjet në vijim janë konfiguruar për identifikimin me dy faktor U2F:",
     "Unnamed device" : "Paisje pa emër",
     "Remove" : "Hiq",
@@ -9,6 +10,7 @@ OC.L10N.register(
     "Adding a new device …" : "Një pajisje e re po shtohet ...",
     "Could not remove your U2F device" : "Nuk mund të hiqet pajisja juaj U2F",
     "Server error while trying to add U2F device" : "Gabim serveri gjatë përpjekjes për të shtuar pajisjen U2F",
+    "You removed an U2F hardware token" : "Ju hoqët një U2F hardware token",
     "U2F device" : "Pajisje U2F",
     "Authenticate with an U2F device" : "Verifikoni me një pajisje U2F",
     "An error occurred. Please try again." : "Ndodhi një problem.Ju lutem provoni përsëri.",
