@@ -1,6 +1,7 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
+    "Remove" : "Noņemt",
     "Server error while trying to add U2F device" : "Servera kļūda, mēģinot pievienot U2F ierīci",
     "U2F device registration failed (error code {errorCode})" : "U2F ierīces reģistrācija neizdevās (kļūdas kods {errorCode})",
     "Server error while trying to complete U2F device registration" : "Servera kļūda mēģinot pabeigt U2F ierīces reģistrācija",
