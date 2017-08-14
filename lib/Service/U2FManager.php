@@ -159,7 +159,7 @@ class U2FManager {
 	private function publishEvent(IUser $user, $event) {
 		$activity = $this->activityManager->generateEvent();
 		$activity->setApp('twofactor_u2f')
-			->setType('twofactor')
+			->setType('security')
 			->setAuthor($user->getUID())
 			->setAffectedUser($user->getUID())
 			->setSubject($event);

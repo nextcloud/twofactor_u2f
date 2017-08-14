@@ -1,6 +1,14 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Nejsou nastavena žádná U2F zařízení. Aktuálně nepoužíváte U2F jako druhý faktor.",
+    "The following devices are configured for U2F second-factor authentication:" : "Následující zařízení jsou nastavena jako druhý faktor autentizace pomocí U2F:",
+    "Unnamed device" : "Nepojmenované zařízení",
+    "Remove" : "Odstranit",
+    "Add U2F device" : "Přidat U2F zařízení",
+    "You can add as many devices as you like. It is recommended to give each device a distinct name." : "Můžete přidat tolik zařízení, kolik chcete. Doporučuje se každému dát unikátní jméno.",
+    "Adding a new device …" : "Přidávání nového zařízení …",
+    "Could not remove your U2F device" : "Nepodařilo se odstranit vaše U2F zařízení",
     "Server error while trying to add U2F device" : "Serverová chyba během pokusu o přidání U2F zařízení",
     "U2F device registration failed (error code {errorCode})" : "registrace U2F zařízení selhala (kód chyby {errorCode})",
     "Server error while trying to complete U2F device registration" : "Serverová chyba během pokusu o dokončení registrace U2F zařízení",
@@ -8,10 +16,13 @@ OC.L10N.register(
     "You removed an U2F hardware token" : "Odebral(a) jste U2F hardwarový token",
     "U2F device" : "Zařízení U2F",
     "Authenticate with an U2F device" : "Ověření pomocí U2F přístroje",
+    "Two Factor U2F" : "Dvoufázové U2F",
     "Please plug in your U2F device and press the device button to authorize." : "Připojte prosím svůj U2F přístroj a stlačte tlačítko pro ověření.",
     "An error occurred. Please try again." : "Došlo k chybě. Zkuste to prosím znovu",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome je jediný prohlížeč podporující U2F přístroje. Musíte nainstalovat \"U2F Support Add-on\" pro Firefox pro použití U2F.",
+    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Pro použití U2F ve Firefoxu nainstalujte \"U2F Support Add-on\". V Chrome to není potřeba.",
     "U2F second-factor auth" : "U2F dvoufaktorové ověření",
+    "Loading your devices …" : "Načítání vašich zařízení …",
+    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome je jediný prohlížeč podporující U2F přístroje. Musíte nainstalovat \"U2F Support Add-on\" pro Firefox pro použití U2F.",
     "U2F device successfully registered." : "U2F přístroj úspěšně zaregistrován."
 },
 "nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;");

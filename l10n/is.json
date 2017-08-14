@@ -1,9 +1,26 @@
 { "translations": {
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Engin U2F-tæki eru uppsett. Þú ert ekki að nota tveggja-þrepa U2F-auðkenningu í augnablikinu.",
+    "The following devices are configured for U2F second-factor authentication:" : "Eftirfarandi tæki eru sett upp fyrir tveggja-þrepa U2F-auðkenningu:",
+    "Unnamed device" : "Nafnlaust tæki",
+    "Remove" : "Fjarlægja",
+    "Add U2F device" : "Bæta við U2F-tæki",
+    "You can add as many devices as you like. It is recommended to give each device a distinct name." : "Þú getur bætt við eins mörgum tækjum og þú vilt. Mælt er með því að þú notir vel aðgreinanleg nöfn á hvert tæki.",
+    "Adding a new device …" : "Bæta við nýju tæki …",
+    "Could not remove your U2F device" : "Gat ekki eytt U2F-tækinu þínu",
     "Server error while trying to add U2F device" : "Villa á þjóni við að bæta við U2F-tæki",
+    "U2F device registration failed (error code {errorCode})" : "Skráning U2F-tækis mistókst (villukóði {errorCode})",
+    "Server error while trying to complete U2F device registration" : "Villa á þjóni við að ljúka skráningu U2F-tækis",
+    "You added an U2F hardware token" : "Þú bættir við teikni fyrir U2F-vélbúnað",
+    "You removed an U2F hardware token" : "Þú fjarlægðir teikn fyrir U2F-vélbúnað",
     "U2F device" : "U2F-tæki",
     "Authenticate with an U2F device" : "Auðkenna með U2F-tæki",
+    "Two Factor U2F" : "Tveggja-þrepa U2F",
+    "Please plug in your U2F device and press the device button to authorize." : "Stingdu U2F-tækinu þínu í samband og ýttu á tækishnappinn til að auðkenna.",
     "An error occurred. Please try again." : "Villa kom upp. Endilega reyndu aftur.",
+    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Settu upp viðbótina \"U2F Support Add-on\" á Firefox til að nota U2F, á Chrome er slíkt ekki nauðsynlegt.",
     "U2F second-factor auth" : "U2F tveggja-þrepa auðkenning",
+    "Loading your devices …" : "Hleð inn tækjunum þínum ...",
+    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome er eini vafrinn sem styður U2F-tæki beint. Á Firefox verður þú að setja upp viðbótina \"U2F Support Add-on\" til að geta notað U2F.",
     "U2F device successfully registered." : "Það tókst að kerfisskrá U2F-tæki."
 },"pluralForm" :"nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);"
 }

@@ -22,7 +22,7 @@ style('twofactor_u2f', 'style');
 </p>
 <p>
 	<em>
-		<?php p($l->t('Chrome is the only browser that supports U2F devices. You need to install the "U2F Support Add-on" on Firefox to use U2F.')) ?>
+		<?php p($l->t('Install the "U2F Support Add-on" on Firefox to use U2F, this is not needed on Chrome.')) ?>
 		<p id="u2f-http-warning"
 		      style="display: none">
 			<?php p($l->t('You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication.')) ?>

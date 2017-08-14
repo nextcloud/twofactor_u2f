@@ -12,7 +12,7 @@ module.exports = function (config) {
 			'../../core/vendor/jquery/dist/jquery.js',
 			'../../core/vendor/underscore/underscore.js',
 			'../../core/vendor/backbone/backbone.js',
-			'../../core/vendor/handlebars/handlebars.js',
+			'../../core/vendor/handlebars/handlebars.min.js',
 			'js/tests/test-main.js',
 			'js/tests/fake-u2f.js',
 			{pattern: 'js/**/*.js', included: true},
