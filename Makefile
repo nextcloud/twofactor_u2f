@@ -34,11 +34,14 @@ appstore:
 	--exclude=composer.json \
 	--exclude=composer.lock \
 	--exclude=composer.phar \
+	--exclude=coverage \
+	--exclude=karma.conf.js \
 	--exclude=l10n/.tx \
 	--exclude=l10n/no-php \
 	--exclude=Makefile \
 	--exclude=nbproject \
 	--exclude=node_modules \
+	--exclude=package.json \
 	--exclude=screenshots \
 	--exclude=phpunit*xml \
 	--exclude=tests \
