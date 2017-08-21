@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.3.3 – 2017-08-21
+### Added
+- Translations
+### Fixed
+- Activity type for 2FA activies
+
 ## 1.3.2 – 2017-05-15
 ### Fixed
 - Login fails when using multiple U2F devices
