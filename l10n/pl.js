@@ -1,15 +1,15 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
-    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Nie znaleziono skonfiguroanego urzadzenia U2F. Nie używasz w tej chwili U2F jako elementu dwuskładnikowego uwierzytelnienia.",
-    "The following devices are configured for U2F second-factor authentication:" : "Następujące urządzenia są skonfigurowane do dwuskładnikowego uwierzytelnienia U2F",
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Nie znaleziono skonfigurowanego urządzenia U2F. Nie używasz w tej chwili U2F jako elementu dwuskładnikowego uwierzytelnienia.",
+    "The following devices are configured for U2F second-factor authentication:" : "Następujące urządzenia są skonfigurowane do dwuskładnikowego uwierzytelnienia U2F: ",
     "Unnamed device" : "Nienazwane urządzenie",
     "Remove" : "Usuń",
     "Add U2F device" : "Dodaj urządzenie U2F",
     "You can add as many devices as you like. It is recommended to give each device a distinct name." : "Możesz dodać tak wiele urządzeń ile chcesz. Zalecane jest nadanie każdemu urządzeniu osobnej nazwy.",
     "Adding a new device …" : "Dodaję nowe urządzenie...",
-    "Could not remove your U2F device" : "Nie można usunąć twojego urządzenia U2F",
-    "Server error while trying to add U2F device" : "Błąd serwera podczas próby dodania urządzenie U2F",
+    "Could not remove your U2F device" : "Nie można usunąć Twojego urządzenia U2F",
+    "Server error while trying to add U2F device" : "Błąd serwera podczas próby dodania urządzenia U2F",
     "U2F device registration failed (error code {errorCode})" : "Rejestracja urządzenia U2F nie powiodła się (kod błędu {errorCode})",
     "Server error while trying to complete U2F device registration" : "Błąd serwera podczas próby zakończenia rejestracji urządzenia U2F",
     "You added an U2F hardware token" : "Dodano token sprzętowy U2F",
@@ -21,7 +21,7 @@ OC.L10N.register(
     "An error occurred. Please try again." : "Wystąpił błąd. Spróbuj ponownie.",
     "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Zainstaluj \"U2F Support Add-on\" dla Firefox aby móc używać U2F, w przypadku Chrome nie jest to konieczne.",
     "U2F second-factor auth" : "Dwuskładnikowe uwierzytelnienie U2F",
-    "Loading your devices …" : "Ładuję twoje urządzenia...",
+    "Loading your devices …" : "Ładuję Twoje urządzenia...",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome jest jedyną przeglądarką obsługującą urządzenia U2F. Aby używać U2F w przeglądarce Firefox należy zainstalować dodatek \"U2F Support Add-on\".",
     "U2F device successfully registered." : "Urządzenie U2F zostało zarejestrowane."
 },
