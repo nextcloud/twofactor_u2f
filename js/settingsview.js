@@ -256,9 +256,29 @@
 				u2f.register(url, [req], sigs, function (data) {
 					if (data.errorCode && data.errorCode !== 0) {
 						$('.utf-register-info').slideUp();
-						reject(new Error(t('twofactor_u2f', 'U2F device registration failed (error code {errorCode})', {
-							errorCode: data.errorCode
-						})));
+
+						// https://developers.yubico.com/U2F/Libraries/Client_error_codes.html
+						switch(data.errorCode) {
+							case 4:
+								// 4 - DEVICE_INELIGIBLE
+								reject(new Error(t('twofactor_u2f', 'U2F device is already registered (error code {errorCode})', {
+									errorCode: data.errorCode
+								})));
+								break;
+							case 5:
+								// 5 - TIMEOUT
+								reject(new Error(t('twofactor_u2f', 'U2F device registration timeout reached (error code {errorCode})', {
+									errorCode: data.errorCode
+								})));
+								break;
+							default:
+								// 1 - OTHER_ERROR
+								// 2 - BAD_REQUEST
+								// 3 - CONFIGURATION_UNSUPPORTED
+								reject(new Error(t('twofactor_u2f', 'U2F device registration failed (error code {errorCode})', {
+									errorCode: data.errorCode
+								})));
+						}
 						return;
 					}
 					resolve(data);
