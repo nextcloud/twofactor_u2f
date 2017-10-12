@@ -8,6 +8,8 @@
     "Adding a new device …" : "Yeni aygıt ekleniyor...",
     "Could not remove your U2F device" : "U2F aygıtınız silinemedi",
     "Server error while trying to add U2F device" : "U2F aygıtı eklenirken sunucu sorunu çıktı",
+    "U2F device is already registered (error code {errorCode})" : "U2F aygıtı zaten kaydedilmiş (hata kodu {errorCode})",
+    "U2F device registration timeout reached (error code {errorCode})" : "U2F aygıtı kaydedilirken zaman aşımına uğradı (hata kodu {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "U2F aygıtı kaydedilemedi (hata kodu {errorCode})",
     "Server error while trying to complete U2F device registration" : "U2F aygıtı kaydı tamamlanırken sunucu sorunu çıktı",
     "You added an U2F hardware token" : "U2F aygıtı eklediniz",

@@ -8,6 +8,7 @@
     "Adding a new device …" : "Ajout d'un nouvel appareil...",
     "Could not remove your U2F device" : "Impossible de retirer votre périphérique U2F",
     "Server error while trying to add U2F device" : "Erreur lors de la tentative d'ajout du périphérique U2F",
+    "U2F device is already registered (error code {errorCode})" : "Le périphérique U2F est déjà enregistré (code d'erreur {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "L'enregistrement du périphérique U2F a échoué (code d'erreur {errorCode})",
     "Server error while trying to complete U2F device registration" : "Erreur du serveur lors de la tentative de terminer l'enregistrement du périphérique U2F",
     "You added an U2F hardware token" : "Vous avez ajouté un jeton de matériel U2F",

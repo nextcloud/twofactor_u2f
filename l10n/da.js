@@ -10,6 +10,8 @@ OC.L10N.register(
     "Adding a new device …" : "Tilføjer en ny enhed ...",
     "Could not remove your U2F device" : "Kunne ikke fjerne din U2F enhed",
     "Server error while trying to add U2F device" : "Serverfejl ved tilføjelse af U2F enhed",
+    "U2F device is already registered (error code {errorCode})" : "U2F enhed er allerede registreret (fejlkode {errorCode})",
+    "U2F device registration timeout reached (error code {errorCode})" : "U2F enhed registrering fik timeout (fejlkode {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "Registrering af U2F enhed fejlede (fejlkode {errorCode})",
     "Server error while trying to complete U2F device registration" : "Serverfejl ved U2F enhed registrering",
     "You added an U2F hardware token" : "Du har tilføjet et U2F hardware token",

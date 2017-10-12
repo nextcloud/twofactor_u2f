@@ -8,6 +8,7 @@
     "Adding a new device …" : "Lägger till en ny enhet ...",
     "Could not remove your U2F device" : "Kunde inte ta bort din U2F-enhet",
     "Server error while trying to add U2F device" : "Serverfel när du försökte lägga till en U2F-enhet.",
+    "U2F device is already registered (error code {errorCode})" : "U2F-enhet är redan registrerad (felkod {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "U2F-enhetsregistrering misslyckades (felkod {errorCode})",
     "Server error while trying to complete U2F device registration" : "Serverfel när du försökte slutföra registreringen av en U2F-enhet",
     "You added an U2F hardware token" : "Du la till en U2F enhets-token",

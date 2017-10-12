@@ -8,6 +8,8 @@
     "Adding a new device …" : "Aggiunta di un nuovo dispositivo...",
     "Could not remove your U2F device" : "Impossibile rimuovere il tuo dispositivo U2F",
     "Server error while trying to add U2F device" : "Errore del server durante il tentativo di aggiungere il dispositivo U2F",
+    "U2F device is already registered (error code {errorCode})" : "Il dispositivo U2F è già registrato (codice di errore {errorCode})",
+    "U2F device registration timeout reached (error code {errorCode})" : "Raggiunti il tempo massimo di registrazione del dispositivo U2F (error code {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "Registrazione del dispositivo U2F non riuscita (codice di errore {errorCode})",
     "Server error while trying to complete U2F device registration" : "Errore del server durante il tentativo di completare la registrazione del dispositivo U2F",
     "You added an U2F hardware token" : "Hai aggiunto un token hardware U2F",

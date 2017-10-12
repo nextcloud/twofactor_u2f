@@ -10,6 +10,8 @@ OC.L10N.register(
     "Adding a new device …" : "Adicionando um novo dispositivo...",
     "Could not remove your U2F device" : "Não foi possível excluir seu dispositivo U2F",
     "Server error while trying to add U2F device" : "Erro de servidor ao tentar adicionar o dispositivo U2F",
+    "U2F device is already registered (error code {errorCode})" : "Dispositivo U2F já registrado (código de erro {errorCode})",
+    "U2F device registration timeout reached (error code {errorCode})" : "Tempo para registrar o dispositivo U2F esgotou (código de erro {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "Falha no registro do dispositivo U2F (código de erro {errorCode})",
     "Server error while trying to complete U2F device registration" : "Erro do servidor ao tentar completar o registro do dispositivo U2F",
     "You added an U2F hardware token" : "Você adicionou um token de hardware U2F",
