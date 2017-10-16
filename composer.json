@@ -11,5 +11,9 @@
     ],
     "require": {
         "yubico/u2flib-server": "^1.0.1"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "classmap-authoritative": true
     }
 }
