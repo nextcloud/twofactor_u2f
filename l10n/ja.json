@@ -8,6 +8,8 @@
     "Adding a new device …" : "新しいデバイスを追加…",
     "Could not remove your U2F device" : "U2Fデバイスを削除できませんでした。",
     "Server error while trying to add U2F device" : "U2Fデバイスの追加中にサーバーエラーが発生しました",
+    "U2F device is already registered (error code {errorCode})" : "U2Fデバイスは既に登録されています (エラーコード {errorCode})",
+    "U2F device registration timeout reached (error code {errorCode})" : "U2Fデバイスの登録がタイムアウトしました (エラーコード {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "U2Fデバイスの登録に失敗しました (エラーコード {errorCode})",
     "Server error while trying to complete U2F device registration" : "U2Fデバイスの登録を完了中にサーバーエラーが発生しました",
     "You added an U2F hardware token" : "U2F ハードウェアトークンを追加しました",
