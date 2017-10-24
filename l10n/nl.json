@@ -8,6 +8,8 @@
     "Adding a new device …" : "Nieuw hulpmiddel wordt toegevoegd ...",
     "Could not remove your U2F device" : "Kon U2F hulpmiddel niet verwijderen",
     "Server error while trying to add U2F device" : "Server fout tijdens het toevoegen van U2F hulpmiddel",
+    "U2F device is already registered (error code {errorCode})" : "U2F apparaat is al geregistreerd (fout code {errorCode})",
+    "U2F device registration timeout reached (error code {errorCode})" : "U2F apparaat registratie time-out is bereikt (fout code {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "U2F hulpmiddel registratie mislukt (fout code {errorCode})",
     "Server error while trying to complete U2F device registration" : "Server fout tijdens registratie van het U2F hulpmiddel",
     "You added an U2F hardware token" : "Je hebt een U2F hardware token toegevoegd",
