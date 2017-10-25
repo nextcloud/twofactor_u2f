@@ -10,6 +10,8 @@ OC.L10N.register(
     "Adding a new device …" : "Lisätään uutta laitetta…",
     "Could not remove your U2F device" : "U2F-laitteen poistaminen ei onnistunut",
     "Server error while trying to add U2F device" : "Tapahtui palvelinvirhe yritettäessä lisätä U2F-laitetta",
+    "U2F device is already registered (error code {errorCode})" : "U2F-laite on jo rekisteröity (virhekoodi {errorCode})",
+    "U2F device registration timeout reached (error code {errorCode})" : "U2F-laitteen rekisteröinti aikakatkaistiin (virhekoodi {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "U2F-laitteen rekisteröinti epäonnistui (virhekoodi {errorCode})",
     "Server error while trying to complete U2F device registration" : "Tapahtui palvelinvirhe yritettäessä viimeistellä U2F-laitteen rekisteröinti",
     "You added an U2F hardware token" : "Lisäsit U2F-laitteen valtuuden",
