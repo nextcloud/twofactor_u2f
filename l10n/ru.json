@@ -8,6 +8,8 @@
     "Adding a new device …" : "Добавить новое устройство…",
     "Could not remove your U2F device" : "Невозможно удалить устройство U2F",
     "Server error while trying to add U2F device" : "Ошибка сервера при добавлении U2F устройства",
+    "U2F device is already registered (error code {errorCode})" : "Это U2F устройство уже зарегистрировано (Код ошибки {errorCode})",
+    "U2F device registration timeout reached (error code {errorCode})" : "Регистрация U2F устройства заняла слишком долгое время и не удалась (Код ошибки {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "Регистрация U2F устройства не удалась (код ошибки {errorCode})",
     "Server error while trying to complete U2F device registration" : "Ошибка сервера при завершении регистрации U2F устройства",
     "You added an U2F hardware token" : "Вы добавили аппаратный токен U2F",
