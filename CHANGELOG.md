@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.4.0 – 2017-10-30
+### Added
+- Better U2F error messages
+
 ## 1.3.3 – 2017-08-21
 ### Added
 - Translations
