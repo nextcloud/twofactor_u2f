@@ -1,4 +1,6 @@
 { "translations": {
+    "Remove" : "Odstrániť",
+    "Add U2F device" : "Pridať U2F zariadenie",
     "Server error while trying to add U2F device" : "Počas pokusu o pridanie U2F zariadenia nastala chyba servera",
     "U2F device registration failed (error code {errorCode})" : "Registrácia U2F zariadenia zlyhala (error code {errorCode})",
     "Server error while trying to complete U2F device registration" : "Počas dokončovania registrácie U2F zariadenia nastala chyba",
