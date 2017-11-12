@@ -7,7 +7,7 @@ OC.L10N.register(
     "Remove" : "წაშლა",
     "Add U2F device" : "U2F მოწყობილობის დამატება",
     "You can add as many devices as you like. It is recommended to give each device a distinct name." : "შეგიძლიათ დაამატოთ რამდენი მოწყობილობაც გსურთ იმდენი. რეკომენდირებულია ყოველ მათგანს დაარქვათ განსხვავებული სახელი.",
-    "Adding a new device …" : "ახალი მოწყობილობის დამატება ...",
+    "Adding a new device …" : "ახალი მოწყობილობის დამატება …",
     "Could not remove your U2F device" : "თქვენი U2F მოწყობილობის წაშლა ვერ მოხერხდა",
     "Server error while trying to add U2F device" : "U2F მოწყობილობის დამატებისას სერვერთან წარმოიშვა შეცდომა",
     "U2F device is already registered (error code {errorCode})" : "U2F მოწყობილობა უკვე რეგისტრირებულია (შეცდომის კოდი {errorCode})",
@@ -24,7 +24,7 @@ OC.L10N.register(
     "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Firefox-ში დააყენეთ \"U2F მხარდაჭერის დანამატი\", Chrome-ში ის საჭირო არაა",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "ამ საიტს უკავშირდებით დაუცველი კავშირით. ბრაუზერებმა შეიძლება უარყონ U2F აუტენტიფიკაცია.",
     "U2F second-factor auth" : "U2F მეორე-ფაქტორის აუტენტიფიკაცია",
-    "Loading your devices …" : "თქვენი მწყობილობების ჩატვირთვა ...",
+    "Loading your devices …" : "თქვენი მწყობილობების ჩატვირთვა …",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome-ი ერთადერთი ბრაუზერია რომელიც მხარს უჭერს U2F მოწყობილობებს. Firefox-ით U2F-ით სარგებლობისთვის საჭიროა დააყენოთ \"U2F-ს მხარდაჭერის დანამატი\".",
     "U2F device successfully registered." : "U2F მოწყობილობა წარმატებით დარეგისტრირდა."
 },
