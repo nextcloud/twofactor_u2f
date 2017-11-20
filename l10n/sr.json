@@ -21,7 +21,7 @@
     "An error occurred. Please try again." : "Десила се грешка. Покушајте поново.",
     "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "На Фајерфоксу морате да инсталирате \"U2F Support Add-on\" додатак да бисте користили U2F. Ово не треба на Хром веб читачу.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Приступате овом сајту преко небезбедне конекције. Веб читач може због тога да одбије U2F пријављивање.",
-    "U2F second-factor auth" : "други фактор U2F пријаве",
+    "U2F second-factor auth" : "Други фактор U2F пријаве",
     "Loading your devices …" : "Учитавам Ваше уређаје …",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Хром веб читач је једини веб читач који подржава U2F уређаје. НА Фајерфоксу морате да инсталирајте \"U2F Support Add-on\" додатак да бисте користили U2F.",
     "U2F device successfully registered." : "U2F уређај успешно регистрован."
