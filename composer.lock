@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb3157cc9273cf177ac94d3daec64485",
+    "content-hash": "f771a87d842c7042fa36b526d5dda87c",
     "packages": [
         {
             "name": "yubico/u2flib-server",
@@ -1393,6 +1393,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.6.0"
+    },
     "platform-dev": []
 }
