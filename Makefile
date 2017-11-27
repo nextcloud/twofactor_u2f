@@ -23,6 +23,7 @@ update-composer: composer.phar
 
 appstore:
 	mkdir -p $(sign_dir)
+	composer install --no-dev
 	rsync -a \
 	--delete \
 	--exclude=.git \

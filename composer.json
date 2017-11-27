@@ -12,6 +12,10 @@
     "require": {
         "yubico/u2flib-server": "^1.0.1"
     },
+    "require-dev": {
+		"christophwurst/nextcloud": "^12.0.0",
+		"phpunit/phpunit": "^5.7"
+    },
     "config": {
         "optimize-autoloader": true,
         "classmap-authoritative": true
