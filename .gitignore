@@ -4,7 +4,5 @@
 /node_modules
 
 /nbproject/private/
-/vendor/yubico/u2flib-server/examples/*
-/vendor/yubico/u2flib-server/tests/
-/vendor/yubico/u2flib-server/do-source-release.sh
+/vendor
 composer.phar
