@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.5.0 – 2017-11-27
+### Added
+- Show warning if HTTP is used
+
 ## 1.4.0 – 2017-10-30
 ### Added
 - Better U2F error messages
