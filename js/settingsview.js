@@ -1,6 +1,6 @@
 /* global Backbone, Handlebars, OC, u2f, Promise, _ */
 
-(function (OC, OCA, Backbone, Handlebars, $, _, u2f) {
+(function (OC, OCA, Backbone, Handlebars, $, _, u2f, document) {
 	'use strict';
 
 	OCA.TwoFactorU2F = OCA.TwoFactorU2F || {};
@@ -81,6 +81,8 @@
 		 * @returns {undefined}
 		 */
 		render: function () {
+			this._checkHTTPS();
+
 			this._devices = _.sortBy(this._devices, function (device) {
 				// Underscore's stable sort requires a value for each item
 				return device.name || '';
@@ -97,6 +99,12 @@
 			}, this);
 
 			return this;
+		},
+
+		_checkHTTPS: function () {
+			if (document.location.protocol !== 'https:') {
+				$('#u2f-http-warning').show();
+			}
 		},
 
 		/**
@@ -328,4 +336,4 @@
 
 	OCA.TwoFactorU2F.SettingsView = SettingsView;
 
-})(OC, OCA, OC.Backbone, Handlebars, $, _, u2f);
+})(OC, OCA, OC.Backbone, Handlebars, $, _, u2f, document);
