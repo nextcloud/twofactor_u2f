@@ -25,11 +25,16 @@ env:
   - TEST_JS=FALSE
   matrix:
   - CORE_BRANCH=master   DB=sqlite
-  - CORE_BRANCH=master   DB=mysql
   - CORE_BRANCH=master   DB=pgsql
-  - CORE_BRANCH=stable12 DB=sqlite
-  - CORE_BRANCH=stable12 DB=mysql
-  - CORE_BRANCH=stable12 DB=pgsql
+  # Uncomment when nc13 is out
+  #- CORE_BRANCH=stable12 DB=sqlite
+  #- CORE_BRANCH=stable12 DB=mysql
+  #- CORE_BRANCH=stable12 DB=pgsql
+
+matrix:
+  include:
+    - env: "CORE_BRANCH=master DB=mysql TEST_JS=TRUE"
+  fast_finish: true
 
 branches:
   only:
@@ -91,7 +96,3 @@ script:
   - if [[ "$PHP_COVERAGE" = "TRUE" ]]; then wget https://scrutinizer-ci.com/ocular.phar; fi
   - if [[ "$PHP_COVERAGE" = "TRUE" ]]; then php ocular.phar code-coverage:upload --format=php-clover clover.xml; fi
 
-matrix:
-  include:
-    - env: "CORE_BRANCH=master DB=mysql TEST_JS=TRUE"
-  fast_finish: true
