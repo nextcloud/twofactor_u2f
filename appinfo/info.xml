@@ -33,4 +33,7 @@
 			<provider>OCA\TwoFactorU2F\Activity\Provider</provider>
 		</providers>
 	</activity>
+	<settings>
+		<personal>OCA\TwoFactorU2F\Settings\Personal</personal>
+	</settings>
 </info>
