@@ -1,9 +1,9 @@
-/* global OCA, u2f */
+/* global OCA */
 
-(function(OCA, u2f, document) {
+define(function (require) {
 	'use strict';
 
-	OCA.TwoFactorU2F = OCA.TwoFactorU2F || {};
+	var u2f = require('u2f-api');
 
 	function toggleError(state) {
 		var $info = $('#u2f-info');
@@ -20,7 +20,6 @@
 	function signCallback(data) {
 		var $form = $('#u2f-form');
 		var $auth = $('#challenge');
-		console.log("Authenticate callback", data);
 		if (data.errorCode) {
 			console.error('U2F auth failed: ' + data.errorCode);
 
@@ -43,14 +42,9 @@
 		var req = JSON.parse($('#u2f-auth').val());
 
 		toggleError(false);
-		var pathArray = location.href.split('/');
-		var protocol = pathArray[0];
-		var host = pathArray[2];
-		var url = protocol + '//' + host;
-		console.log("sign: ", req);
-		u2f.sign(url, req[0].challenge, req, signCallback);
+		u2f.sign(req).then(signCallback);
 	}
 
 	$(sign);
 
-})(OCA || {}, u2f, document);
+});

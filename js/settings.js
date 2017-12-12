@@ -1,12 +1,14 @@
-/* global OC */
-
-(function (OC) {
+define(function () {
 	'use strict';
 
+	var $ = require('jquery');
+
+	var SettingsView = require('./settingsview');
+
 	$(function () {
-		var view = new OCA.TwoFactorU2F.SettingsView({
+		var view = new SettingsView({
 			el: $('#twofactor-u2f-settings')
 		});
 		view.load();
 	});
-})(OC);
+});
