@@ -1,7 +1,6 @@
 <?php
 
-script('twofactor_u2f', 'vendor/u2f-api');
-script('twofactor_u2f', 'challenge');
+script('twofactor_u2f', 'build/challenge');
 style('twofactor_u2f', 'style');
 
 ?>
