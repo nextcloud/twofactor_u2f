@@ -1,9 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## 1.5.0 – 2017-11-27
+## 1.5.0 – 2017-12-13
 ### Added
 - Show warning if HTTP is used
+- Php7.2 support
+- Nextcloud 13 support
+- New translations
+- Firefox' internal U2F
+### Fixed
+- Settings are now listed in security section
 
 ## 1.4.0 – 2017-10-30
 ### Added
