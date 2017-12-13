@@ -43,7 +43,7 @@ define(function (require) {
 		var req = JSON.parse($('#u2f-auth').val());
 
 		toggleError(false);
-		u2f.sign(req).then(signCallback);
+		u2f.sign(req).then(signCallback).catch(console.error.bind(this));
 	}
 
 	return {
