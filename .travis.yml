@@ -85,7 +85,8 @@ script:
   #- php ../../occ app:check-code twofactor_u2f
 
   # Run JS tests
-  - sh -c "if [ '$TEST_JS' = 'TRUE' ]; then ./node_modules/karma/bin/karma start --single-run; fi"
+  - sh -c "if [ '$TEST_JS' = 'TRUE' ]; then npm run build; fi"
+  - sh -c "if [ '$TEST_JS' = 'TRUE' ]; then npm run test; fi"
   - sh -c "if [ '$TEST_JS' = 'TRUE' ]; then cat ./coverage/*/lcov.info | ./node_modules/coveralls/bin/coveralls.js; fi"
 
   # Run PHP tests

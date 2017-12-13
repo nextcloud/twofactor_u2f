@@ -3,6 +3,7 @@
 define(function (require) {
 	'use strict';
 
+	var $ = require('jquery');
 	var u2f = require('u2f-api');
 
 	function toggleError(state) {
@@ -45,6 +46,7 @@ define(function (require) {
 		u2f.sign(req).then(signCallback);
 	}
 
-	$(sign);
-
+	return {
+		sign: sign
+	};
 });

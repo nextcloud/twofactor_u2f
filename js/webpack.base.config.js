@@ -3,8 +3,8 @@ const webpack = require('webpack');
 
 module.exports = {
 	entry: {
-		challenge: './js/challenge.js',
-		settings: './js/settings.js'
+		challenge: './js/init_challenge.js',
+		settings: './js/init_settings.js'
 	},
 	output: {
 		filename: '[name].js',
