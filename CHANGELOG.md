@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## 1.5.0 – 2017-12-13
+## 1.5.0 – 2017-12-15
 ### Added
 - Show warning if HTTP is used
 - Php7.2 support
