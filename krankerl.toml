@@ -24,6 +24,7 @@ exclude = [
 	"screenshots",
 	"tests",
 	"vendor/bin",
+	"vendor/yubico/u2flib-server/examples",
 ]
 
 before_cmds = [
