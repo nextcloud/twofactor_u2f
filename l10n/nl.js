@@ -24,7 +24,7 @@ OC.L10N.register(
     "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Installeer de \"U2F Support Add-on\" in Firefox om U2F te gebruiken, dit is niet nodig in Chrome.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Je hebt toegang tot deze site via een onbeveiligde verbinding. Browsers kunnen daarom U2F authenticatie weigeren.",
     "U2F second-factor auth" : "U2F tweede factor autentificatie",
-    "Loading your devices …" : "Je hulpmiddel wordt geladen",
+    "Loading your devices …" : "Je apparaten worden geladen …",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome is de enige browser die U2F apparaten ondersteunt. Je moet de \"U2F Support Add-on\" in Firefox installeren om U2F te kunnen gebruiken.",
     "U2F device successfully registered." : "U2F hulpmiddel succesvol geregistreerd."
 },
