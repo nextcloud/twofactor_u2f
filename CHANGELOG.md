@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.5.1 – 2018-01-09
+### Added
+- New and updated translations
+
 ## 1.5.0 – 2017-12-15
 ### Added
 - Show warning if HTTP is used
