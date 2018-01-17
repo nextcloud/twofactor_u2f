@@ -20,7 +20,7 @@ OC.L10N.register(
     "Authenticate with an U2F device" : "Autenticar con un dispositivo U2F",
     "Two Factor U2F" : "U2F de dos factores",
     "Please plug in your U2F device and press the device button to authorize." : "Por favor conecta tu dispositivo U2F y presiona el botón del dispositivo para autorizar. ",
-    "An error occurred. Please try again." : "Se presentó un erorr. Por favor vuelve a intentarlo.",
+    "An error occurred. Please try again." : "Se presentó un error. Por favor vuelve a intentarlo.",
     "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Por favor instala el \"Complemento de Soportar U2F\" en Firefox para usar U2F, esto no es necesario en Chrome. ",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Estás accediendo a este sitio vía una conexión insegura. Los navegadores pueden llegar a reusar la autenticación U2F.",
     "U2F second-factor auth" : "Segundo factor de autenticación  U2F",
