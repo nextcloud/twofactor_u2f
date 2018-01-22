@@ -29,9 +29,9 @@ use OCP\IL10N;
 use OCP\ILogger;
 use OCP\IURLGenerator;
 use OCP\L10N\IFactory;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class ProviderTest extends PHPUnit_Framework_TestCase {
+class ProviderTest extends TestCase {
 
 	private $l10n;
 	private $urlGenerator;
@@ -56,7 +56,7 @@ class ProviderTest extends PHPUnit_Framework_TestCase {
 		$event->expects($this->once())
 			->method('getApp')
 			->willReturn('comments');
-		$this->setExpectedException(InvalidArgumentException::class);
+		$this->expectException(InvalidArgumentException::class);
 
 		$this->provider->parse($lang, $event);
 	}
