@@ -17,8 +17,8 @@
 	<screenshot>https://raw.githubusercontent.com/nextcloud/twofactor_u2f/4e0542d888236b7f212bed0b536244d08803466f/screenshots/settings.png</screenshot>
 
 	<dependencies>
-		<php min-version="5.6" max-version="7.2"></php>
-		<nextcloud min-version="13" max-version="13" />
+		<php min-version="7.0" max-version="7.2"></php>
+		<nextcloud min-version="14" max-version="14" />
 	</dependencies>
 
 	<two-factor-providers>

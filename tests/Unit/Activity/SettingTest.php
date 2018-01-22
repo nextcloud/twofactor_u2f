@@ -24,9 +24,9 @@ namespace OCA\TwoFactorU2F\Tests\Unit\Activity;
 
 use OCA\TwoFactorU2F\Activity\Setting;
 use OCP\IL10N;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class SettingTest extends PHPUnit_Framework_TestCase {
+class SettingTest extends TestCase {
 
 	private $l10n;
 

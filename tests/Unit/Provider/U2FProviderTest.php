@@ -17,15 +17,15 @@ use OCA\TwoFactorU2F\Service\U2FManager;
 use OCP\IL10N;
 use OCP\IUser;
 use OCP\Template;
-use PHPUnit_Framework_MockObject_MockObject;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\MockObject\MockObject;
+use PHPUnit\Framework\TestCase;
 
-class U2FProviderTest extends PHPUnit_Framework_TestCase {
+class U2FProviderTest extends TestCase {
 
-	/** @var IL10N|PHPUnit_Framework_MockObject_MockObject */
+	/** @var IL10N|MockObject */
 	private $l10n;
 
-	/** @var U2FManager|PHPUnit_Framework_MockObject_MockObject */
+	/** @var U2FManager|MockObject */
 	private $manager;
 
 	/** @var U2FProvider */

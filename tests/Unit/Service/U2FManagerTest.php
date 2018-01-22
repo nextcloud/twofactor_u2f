@@ -21,25 +21,24 @@ use OCP\ILogger;
 use OCP\IRequest;
 use OCP\ISession;
 use OCP\IUser;
-use PHPUnit_Framework_MockObject_MockObject;
-use PHPUnit_Framework_TestCase;
-use u2flib_server\U2F;
+use PHPUnit\Framework\MockObject\MockObject;
+use PHPUnit\Framework\TestCase;
 
-class U2FManagerTest extends PHPUnit_Framework_TestCase {
+class U2FManagerTest extends TestCase {
 
-	/** @var RegistrationMapper|PHPUnit_Framework_MockObject_MockObject */
+	/** @var RegistrationMapper|MockObject */
 	private $mapper;
 
-	/** @var ISession|PHPUnit_Framework_MockObject_MockObject */
+	/** @var ISession|MockObject */
 	private $session;
 
-	/** @var ILogger|PHPUnit_Framework_MockObject_MockObject */
+	/** @var ILogger|MockObject */
 	private $logger;
 
-	/** @var IRequest|PHPUnit_Framework_MockObject_MockObject */
+	/** @var IRequest|MockObject */
 	private $request;
 
-	/** @var IManager|PHPUnit_Framework_MockObject_MockObject */
+	/** @var IManager|MockObject */
 	private $activityManager;
 
 	/** @var U2FManager */
@@ -55,19 +54,6 @@ class U2FManagerTest extends PHPUnit_Framework_TestCase {
 		$this->activityManager = $this->createMock(IManager::class);
 
 		$this->manager = new U2FManager($this->mapper, $this->session, $this->logger, $this->request, $this->activityManager);
-	}
-
-	/**
-	 * @return U2F
-	 */
-	private function getU2f() {
-		$this->request->expects($this->once())
-			->method('getServerProtocol')
-			->willReturn('https');
-		$this->request->expects($this->once())
-			->method('getServerHost')
-			->willReturn('cloud.example.com');
-		return new U2F('https://cloud.example.com');
 	}
 
 	/**

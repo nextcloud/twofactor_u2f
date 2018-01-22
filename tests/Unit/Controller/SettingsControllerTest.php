@@ -17,18 +17,18 @@ use OCA\TwoFactorU2F\Service\U2FManager;
 use OCP\IRequest;
 use OCP\IUser;
 use OCP\IUserSession;
-use PHPUnit_Framework_MockObject_MockObject;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\MockObject\MockObject;
+use PHPUnit\Framework\TestCase;
 
-class SettingsControllerTest extends PHPUnit_Framework_TestCase {
+class SettingsControllerTest extends TestCase {
 
-	/** @var IRequest|PHPUnit_Framework_MockObject_MockObject */
+	/** @var IRequest|MockObject */
 	private $request;
 
-	/** @var U2FManager|PHPUnit_Framework_MockObject_MockObject */
+	/** @var U2FManager|MockObject */
 	private $u2fManager;
 
-	/** @var IUserSession|PHPUnit_Framework_MockObject_MockObject */
+	/** @var IUserSession|MockObject */
 	private $userSession;
 
 	/** @var SettingsController */
