@@ -8,7 +8,7 @@
 	<licence>agpl</licence>
 	<author>Christoph Wurst</author>
 	<namespace>TwoFactorU2F</namespace>
-	<category>auth</category>
+	<category>security</category>
 
 	<website>https://github.com/nextcloud/twofactor_u2f#readme</website>
 	<bugs>https://github.com/nextcloud/twofactor_u2f/issues</bugs>
@@ -25,6 +25,9 @@
 		<provider>OCA\TwoFactorU2F\Provider\U2FProvider</provider>
 	</two-factor-providers>
 
+	<settings>
+		<personal>OCA\TwoFactorU2F\Settings\Personal</personal>
+	</settings>
 	<activity>
 		<settings>
 			<setting>OCA\TwoFactorU2F\Activity\Setting</setting>
@@ -33,7 +36,4 @@
 			<provider>OCA\TwoFactorU2F\Activity\Provider</provider>
 		</providers>
 	</activity>
-	<settings>
-		<personal>OCA\TwoFactorU2F\Settings\Personal</personal>
-	</settings>
 </info>

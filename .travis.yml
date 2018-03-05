@@ -14,6 +14,7 @@ addons:
     - mysql-server-5.6
     - mysql-client-core-5.6
     - mysql-client-5.6
+    - libxml2-utils
 
 services:
   - docker
@@ -79,6 +80,11 @@ before_script:
   - cd core/apps/twofactor_u2f
 
 script:
+  # Check info.xml schema validity
+  - wget https://apps.nextcloud.com/schema/apps/info.xsd
+  - xmllint appinfo/info.xml --schema info.xsd --noout
+  - rm info.xsd
+
   # Check PHP syntax errors
   - find . -name \*.php -not -path './vendor/*' -exec php -l "{}" \;
 
