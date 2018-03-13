@@ -14,6 +14,7 @@ namespace OCA\TwoFactorU2F\Tests\Unit\Controller;
 
 use OCA\TwoFactorU2F\Controller\SettingsController;
 use OCA\TwoFactorU2F\Service\U2FManager;
+use OCP\AppFramework\Http\JSONResponse;
 use OCP\IRequest;
 use OCP\IUser;
 use OCP\IUserSession;
@@ -64,10 +65,10 @@ class SettingsControllerTest extends TestCase {
 			->with($this->equalTo($user))
 			->willReturn($devices);
 
-		$expected = [
+		$expected = new JSONResponse([
 			'devices' => $devices,
-		];
-		$this->assertSame($expected, $this->controller->state());
+		]);
+		$this->assertEquals($expected, $this->controller->state());
 	}
 
 	public function testStartRegister() {
@@ -81,7 +82,7 @@ class SettingsControllerTest extends TestCase {
 			->with($this->equalTo($user))
 			->willReturn([]);
 
-		$this->assertEquals([], $this->controller->startRegister());
+		$this->assertEquals(new JSONResponse([]), $this->controller->startRegister());
 	}
 
 	public function testFinishRegister() {
@@ -94,9 +95,12 @@ class SettingsControllerTest extends TestCase {
 
 		$this->u2fManager->expects($this->once())
 			->method('finishRegistration')
-			->with($this->equalTo($user), $this->equalTo($registrationData), $this->equalTo($data));
+			->with($this->equalTo($user), $this->equalTo($registrationData), $this->equalTo($data))
+			->willReturn([]);
 
-		$this->controller->finishRegister($registrationData, $data);
+		$resp = $this->controller->finishRegister($registrationData, $data);
+
+		$this->assertEquals(new JSONResponse([]), $resp);
 	}
 
 }
