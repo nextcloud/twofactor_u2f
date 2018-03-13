@@ -1,8 +1,10 @@
 <?php
 
+declare(strict_types = 1);
+
 /**
  * @author Christoph Wurst <christoph@winzerhof-wurst.at>
- * @copyright Copyright (c) 2016 Christoph Wurst <christoph@winzerhof-wurst.at>
+ * @copyright Copyright (c) 2018 Christoph Wurst <christoph@winzerhof-wurst.at>
  *
  * Two-factor U2F
  *
