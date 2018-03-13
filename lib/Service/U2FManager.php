@@ -42,13 +42,6 @@ class U2FManager {
 	/** @var IManager */
 	private $activityManager;
 
-	/**
-	 * @param RegistrationMapper $mapper
-	 * @param ISession $session
-	 * @param ILogger $logger
-	 * @param IRequest $request
-	 * @param IManager $activityManager
-	 */
 	public function __construct(RegistrationMapper $mapper, ISession $session, ILogger $logger, IRequest $request, IManager $activityManager) {
 		$this->mapper = $mapper;
 		$this->session = $session;
@@ -57,12 +50,12 @@ class U2FManager {
 		$this->activityManager = $activityManager;
 	}
 
-	private function getU2f() {
+	private function getU2f(): U2F {
 		$url = $this->request->getServerProtocol() . '://' . $this->request->getServerHost();
 		return new U2F($url);
 	}
 
-	private function getRegistrations(IUser $user) {
+	private function getRegistrations(IUser $user): array {
 		$registrations = $this->mapper->findRegistrations($user);
 		$registrationObjects = array_map(function (Registration $registration) {
 			return (object) $registration->jsonSerialize();
@@ -70,11 +63,7 @@ class U2FManager {
 		return $registrationObjects;
 	}
 
-	/**
-	 * @param IUser $user
-	 * @return array
-	 */
-	public function getDevices(IUser $user) {
+	public function getDevices(IUser $user): array {
 		$registrations = $this->mapper->findRegistrations($user);
 		return array_map(function(Registration $reg) {
 			return [
@@ -84,21 +73,13 @@ class U2FManager {
 		}, $registrations);
 	}
 
-	/**
-	 * @param IUser $user
-	 * @param int $id device id
-	 */
-	public function removeDevice(IUser $user, $id) {
+	public function removeDevice(IUser $user, int $id) {
 		$reg = $this->mapper->findRegistration($user, $id);
 		$this->mapper->delete($reg);
 		$this->publishEvent($user, 'u2f_device_removed');
 	}
 
-	/**
-	 * @param IUser $user
-	 * @return array
-	 */
-	public function startRegistration(IUser $user) {
+	public function startRegistration(IUser $user): array {
 		$u2f = $this->getU2f();
 		$data = $u2f->getRegisterData($this->getRegistrations($user));
 		list($req, $sigs) = $data;
@@ -114,13 +95,7 @@ class U2FManager {
 		];
 	}
 
-	/**
-	 * @param IUser $user
-	 * @param string $registrationData
-	 * @param string $clientData
-	 * @param string $name
-	 */
-	public function finishRegistration(IUser $user, $registrationData, $clientData, $name = null) {
+	public function finishRegistration(IUser $user, string $registrationData, string $clientData, string $name = null): array {
 		$this->logger->debug($registrationData);
 		$this->logger->debug($clientData);
 
@@ -152,11 +127,8 @@ class U2FManager {
 
 	/**
 	 * Push an U2F event the user's activity stream
-	 *
-	 * @param IUser $user
-	 * @param string $event
 	 */
-	private function publishEvent(IUser $user, $event) {
+	private function publishEvent(IUser $user, string $event) {
 		$activity = $this->activityManager->generateEvent();
 		$activity->setApp('twofactor_u2f')
 			->setType('security')
@@ -166,14 +138,14 @@ class U2FManager {
 		$this->activityManager->publish($activity);
 	}
 
-	public function startAuthenticate(IUser $user) {
+	public function startAuthenticate(IUser $user): array {
 		$u2f = $this->getU2f();
 		$reqs = $u2f->getAuthenticateData($this->getRegistrations($user));
 		$this->session->set('twofactor_u2f_authReq', json_encode($reqs));
 		return $reqs;
 	}
 
-	public function finishAuthenticate(IUser $user, $challenge) {
+	public function finishAuthenticate(IUser $user, string $challenge): bool {
 		$u2f = $this->getU2f();
 
 		$registrations = $this->getRegistrations($user);

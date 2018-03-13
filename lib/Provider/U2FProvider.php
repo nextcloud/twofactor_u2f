@@ -7,7 +7,7 @@
  * later. See the COPYING file.
  *
  * @author Christoph Wurst <christoph@winzerhof-wurst.at>
- * @copyright Christoph Wurst 2016
+ * @copyright Christoph Wurst 2018
  */
 
 namespace OCA\TwoFactorU2F\Provider;
@@ -26,10 +26,6 @@ class U2FProvider implements IProvider {
 	/** @var U2FManager */
 	private $manager;
 
-	/**
-	 * @param IL10N $l10n
-	 * @param U2FManager $manager
-	 */
 	public function __construct(IL10N $l10n, U2FManager $manager) {
 		$this->l10n = $l10n;
 		$this->manager = $manager;
@@ -37,38 +33,29 @@ class U2FProvider implements IProvider {
 
 	/**
 	 * Get unique identifier of this 2FA provider
-	 *
-	 * @return string
 	 */
-	public function getId() {
+	public function getId(): string {
 		return 'u2f';
 	}
 
 	/**
 	 * Get the display name for selecting the 2FA provider
-	 *
-	 * @return string
 	 */
-	public function getDisplayName() {
+	public function getDisplayName(): string {
 		return 'U2F device';
 	}
 
 	/**
 	 * Get the description for selecting the 2FA provider
-	 *
-	 * @return string
 	 */
-	public function getDescription() {
+	public function getDescription(): string {
 		return $this->l10n->t('Authenticate with an U2F device');
 	}
 
 	/**
 	 * Get the template for rending the 2FA provider view
-	 *
-	 * @param IUser $user
-	 * @return Template
 	 */
-	public function getTemplate(IUser $user) {
+	public function getTemplate(IUser $user): Template {
 		$reqs = $this->manager->startAuthenticate($user);
 
 		$tmpl = new Template('twofactor_u2f', 'challenge');
@@ -79,20 +66,16 @@ class U2FProvider implements IProvider {
 	/**
 	 * Verify the given challenge
 	 *
-	 * @param IUser $user
 	 * @param string $challenge
 	 */
-	public function verifyChallenge(IUser $user, $challenge) {
+	public function verifyChallenge(IUser $user, $challenge): bool {
 		return $this->manager->finishAuthenticate($user, $challenge);
 	}
 
 	/**
 	 * Decides whether 2FA is enabled for the given user
-	 *
-	 * @param IUser $user
-	 * @return boolean
 	 */
-	public function isTwoFactorAuthEnabledForUser(IUser $user) {
+	public function isTwoFactorAuthEnabledForUser(IUser $user): bool {
 		return count($this->manager->getDevices($user)) > 0;
 	}
 

@@ -7,7 +7,7 @@
  * later. See the COPYING file.
  *
  * @author Christoph Wurst <christoph@winzerhof-wurst.at>
- * @copyright Christoph Wurst 2016
+ * @copyright Christoph Wurst 2018
  */
 
 namespace OCA\TwoFactorU2F\Db;
@@ -38,7 +38,7 @@ class Registration extends Entity implements JsonSerializable {
 	protected $counter;
 	protected $name;
 
-	public function jsonSerialize() {
+	public function jsonSerialize(): array {
 		return [
 			'id' => $this->getId(),
 			'userId' => $this->getUserId(),

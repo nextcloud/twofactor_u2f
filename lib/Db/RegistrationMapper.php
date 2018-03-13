@@ -7,7 +7,7 @@
  * later. See the COPYING file.
  *
  * @author Christoph Wurst <christoph@winzerhof-wurst.at>
- * @copyright Christoph Wurst 2016
+ * @copyright Christoph Wurst 2018
  */
 
 namespace OCA\TwoFactorU2F\Db;
@@ -26,9 +26,8 @@ class RegistrationMapper extends Mapper {
 	/**
 	 * @param IUser $user
 	 * @param int $id
-	 * @return Registration
 	 */
-	public function findRegistration(IUser $user, $id) {
+	public function findRegistration(IUser $user, $id): Registration {
 		/* @var $qb IQueryBuilder */
 		$qb = $this->db->getQueryBuilder();
 
@@ -48,7 +47,7 @@ class RegistrationMapper extends Mapper {
 	 * @param IUser $user
 	 * @return Registration[]
 	 */
-	public function findRegistrations(IUser $user) {
+	public function findRegistrations(IUser $user): array {
 		/* @var $qb IQueryBuilder */
 		$qb = $this->db->getQueryBuilder();
 
