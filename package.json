@@ -24,7 +24,7 @@
     "karma-jasmine-ajax": "^0.1.13",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-sourcemap-loader": "^0.3.7",
-    "karma-webpack": "^2.0.13",
+    "karma-webpack": "^3.0.0",
     "underscore": "^1.8.3",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.11",
