@@ -9,7 +9,7 @@
   "dependencies": {
     "es6-promise": "^4.2.4",
     "handlebars": "^4.0.11",
-    "u2f-api": "^0.2.7"
+    "u2f-api": "^1.0.4"
   },
   "devDependencies": {
     "backbone": "^1.3.3",
