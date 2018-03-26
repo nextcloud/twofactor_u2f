@@ -24,7 +24,7 @@ env:
   global:
   - PHP_COVERAGE=FALSE
   - TEST_JS=FALSE
-  - CORE_BRANCH=master
+  - CORE_BRANCH=v13.0.1
   matrix:
   - DB=sqlite
 
