@@ -2,15 +2,10 @@
 
 ![Downloads](https://img.shields.io/github/downloads/nextcloud/twofactor_u2f/total.svg)
 
-Master:
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/?branch=master)
-[![Build Status](https://api.travis-ci.org/nextcloud/twofactor_u2f.svg?branch=master)](https://travis-ci.org/nextcloud/twofactor_u2f)
-[![JavaScript Coverage Status](https://coveralls.io/repos/github/nextcloud/twofactor_u2f/badge.svg?branch=master)](https://coveralls.io/github/nextcloud/twofactor_u2f?branch=master)
-
-1.5.x:
-[![Code Coverage](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/badges/coverage.png?b=stable1.5)](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/?branch=stable1.5)
-[![Build Status](https://api.travis-ci.org/nextcloud/twofactor_u2f.svg?branch=stable1.5)](https://travis-ci.org/nextcloud/twofactor_u2f)
-[![JavaScript Coverage Status](https://coveralls.io/repos/github/nextcloud/twofactor_u2f/badge.svg?branch=stable1.5)](https://coveralls.io/github/nextcloud/twofactor_u2f?branch=stable1.5)
+|branch|target Nextcloud version|build status and code metrics|
+|---|---|---|
+|master| Nextcloud 14.0.x | [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/?branch=master) [![Build Status](https://api.travis-ci.org/nextcloud/twofactor_u2f.svg?branch=master)](https://travis-ci.org/nextcloud/twofactor_u2f) [![JavaScript Coverage Status](https://coveralls.io/repos/github/nextcloud/twofactor_u2f/badge.svg?branch=master)](https://coveralls.io/github/nextcloud/twofactor_u2f?branch=master)
+| stable1.5 | Nextcloud 13.0.1 | [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/badges/quality-score.png?b=stable1.5)](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/?branch=stable1.5) [![Build Status](https://api.travis-ci.org/nextcloud/twofactor_u2f.svg?branch=stable1.5)](https://travis-ci.org/nextcloud/twofactor_u2f) [![JavaScript Coverage Status](https://coveralls.io/repos/github/nextcloud/twofactor_u2f/badge.svg?branch=stable1.5)](https://coveralls.io/github/nextcloud/twofactor_u2f?branch=stable1.5) |
 
 ![](screenshots/challenge.png)
 
