@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "dependencies": {
-    "es6-promise": "^4.2.2",
+    "es6-promise": "^4.2.4",
     "handlebars": "^4.0.11",
     "karma-sourcemap-loader": "^0.3.7",
     "u2f-api": "^1.0.6"
@@ -18,16 +18,16 @@
     "jasmine": "^2.8.0",
     "jasmine-ajax": "^3.3.1",
     "jasmine-core": "^2.8.0",
-    "jquery": "^3.2.1",
+    "jquery": "^3.3.1",
     "karma": "^2.0.0",
     "karma-coverage": "^1.1.1",
     "karma-jasmine": "^1.1.1",
     "karma-jasmine-ajax": "^0.1.13",
     "karma-phantomjs-launcher": "^1.0.4",
-    "karma-webpack": "^2.0.9",
+    "karma-webpack": "^3.0.0",
     "underscore": "^1.8.3",
     "webpack": "^3.10.0",
-    "webpack-merge": "^4.1.1"
+    "webpack-merge": "^4.1.2"
   },
   "scripts": {
     "test": "./node_modules/karma/bin/karma start karma.conf.js --single-run",
