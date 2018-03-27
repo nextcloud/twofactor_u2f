@@ -67,10 +67,8 @@ class U2FProvider implements IProvider {
 
 	/**
 	 * Verify the given challenge
-	 *
-	 * @param string $challenge
 	 */
-	public function verifyChallenge(IUser $user, $challenge): bool {
+	public function verifyChallenge(IUser $user, string $challenge): bool {
 		return $this->manager->finishAuthenticate($user, $challenge);
 	}
 
