@@ -25,7 +25,7 @@
     "karma-jasmine-ajax": "^0.1.13",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-webpack": "^3.0.0",
-    "underscore": "^1.8.3",
+    "underscore": "^1.9.0",
     "webpack": "^3.10.0",
     "webpack-merge": "^4.1.2"
   },
