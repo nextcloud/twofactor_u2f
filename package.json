@@ -25,7 +25,7 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^3.0.0",
-    "underscore": "^1.8.3",
+    "underscore": "^1.9.0",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15",
     "webpack-merge": "^4.1.2"
