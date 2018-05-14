@@ -41,7 +41,7 @@ matrix:
 branches:
   only:
   - master
-  - "/^stable\\d+(\\.\\d+)?+(\.\d+)?$/"
+  - "/^stable\\d+(\\.\\d+)?$/"
   - /^v\d++(\.\d+)?+(\.\d+)?+(\.\d+)?$/
 
 cache:
