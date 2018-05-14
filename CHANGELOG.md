@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.5.5 – 2018-05-14
+### Fixed
+- Installation on Nextcloud 13.x
+
 ## 1.5.3 – 2018-04-30
 ### Fixed
 - Allow Nextcloud 13.0.2
