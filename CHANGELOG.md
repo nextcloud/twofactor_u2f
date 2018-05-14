@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.5.5 – 2018-05-14
+### Fixed
+- Installation on Nextcloud 13.x
+
 ## 1.5.4 – 2018-05-07
 ### Fixed
 - Updated vulnerable development dependencies
