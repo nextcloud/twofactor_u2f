@@ -28,4 +28,4 @@ OC.L10N.register(
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome je jediný prohlížeč podporující U2F přístroje. Musíte nainstalovat \"U2F Support Add-on\" pro Firefox pro použití U2F.",
     "U2F device successfully registered." : "U2F přístroj úspěšně zaregistrován."
 },
-"nplurals=4; plural=(n < 10 && n % 1 == 0) ? 1 : (n < 9999 && n >= 10 && n % 1 == 0) ? 3 : (n % 1 != 0) : 4;");
+"nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;");

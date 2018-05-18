@@ -28,4 +28,4 @@ OC.L10N.register(
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome-ი ერთადერთი ბრაუზერია რომელიც მხარს უჭერს U2F მოწყობილობებს. Firefox-ით U2F-ით სარგებლობისთვის საჭიროა დააყენოთ \"U2F-ს მხარდაჭერის დანამატი\".",
     "U2F device successfully registered." : "U2F მოწყობილობა წარმატებით დარეგისტრირდა."
 },
-"nplurals=2; plural=(n==1);");
+"nplurals=2; plural=(n!=1);");
