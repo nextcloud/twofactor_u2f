@@ -1,6 +1,7 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
+    "Unnamed device" : "Įrenginys be pavadinimo",
     "Remove" : "Šalinti",
     "Adding a new device …" : "Pridedamas naujas įrenginys …",
     "Could not remove your U2F device" : "Nepavyko pašalinti jūsų U2F įrenginio",
