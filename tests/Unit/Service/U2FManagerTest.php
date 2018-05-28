@@ -141,19 +141,4 @@ class U2FManagerTest extends TestCase {
 		$this->manager->startRegistration($user);
 	}
 
-	public function testFinishRegistration() {
-		// TODO: get a grasp of how the u2f lib works and feed it with
-		// realistic data or mock it.
-	}
-
-	public function testStartAuthenticate() {
-		// TODO: get a grasp of how the u2f lib works and feed it with
-		// realistic data or mock it.
-	}
-
-	public function testFinishAuthenticate() {
-		// TODO: get a grasp of how the u2f lib works and feed it with
-		// realistic data or mock it.
-	}
-
 }

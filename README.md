@@ -1,9 +1,11 @@
 # U2F second factor provider for Nextcloud
 
 ![Downloads](https://img.shields.io/github/downloads/nextcloud/twofactor_u2f/total.svg)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/?branch=master)
-[![Build Status](https://api.travis-ci.org/nextcloud/twofactor_u2f.svg?branch=master)](https://travis-ci.org/nextcloud/twofactor_u2f)
-[![JavaScript Coverage Status](https://coveralls.io/repos/github/nextcloud/twofactor_u2f/badge.svg?branch=master)](https://coveralls.io/github/nextcloud/twofactor_u2f?branch=master)
+
+|branch|target Nextcloud version|build status and code metrics|
+|---|---|---|
+|master| Nextcloud 14.0.x | [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/?branch=master) [![Build Status](https://api.travis-ci.org/nextcloud/twofactor_u2f.svg?branch=master)](https://travis-ci.org/nextcloud/twofactor_u2f) [![JavaScript Coverage Status](https://coveralls.io/repos/github/nextcloud/twofactor_u2f/badge.svg?branch=master)](https://coveralls.io/github/nextcloud/twofactor_u2f?branch=master)
+| stable1.5.5 | Nextcloud 13.x | [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/badges/quality-score.png?b=stable1.5.5)](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/?branch=stable1.5.5) [![Build Status](https://api.travis-ci.org/nextcloud/twofactor_u2f.svg?branch=stable1.5.5)](https://travis-ci.org/nextcloud/twofactor_u2f) [![JavaScript Coverage Status](https://coveralls.io/repos/github/nextcloud/twofactor_u2f/badge.svg?branch=stable1.5.5)](https://coveralls.io/github/nextcloud/twofactor_u2f?branch=stable1.5.5) |
 
 ![](screenshots/challenge.png)
 
@@ -11,7 +13,9 @@
 In order to use this app for authentication, you have to use a browser that supports the U2F standard:
 * Google Chrome
 * Chromium
-* Firefox in combination with [this extension](https://addons.mozilla.org/en-US/firefox/addon/u2f-support-add-on/)
+* Firefox 
+  * V56 or before: In combination with [this extension](https://addons.mozilla.org/en-US/firefox/addon/u2f-support-add-on/)
+  * V57 or newer: After activation of `security.webauth.u2f` in `about:config`
 * Opera
 
 ## Login with external apps

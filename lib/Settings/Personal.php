@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 /**
  * @author Christoph Wurst <christoph@winzerhof-wurst.at>
  *
@@ -29,21 +31,18 @@ class Personal implements ISettings {
 	/**
 	 * @return TemplateResponse
 	 */
-	public function getForm() {
+	public function getForm(): TemplateResponse {
 		return new TemplateResponse('twofactor_u2f', 'personal');
 	}
 
 	/**
 	 * @return string the section ID
 	 */
-	public function getSection() {
+	public function getSection(): string {
 		return 'security';
 	}
 
-	/**
-	 * @return int
-	 */
-	public function getPriority() {
+	public function getPriority(): int {
 		return 40;
 	}
 

@@ -49,12 +49,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ChristophWurst/nextcloud_composer.git",
-                "reference": "bc6390f8d87e31c6c695bfc1bce4e000cec487c3"
+                "reference": "0ae1bf929545914b0b0db5979d1510c331fe799e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ChristophWurst/nextcloud_composer/zipball/bc6390f8d87e31c6c695bfc1bce4e000cec487c3",
-                "reference": "bc6390f8d87e31c6c695bfc1bce4e000cec487c3",
+                "url": "https://api.github.com/repos/ChristophWurst/nextcloud_composer/zipball/0ae1bf929545914b0b0db5979d1510c331fe799e",
+                "reference": "0ae1bf929545914b0b0db5979d1510c331fe799e",
                 "shasum": ""
             },
             "type": "library",
@@ -74,7 +74,7 @@
                 }
             ],
             "description": "Composer package containing Nextcloud's public API (classes, interfaces)",
-            "time": "2018-02-26T10:06:58+00:00"
+            "time": "2018-04-13T15:48:57+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -743,16 +743,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.5.7",
+            "version": "6.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "6bd77b57707c236833d2b57b968e403df060c9d9"
+                "reference": "4f21a3c6b97c42952fd5c2837bb354ec0199b97b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6bd77b57707c236833d2b57b968e403df060c9d9",
-                "reference": "6bd77b57707c236833d2b57b968e403df060c9d9",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4f21a3c6b97c42952fd5c2837bb354ec0199b97b",
+                "reference": "4f21a3c6b97c42952fd5c2837bb354ec0199b97b",
                 "shasum": ""
             },
             "require": {
@@ -823,7 +823,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-02-26T07:01:09+00:00"
+            "time": "2018-04-10T11:38:34+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",

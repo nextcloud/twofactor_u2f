@@ -1,6 +1,20 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.5.5 – 2018-05-14
+### Fixed
+- Installation on Nextcloud 13.x
+
+## 1.5.3 – 2018-04-30
+### Fixed
+- Allow Nextcloud 13.0.2
+
+## 1.5.2 – 2018-03-28
+### Changed
+- Requires Nextcloud 13.0.1
+### Fixed
+- U2F on Firefox Quantum and mobile browsers
+
 ## 1.5.1 – 2018-01-09
 ### Added
 - New and updated translations

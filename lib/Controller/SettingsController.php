@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 /**
  * Nextcloud - U2F 2FA
  *
@@ -7,7 +9,7 @@
  * later. See the COPYING file.
  *
  * @author Christoph Wurst <christoph@winzerhof-wurst.at>
- * @copyright Christoph Wurst 2016
+ * @copyright Christoph Wurst 2018
  */
 
 namespace OCA\TwoFactorU2F\Controller;
@@ -28,13 +30,7 @@ class SettingsController extends Controller {
 	/** @var IUserSession */
 	private $userSession;
 
-	/**
-	 * @param string $appName
-	 * @param IRequest $request
-	 * @param U2FManager $manager
-	 * @param IUserSession $userSession
-	 */
-	public function __construct($appName, IRequest $request, U2FManager $manager, IUserSession $userSession) {
+	public function __construct(string $appName, IRequest $request, U2FManager $manager, IUserSession $userSession) {
 		parent::__construct($appName, $request);
 		$this->manager = $manager;
 		$this->userSession = $userSession;
@@ -42,22 +38,20 @@ class SettingsController extends Controller {
 
 	/**
 	 * @NoAdminRequired
-	 * @return JSONResponse
 	 */
-	public function state() {
-		return [
+	public function state(): JSONResponse {
+		return new JSONResponse([
 			'devices' => $this->manager->getDevices($this->userSession->getUser())
-		];
+		]);
 	}
 
 	/**
 	 * @NoAdminRequired
 	 * @PasswordConfirmationRequired
 	 * @UseSession
-	 * @return JSONResponse
 	 */
-	public function startRegister() {
-		return $this->manager->startRegistration($this->userSession->getUser());
+	public function startRegister(): JSONResponse {
+		return new JSONResponse($this->manager->startRegistration($this->userSession->getUser()));
 	}
 
 	/**
@@ -67,10 +61,9 @@ class SettingsController extends Controller {
 	 * @param string $registrationData
 	 * @param string $clientData
 	 * @param string|null $name device name, given by user
-	 * @return JSONResponse
 	 */
-	public function finishRegister($registrationData, $clientData, $name = null) {
-		return $this->manager->finishRegistration($this->userSession->getUser(), $registrationData, $clientData, $name);
+	public function finishRegister(string $registrationData, string $clientData, string $name = null): JSONResponse {
+		return new JSONResponse($this->manager->finishRegistration($this->userSession->getUser(), $registrationData, $clientData, $name));
 	}
 
 	/**
@@ -78,10 +71,9 @@ class SettingsController extends Controller {
 	 * @PasswordConfirmationRequired
 	 *
 	 * @param int $id
-	 * @return JSONResponse
 	 */
-	public function remove($id) {
-		return $this->manager->removeDevice($this->userSession->getUser(), $id);
+	public function remove(int $id): JSONResponse {
+		return new JSONResponse($this->manager->removeDevice($this->userSession->getUser(), $id));
 	}
 
 }
