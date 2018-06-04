@@ -15,7 +15,7 @@
 	},
 	"require-dev": {
 		"christophwurst/nextcloud": "14.0.0.x-dev",
-		"phpunit/phpunit": "^6.5.5"
+		"phpunit/phpunit": "^7.2.3"
 	},
 	"config": {
 		"optimize-autoloader": true,
