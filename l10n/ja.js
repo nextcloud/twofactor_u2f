@@ -10,7 +10,7 @@ OC.L10N.register(
     "Adding a new device …" : "新しいデバイスを追加…",
     "Could not remove your U2F device" : "U2Fデバイスを削除できませんでした。",
     "Server error while trying to add U2F device" : "U2Fデバイスの追加中にサーバーエラーが発生しました",
-    "U2F device is already registered (error code {errorCode})" : "U2Fデバイスは既に登録されています (エラーコード {errorCode})",
+    "U2F device is already registered (error code {errorCode})" : "U2Fデバイスはすでに登録されています (エラーコード {errorCode})",
     "U2F device registration timeout reached (error code {errorCode})" : "U2Fデバイスの登録がタイムアウトしました (エラーコード {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "U2Fデバイスの登録に失敗しました (エラーコード {errorCode})",
     "Server error while trying to complete U2F device registration" : "U2Fデバイスの登録を完了中にサーバーエラーが発生しました",
@@ -22,10 +22,10 @@ OC.L10N.register(
     "Please plug in your U2F device and press the device button to authorize." : "U2Fデバイスを接続し、デバイスボタンを押して承認してください。",
     "An error occurred. Please try again." : "エラーが発生しました。もう一度実行してください。",
     "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "U2Fを利用するため、\"U2F サポート・アドオン\"をFirefoxにインストールします。Chromeでは必要ありません。",
-    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "あなたは安全ではない接続を経由してアクセスしています。ブラウザはU2F認証を拒否する可能性があります。",
+    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "あなたは安全ではない接続を経由してアクセスしています。ブラウザーはU2F認証を拒否する可能性があります。",
     "U2F second-factor auth" : "U2Fデバイスによる第2要素認証",
     "Loading your devices …" : "デバイスを読み込み中…",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "ChromeはU2Fデバイスをサポートする唯一のブラウザです。 FirefoxでU2Fを使用するには \"U2F Support Add-on\" をインストールする必要があります。",
+    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "ChromeはU2Fデバイスをサポートする唯一のブラウザーです。 FirefoxでU2Fを使用するには \"U2F Support Add-on\" をインストールする必要があります。",
     "U2F device successfully registered." : "U2Fデバイスが正常に登録されました。"
 },
 "nplurals=1; plural=0;");
