@@ -17,6 +17,8 @@
     "U2F device" : "Dispositivo U2F",
     "Authenticate with an U2F device" : "Autenticar con un dispositivo U2F",
     "Two Factor U2F" : "Autenticación en dos pasos U2F",
+    "U2F two-factor provider" : "Proveedor de autenticación de dos factores U2F",
+    "A two-factor provider for U2F devices" : "Un proveedor de dos factores para dispositivos U2F ",
     "Please plug in your U2F device and press the device button to authorize." : "Por favor enchufa tu dispositivo U2F y pulsa el botón de autorizar en tu dispositivo.",
     "An error occurred. Please try again." : "Ha sucedido un error. Por favor, vuelva a intentarlo.",
     "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Instala el add-on \"U2F Support\" en Firefox para usar U2F. Esto no es necesario en Chrome.",
