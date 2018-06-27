@@ -19,6 +19,8 @@ OC.L10N.register(
     "U2F device" : "U2F уређај",
     "Authenticate with an U2F device" : "Пријави се са U2F уређајем",
     "Two Factor U2F" : "Двофакторски U2F",
+    "U2F two-factor provider" : "Провајдер двофакторског U2F-а",
+    "A two-factor provider for U2F devices" : "Двофакторски провајдер за U2F уређаје",
     "Please plug in your U2F device and press the device button to authorize." : "Молимо утакните Ваш U2F уређај и притисните дугме на уређају да се пријавите.",
     "An error occurred. Please try again." : "Десила се грешка. Покушајте поново.",
     "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "На Фајерфоксу морате да инсталирате \"U2F Support Add-on\" додатак да бисте користили U2F. Ово не треба на Хром веб читачу.",
