@@ -26,7 +26,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^3.0.0",
     "underscore": "^1.9.1",
-    "webpack": "^4.12.1",
+    "webpack": "^4.16.1",
     "webpack-cli": "^2.1.4",
     "webpack-merge": "^4.1.3"
   },
