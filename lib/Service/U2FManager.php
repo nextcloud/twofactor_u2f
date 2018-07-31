@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 /**
  * Nextcloud - U2F 2FA
@@ -19,11 +19,12 @@ require_once(__DIR__ . '/../../vendor/yubico/u2flib-server/src/u2flib_server/U2F
 use InvalidArgumentException;
 use OCA\TwoFactorU2F\Db\Registration;
 use OCA\TwoFactorU2F\Db\RegistrationMapper;
-use OCP\Activity\IManager;
+use OCA\TwoFactorU2F\Event\StateChanged;
 use OCP\ILogger;
 use OCP\IRequest;
 use OCP\ISession;
 use OCP\IUser;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use u2flib_server\Error;
 use u2flib_server\U2F;
 
@@ -41,15 +42,19 @@ class U2FManager {
 	/** @var IRequest */
 	private $request;
 
-	/** @var IManager */
-	private $activityManager;
+	/** @var EventDispatcherInterface */
+	private $eventDispatcher;
 
-	public function __construct(RegistrationMapper $mapper, ISession $session, ILogger $logger, IRequest $request, IManager $activityManager) {
+	public function __construct(RegistrationMapper $mapper,
+								ISession $session,
+								ILogger $logger,
+								IRequest $request,
+								EventDispatcherInterface $eventDispatcher) {
 		$this->mapper = $mapper;
 		$this->session = $session;
 		$this->logger = $logger;
 		$this->request = $request;
-		$this->activityManager = $activityManager;
+		$this->eventDispatcher = $eventDispatcher;
 	}
 
 	private function getU2f(): U2F {
@@ -60,14 +65,14 @@ class U2FManager {
 	private function getRegistrations(IUser $user): array {
 		$registrations = $this->mapper->findRegistrations($user);
 		$registrationObjects = array_map(function (Registration $registration) {
-			return (object) $registration->jsonSerialize();
+			return (object)$registration->jsonSerialize();
 		}, $registrations);
 		return $registrationObjects;
 	}
 
 	public function getDevices(IUser $user): array {
 		$registrations = $this->mapper->findRegistrations($user);
-		return array_map(function(Registration $reg) {
+		return array_map(function (Registration $reg) {
 			return [
 				'id' => $reg->getId(),
 				'name' => $reg->getName(),
@@ -78,7 +83,7 @@ class U2FManager {
 	public function removeDevice(IUser $user, int $id) {
 		$reg = $this->mapper->findRegistration($user, $id);
 		$this->mapper->delete($reg);
-		$this->publishEvent($user, 'u2f_device_removed');
+		$this->eventDispatcher->dispatch(StateChanged::class, new StateChanged($user, false));
 	}
 
 	public function startRegistration(IUser $user): array {
@@ -107,7 +112,7 @@ class U2FManager {
 			'registrationData' => $registrationData,
 			'clientData' => $clientData,
 		];
-		$reg = $u2f->doRegister($regReq, (object) $regResp);
+		$reg = $u2f->doRegister($regReq, (object)$regResp);
 
 		$registration = new Registration();
 		$registration->setUserId($user->getUID());
@@ -117,7 +122,7 @@ class U2FManager {
 		$registration->setCounter($reg->counter);
 		$registration->setName($name);
 		$this->mapper->insert($registration);
-		$this->publishEvent($user, 'u2f_device_added');
+		$this->eventDispatcher->dispatch(StateChanged::class, new StateChanged($user, true));
 
 		$this->logger->debug(json_encode($reg));
 
@@ -125,19 +130,6 @@ class U2FManager {
 			'id' => $registration->getId(),
 			'name' => $registration->getName(),
 		];
-	}
-
-	/**
-	 * Push an U2F event the user's activity stream
-	 */
-	private function publishEvent(IUser $user, string $event) {
-		$activity = $this->activityManager->generateEvent();
-		$activity->setApp('twofactor_u2f')
-			->setType('security')
-			->setAuthor($user->getUID())
-			->setAffectedUser($user->getUID())
-			->setSubject($event);
-		$this->activityManager->publish($activity);
 	}
 
 	public function startAuthenticate(IUser $user): array {

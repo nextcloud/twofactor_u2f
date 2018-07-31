@@ -14,15 +14,16 @@ namespace OCA\TwoFactorU2F\Tests\Unit\Service;
 
 use OCA\TwoFactorU2F\Db\Registration;
 use OCA\TwoFactorU2F\Db\RegistrationMapper;
+use OCA\TwoFactorU2F\Event\StateChanged;
 use OCA\TwoFactorU2F\Service\U2FManager;
 use OCP\Activity\IEvent;
-use OCP\Activity\IManager;
 use OCP\ILogger;
 use OCP\IRequest;
 use OCP\ISession;
 use OCP\IUser;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class U2FManagerTest extends TestCase {
 
@@ -38,11 +39,11 @@ class U2FManagerTest extends TestCase {
 	/** @var IRequest|MockObject */
 	private $request;
 
-	/** @var IManager|MockObject */
-	private $activityManager;
-
 	/** @var U2FManager */
 	private $manager;
+
+	/** @var EventDispatcherInterface */
+	private $eventDispatcher;
 
 	protected function setUp() {
 		parent::setUp();
@@ -51,9 +52,9 @@ class U2FManagerTest extends TestCase {
 		$this->session = $this->createMock(ISession::class);
 		$this->logger = $this->createMock(ILogger::class);
 		$this->request = $this->createMock(IRequest::class);
-		$this->activityManager = $this->createMock(IManager::class);
+		$this->eventDispatcher = $this->createMock(EventDispatcherInterface::class);
 
-		$this->manager = new U2FManager($this->mapper, $this->session, $this->logger, $this->request, $this->activityManager);
+		$this->manager = new U2FManager($this->mapper, $this->session, $this->logger, $this->request, $this->eventDispatcher);
 	}
 
 	/**
@@ -88,9 +89,7 @@ class U2FManagerTest extends TestCase {
 
 	public function testDisableU2F() {
 		$user = $this->createMock(IUser::class);
-		$event = $this->createMock(IEvent::class);
 		$reg = $this->createMock(Registration::class);
-
 		$this->mapper->expects($this->once())
 			->method('findRegistration')
 			->with($user, 13)
@@ -98,35 +97,12 @@ class U2FManagerTest extends TestCase {
 		$this->mapper->expects($this->once())
 			->method('delete')
 			->with($reg);
-		$this->activityManager->expects($this->once())
-			->method('generateEvent')
-			->willReturn($event);
-		$event->expects($this->once())
-			->method('setApp')
-			->with($this->equalTo('twofactor_u2f'))
-			->willReturnSelf();
-		$event->expects($this->once())
-			->method('setType')
-			->with($this->equalTo('security'))
-			->willReturnSelf();
-		$user->expects($this->any())
-			->method('getUID')
-			->willReturn('ursula');
-		$event->expects($this->once())
-			->method('setAuthor')
-			->with($this->equalTo('ursula'))
-			->willReturnSelf();
-		$event->expects($this->once())
-			->method('setAffectedUser')
-			->with($this->equalTo('ursula'))
-			->willReturnSelf();
-		$event->expects($this->once())
-			->method('setSubject')
-			->with($this->equalTo('u2f_device_removed'))
-			->willReturnSelf();
-		$this->activityManager->expects($this->once())
-			->method('publish')
-			->with($this->equalTo($event));
+		$this->eventDispatcher->expects($this->once())
+			->method('dispatch')
+			->with(
+				$this->equalTo(StateChanged::class),
+				$this->equalTo(new StateChanged($user, false))
+			);
 
 		$this->manager->removeDevice($user, 13);
 	}
