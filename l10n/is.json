@@ -17,6 +17,8 @@
     "U2F device" : "U2F-tæki",
     "Authenticate with an U2F device" : "Auðkenna með U2F-tæki",
     "Two Factor U2F" : "Tveggja-þrepa U2F",
+    "U2F two-factor provider" : "Veituaðili tveggja-þrepa U2F-vottunar",
+    "A two-factor provider for U2F devices" : "Veituaðili tveggja-þrepa vottunar fyrir U2F-tæki",
     "Please plug in your U2F device and press the device button to authorize." : "Stingdu U2F-tækinu þínu í samband og ýttu á tækishnappinn til að auðkenna.",
     "An error occurred. Please try again." : "Villa kom upp. Endilega reyndu aftur.",
     "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Settu upp viðbótina \"U2F Support Add-on\" á Firefox til að nota U2F, á Chrome er slíkt ekki nauðsynlegt.",
