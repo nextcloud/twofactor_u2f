@@ -17,6 +17,7 @@ namespace OCA\TwoFactorU2F\AppInfo;
 use OCA\TwoFactorU2F\Event\StateChanged;
 use OCA\TwoFactorU2F\Listener\IListener;
 use OCA\TwoFactorU2F\Listener\StateChangeActivity;
+use OCA\TwoFactorU2F\Listener\StateChangeRegistryUpdater;
 use OCP\AppFramework\App;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
@@ -32,6 +33,7 @@ class Application extends App {
 			/** @var IListener[] $listeners */
 			$listeners = [
 				$container->query(StateChangeActivity::class),
+				$container->query(StateChangeRegistryUpdater::class),
 			];
 
 			foreach ($listeners as $listener) {
