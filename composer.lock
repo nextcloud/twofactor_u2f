@@ -49,12 +49,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ChristophWurst/nextcloud_composer.git",
-                "reference": "92ec5708d6f8ca901f4f6cda7242ebd74b8f8aa5"
+                "reference": "499dfadc8f8694915f49730c69829c03eace56d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ChristophWurst/nextcloud_composer/zipball/92ec5708d6f8ca901f4f6cda7242ebd74b8f8aa5",
-                "reference": "92ec5708d6f8ca901f4f6cda7242ebd74b8f8aa5",
+                "url": "https://api.github.com/repos/ChristophWurst/nextcloud_composer/zipball/499dfadc8f8694915f49730c69829c03eace56d8",
+                "reference": "499dfadc8f8694915f49730c69829c03eace56d8",
                 "shasum": ""
             },
             "type": "library",
@@ -74,7 +74,7 @@
                 }
             ],
             "description": "Composer package containing Nextcloud's public API (classes, interfaces)",
-            "time": "2018-07-05T15:12:25+00:00"
+            "time": "2018-07-26T15:23:17+00:00"
         },
         {
             "name": "doctrine/instantiator",
