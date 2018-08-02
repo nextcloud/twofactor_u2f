@@ -1,6 +1,6 @@
 {
   "name": "twofactor_u2f",
-  "version": "1.0.0",
+  "version": "1.6.0",
   "description": "![Downloads](https://img.shields.io/github/downloads/nextcloud/twofactor_u2f/total.svg) [![Build Status](https://api.travis-ci.org/nextcloud/twofactor_u2f.svg?branch=master)](https://travis-ci.org/nextcloud/twofactor_u2f)",
   "main": "js/challenge.js",
   "directories": {
