@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.6.0 – 2018-08-02
+
+### Added
+- Nextcloud 14 support (requires beta 2+)
+- Performance improvements
+- New and updated translations
+### Changed
+- Dropped Nextcloud 13 support
+
 ## 1.5.5 – 2018-05-14
 ### Fixed
 - Installation on Nextcloud 13.x
