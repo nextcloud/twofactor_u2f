@@ -16,6 +16,7 @@ namespace OCA\TwoFactorU2F\Listener;
 
 use OCA\TwoFactorU2F\Event\StateChanged;
 use OCA\TwoFactorU2F\Provider\U2FProvider;
+use OCA\TwoFactorU2F\Service\U2FManager;
 use OCP\Authentication\TwoFactorAuth\IRegistry;
 use Symfony\Component\EventDispatcher\Event;
 
@@ -24,19 +25,26 @@ class StateChangeRegistryUpdater implements IListener {
 	/** @var IRegistry */
 	private $providerRegistry;
 
+	/** @var U2FManager */
+	private $manager;
+
 	/** @var U2FProvider */
 	private $provider;
 
-	public function __construct(IRegistry $providerRegistry, U2FProvider $provider) {
+	public function __construct(IRegistry $providerRegistry, U2FManager $manager, U2FProvider $provider) {
 		$this->providerRegistry = $providerRegistry;
 		$this->provider = $provider;
+		$this->manager = $manager;
 	}
 
 	public function handle(Event $event) {
 		if ($event instanceof StateChanged) {
-			if ($event->isEnabled()) {
+			$devices = $this->manager->getDevices($event->getUser());
+			if ($event->isEnabled() && count($devices) === 1) {
+				// The first device was enabled -> enable provider for this user
 				$this->providerRegistry->enableProviderFor($this->provider, $event->getUser());
-			} else {
+			} else if (!$event->isEnabled() && empty($devices)) {
+				// The last device was removed -> disable provider for this user
 				$this->providerRegistry->disableProviderFor($this->provider, $event->getUser());
 			}
 		}
