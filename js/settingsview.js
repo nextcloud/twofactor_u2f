@@ -69,6 +69,7 @@ define(function () {
 		 */
 		template: function (data) {
 			if (!this._template) {
+				console.log('compiling u2f settings template');
 				this._template = Handlebars.compile(TEMPLATE);
 			}
 			return this._template(data);
@@ -84,6 +85,7 @@ define(function () {
 		 * @returns {undefined}
 		 */
 		render: function () {
+			console.log('rendering u2f settings view');
 			this._checkHTTPS();
 
 			this._devices = _.sortBy(this._devices, function (device) {
@@ -101,12 +103,17 @@ define(function () {
 				OC.registerMenu($deviceEl.find('a.icon-more'), $deviceEl.find('.popovermenu'));
 			}, this);
 
+			console.log('u2f settings view rendered');
+
 			return this;
 		},
 
 		_checkHTTPS: function () {
 			if (document.location.protocol !== 'https:') {
+				console.error('u2f requires https');
 				$('#u2f-http-warning').show();
+			} else {
+				console.log('https connection detected');
 			}
 		},
 
@@ -129,6 +136,7 @@ define(function () {
 				this._devices = data.devices;
 				this.render();
 			}.bind(this), function () {
+				console.error('Could not load list of u2f devices');
 				OC.Notification.showTemporary('Could not load list of U2F devices.');
 			}).catch(console.error.bind(this));
 		},
@@ -139,6 +147,7 @@ define(function () {
 		 */
 		_onAddU2FDevice: function () {
 			if (this._loading) {
+				console.log('view is loading, ignoring `_onAddU2FDevice` call');
 				// Ignore event
 				return Promise.resolve();
 			}
@@ -195,6 +204,7 @@ define(function () {
 		 * @returns {Promise}
 		 */
 		_onRegister: function () {
+			console.log('starting u2f registration');
 			var name = this.$('#u2f-device-name').val();
 
 			// Show loading feedback
@@ -205,19 +215,24 @@ define(function () {
 			return this._requirePasswordConfirmation()
 				.then(this._startRegistrationOnServer)
 				.then(function (data) {
+					console.log('got server u2f registration data');
 					return self._registerU2fDevice(data.req, data.sigs);
 				})
 				.then(function (data) {
+					console.log('finished client-side u2f registration');
 					data.name = name;
 					return self._finishRegisterOnServer(data);
 				})
 				.then(function (newDevice) {
+					console.log('finished server-side u2f registration');
 					self._devices.push(newDevice);
 				})
 				.catch(function (e) {
-					OC.Notification.showTemporary(e.message);
+					console.error(e);
+					OC.Notification.showTemporary('Error while registering u2f device: ' + e.message);
 				})
 				.then(function () {
+					console.log('finished u2f registration');
 					self._loading = false;
 					self.render();
 				});
