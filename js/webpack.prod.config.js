@@ -4,14 +4,10 @@ const baseConfig = require('./webpack.base.config.js');
 
 module.exports = merge(baseConfig, {
 	plugins: [
-		new webpack.DefinePlugin({
-			'process.env': {
-				'NODE_ENV': JSON.stringify('production')
-			}
-		}),
 		new webpack.optimize.AggressiveMergingPlugin(), // Merge chunks
 		new webpack.LoaderOptionsPlugin({
 			minimize: true
 		})
-	]
+	],
+	mode: 'production'
 });
