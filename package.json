@@ -31,8 +31,8 @@
     "webpack-merge": "^4.1.4"
   },
   "scripts": {
-    "build": "./node_modules/webpack-cli/bin/webpack.js --mode production --config js/webpack.prod.config.js",
-    "dev": "./node_modules/webpack-cli/bin/webpack.js --mode development --config js/webpack.dev.config.js --watch",
+    "build": "./node_modules/webpack-cli/bin/cli.js --config js/webpack.prod.config.js",
+    "dev": " ./node_modules/webpack-cli/bin/cli.js --config js/webpack.dev.config.js --watch",
     "test": "./node_modules/karma/bin/karma start karma.conf.js --single-run"
   },
   "repository": {
