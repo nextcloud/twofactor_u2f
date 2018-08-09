@@ -27,7 +27,7 @@
     "karma-webpack": "^3.0.0",
     "underscore": "^1.9.1",
     "webpack": "^4.16.5",
-    "webpack-cli": "^2.1.4",
+    "webpack-cli": "^3.1.0",
     "webpack-merge": "^4.1.4"
   },
   "scripts": {
