@@ -63,7 +63,7 @@ define(['settingsview'], function(SettingsView) {
 
 			view.load().then(function() {
 				view._onAddU2FDevice().then(function() {
-					expect(OC.Notification.showTemporary).toHaveBeenCalledWith('Wrong password');
+					expect(OC.Notification.showTemporary).toHaveBeenCalledWith('Error while registering u2f device: Wrong password');
 					done();
 				}).catch(function(e) {
 					done.fail(e);
