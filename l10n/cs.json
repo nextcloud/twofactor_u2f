@@ -19,11 +19,11 @@
     "Two Factor U2F" : "Dvoufázové U2F",
     "Please plug in your U2F device and press the device button to authorize." : "Připojte prosím svůj U2F přístroj a stlačte tlačítko pro ověření.",
     "An error occurred. Please try again." : "Došlo k chybě. Zkuste to prosím znovu",
-    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Pro použití U2F ve Firefoxu nainstalujte \"U2F Support Add-on\". V Chrome to není potřeba.",
+    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Pro použití U2F ve Firefoxu nainstalujte „U2F Support Add-on“. V Chrome to není potřeba.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "K tomuto webu přistupujete přes nezabezpečené připojení. Prohlížeče proto mohou odmítnout U2F ověřování.",
     "U2F second-factor auth" : "U2F dvoufaktorové ověření",
     "Loading your devices …" : "Načítání vašich zařízení …",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome je jediný prohlížeč podporující U2F přístroje. Musíte nainstalovat \"U2F Support Add-on\" pro Firefox pro použití U2F.",
+    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome je jediný prohlížeč podporující U2F přístroje. Je třeba nainstalovat „U2F Support Add-on“ pro Firefox pro použití U2F.",
     "U2F device successfully registered." : "U2F přístroj úspěšně zaregistrován."
 },"pluralForm" :"nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;"
 }
