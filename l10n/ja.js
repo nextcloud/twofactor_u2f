@@ -2,7 +2,7 @@ OC.L10N.register(
     "twofactor_u2f",
     {
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "U2Fデバイスが設定されていません。2段階認証としてU2Fが使われていません。",
-    "The following devices are configured for U2F second-factor authentication:" : "以下のデバイスはU2F 2段階認証設定されています。",
+    "The following devices are configured for U2F second-factor authentication:" : "次のデバイスはU2F 2段階認証設定されています。",
     "Unnamed device" : "名称設定されていないデバイス",
     "Remove" : "削除",
     "Add U2F device" : "U2Fデバイスを追加",
