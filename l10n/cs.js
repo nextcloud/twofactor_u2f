@@ -19,6 +19,7 @@ OC.L10N.register(
     "U2F device" : "Zařízení U2F",
     "Authenticate with an U2F device" : "Ověření pomocí U2F přístroje",
     "Two Factor U2F" : "Dvoufázové U2F",
+    "U2F two-factor provider" : "Poskytovatel dvouúrovňového U2F",
     "A two-factor provider for U2F devices" : "Poskytovat dvouúrovňového ověřování pro U2F zařízení",
     "Please plug in your U2F device and press the device button to authorize." : "Připojte prosím svůj U2F přístroj a stlačte tlačítko pro ověření.",
     "An error occurred. Please try again." : "Došlo k chybě. Zkuste to prosím znovu",
