@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "dependencies": {
-    "es6-promise": "^4.2.4",
+    "es6-promise": "^4.2.5",
     "handlebars": "^4.0.12",
     "u2f-api": "^1.0.6"
   },
