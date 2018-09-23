@@ -3,6 +3,7 @@
     "Unnamed device" : "Neimenovana naprava",
     "Remove" : "Odstrani",
     "Server error while trying to add U2F device" : "Napaka strežnika med dodajanjem U2F naprave",
+    "You added an U2F hardware token" : "Dodan je strojni žeton U2F",
     "U2F device" : "U2F naprava",
     "Authenticate with an U2F device" : "Prijavi se z U2F napravo",
     "An error occurred. Please try again." : "Zgodila se je napaka. Poskusi ponovno.",
