@@ -1,10 +1,10 @@
 { "translations": {
-    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Nejsou nastavena žádná U2F zařízení. Aktuálně nepoužíváte U2F jako druhý faktor.",
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Nejsou nastavená žádná U2F zařízení. V tuto chvíli nepoužíváte U2F jako druhý faktor.",
     "The following devices are configured for U2F second-factor authentication:" : "Následující zařízení jsou nastavena jako druhý stupeň ověřování pomocí U2F:",
     "Unnamed device" : "Nenazvané zařízení",
     "Remove" : "Odstranit",
     "Add U2F device" : "Přidat U2F zařízení",
-    "You can add as many devices as you like. It is recommended to give each device a distinct name." : "Můžete přidat tolik zařízení, kolik chcete. Doporučuje se každému dát každému zařízení jiný název.",
+    "You can add as many devices as you like. It is recommended to give each device a distinct name." : "Můžete přidat tolik zařízení, kolik chcete. Doporučuje se dát každému zařízení jiný název.",
     "Adding a new device …" : "Přidávání nového zařízení…",
     "Could not remove your U2F device" : "Nepodařilo se odstranit vaše U2F zařízení",
     "Server error while trying to add U2F device" : "Chyba serveru při pokusu o přidání U2F zařízení",
