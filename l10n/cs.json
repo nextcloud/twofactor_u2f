@@ -8,7 +8,7 @@
     "Adding a new device …" : "Přidávání nového zařízení…",
     "Could not remove your U2F device" : "Nepodařilo se odstranit vaše U2F zařízení",
     "Server error while trying to add U2F device" : "Chyba serveru při pokusu o přidání U2F zařízení",
-    "U2F device is already registered (error code {errorCode})" : "Zařízení U2F je již zaregistrováno (kód chyby {errorCode})",
+    "U2F device is already registered (error code {errorCode})" : "Zařízení U2F je už zaregistrováno (kód chyby {errorCode})",
     "U2F device registration timeout reached (error code {errorCode})" : "Překročen časový limit pro registraci U2F zařízení (kód chyby {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "registrace U2F zařízení se nezdařila (kód chyby {errorCode})",
     "Server error while trying to complete U2F device registration" : "Chyba serveru při pokusu o dokončení registrace U2F zařízení",
