@@ -154,7 +154,10 @@ class U2FManager {
 			return false;
 		}
 
-		$registration = $this->mapper->findRegistration($user, $reg->id);
+		$origReg = reset(array_filter($registrations, function(object $registration) use ($reg) {
+			return $registration->keyHandle === $reg->keyHandle;
+		}));
+		$registration = $this->mapper->findRegistration($user, $origReg->id);
 		$registration->setCounter($reg->counter);
 		$this->mapper->update($registration);
 		return true;
