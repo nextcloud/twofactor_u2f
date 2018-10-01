@@ -11,9 +11,9 @@ style('twofactor_u2f', 'style');
 	<input id="challenge" type="hidden" name="challenge">
 </form>
 
-<img src="<?php print_unescaped(image_path('twofactor_u2f', 'app.svg')); ?>">
+<img class="two-factor-icon" src="<?php print_unescaped(image_path('twofactor_u2f', 'app.svg')); ?>" alt="">
 <p id="u2f-info">
-<?php p($l->t('Please plug in your U2F device and press the device button to authorize.')) ?>
+<?php p($l->t('Plug in your U2F device and press the device button to authorize.')) ?>
 </p>
 <p id="u2f-error"
    style="display: none">
@@ -21,7 +21,7 @@ style('twofactor_u2f', 'style');
 </p>
 <p>
 	<em>
-		<?php p($l->t('Install the "U2F Support Add-on" on Firefox to use U2F, this is not needed on Chrome.')) ?>
+		<?php p($l->t('In Firefox, you need to install the "U2F Support Add-on" to use U2F. This is not needed in Chrome.')) ?>
 		<p id="u2f-http-warning"
 		      style="display: none">
 			<?php p($l->t('You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication.')) ?>
