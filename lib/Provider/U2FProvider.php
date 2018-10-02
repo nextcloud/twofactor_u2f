@@ -24,7 +24,7 @@ use OCP\IL10N;
 use OCP\IUser;
 use OCP\Template;
 
-class U2FProvider implements IProvider, IProvidesIcons {
+class U2FProvider implements IProvider, IProvidesIcons, IProvidesPersonalSettings {
 
 	/** @var IL10N */
 	private $l10n;
@@ -83,11 +83,6 @@ class U2FProvider implements IProvider, IProvidesIcons {
 		return count($this->manager->getDevices($user)) > 0;
 	}
 
-	/**
-	 * @param IUser $user
-	 *
-	 * @return IPersonalProviderSettings
-	 */
 	public function getPersonalSettings(IUser $user): IPersonalProviderSettings {
 		return new Personal();
 	}
