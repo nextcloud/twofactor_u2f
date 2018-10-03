@@ -14,7 +14,7 @@
 		"yubico/u2flib-server": "^1.0.1"
 	},
 	"require-dev": {
-		"christophwurst/nextcloud": "14.0.0.x-dev",
+		"christophwurst/nextcloud": "dev-master",
 		"phpunit/phpunit": "^6.5.5"
 	},
 	"config": {

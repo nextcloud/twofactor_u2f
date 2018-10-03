@@ -8,11 +8,6 @@
  * @copyright Christoph Wurst 2016
  */
 
-#body-login .wrapper .warning img {
-	width: 100px;
-	margin-left: 80px;
-}
-
 .u2f-loading {
 	display: inline-block;
 	vertical-align: sub;

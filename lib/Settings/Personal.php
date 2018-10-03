@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 /**
  * @author Christoph Wurst <christoph@winzerhof-wurst.at>
@@ -23,27 +23,12 @@ declare(strict_types = 1);
 
 namespace OCA\TwoFactorU2F\Settings;
 
-use OCP\AppFramework\Http\TemplateResponse;
-use OCP\Settings\ISettings;
+use OCP\Authentication\TwoFactorAuth\IPersonalProviderSettings;
+use OCP\Template;
 
-class Personal implements ISettings {
+class Personal implements IPersonalProviderSettings {
 
-	/**
-	 * @return TemplateResponse
-	 */
-	public function getForm(): TemplateResponse {
-		return new TemplateResponse('twofactor_u2f', 'personal');
+	public function getBody(): Template {
+		return new Template('twofactor_u2f', 'personal');
 	}
-
-	/**
-	 * @return string the section ID
-	 */
-	public function getSection(): string {
-		return 'security';
-	}
-
-	public function getPriority(): int {
-		return 40;
-	}
-
 }

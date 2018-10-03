@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 /**
  * Nextcloud - U2F 2FA
@@ -15,12 +15,16 @@ declare(strict_types = 1);
 namespace OCA\TwoFactorU2F\Provider;
 
 use OCA\TwoFactorU2F\Service\U2FManager;
+use OCA\TwoFactorU2F\Settings\Personal;
+use OCP\Authentication\TwoFactorAuth\IPersonalProviderSettings;
 use OCP\Authentication\TwoFactorAuth\IProvider;
+use OCP\Authentication\TwoFactorAuth\IProvidesIcons;
+use OCP\Authentication\TwoFactorAuth\IProvidesPersonalSettings;
 use OCP\IL10N;
 use OCP\IUser;
 use OCP\Template;
 
-class U2FProvider implements IProvider {
+class U2FProvider implements IProvider, IProvidesIcons, IProvidesPersonalSettings {
 
 	/** @var IL10N */
 	private $l10n;
@@ -79,4 +83,15 @@ class U2FProvider implements IProvider {
 		return count($this->manager->getDevices($user)) > 0;
 	}
 
+	public function getPersonalSettings(IUser $user): IPersonalProviderSettings {
+		return new Personal();
+	}
+
+	public function getLightIcon(): String {
+		return image_path('twofactor_u2f', 'app.svg');
+	}
+
+	public function getDarkIcon(): String {
+		return image_path('twofactor_u2f', 'app-dark.svg');;
+	}
 }

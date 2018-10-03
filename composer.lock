@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6314967e4cb0ced509b4b9972eda527f",
+    "content-hash": "63bbbf2542c73a2ebf97a3f02241aa7f",
     "packages": [
         {
             "name": "paragonie/random_compat",
@@ -96,13 +96,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ChristophWurst/nextcloud_composer.git",
-                "reference": "8836afeee79a53885c7cd77b447c8de348ea506a"
+                "reference": "bed1c86c007845cd00780f2284bfd2a1caa74423"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ChristophWurst/nextcloud_composer/zipball/8836afeee79a53885c7cd77b447c8de348ea506a",
-                "reference": "8836afeee79a53885c7cd77b447c8de348ea506a",
+                "url": "https://api.github.com/repos/ChristophWurst/nextcloud_composer/zipball/bed1c86c007845cd00780f2284bfd2a1caa74423",
+                "reference": "bed1c86c007845cd00780f2284bfd2a1caa74423",
                 "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
             },
             "type": "library",
             "extra": {
@@ -121,7 +124,7 @@
                 }
             ],
             "description": "Composer package containing Nextcloud's public API (classes, interfaces)",
-            "time": "2018-09-06T15:46:29+00:00"
+            "time": "2018-10-02T15:59:55+00:00"
         },
         {
             "name": "doctrine/instantiator",
