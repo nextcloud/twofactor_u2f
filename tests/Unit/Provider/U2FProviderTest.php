@@ -14,6 +14,7 @@ namespace OCA\TwoFactorU2F\Tests\Unit\Provider;
 
 use OCA\TwoFactorU2F\Provider\U2FProvider;
 use OCA\TwoFactorU2F\Service\U2FManager;
+use OCA\TwoFactorU2F\Settings\Personal;
 use OCP\IL10N;
 use OCP\IUser;
 use OCP\Template;
@@ -104,6 +105,31 @@ class U2FProviderTest extends TestCase {
 			->willReturn($devices);
 
 		$this->assertFalse($this->provider->isTwoFactorAuthEnabledForUser($user));
+	}
+
+	public function testGetGetLightIcon() {
+		$expected = image_path('twofactor_u2f', 'app-dark.svg');
+
+		$icon = $this->provider->getDarkIcon();
+
+		$this->assertEquals($expected, $icon);
+	}
+
+	public function testGetDarkIcon() {
+		$expected = image_path('twofactor_u2f', 'app-dark.svg');
+
+		$icon = $this->provider->getDarkIcon();
+
+		$this->assertEquals($expected, $icon);
+	}
+
+	public function testGetPersonalSettings() {
+		$expected = new Personal();
+		$user = $this->createMock(IUser::class);
+
+		$settings = $this->provider->getPersonalSettings($user);
+
+		$this->assertEquals($expected, $settings);
 	}
 
 }
