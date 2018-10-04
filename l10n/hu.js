@@ -19,12 +19,10 @@ OC.L10N.register(
     "U2F device" : "U2F eszköz",
     "Authenticate with an U2F device" : "Hitelesítés U2F eszköz segítségével",
     "Two Factor U2F" : "Kétfaktoros U2F",
-    "Please plug in your U2F device and press the device button to authorize." : "Kérjük, dugja be az U2F eszközt, majd kattintson az eszköz gombra a hitelesítéshez.",
     "An error occurred. Please try again." : "Hiba történt. Kérjük, próbálja meg újra.",
-    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Telepítsd a \"U2F támogatás kiegészítőt\" Firefox-on a U2F használatához, ez Chrome-on nem szükséges.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Nem biztonságos kapcsolaton keresztül éred el ezt az oldalt. Emiatt a böngészők megtagadhatják a U2F kétfaktoros azonosítás használatát.",
-    "U2F second-factor auth" : "U2F második lépcsős hitelesítés",
     "Loading your devices …" : "Eszközeid betöltése …",
+    "Please plug in your U2F device and press the device button to authorize." : "Kérjük, dugja be az U2F eszközt, majd kattintson az eszköz gombra a hitelesítéshez.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "A Chrome az egyedüli böngésző, mely támogatja az U2F eszközöket. Az U2F használatához szükség van az \"U2F Support Add-on\" Firefox kiegészítő telepítésére.",
     "U2F device successfully registered." : "U2F eszköz sikeresen regisztrálva."
 },

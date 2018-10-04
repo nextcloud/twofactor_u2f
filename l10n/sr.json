@@ -19,12 +19,10 @@
     "Two Factor U2F" : "Двофакторски U2F",
     "U2F two-factor provider" : "Провајдер двофакторског U2F-а",
     "A two-factor provider for U2F devices" : "Двофакторски провајдер за U2F уређаје",
-    "Please plug in your U2F device and press the device button to authorize." : "Молимо утакните Ваш U2F уређај и притисните дугме на уређају да се пријавите.",
     "An error occurred. Please try again." : "Десила се грешка. Покушајте поново.",
-    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "На Фајерфоксу морате да инсталирате \"U2F Support Add-on\" додатак да бисте користили U2F. Ово не треба на Хром веб читачу.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Приступате овом сајту преко небезбедне конекције. Веб читач може због тога да одбије U2F пријављивање.",
-    "U2F second-factor auth" : "Други фактор U2F пријаве",
     "Loading your devices …" : "Учитавам Ваше уређаје …",
+    "Please plug in your U2F device and press the device button to authorize." : "Молимо утакните Ваш U2F уређај и притисните дугме на уређају да се пријавите.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Хром веб читач је једини веб читач који подржава U2F уређаје. НА Фајерфоксу морате да инсталирајте \"U2F Support Add-on\" додатак да бисте користили U2F.",
     "U2F device successfully registered." : "U2F уређај успешно регистрован."
 },"pluralForm" :"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"

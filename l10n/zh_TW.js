@@ -19,12 +19,10 @@ OC.L10N.register(
     "U2F device" : "U2F裝置",
     "Authenticate with an U2F device" : "使用U2F裝置進行驗證",
     "Two Factor U2F" : "U2F兩階段",
-    "Please plug in your U2F device and press the device button to authorize." : "請接入您的U2F裝置並按下裝置上按鍵進行驗證",
     "An error occurred. Please try again." : "發生錯誤，請再試一次。",
-    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "在Firefox上安裝「U2F Support Add-on」後，就不需要在Chrome瀏覽器上進行。",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "您正使用不安全的連線。瀏覽器可能會因此拒絕U2F驗證",
-    "U2F second-factor auth" : "U2F兩階段驗證",
     "Loading your devices …" : "正讀取您的裝置...",
+    "Please plug in your U2F device and press the device button to authorize." : "請接入您的U2F裝置並按下裝置上按鍵進行驗證",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome是唯一支援U2F裝置的瀏覽器，你在Firefox上使用U2F則必須安裝「U2F Support Add-on」。",
     "U2F device successfully registered." : "U2F裝置已成功註冊。"
 },

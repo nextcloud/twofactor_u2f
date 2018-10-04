@@ -9,9 +9,8 @@ OC.L10N.register(
     "You removed an U2F hardware token" : "Jūs noņēmāt U2F aparatūras pilnvaras",
     "U2F device" : "U2F ierīce",
     "Authenticate with an U2F device" : "Autentifikācija ar U2F ierīci",
-    "Please plug in your U2F device and press the device button to authorize." : "Lūdzu, pievienojiet U2F ierīci un nospiediet ierīces pogu, lai atļauj.",
     "An error occurred. Please try again." : "Notika kļūda. Mēģini vēlreiz.",
-    "U2F second-factor auth" : "U2F second-factor autentifikācija",
+    "Please plug in your U2F device and press the device button to authorize." : "Lūdzu, pievienojiet U2F ierīci un nospiediet ierīces pogu, lai atļauj.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome ir vienīgā pārlūkprogramma, kas atbalsta U2F ierīces Jums jāinstalē \"U2F Support Add-on\" Firefox lai lietotu U2F.",
     "U2F device successfully registered." : "U2F ierīce tika veiksmīgi reģistrēta."
 },

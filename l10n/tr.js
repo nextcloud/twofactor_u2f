@@ -21,12 +21,10 @@ OC.L10N.register(
     "Two Factor U2F" : "İki Aşamalı Kimlik Doğrulama U2F",
     "U2F two-factor provider" : "U2F iki aşamalı kimlik doğrulama hizmeti sağlayıcısı",
     "A two-factor provider for U2F devices" : "U2F aygıtları için iki aşamalı kimlik doğrulama hizmeti sağlayıcısı",
-    "Please plug in your U2F device and press the device button to authorize." : "Lütfen U2F aygıtınızı takın ve kimliğinizi doğrulamak için aygıt üzerindeki düğmeye tıklayın.",
     "An error occurred. Please try again." : "Bir sorun çıktı. Lütfen yeniden deneyin.",
-    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Firefox üzerinde U2F kullanabilmek için \"U2F Desteği Eklentisini\" yükleyin. Chrome için gerekmez.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Bu site ile bağlantınız güvenli değil. Bu nedenle tarayıcılar yeniden U2F kimlik dooğrulaması isteyebilir.",
-    "U2F second-factor auth" : "U2F iki aşamalı kimlik doğrulama",
     "Loading your devices …" : "Aygıtlarınız yükleniyor...",
+    "Please plug in your U2F device and press the device button to authorize." : "Lütfen U2F aygıtınızı takın ve kimliğinizi doğrulamak için aygıt üzerindeki düğmeye tıklayın.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "U2F aygıtı yalnız Chrome web tarayıcısı tarafından desteklenir. Firefox üzerinde U2F kullanabilmek için \"U2F Support eklentisini\" kurmalısınız.",
     "U2F device successfully registered." : "U2F aygıtı kaydedildi."
 },

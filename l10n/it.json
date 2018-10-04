@@ -19,12 +19,10 @@
     "Two Factor U2F" : "U2F a due fattori",
     "U2F two-factor provider" : "Fornitore a due fattori per U2F",
     "A two-factor provider for U2F devices" : "Un fornitore a due fattori per dispositivi U2F",
-    "Please plug in your U2F device and press the device button to authorize." : "Collega il tuo dispositivo U2F e premi il pulsante del dispositivo per autorizzare.",
     "An error occurred. Please try again." : "Si è verificato un errore. Prova ancora.",
-    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Installa \"U2F Support Add-on\" su Firefox per utilizzare U2F, ciò non è necessario su Chrome.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Stai accedendo a questo sito tramite una connessione non sicura. I browser potrebbero rifiutare l'autenticazione U2F.",
-    "U2F second-factor auth" : "Autenticazione con secondo fattore U2F",
     "Loading your devices …" : "Caricamento dei tuoi dispositivi...",
+    "Please plug in your U2F device and press the device button to authorize." : "Collega il tuo dispositivo U2F e premi il pulsante del dispositivo per autorizzare.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome è l'unico browser che supporta i dispositivi U2F. Devi installare l'\"estensione per il supporto U2F\" su Firefox per utilizzare U2F.",
     "U2F device successfully registered." : "Dispositivo U2F registrato correttamente."
 },"pluralForm" :"nplurals=2; plural=(n != 1);"

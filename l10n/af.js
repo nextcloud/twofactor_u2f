@@ -17,7 +17,7 @@ OC.L10N.register(
     "Two Factor U2F" : "Tweefaktor-U2F",
     "U2F two-factor provider" : "U2F-tweefaktorverskaffer",
     "A two-factor provider for U2F devices" : "’n Tweefaktorverskaffer vir U2F-toestelle",
-    "Please plug in your U2F device and press the device button to authorize." : "Prop asseblief u U2F-toestel in en druk die toestelknop om te magtig.",
-    "An error occurred. Please try again." : "’n Fout het voorgekom. Probeer weer."
+    "An error occurred. Please try again." : "’n Fout het voorgekom. Probeer weer.",
+    "Please plug in your U2F device and press the device button to authorize." : "Prop asseblief u U2F-toestel in en druk die toestelknop om te magtig."
 },
 "nplurals=2; plural=(n != 1);");

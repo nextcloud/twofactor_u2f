@@ -21,12 +21,10 @@ OC.L10N.register(
     "Two Factor U2F" : "Второй фактор — устройство U2F",
     "U2F two-factor provider" : "Провайдер двухфакторной аутентификации U2F ",
     "A two-factor provider for U2F devices" : "Провайдер двухфакторной аутентификации для U2F устройств",
-    "Please plug in your U2F device and press the device button to authorize." : "Пожалуйста, подключите своё U2F устройство и нажмите на нем кнопку для авторизации.",
     "An error occurred. Please try again." : "Произошла ошибка. Попробуйте ещё раз.",
-    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Для использования U2F в Firefox установите дополнение «U2F Support Add-on». Для Chrome  установка расширений не требуется.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Соединение с сайтом не защищено, браузеры могут не разрешить двухфакторную аутентификацию.",
-    "U2F second-factor auth" : "U2F - протокол двухфакторной аутентификации",
     "Loading your devices …" : "Загружаются ваши устройства…",
+    "Please plug in your U2F device and press the device button to authorize." : "Пожалуйста, подключите своё U2F устройство и нажмите на нем кнопку для авторизации.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome — единственный браузер поддерживающий устройства U2F. Для использования U2F в Firefox необходимо установить дополнение «U2F Support Add-on».",
     "U2F device successfully registered." : "Устройство U2F успешно зарегистрировано."
 },

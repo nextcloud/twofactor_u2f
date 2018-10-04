@@ -19,12 +19,10 @@ OC.L10N.register(
     "U2F device" : "U2Fデバイス",
     "Authenticate with an U2F device" : "U2Fデバイスで認証する",
     "Two Factor U2F" : "2段階U2F",
-    "Please plug in your U2F device and press the device button to authorize." : "U2Fデバイスを接続し、デバイスボタンを押して承認してください。",
     "An error occurred. Please try again." : "エラーが発生しました。もう一度実行してください。",
-    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "U2Fを利用するため、\"U2F サポート・アドオン\"をFirefoxにインストールします。Chromeでは必要ありません。",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "あなたは安全ではない接続を経由してアクセスしています。ブラウザーはU2F認証を拒否する可能性があります。",
-    "U2F second-factor auth" : "U2Fデバイスによる第2要素認証",
     "Loading your devices …" : "デバイスを読み込み中…",
+    "Please plug in your U2F device and press the device button to authorize." : "U2Fデバイスを接続し、デバイスボタンを押して承認してください。",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "ChromeはU2Fデバイスをサポートする唯一のブラウザーです。 FirefoxでU2Fを使用するには \"U2F Support Add-on\" をインストールする必要があります。",
     "U2F device successfully registered." : "U2Fデバイスが正常に登録されました。"
 },

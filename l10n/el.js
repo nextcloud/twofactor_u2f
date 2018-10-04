@@ -17,11 +17,9 @@ OC.L10N.register(
     "U2F device" : "Συσκευή U2F",
     "Authenticate with an U2F device" : "Πιστοποίηση με μια συσκευή U2F",
     "Two Factor U2F" : "U2F Δύο Παραγόντων",
-    "Please plug in your U2F device and press the device button to authorize." : "Παρακαλούμε συνδέστε την U2F συσκευή και πατήστε το κουμπί της συσκευής για να εξουσιοδοτήσετε.",
     "An error occurred. Please try again." : "Παρουσιάστηκε σφάλμα. Παρακαλώ προσπαθήστε ξανά.",
-    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Εγκαταστήστε το πρόσθετο \"U2F Support\" στο FIrefox για να χρησιμοποιήσετε το U2F, αυτό δεν χρειάζεται στο Chrome",
-    "U2F second-factor auth" : "Πιστοποίηση δύο βημάτων U2F",
     "Loading your devices …" : "Φορτώνονται οι συσκευές σας",
+    "Please plug in your U2F device and press the device button to authorize." : "Παρακαλούμε συνδέστε την U2F συσκευή και πατήστε το κουμπί της συσκευής για να εξουσιοδοτήσετε.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Ο Chrome είναι ο μόνος περιηγητής που υποστηρίζει U2F συσκευές. Χρειάζεται να εγκαταστήσετε το \"U2F Support Add-on\" στον Firefox για να χρησιμοποιήσετε U2F.",
     "U2F device successfully registered." : "Η U2F συσκευή καταχωρήθηκε επιτυχώς."
 },

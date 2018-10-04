@@ -21,12 +21,10 @@ OC.L10N.register(
     "Two Factor U2F" : "Dvojfaktorové U2F",
     "U2F two-factor provider" : "Poskytovateľ dvojfaktorového U2F",
     "A two-factor provider for U2F devices" : "Poskytovateľ dvojfaktorového overovania pre U2F zariadenia",
-    "Please plug in your U2F device and press the device button to authorize." : "Pripojte prosím vaše U2F zariadenie a stlačte tlačítko pre overenie.",
     "An error occurred. Please try again." : "Nastala chyba. Skúste to prosím znovu.",
-    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Pre použitie U2F vo Firefoxe nainštalujte \"U2F Support Add-on\". V Chrome to nie je potrebné.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Prichádzate na túto stránku prostredníctvom nezabezpečeného pripojenia. Prehliadače by preto mohli odmietnuť U2F overovanie.",
-    "U2F second-factor auth" : "Dvojstupňové overenie U2F",
     "Loading your devices …" : "Načítavanie vašich zariadení...",
+    "Please plug in your U2F device and press the device button to authorize." : "Pripojte prosím vaše U2F zariadenie a stlačte tlačítko pre overenie.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Prehliadač Chrome je jedniný, ktorý podporuje U2F zariadenia. Pre použitie U2F zariadenia v prehliadači Firefox je potrebné nainštalovať doplnok \"U2F Support Add-on\".",
     "U2F device successfully registered." : "Zariadenie U2F bolo úspešne zaregistrované."
 },

@@ -19,12 +19,10 @@ OC.L10N.register(
     "U2F device" : "U2F მოწყობილობა",
     "Authenticate with an U2F device" : "აუტენტიფიკაცია U2F მოწყობილობით",
     "Two Factor U2F" : "ორ ფაქტორიანი U2F",
-    "Please plug in your U2F device and press the device button to authorize." : "გთხოვთ მიაერთოთ U2F მოწყობილობა და დააწვეთ მოწყობილობის ღილაკს ავტორიზაციისთვის.",
     "An error occurred. Please try again." : "გამოჩნდა შეცდომა. გთხოვთ სცადოთ ახლიდან.",
-    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Firefox-ში დააყენეთ \"U2F მხარდაჭერის დანამატი\", Chrome-ში ის საჭირო არაა",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "ამ საიტს უკავშირდებით დაუცველი კავშირით. ბრაუზერებმა შეიძლება უარყონ U2F აუტენტიფიკაცია.",
-    "U2F second-factor auth" : "U2F მეორე-ფაქტორის აუტენტიფიკაცია",
     "Loading your devices …" : "თქვენი მწყობილობების ჩატვირთვა …",
+    "Please plug in your U2F device and press the device button to authorize." : "გთხოვთ მიაერთოთ U2F მოწყობილობა და დააწვეთ მოწყობილობის ღილაკს ავტორიზაციისთვის.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome-ი ერთადერთი ბრაუზერია რომელიც მხარს უჭერს U2F მოწყობილობებს. Firefox-ით U2F-ით სარგებლობისთვის საჭიროა დააყენოთ \"U2F-ს მხარდაჭერის დანამატი\".",
     "U2F device successfully registered." : "U2F მოწყობილობა წარმატებით დარეგისტრირდა."
 },

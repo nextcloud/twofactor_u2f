@@ -19,12 +19,10 @@ OC.L10N.register(
     "U2F device" : "U2F-laite",
     "Authenticate with an U2F device" : "Tunnistaudu U2F-laitteella",
     "Two Factor U2F" : "Kaksivaiheinen U2F",
-    "Please plug in your U2F device and press the device button to authorize." : "Yhdistä U2F-laitteesi ja paina laitteen painiketta tunnistautuaksesi.",
     "An error occurred. Please try again." : "Tapahtui virhe. Yritä myöhemmin uudelleen.",
-    "Install the \"U2F Support Add-on\" on Firefox to use U2F, this is not needed on Chrome." : "Asenna \"U2F Support Add-on\" -lisäosa Firefox-selaimelle käyttääksesi U2F-laitetta. Lisäosaa ei tarvita Chrome-selaimella.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Olet yhteydessä tähän sivustoon salaamattomalla yhteydellä. Selaimet saattavat sen vuoksi kieltäytyä U2F-tunnistautumisesta.",
-    "U2F second-factor auth" : "U2F-kaksivaiheinen tunnistautuminen",
     "Loading your devices …" : "Ladataan laitteitasi…",
+    "Please plug in your U2F device and press the device button to authorize." : "Yhdistä U2F-laitteesi ja paina laitteen painiketta tunnistautuaksesi.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome on ainoa selain, joka tukee U2F-laitteita. Asenna \"U2F Support Add-on\" -lisäosa käyttääksesi U2F-laitetta Firefox-selaimella.",
     "U2F device successfully registered." : "U2F-laite onnistuneesti rekisteröity."
 },
