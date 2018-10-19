@@ -11,8 +11,6 @@ exclude = [
 	"composer.json",
 	"composer.lock",
 	"composer.phar",
-	"js/tests",
-	"js/*.js",
 	"karma.conf.js",
 	"krankerl.toml",
 	"l10n/no-php",
@@ -22,6 +20,7 @@ exclude = [
 	"package.json",
 	"package-lock.json",
 	"screenshots",
+	"src",
 	"tests",
 	"vendor/bin",
 ]
