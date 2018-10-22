@@ -124,7 +124,7 @@ class U2FProviderTest extends TestCase {
 	}
 
 	public function testGetPersonalSettings() {
-		$expected = new Personal();
+		$expected = new Personal([]);
 		$user = $this->createMock(IUser::class);
 
 		$settings = $this->provider->getPersonalSettings($user);
