@@ -84,7 +84,7 @@ class U2FProvider implements IProvider, IProvidesIcons, IProvidesPersonalSetting
 	}
 
 	public function getPersonalSettings(IUser $user): IPersonalProviderSettings {
-		return new Personal();
+		return new Personal($this->manager->getDevices($user));
 	}
 
 	public function getLightIcon(): String {
