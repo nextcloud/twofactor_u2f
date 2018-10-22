@@ -65,7 +65,6 @@ class ProviderTest extends TestCase {
 		return [
 				['u2f_device_added'],
 				['u2f_device_removed'],
-				[null],
 		];
 	}
 
@@ -98,13 +97,8 @@ class ProviderTest extends TestCase {
 		$event->expects($this->once())
 			->method('getSubject')
 			->willReturn($subject);
-		if (is_null($subject)) {
-			$event->expects($this->never())
-				->method('setSubject');
-		} else {
-			$event->expects($this->once())
-				->method('setSubject');
-		}
+		$event->expects($this->once())
+			->method('setSubject');
 
 		$this->provider->parse($lang, $event);
 	}
