@@ -94,8 +94,7 @@ script:
   # Run JS tests
   - sh -c "if [ '$TEST_JS' = 'TRUE' ]; then npm run build; fi"
   - sh -c "if [ '$TEST_JS' = 'TRUE' ]; then npm run test; fi"
-  - sh -c "if [ '$TEST_JS' = 'TRUE' ]; then npm i -g coveralls; fi"
-  - sh -c "if [ '$TEST_JS' = 'TRUE' ]; then cat ./coverage/*/lcov.info | coveralls; fi"
+  - sh -c "if [ '$TEST_JS' = 'TRUE' ]; then npm run coverage; fi"
 
   # Run PHP tests
   - composer run test

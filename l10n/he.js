@@ -1,16 +1,12 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
-    "Unnamed device" : "התקן ללא שם",
-    "Remove" : "הסרה",
-    "Add U2F device" : "הוספת התקן U2F",
-    "Adding a new device …" : "הוספת התקן חדש…",
-    "Could not remove your U2F device" : "לא ניתן להסיר את התקן ה־U2F שלך",
-    "Server error while trying to add U2F device" : "אירעה שגיאת שרת בעת הניסיון להוספת התקן U2F",
-    "U2F device is already registered (error code {errorCode})" : "התקן ה־U2F כבר רשום (קוד שגיאה {errorCode})",
-    "Server error while trying to complete U2F device registration" : "התקבלה שגיאת שרת בעת הניסיון להשלים את הרשמת התקן ה־U2F",
     "You added an U2F hardware token" : "הוספת אסימון חומרה U2F",
     "You removed an U2F hardware token" : "הסרת אסימון חומרה U2F",
-    "U2F device" : "התקן U2F"
+    "U2F device" : "התקן U2F",
+    "Add U2F device" : "הוספת התקן U2F",
+    "Server error while trying to add U2F device" : "אירעה שגיאת שרת בעת הניסיון להוספת התקן U2F",
+    "U2F device is already registered (error code {errorCode})" : "התקן ה־U2F כבר רשום (קוד שגיאה {errorCode})",
+    "Server error while trying to complete U2F device registration" : "התקבלה שגיאת שרת בעת הניסיון להשלים את הרשמת התקן ה־U2F"
 },
 "nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;");
