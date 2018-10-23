@@ -20,11 +20,14 @@
  */
 
 const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
 const nodeExternals = require('webpack-node-externals')
+const path = require('path');
+
+const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
 	mode: 'development',
+	context: path.resolve(__dirname, 'src'),
 	devtool: 'inline-cheap-module-source-map',
 	externals: [nodeExternals()]
 })

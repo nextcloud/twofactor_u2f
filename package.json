@@ -19,13 +19,17 @@
     "@vue/babel-preset-app": "^3.0.5",
     "@vue/test-utils": "^1.0.0-beta.25",
     "babel-loader": "^8.0.4",
+    "babel-plugin-istanbul": "^5.1.0",
     "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
+    "istanbul-instrumenter-loader": "^3.0.1",
     "jsdom": "^12.2.0",
     "jsdom-global": "^3.0.2",
     "mocha": "^5.2.0",
     "mocha-webpack": "^2.0.0-beta.0",
+    "nyc": "^13.1.0",
     "sinon": "^7.0.0",
     "url-loader": "^1.1.2",
     "vue-loader": "^15.4.2",
@@ -37,8 +41,9 @@
   },
   "scripts": {
     "build": "webpack --progress --config src/webpack.prod.js",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "dev": "webpack --progress --watch --config src/webpack.dev.js",
-    "test": "mocha-webpack --webpack-config src/webpack.test.js --require src/tests/setup.js src/tests/**/*.spec.js",
+    "test": "NODE_ENV=test nyc mocha-webpack --webpack-config src/webpack.test.js --require src/tests/setup.js src/tests/**/*.spec.js",
     "test:watch": "mocha-webpack -w --webpack-config src/webpack.test.js --require src/tests/setup.js src/tests/**/*.spec.js"
   },
   "browserslist": [
@@ -47,6 +52,19 @@
   ],
   "jshintConfig": {
     "esversion": 6
+  },
+  "nyc": {
+    "sourceMap": false,
+    "instrument": false,
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "exclude": [
+      "js",
+      "src/tests",
+      "src/webpack.*"
+    ]
   },
   "repository": {
     "type": "git",
