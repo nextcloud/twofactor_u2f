@@ -86,7 +86,7 @@ script:
   - rm info.xsd
 
   # Check PHP syntax errors
-  - find . -name \*.php -not -path './vendor/*' -exec php -l "{}" \;
+  - composer run lint
 
   # Run server's app code checker
   #- php ../../occ app:check-code twofactor_u2f
