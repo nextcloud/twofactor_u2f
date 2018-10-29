@@ -30,7 +30,7 @@
 
 		<AddDeviceDialog :httpWarning="httpWarning" />
 		<p v-if="notSupported">
-			{{ t('twofactor_u2f', 'Your browser does not support u2f.') }}
+			{{ t('twofactor_u2f', 'Your browser does not support U2F.') }}
 			{{ t('twofactor_u2f', 'Chrome is the only browser that supports U2F devices. You need to install the "U2F Support Add-on" on Firefox to use U2F.') }}
 		</p>
 		<p v-if="httpWarning"
