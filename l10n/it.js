@@ -16,6 +16,7 @@ OC.L10N.register(
     "U2F device registration failed (error code {errorCode})" : "Registrazione del dispositivo U2F non riuscita (codice di errore {errorCode})",
     "Server error while trying to complete U2F device registration" : "Errore del server durante il tentativo di completare la registrazione del dispositivo U2F",
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Nessun dispositivo U2F configurato. Al momento, non stai utilizzando U2F come secondo fattore. ",
+    "Your browser does not support U2F." : "Il tuo browser non supporta U2F.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome è l'unico browser che supporta i dispositivi U2F. Devi installare l'\"estensione per il supporto U2F\" su Firefox per utilizzare U2F.",
     "Plug in your U2F device and press the device button to authorize." : "Collega il tuo dispositivo U2F e premi il pulsante del dispositivo per autorizzare.",
     "An error occurred. Please try again." : "Si è verificato un errore. Prova ancora.",
