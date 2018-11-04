@@ -14,6 +14,7 @@
     "U2F device registration failed (error code {errorCode})" : "U2F hulpmiddel registratie mislukt (fout code {errorCode})",
     "Server error while trying to complete U2F device registration" : "Server fout tijdens registratie van het U2F hulpmiddel",
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Geen U2F apparaten ingesteld. Je gebruikt U2F niet als tweede factor op het moment.",
+    "Your browser does not support U2F." : "Je browser ondersteunt u2f niet.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome is de enige browser die U2F apparaten ondersteunt. Je moet de \"U2F Support Add-on\" in Firefox installeren om U2F te kunnen gebruiken.",
     "Plug in your U2F device and press the device button to authorize." : "Plaats je U2F apparaat en druk op de apparaatknop om te autoriseren.",
     "An error occurred. Please try again." : "Er trad een fout op. Probeer het opnieuw",
