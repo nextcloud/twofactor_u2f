@@ -14,6 +14,7 @@
     "U2F device registration failed (error code {errorCode})" : "РегистрацијаU2F уређаја није успела (код грешке {errorCode})",
     "Server error while trying to complete U2F device registration" : "Серверска грешка за време довршавања регистрације U2F уређаја",
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Нема конфигурисаних U2F уређаја. Не користите универзални други фактор тренутно.",
+    "Your browser does not support U2F." : "Ваш веб читач не подржава U2F.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Хром веб читач је једини веб читач који подржава U2F уређаје. НА Фајерфоксу морате да инсталирајте \"U2F Support Add-on\" додатак да бисте користили U2F.",
     "Plug in your U2F device and press the device button to authorize." : "Утакните Ваш U2F уређај и притисните дугме на уређају да се пријавите.",
     "An error occurred. Please try again." : "Десила се грешка. Покушајте поново.",
