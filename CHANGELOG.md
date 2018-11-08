@@ -1,12 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 2.0.0 – 2018-11-09
+### Added
+- Nextcloud 15 support
+- New personal settings page (consolidated with other 2FA providers)
+### Removed
+- Nextcloud 14 support
+
 ## 1.6.1 – 2018-08-02
 ### Fixed
 - Server provider registration updates when using multiple u2f devices
 
 ## 1.6.0 – 2018-08-02
-
 ### Added
 - Nextcloud 14 support (requires beta 2+)
 - Performance improvements
