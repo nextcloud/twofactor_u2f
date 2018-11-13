@@ -16,6 +16,7 @@ OC.L10N.register(
     "U2F device registration failed (error code {errorCode})" : "Skráning U2F-tækis mistókst (villukóði {errorCode})",
     "Server error while trying to complete U2F device registration" : "Villa á þjóni við að ljúka skráningu U2F-tækis",
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Engin U2F-tæki eru uppsett. Þú ert ekki að nota tveggja-þrepa U2F-auðkenningu í augnablikinu.",
+    "Your browser does not support U2F." : "Vafrinn þinn styður ekki U2F.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome er eini vafrinn sem styður U2F-tæki beint. Á Firefox verður þú að setja upp viðbótina \"U2F Support Add-on\" til að geta notað U2F.",
     "Plug in your U2F device and press the device button to authorize." : "Stingdu U2F-tækinu þínu í samband og ýttu á tækishnappinn til að auðkenna.",
     "An error occurred. Please try again." : "Villa kom upp. Endilega reyndu aftur.",
