@@ -6,11 +6,6 @@ OC.L10N.register(
     "U2F device" : "Preséu U2F",
     "Authenticate with an U2F device" : "Autenticar con un preséu U2F",
     "Two Factor U2F" : "U2F de dos pasos",
-    "Add U2F device" : "Amestar preséu U2F",
-    "Server error while trying to add U2F device" : "Fallu del sirvidor entrín se tentaba d'amestar el preséu U2F",
-    "U2F device registration failed (error code {errorCode})" : "Falló'l rexistru del preséu U2F (códigu de fallu {errorCode})",
-    "Server error while trying to complete U2F device registration" : "Fallu del sirvidor entrín se tentaba de completar el rexistru del preséu U2F",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome ye l'únicu restolador que sofita preseos U2F. Precises instalar «U2F Support Add-on» en Firefox pa usar U2F.",
     "An error occurred. Please try again." : "Asocedió un fallu. Volvi tentalo, por favor."
 },
 "nplurals=2; plural=(n != 1);");
