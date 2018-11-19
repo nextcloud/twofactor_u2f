@@ -6,7 +6,7 @@ OC.L10N.register(
     "U2F device" : "U2F eszköz",
     "Authenticate with an U2F device" : "Hitelesítés U2F eszköz segítségével",
     "Two Factor U2F" : "Kétfaktoros U2F",
-    "An error occurred. Please try again." : "Hiba történt. Kérjük, próbálja meg újra.",
-    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Nem biztonságos kapcsolaton keresztül éred el ezt az oldalt. Emiatt a böngészők megtagadhatják a U2F kétfaktoros azonosítás használatát."
+    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Nem biztonságos kapcsolaton keresztül éred el ezt az oldalt. Emiatt a böngészők megtagadhatják a U2F kétfaktoros azonosítás használatát.",
+    "An error occurred. Please try again." : "Hiba történt. Kérjük, próbálja meg újra."
 },
 "nplurals=2; plural=(n != 1);");

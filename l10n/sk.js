@@ -8,7 +8,7 @@ OC.L10N.register(
     "Two Factor U2F" : "Dvojfaktorové U2F",
     "U2F two-factor provider" : "Poskytovateľ dvojfaktorového U2F",
     "A two-factor provider for U2F devices" : "Poskytovateľ dvojfaktorového overovania pre U2F zariadenia",
-    "An error occurred. Please try again." : "Nastala chyba. Skúste to prosím znovu.",
-    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Prichádzate na túto stránku prostredníctvom nezabezpečeného pripojenia. Prehliadače by preto mohli odmietnuť U2F overovanie."
+    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Prichádzate na túto stránku prostredníctvom nezabezpečeného pripojenia. Prehliadače by preto mohli odmietnuť U2F overovanie.",
+    "An error occurred. Please try again." : "Nastala chyba. Skúste to prosím znovu."
 },
 "nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);");

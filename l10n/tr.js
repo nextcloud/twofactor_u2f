@@ -8,9 +8,9 @@ OC.L10N.register(
     "Two Factor U2F" : "İki Aşamalı Kimlik Doğrulama U2F",
     "U2F two-factor provider" : "U2F iki aşamalı kimlik doğrulama hizmeti sağlayıcısı",
     "A two-factor provider for U2F devices" : "U2F aygıtları için iki aşamalı kimlik doğrulama hizmeti sağlayıcısı",
+    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Bu site ile bağlantınız güvenli değil. Bu nedenle tarayıcılar yeniden U2F kimlik dooğrulaması isteyebilir.",
     "Plug in your U2F device and press the device button to authorize." : "U2F aygıtınızı takın ve kimliğinizi doğrulamak için aygıt üzerindeki düğmeye tıklayın.",
     "An error occurred. Please try again." : "Bir sorun çıktı. Lütfen yeniden deneyin.",
-    "In Firefox, you need to install the \"U2F Support Add-on\" to use U2F. This is not needed in Chrome." : "Firefox üzerinde U2F kullanabilmek için \"U2F Desteği Eklentisini\" yükleyin. Chrome için gerekmez.",
-    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Bu site ile bağlantınız güvenli değil. Bu nedenle tarayıcılar yeniden U2F kimlik dooğrulaması isteyebilir."
+    "In Firefox, you need to install the \"U2F Support Add-on\" to use U2F. This is not needed in Chrome." : "Firefox üzerinde U2F kullanabilmek için \"U2F Desteği Eklentisini\" yükleyin. Chrome için gerekmez."
 },
 "nplurals=2; plural=(n > 1);");

@@ -6,7 +6,7 @@ OC.L10N.register(
     "U2F device" : "U2F enhed",
     "Authenticate with an U2F device" : "Godkend med en U2F enhed",
     "Two Factor U2F" : "To faktor U2F",
-    "An error occurred. Please try again." : "En fejl opstod. Prøv venligst igen.",
-    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Du tilgår denne side via en usikker forbindelse. Browseren vil derfor måske nægte dig at bruge U2F godkendelse."
+    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Du tilgår denne side via en usikker forbindelse. Browseren vil derfor måske nægte dig at bruge U2F godkendelse.",
+    "An error occurred. Please try again." : "En fejl opstod. Prøv venligst igen."
 },
 "nplurals=2; plural=(n != 1);");

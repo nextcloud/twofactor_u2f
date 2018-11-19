@@ -8,7 +8,7 @@ OC.L10N.register(
     "Two Factor U2F" : "Two Factor U2F",
     "U2F two-factor provider" : "U2F two-factor provider",
     "A two-factor provider for U2F devices" : "A two-factor provider for U2F devices",
-    "An error occurred. Please try again." : "An error occurred. Please try again.",
-    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication."
+    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication.",
+    "An error occurred. Please try again." : "An error occurred. Please try again."
 },
 "nplurals=2; plural=(n != 1);");

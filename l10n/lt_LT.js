@@ -1,9 +1,0 @@
-OC.L10N.register(
-    "twofactor_u2f",
-    {
-    "You added an U2F hardware token" : "Jūs pridėjote U2F aparatinės įrangos prieigos raktą",
-    "You removed an U2F hardware token" : "Jūs pašalinote U2F aparatinės įrangos prieigos raktą",
-    "U2F device" : "U2F įrenginys",
-    "An error occurred. Please try again." : "Įvyko klaida. Prašome bandyti dar kartą."
-},
-"nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);");
