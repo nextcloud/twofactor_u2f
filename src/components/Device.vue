@@ -62,6 +62,7 @@
 						action: () => {
 							confirmPassword()
 								.then(() => this.$store.dispatch('removeDevice', this.id))
+								.catch(console.error.bind(this))
 						}
 					}
 				]
