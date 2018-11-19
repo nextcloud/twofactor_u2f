@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "nextcloud-axios": "^0.1.2",
-    "nextcloud-password-confirmation": "^0.3.1",
+    "nextcloud-password-confirmation": "^0.4.0",
     "nextcloud-server": "^0.15.7",
     "nextcloud-vue": "^0.4.3",
     "u2f-api": "^1.0.8",
