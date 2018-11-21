@@ -18,15 +18,14 @@ OC.L10N.register(
     "U2F device registration timeout reached (error code {errorCode})" : "Zeitüberschreitung bei der Registrierung des U2F-Gerätes (error code {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "Registrierung des U2F-Gerätes fehlgeschlagen (Fehler-Code  {errorCode}) ",
     "Server error while trying to complete U2F device registration" : "Server-Fehler beim Versuch die U2F-Geräte-Registrierung abzuschließen",
-    "Unnamed device" : "Unbenanntes Gerät",
-    "Remove" : "Entfernen",
-    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Es sind keine U2F-Geräte konfiguriert. Momentan verwenden Sie U2F nicht als Zwei-Faktor-Authentifizierungsmethode.",
-    "The following devices are configured for U2F second-factor authentication:" : "Die folgenden Geräte sind für U2F-Zwei-Faktor-Authentifizierung konfiguriert:",
+    "Plug in your U2F device and press the device button to authorize." : "Bitte verbinden Sie Ihr U2F-Gerät und drücken Sie den Geräteknopf zur Authentifizierung.",
+    "An error occurred. Please try again." : "Es ist ein Fehler aufgetreten. Bitte erneut versuchen.",
     "Your browser does not support U2F." : "Ihr Browser unterstützt kein U2F.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome ist der einzige Browser, der U2F-Geräte unterstützt. Für Firefox wird das \"U2F Support Add-on\" benötigt, um U2F zu verwenden.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Sie greifen auf diese Seite über eine unsichere Verbindung zu. EInige Browser werden daher die U2F-Authentifizierung zurückweisen.",
-    "Plug in your U2F device and press the device button to authorize." : "Bitte verbinden Sie Ihr U2F-Gerät und drücken Sie den Geräteknopf zur Authentifizierung.",
-    "An error occurred. Please try again." : "Es ist ein Fehler aufgetreten. Bitte erneut versuchen.",
-    "In Firefox, you need to install the \"U2F Support Add-on\" to use U2F. This is not needed in Chrome." : "Installieren Sie das \"U2F-Support-Add-on\" für Firefox um U2F zu benutzen, dies ist für Chrome nicht erforderlich."
+    "Unnamed device" : "Unbenanntes Gerät",
+    "Remove" : "Entfernen",
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Es sind keine U2F-Geräte konfiguriert. Momentan verwenden Sie U2F nicht als Zwei-Faktor-Authentifizierungsmethode.",
+    "The following devices are configured for U2F second-factor authentication:" : "Die folgenden Geräte sind für U2F-Zwei-Faktor-Authentifizierung konfiguriert:"
 },
 "nplurals=2; plural=(n != 1);");

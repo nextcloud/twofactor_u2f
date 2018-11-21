@@ -8,9 +8,8 @@ OC.L10N.register(
     "Two Factor U2F" : "Twee-factor U2F",
     "U2F two-factor provider" : "U2F two-factor provider",
     "A two-factor provider for U2F devices" : "Een two-factor provider voor U2F apparaten",
-    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Je hebt toegang tot deze site via een onbeveiligde verbinding. Browsers kunnen daarom U2F authenticatie weigeren.",
     "Plug in your U2F device and press the device button to authorize." : "Plaats je U2F apparaat en druk op de apparaatknop om te autoriseren.",
     "An error occurred. Please try again." : "Er trad een fout op. Probeer het opnieuw",
-    "In Firefox, you need to install the \"U2F Support Add-on\" to use U2F. This is not needed in Chrome." : "In Firefox moet je de \"U2F Support Add-on\" installeren om U2F te gebruiken, dit is niet nodig in Chrome."
+    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Je hebt toegang tot deze site via een onbeveiligde verbinding. Browsers kunnen daarom U2F authenticatie weigeren."
 },
 "nplurals=2; plural=(n != 1);");
