@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 2.0.3 – 2018-11-21
+### Fixed
+- Type cast error
+### Changed
+- New and updated translations
+
 ## 2.0.2 – 2018-11-20
 ### Fixed
 - Missing challenge script
