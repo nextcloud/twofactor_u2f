@@ -154,7 +154,7 @@ class U2FManager {
 			return false;
 		}
 
-		$regs = array_filter($registrations, function(object $registration) use ($reg) {
+		$regs = array_filter($registrations, function($registration) use ($reg) {
 			return $registration->keyHandle === $reg->keyHandle;
 		});
 		$origReg = reset($regs);
