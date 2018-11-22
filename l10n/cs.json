@@ -16,6 +16,8 @@
     "U2F device registration timeout reached (error code {errorCode})" : "Překročen časový limit pro registraci U2F zařízení (kód chyby {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "registrace U2F zařízení se nezdařila (kód chyby {errorCode})",
     "Server error while trying to complete U2F device registration" : "Chyba serveru při pokusu o dokončení registrace U2F zařízení",
+    "An error occurred: {msg}" : "Nastala chyba: {msg}",
+    "Retry" : "Zkusit znovu",
     "Plug in your U2F device and press the device button to authorize." : "Připojte své U2F zařízení a ověřte stiskem tlačítka na něm.",
     "An error occurred. Please try again." : "Došlo k chybě. Zkuste to znovu",
     "Your browser does not support U2F." : "Váš prohlížeč nepodporuje U2F.",

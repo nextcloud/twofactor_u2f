@@ -16,6 +16,8 @@
     "U2F device registration timeout reached (error code {errorCode})" : "Tempo limite de registro do dispositivo U2F atingido (código de erro {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "Falha no registro do dispositivo U2F (código de erro {errorCode})",
     "Server error while trying to complete U2F device registration" : "Erro de servidor ao tentar concluir o registro do dispositivo U2F",
+    "An error occurred: {msg}" : "Ocorreu um erro: {msg}",
+    "Retry" : "Retentar",
     "Plug in your U2F device and press the device button to authorize." : "Abra seu dispositivo U2F e pressione autorize.",
     "An error occurred. Please try again." : "Ocorreu um erro. Tente novamente.",
     "Your browser does not support U2F." : "Seu navegador não suporta U2F.",
