@@ -18,6 +18,8 @@ OC.L10N.register(
     "U2F device registration timeout reached (error code {errorCode})" : "Истекло време за регистрацију U2F уређаја (код грешке {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "РегистрацијаU2F уређаја није успела (код грешке {errorCode})",
     "Server error while trying to complete U2F device registration" : "Серверска грешка приликом довршавања регистрације U2F уређаја",
+    "An error occurred: {msg}" : "Догодила се грешка: {msg}",
+    "Retry" : "Покушај поново",
     "Plug in your U2F device and press the device button to authorize." : "Утакните Ваш U2F уређај и притисните дугме на уређају да се пријавите.",
     "An error occurred. Please try again." : "Десила се грешка. Покушајте поново.",
     "Your browser does not support U2F." : "Ваш веб читач не подржава U2F.",
