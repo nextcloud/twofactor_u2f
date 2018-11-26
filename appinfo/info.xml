@@ -18,7 +18,7 @@
 
 	<dependencies>
 		<php min-version="7.0" max-version="7.2"></php>
-		<nextcloud min-version="15" max-version="15" />
+		<nextcloud min-version="15" max-version="16" />
 	</dependencies>
 
 	<two-factor-providers>
