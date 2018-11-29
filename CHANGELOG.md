@@ -1,6 +1,24 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 2.0.3 – 2018-11-21
+### Fixed
+- Type cast error
+### Changed
+- New and updated translations
+
+## 2.0.2 – 2018-11-20
+### Fixed
+- Missing challenge script
+### Changed
+- New and updated translations
+
+## 2.0.1 – 2018-11-19
+### Fixed
+- Updated vulnerable npm dependencies
+### Changed
+- New and updated translations
+
 ## 2.0.0 – 2018-11-09
 ### Added
 - Nextcloud 15 support
