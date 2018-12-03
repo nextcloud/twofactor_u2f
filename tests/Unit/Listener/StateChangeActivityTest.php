@@ -8,6 +8,7 @@
 
 namespace OCA\TwoFactorU2F\Tests\Unit\Listener;
 
+use OCA\TwoFactorU2F\Event\DisabledByAdmin;
 use OCA\TwoFactorU2F\Event\StateChanged;
 use OCA\TwoFactorU2F\Listener\StateChangeActivity;
 use OCP\Activity\IEvent;
@@ -111,6 +112,42 @@ class StateChangeActivityTest extends TestCase {
 		$this->activityManager->expects($this->once())
 			->method('publish')
 			->with($this->equalTo($activityEvent));
+
+		$this->listener->handle($event);
+	}
+
+	public function testHandleDisabledByAdminEvent() {
+		$uid = 'user234';
+		$user = $this->createMock(IUser::class);
+		$user->method('getUID')->willReturn($uid);
+		$event = new DisabledByAdmin($user);
+		$activityEvent = $this->createMock(IEvent::class);
+		$this->activityManager->expects($this->once())
+			->method('generateEvent')
+			->willReturn($activityEvent);
+		$activityEvent->expects($this->once())
+			->method('setApp')
+			->with('twofactor_u2f')
+			->willReturnSelf();
+		$activityEvent->expects($this->once())
+			->method('setType')
+			->with('security')
+			->willReturnSelf();
+		$activityEvent->expects($this->once())
+			->method('setAuthor')
+			->with($uid)
+			->willReturnSelf();
+		$activityEvent->expects($this->once())
+			->method('setAffectedUser')
+			->with($uid)
+			->willReturnSelf();
+		$activityEvent->expects($this->once())
+			->method('setSubject')
+			->with($this->equalTo('u2f_disabled_by_admin'))
+			->willReturnSelf();
+		$this->activityManager->expects($this->once())
+			->method('publish')
+			->with($activityEvent);
 
 		$this->listener->handle($event);
 	}

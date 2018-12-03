@@ -75,6 +75,9 @@ class Provider implements IProvider {
 			case 'u2f_device_removed':
 				$event->setSubject($l->t('You removed an U2F hardware token'));
 				break;
+			case 'u2f_disabled_by_admin':
+				$event->setSubject($l->t('U2F disabled by an admin'));
+				break;
 		}
 		return $event;
 	}

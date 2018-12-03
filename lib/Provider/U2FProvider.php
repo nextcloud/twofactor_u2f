@@ -16,6 +16,7 @@ namespace OCA\TwoFactorU2F\Provider;
 
 use OCA\TwoFactorU2F\Service\U2FManager;
 use OCA\TwoFactorU2F\Settings\Personal;
+use OCP\Authentication\TwoFactorAuth\IDeactivatableByAdmin;
 use OCP\Authentication\TwoFactorAuth\IPersonalProviderSettings;
 use OCP\Authentication\TwoFactorAuth\IProvider;
 use OCP\Authentication\TwoFactorAuth\IProvidesIcons;
@@ -24,7 +25,7 @@ use OCP\IL10N;
 use OCP\IUser;
 use OCP\Template;
 
-class U2FProvider implements IProvider, IProvidesIcons, IProvidesPersonalSettings {
+class U2FProvider implements IProvider, IProvidesIcons, IProvidesPersonalSettings, IDeactivatableByAdmin {
 
 	/** @var IL10N */
 	private $l10n;
@@ -94,4 +95,14 @@ class U2FProvider implements IProvider, IProvidesIcons, IProvidesPersonalSetting
 	public function getDarkIcon(): String {
 		return image_path('twofactor_u2f', 'app-dark.svg');;
 	}
+
+	/**
+	 * Disable this provider for the given user.
+	 *
+	 * @param IUser $user the user to deactivate this provider for
+	 */
+	public function disableFor(IUser $user) {
+		$this->manager->removeAllDevices($user);
+	}
+
 }

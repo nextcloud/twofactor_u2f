@@ -19,6 +19,7 @@ require_once(__DIR__ . '/../../vendor/yubico/u2flib-server/src/u2flib_server/U2F
 use InvalidArgumentException;
 use OCA\TwoFactorU2F\Db\Registration;
 use OCA\TwoFactorU2F\Db\RegistrationMapper;
+use OCA\TwoFactorU2F\Event\DisabledByAdmin;
 use OCA\TwoFactorU2F\Event\StateChanged;
 use OCP\ILogger;
 use OCP\IRequest;
@@ -84,6 +85,13 @@ class U2FManager {
 		$reg = $this->mapper->findRegistration($user, $id);
 		$this->mapper->delete($reg);
 		$this->eventDispatcher->dispatch(StateChanged::class, new StateChanged($user, false));
+	}
+
+	public function removeAllDevices(IUser $user) {
+		foreach ($this->mapper->findRegistrations($user) as $registration) {
+			$this->mapper->delete($registration);
+		}
+		$this->eventDispatcher->dispatch(DisabledByAdmin::class, new DisabledByAdmin($user));
 	}
 
 	public function startRegistration(IUser $user): array {
