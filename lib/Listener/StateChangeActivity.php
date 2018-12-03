@@ -14,6 +14,7 @@ declare(strict_types=1);
 
 namespace OCA\TwoFactorU2F\Listener;
 
+use OCA\TwoFactorU2F\Event\DisabledByAdmin;
 use OCA\TwoFactorU2F\Event\StateChanged;
 use OCP\Activity\IManager;
 use Symfony\Component\EventDispatcher\Event;
@@ -29,7 +30,11 @@ class StateChangeActivity implements IListener {
 
 	public function handle(Event $event) {
 		if ($event instanceof StateChanged) {
-			$subject = $event->isEnabled() ? 'u2f_device_added' : 'u2f_device_removed';
+			if ($event instanceof DisabledByAdmin) {
+				$subject = 'u2f_disabled_by_admin';
+			} else {
+				$subject = $event->isEnabled() ? 'u2f_device_added' : 'u2f_device_removed';
+			}
 
 			$activity = $this->activityManager->generateEvent();
 			$activity->setApp('twofactor_u2f')

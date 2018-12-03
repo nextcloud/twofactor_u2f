@@ -14,6 +14,7 @@ namespace OCA\TwoFactorU2F\Tests\Unit\Service;
 
 use OCA\TwoFactorU2F\Db\Registration;
 use OCA\TwoFactorU2F\Db\RegistrationMapper;
+use OCA\TwoFactorU2F\Event\DisabledByAdmin;
 use OCA\TwoFactorU2F\Event\StateChanged;
 use OCA\TwoFactorU2F\Service\U2FManager;
 use OCP\Activity\IEvent;
@@ -105,6 +106,26 @@ class U2FManagerTest extends TestCase {
 			);
 
 		$this->manager->removeDevice($user, 13);
+	}
+
+	public function testRemoveAllDevices() {
+		$user = $this->createMock(IUser::class);
+		$regs = [$this->createMock(Registration::class)];
+		$this->mapper->expects($this->once())
+			->method('findRegistrations')
+			->with($user)
+			->willReturn($regs);
+		$this->mapper->expects($this->once())
+			->method('delete')
+			->with($regs[0]);
+		$this->eventDispatcher->expects($this->once())
+			->method('dispatch')
+			->with(
+				$this->equalTo(DisabledByAdmin::class),
+				$this->equalTo(new DisabledByAdmin($user))
+			);
+
+		$this->manager->removeAllDevices($user);
 	}
 
 	public function testStartRegistrationFirstDevice() {

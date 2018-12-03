@@ -14,6 +14,7 @@ declare(strict_types=1);
 
 namespace OCA\TwoFactorU2F\AppInfo;
 
+use OCA\TwoFactorU2F\Event\DisabledByAdmin;
 use OCA\TwoFactorU2F\Event\StateChanged;
 use OCA\TwoFactorU2F\Listener\IListener;
 use OCA\TwoFactorU2F\Listener\StateChangeActivity;
@@ -34,6 +35,16 @@ class Application extends App {
 			$listeners = [
 				$container->query(StateChangeActivity::class),
 				$container->query(StateChangeRegistryUpdater::class),
+			];
+
+			foreach ($listeners as $listener) {
+				$listener->handle($event);
+			}
+		});
+		$eventDispatcher->addListener(DisabledByAdmin::class, function (DisabledByAdmin $event) use ($container) {
+			/** @var IListener[] $listeners */
+			$listeners = [
+				$container->query(StateChangeActivity::class),
 			];
 
 			foreach ($listeners as $listener) {

@@ -132,4 +132,13 @@ class U2FProviderTest extends TestCase {
 		$this->assertEquals($expected, $settings);
 	}
 
+	public function testDisable() {
+		$user = $this->createMock(IUser::class);
+		$this->manager->expects($this->once())
+			->method('removeAllDevices')
+			->with($user);
+
+		$this->provider->disableFor($user);
+	}
+
 }

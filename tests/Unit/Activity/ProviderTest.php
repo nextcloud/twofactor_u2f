@@ -63,8 +63,9 @@ class ProviderTest extends TestCase {
 
 	public function subjectData() {
 		return [
-				['u2f_device_added'],
-				['u2f_device_removed'],
+			['u2f_device_added'],
+			['u2f_device_removed'],
+			['u2f_disabled_by_admin'],
 		];
 	}
 
