@@ -1,6 +1,7 @@
 { "translations": {
     "You added an U2F hardware token" : "Hai aggiunto un token hardware U2F",
     "You removed an U2F hardware token" : "Hai rimosso un token hardware U2F",
+    "U2F disabled by an admin" : "U2F disabilitato da un amministratore",
     "U2F device" : "Dispositivo U2F",
     "Authenticate with an U2F device" : "Autenticati con un dispositivo U2F",
     "Two Factor U2F" : "U2F a due fattori",

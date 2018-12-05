@@ -1,6 +1,7 @@
 { "translations": {
     "You added an U2F hardware token" : "U2F aygıtı eklediniz",
     "You removed an U2F hardware token" : "U2F aygıtını sildiniz",
+    "U2F disabled by an admin" : "U2F yönetici tarafından devre dışı bırakılmış",
     "U2F device" : "U2F aygıtı",
     "Authenticate with an U2F device" : "U2F aygıtı ile kimlik doğrulama",
     "Two Factor U2F" : "İki Aşamalı Kimlik Doğrulama U2F",

@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "You added an U2F hardware token" : "Přidali jste U2F hardwarový token",
     "You removed an U2F hardware token" : "Odebrali jste U2F hardwarový token",
+    "U2F disabled by an admin" : "U2F vypnuto správcem",
     "U2F device" : "Zařízení U2F",
     "Authenticate with an U2F device" : "Ověření pomocí U2F přístroje",
     "Two Factor U2F" : "Dvoufázové U2F",

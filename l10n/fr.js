@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "You added an U2F hardware token" : "Vous avez ajouté un jeton de matériel U2F",
     "You removed an U2F hardware token" : "Vous avez supprimé un jeton de matériel U2F",
+    "U2F disabled by an admin" : "U2F désactivé par l'administrateur",
     "U2F device" : "Périphérique U2F",
     "Authenticate with an U2F device" : "Authentifier avec un périphérique U2F",
     "Two Factor U2F" : "Authentification en deux étapes U2F",

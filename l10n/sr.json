@@ -1,6 +1,7 @@
 { "translations": {
     "You added an U2F hardware token" : "Додали сте U2F хардверски токен",
     "You removed an U2F hardware token" : "Уклонили сте U2F хардверски токен",
+    "U2F disabled by an admin" : "Администратор искључио U2F",
     "U2F device" : "U2F уређај",
     "Authenticate with an U2F device" : "Пријави се са U2F уређајем",
     "Two Factor U2F" : "Двофакторски U2F",
