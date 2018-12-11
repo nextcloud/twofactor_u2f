@@ -1,11 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## 2.0.3 – 2018-11-21
-### Fixed
-- Type cast error
-### Changed
+## 2.1.0 – 2018-12-12
+### Added
+- Ability to disable provider via `occ twofactor:disable <uid> u2f`
+- Support for Nextcloud 16
+- Support for php 7.3
 - New and updated translations
+### Fixed
+- Password confirmation on IE and other outdated browsers
 
 ## 2.0.2 – 2018-11-20
 ### Fixed
