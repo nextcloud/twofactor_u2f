@@ -18,6 +18,9 @@
 
 	<dependencies>
 		<php min-version="7.0" max-version="7.3"></php>
+		<database>sqlite</database>
+		<database>mysql</database>
+		<database>pgsql</database>
 		<nextcloud min-version="15" max-version="16" />
 	</dependencies>
 
