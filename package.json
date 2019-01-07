@@ -34,7 +34,7 @@
     "url-loader": "^1.1.2",
     "vue-loader": "^15.4.2",
     "vue-template-compiler": "^2.5.21",
-    "webpack": "^4.27.1",
+    "webpack": "^4.28.3",
     "webpack-cli": "^3.2.1",
     "webpack-merge": "^4.1.5",
     "webpack-node-externals": "^1.7.2"
