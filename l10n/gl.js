@@ -17,7 +17,7 @@ OC.L10N.register(
     "Server error while trying to add U2F device" : "Produciuse un erro do servidor cando se intentaba engadir un dispositivo U2F",
     "U2F device is already registered (error code {errorCode})" : "O dispositivo U2F xa está rexistrado (código de erro {errorCode})",
     "U2F device registration timeout reached (error code {errorCode})" : "O rexistro do dispositivo U2F esgotou o límite de tempo (código de erro {errorCode})",
-    "U2F device registration failed (error code {errorCode})" : "Produciuse unha falla no rexistro do dispositivo U2F (código de erro {errorCode})",
+    "U2F device registration failed (error code {errorCode})" : "Produciuse un fallo no rexistro do dispositivo U2F (código de erro {errorCode})",
     "Server error while trying to complete U2F device registration" : "Produciuse un erro do servidor cando se intentaba completar o rexistro do dispositivo U2F",
     "An error occurred: {msg}" : "Produciuse un erro: {msg}",
     "Retry" : "Tentar de novo",
