@@ -14,12 +14,12 @@ declare(strict_types = 1);
 
 namespace OCA\TwoFactorU2F\Db;
 
-use OCP\AppFramework\Db\Mapper;
+use OCP\AppFramework\Db\QBMapper;
 use OCP\DB\QueryBuilder\IQueryBuilder;
 use OCP\IDBConnection;
 use OCP\IUser;
 
-class RegistrationMapper extends Mapper {
+class RegistrationMapper extends QBMapper {
 
 	public function __construct(IDBConnection $db) {
 		parent::__construct($db, 'twofactor_u2f_registrations');
@@ -37,12 +37,7 @@ class RegistrationMapper extends Mapper {
 			->from('twofactor_u2f_registrations')
 			->where($qb->expr()->eq('user_id', $qb->createNamedParameter($user->getUID())))
 			->andWhere($qb->expr()->eq('id', $qb->createNamedParameter($id)));
-		$result = $qb->execute();
-
-		$row = $result->fetch();
-		$result->closeCursor();
-
-		return Registration::fromRow($row);
+		return $this->findEntity($qb);
 	}
 
 	/**
@@ -56,16 +51,7 @@ class RegistrationMapper extends Mapper {
 		$qb->select('id', 'user_id', 'key_handle', 'public_key', 'certificate', 'counter', 'name')
 			->from('twofactor_u2f_registrations')
 			->where($qb->expr()->eq('user_id', $qb->createNamedParameter($user->getUID())));
-		$result = $qb->execute();
-
-		$rawRegistrations = $result->fetchAll();
-		$result->closeCursor();
-
-		$registrations = array_map(function ($row) {
-			return Registration::fromRow($row);
-		}, $rawRegistrations);
-
-		return $registrations;
+		return $this->findEntities($qb);
 	}
 
 }
