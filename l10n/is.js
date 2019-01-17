@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "You added an U2F hardware token" : "Þú bættir við teikni fyrir U2F-vélbúnað",
     "You removed an U2F hardware token" : "Þú fjarlægðir teikn fyrir U2F-vélbúnað",
+    "U2F disabled by an admin" : "U2F auðkenning er gerð óvirk af kerfisstjóra",
     "U2F device" : "U2F-tæki",
     "Authenticate with an U2F device" : "Auðkenna með U2F-tæki",
     "Two Factor U2F" : "Tveggja-þrepa U2F",
