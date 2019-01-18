@@ -92,6 +92,8 @@
 		},
 		methods: {
 			sign () {
+				console.debug('Starting u2f.sign', this.req)
+
 				this.error = undefined
 
 				return u2f.sign(this.req)
