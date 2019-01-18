@@ -29,6 +29,8 @@ Vue.mixin(Nextcloud)
 const initialStateElement = document.getElementById('twofactor-u2f-req')
 const req = JSON.parse(initialStateElement.value)
 
+console.debug('Loaded initial state of the u2f challenge page', req)
+
 import Challenge from './components/Challenge'
 
 const View = Vue.extend(Challenge)
