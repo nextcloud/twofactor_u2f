@@ -103,7 +103,7 @@
 						})
 					})
 					.catch(err => {
-						console.error('could not sign u2f challenge', err)
+						console.error('could not sign u2f challenge', err.metaData)
 
 						this.error = err.message || 'Unknown error'
 
