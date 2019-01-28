@@ -92,6 +92,8 @@
 		},
 		methods: {
 			sign () {
+				console.debug('Starting u2f.sign', this.req)
+
 				this.error = undefined
 
 				return u2f.sign(this.req)
@@ -103,7 +105,7 @@
 						})
 					})
 					.catch(err => {
-						console.error('could not sign u2f challenge', err)
+						console.error('could not sign u2f challenge', err.metaData)
 
 						this.error = err.message || 'Unknown error'
 
