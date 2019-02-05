@@ -29,7 +29,7 @@
     "jsdom-global": "^3.0.2",
     "mocha": "^5.2.0",
     "mocha-webpack": "^2.0.0-beta.0",
-    "nyc": "^13.1.0",
+    "nyc": "^13.2.0",
     "sinon": "^7.2.3",
     "url-loader": "^1.1.2",
     "vue-loader": "^15.5.1",
