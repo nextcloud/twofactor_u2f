@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 2.1.1 – 2019-02-12
+### Added
+- More client-side debug logging
+### Fixed
+- Updated vulnerable `lodash` dependency
+
 ## 2.1.0 – 2018-12-12
 ### Added
 - Ability to disable provider via `occ twofactor:disable <uid> u2f`
