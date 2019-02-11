@@ -1,0 +1,28 @@
+{ "translations": {
+    "You added an U2F hardware token" : "Lisäsit U2F-laitteen valtuuden",
+    "You removed an U2F hardware token" : "Poistit U2F-laitteen valtuuden",
+    "U2F disabled by an admin" : "U2F on poistettu käytöstä ylläpitäjän toimesta",
+    "U2F device" : "U2F-laite",
+    "Authenticate with an U2F device" : "Tunnistaudu U2F-laitteella",
+    "Two Factor U2F" : "Kaksivaiheinen U2F",
+    "Add U2F device" : "Lisää U2F-laite",
+    "Please plug in your U2F device and press the device button to authorize." : "Yhdistä U2F-laitteesi ja paina laitteen painiketta valtuuttaaksesi.",
+    "Name your device" : "Nimeä laitteesi",
+    "Add" : "Lisää",
+    "Adding your device …" : "Lisätään laitettasi…",
+    "Server error while trying to add U2F device" : "Tapahtui palvelinvirhe yritettäessä lisätä U2F-laitetta",
+    "U2F device is already registered (error code {errorCode})" : "U2F-laite on jo rekisteröity (virhekoodi {errorCode})",
+    "U2F device registration failed (error code {errorCode})" : "U2F-laitteen rekisteröinti epäonnistui (virhekoodi {errorCode})",
+    "An error occurred: {msg}" : "Tapahtui virhe: {msg}",
+    "Retry" : "Yritä uudelleen",
+    "Plug in your U2F device and press the device button to authorize." : "Yhdistä U2F-laitteesi ja paina laitteen painiketta valtuuttaaksesi.",
+    "An error occurred. Please try again." : "Tapahtui virhe. Yritä myöhemmin uudelleen.",
+    "Your browser does not support U2F." : "Selaimesi ei tue U2F:ta.",
+    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome on ainoa U2F-laitteita tukeva selain. Jos käytät Firefoxia, asenna \"U2F Support Add-on\"-laajennus käyttääksesi U2F:ta.",
+    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Olet yhteydessä tähän sivustoon salaamattomalla yhteydellä. Selaimet saattavat sen vuoksi kieltäytyä U2F-tunnistautumisesta.",
+    "Unnamed device" : "Nimetön laite",
+    "Remove" : "Poista",
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Ei U2F-laitteita määritelty. Et käytä U2F:ta kaksivaiheiseen tunnistautumiseen tällä hetkellä.",
+    "The following devices are configured for U2F second-factor authentication:" : "Seuraavat laitteet on määritelty U2F-kaksivaiheiseen tunnistautumiseen:"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
