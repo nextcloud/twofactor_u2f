@@ -1,6 +1,6 @@
 {
   "name": "twofactor_u2f",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "U2F second factor provider for Nextcloud",
   "private": true,
   "dependencies": {
