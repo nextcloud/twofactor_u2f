@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
 	<id>twofactor_u2f</id>
-	<name>Two Factor U2F</name>
+	<name>Two-Factor U2F</name>
 	<summary>U2F two-factor provider</summary>
 	<description>A two-factor provider for U2F devices</description>
 	<version>2.1.1</version>
