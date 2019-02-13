@@ -6,7 +6,6 @@ OC.L10N.register(
     "U2F disabled by an admin" : "U2F yönetici tarafından devre dışı bırakılmış",
     "U2F device" : "U2F aygıtı",
     "Authenticate with an U2F device" : "U2F aygıtı ile kimlik doğrulama",
-    "Two Factor U2F" : "İki Aşamalı Kimlik Doğrulama U2F",
     "U2F two-factor provider" : "U2F iki aşamalı kimlik doğrulama hizmeti sağlayıcısı",
     "A two-factor provider for U2F devices" : "U2F aygıtları için iki aşamalı kimlik doğrulama hizmeti sağlayıcısı",
     "Add U2F device" : "U2F aygıtı ekle",

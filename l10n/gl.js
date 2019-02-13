@@ -6,7 +6,6 @@ OC.L10N.register(
     "U2F disabled by an admin" : "U2F desactivado por un administrador",
     "U2F device" : "Dispositivo U2F",
     "Authenticate with an U2F device" : "Autenticar cun dispositivo U2F",
-    "Two Factor U2F" : "Verificación U2F de dous factores",
     "U2F two-factor provider" : "Provedor de verificación de dous factores U2F",
     "A two-factor provider for U2F devices" : "Un provedor de verificación de dous factores para dispositivos U2F",
     "Add U2F device" : "Engadir un dispositivo U2F",

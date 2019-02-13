@@ -5,7 +5,6 @@ OC.L10N.register(
     "You removed an U2F hardware token" : "Вы удалили аппаратный токен U2F",
     "U2F device" : "Устройство U2F",
     "Authenticate with an U2F device" : "Аутентификация с помощью U2F устройства",
-    "Two Factor U2F" : "Второй фактор — устройство U2F",
     "U2F two-factor provider" : "Провайдер двухфакторной аутентификации U2F ",
     "A two-factor provider for U2F devices" : "Провайдер двухфакторной аутентификации для U2F устройств",
     "Add U2F device" : "Добавить устройство U2F",

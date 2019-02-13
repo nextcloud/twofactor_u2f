@@ -6,7 +6,6 @@ OC.L10N.register(
     "U2F disabled by an admin" : "被系統管理員停用U2F功能",
     "U2F device" : "U2F裝置",
     "Authenticate with an U2F device" : "使用U2F裝置進行驗證",
-    "Two Factor U2F" : "U2F兩階段",
     "U2F two-factor provider" : "U2F驗證供應商",
     "A two-factor provider for U2F devices" : "U2F兩階段驗證裝置供應商",
     "Add U2F device" : "新增U2F裝置",

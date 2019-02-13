@@ -6,7 +6,6 @@ OC.L10N.register(
     "U2F disabled by an admin" : "U2F rendszergazda által letiltva",
     "U2F device" : "U2F eszköz",
     "Authenticate with an U2F device" : "Hitelesítés U2F eszköz segítségével",
-    "Two Factor U2F" : "Kétfaktoros U2F",
     "Add U2F device" : "U2F eszköz hozzáadása",
     "Name your device" : "Nevezd el az eszközöd",
     "Add" : "Hozzáadás",

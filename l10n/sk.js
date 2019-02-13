@@ -5,7 +5,6 @@ OC.L10N.register(
     "You removed an U2F hardware token" : "Odstránili ste hardvérový U2F token",
     "U2F device" : "Zariadenie U2F",
     "Authenticate with an U2F device" : "Overenie použitím U2F zariadenia",
-    "Two Factor U2F" : "Dvojfaktorové U2F",
     "U2F two-factor provider" : "Poskytovateľ dvojfaktorového U2F",
     "A two-factor provider for U2F devices" : "Poskytovateľ dvojfaktorového overovania pre U2F zariadenia",
     "An error occurred. Please try again." : "Nastala chyba. Skúste to prosím znovu.",

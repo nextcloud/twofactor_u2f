@@ -4,7 +4,6 @@
     "U2F disabled by an admin" : "“两步验证”被管理员禁用",
     "U2F device" : "U2F 设备",
     "Authenticate with an U2F device" : "U2F 设备认证",
-    "Two Factor U2F" : "双重 U2F",
     "U2F two-factor provider" : "“两步验证”的提供者",
     "Add U2F device" : "添加“两步验证”设备",
     "Name your device" : "为您的设备命名",
