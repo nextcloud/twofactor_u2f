@@ -6,6 +6,7 @@ OC.L10N.register(
     "U2F disabled by an admin" : "Администратор искључио U2F",
     "U2F device" : "U2F уређај",
     "Authenticate with an U2F device" : "Пријави се са U2F уређајем",
+    "Two-Factor U2F" : "Двофакторски U2F",
     "U2F two-factor provider" : "Провајдер двофакторског U2F-а",
     "A two-factor provider for U2F devices" : "Двофакторски провајдер за U2F уређаје",
     "Add U2F device" : "Додај U2F уређај",
