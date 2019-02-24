@@ -19,7 +19,7 @@
     "@vue/babel-preset-app": "^3.4.0",
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-loader": "^8.0.5",
-    "babel-plugin-istanbul": "^5.1.0",
+    "babel-plugin-istanbul": "^5.1.1",
     "chai": "^4.2.0",
     "coveralls": "^3.0.2",
     "css-loader": "^2.1.0",
