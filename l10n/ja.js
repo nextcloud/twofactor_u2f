@@ -5,6 +5,7 @@ OC.L10N.register(
     "You removed an U2F hardware token" : "U2F ハードウェアトークンを削除しました",
     "U2F device" : "U2Fデバイス",
     "Authenticate with an U2F device" : "U2Fデバイスで認証する",
+    "Two-Factor U2F" : "2段階認証 U2F",
     "U2F two-factor provider" : "U2F二要素プロバイダー",
     "A two-factor provider for U2F devices" : "U2Fデバイスの二要素プロバイダー",
     "Add U2F device" : "U2Fデバイスを追加",
