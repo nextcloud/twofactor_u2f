@@ -3,7 +3,7 @@
     "You removed an U2F hardware token" : "U2F ハードウェアトークンを削除しました",
     "U2F device" : "U2Fデバイス",
     "Authenticate with an U2F device" : "U2Fデバイスで認証する",
-    "Two-Factor U2F" : "2段階認証 U2F",
+    "Two-Factor U2F" : "二段階認証 U2F",
     "U2F two-factor provider" : "U2F二要素プロバイダー",
     "A two-factor provider for U2F devices" : "U2Fデバイスの二要素プロバイダー",
     "Add U2F device" : "U2Fデバイスを追加",
@@ -25,7 +25,7 @@
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "あなたは安全ではない接続を経由してアクセスしています。ブラウザーはU2F認証を拒否する可能性があります。",
     "Unnamed device" : "名称設定されていないデバイス",
     "Remove" : "削除",
-    "No U2F devices configured. You are not using U2F as second factor at the moment." : "U2Fデバイスが設定されていません。2段階認証としてU2Fが使われていません。",
-    "The following devices are configured for U2F second-factor authentication:" : "次のデバイスはU2F 2段階認証設定されています。"
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "U2Fデバイスが設定されていません。二段階認証としてU2Fが使われていません。",
+    "The following devices are configured for U2F second-factor authentication:" : "次のデバイスはU2F 二段階認証設定されています。"
 },"pluralForm" :"nplurals=1; plural=0;"
 }
