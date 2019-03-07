@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 2.1.2 – 2019-03-07
+### Fixed
+- App name typo
+### Changed
+- Updated translations
+- Updated dependencies
+
 ## 2.1.1 – 2019-02-12
 ### Added
 - More client-side debug logging
