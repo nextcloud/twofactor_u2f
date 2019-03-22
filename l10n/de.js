@@ -10,7 +10,7 @@ OC.L10N.register(
     "U2F two-factor provider" : "U2F Zwei-Faktor-Anbieter",
     "A two-factor provider for U2F devices" : "Ein Zwei-Faktor-Anbieter für U2F Geräte",
     "Add U2F device" : "U2F-Gerät hinzufügen",
-    "Please plug in your U2F device and press the device button to authorize." : "Bitte verbinde dein U2F-Gerät und drücke den Geräteknopf, um dich zu authentifizieren.",
+    "Please plug in your U2F device and press the device button to authorize." : "Bitte verbinde Dein U2F-Gerät und drücke den Geräteknopf, um Dich zu authentifizieren.",
     "Name your device" : "Gerät benennen",
     "Add" : "Hinzufügen",
     "Adding your device …" : "Füge Dein Gerät hinzu…",
