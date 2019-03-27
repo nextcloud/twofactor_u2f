@@ -14,6 +14,7 @@
 	"indent": 4,
 	"browser": true,
 	"globals": {
+		"t": true,
 		"console": true,
 		"it": true,
 		"xit": true,
@@ -21,7 +22,8 @@
 		"describe": true,
 		"define": true,
 		"beforeEach": true,
-		"afterEach": true
+		"afterEach": true,
+		"require": true
 	},
 	"esversion": 6,
 	"asi": true
