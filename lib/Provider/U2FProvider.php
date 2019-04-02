@@ -49,7 +49,7 @@ class U2FProvider implements IProvider, IProvidesIcons, IProvidesPersonalSetting
 	 * Get the display name for selecting the 2FA provider
 	 */
 	public function getDisplayName(): string {
-		return 'U2F device';
+		return $this->l10n->t('U2F device');
 	}
 
 	/**
