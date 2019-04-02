@@ -46,7 +46,14 @@ class U2FProviderTest extends TestCase {
 	}
 
 	public function testGetDisplayName() {
-		$this->assertSame('U2F device', $this->provider->getDisplayName());
+		$this->l10n->expects($this->once())
+			->method('t')
+			->with('U2F device')
+			->willReturn('translated');
+
+		$displayName = $this->provider->getDisplayName();
+
+		$this->assertSame('translated', $displayName);
 	}
 
 	public function testGetDescription() {
