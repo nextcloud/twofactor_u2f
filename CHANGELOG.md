@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 2.1.3 – 2019-04-04
+### Fixed
+- Listing keys without a name
+- Format HTTP warning as warning text color
+- Translatable provider description (for the settings page header)
+### Changed
+- Updated translations
+- Updated dependencies
+
 ## 2.1.2 – 2019-03-07
 ### Fixed
 - App name typo
