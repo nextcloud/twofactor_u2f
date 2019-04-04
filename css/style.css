@@ -12,3 +12,7 @@
 .nav-icon-u2f-second-factor-auth, .icon-u2f-device {
 	background-image: url('../img/app-dark.svg?v=1');
 }
+
+#u2f-http-warning {
+	color: var(--color-warning);
+}
