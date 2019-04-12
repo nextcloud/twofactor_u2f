@@ -10,11 +10,11 @@
 		}
 	],
 	"require": {
-		"php": ">=7.0.0",
+		"php": ">=7.1.0",
 		"yubico/u2flib-server": "^1.0.1"
 	},
 	"require-dev": {
-		"christophwurst/nextcloud": "dev-master",
+		"christophwurst/nextcloud": "16.0.0-beta3",
 		"phpunit/phpunit": "^6.5.5"
 	},
 	"scripts": {
@@ -29,7 +29,7 @@
 		"optimize-autoloader": true,
 		"classmap-authoritative": true,
 		"platform": {
-			"php": "7.0.0"
+			"php": "7.1.0"
 		}
 	}
 }
