@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 3.0.0 – 2019-05-03
+### Added
+- Nextcloud 17 support
+### Changed
+- Updated translations
+- Updated dependencies
+### Fixed
+- `tar` npm package vulnerability
+### Removed
+- Nextcloud 15 support
+
 ## 2.1.3 – 2019-04-04
 ### Fixed
 - Listing keys without a name
