@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "You added an U2F hardware token" : "U2F ハードウェアトークンを追加しました",
     "You removed an U2F hardware token" : "U2F ハードウェアトークンを削除しました",
+    "U2F disabled by an admin" : "U2Fは管理者によって無効にされています",
     "U2F device" : "U2Fデバイス",
     "Authenticate with an U2F device" : "U2Fデバイスで認証する",
     "Two-Factor U2F" : "二段階認証 U2F",
