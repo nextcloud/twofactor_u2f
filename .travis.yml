@@ -7,6 +7,8 @@ php:
   - 7.3
 
 addons:
+  # Server requires PostgreSQL >= 9.5
+  postgresql: "9.5"
   apt:
     packages:
     - mysql-server-5.6
