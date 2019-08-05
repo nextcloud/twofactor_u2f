@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 3.0.1 – 2019-08-06
+### Added
+- `lodash` npm package vulnerability
+### Changed
+- Updated translations
+- Updated dependencies
+
 ## 3.0.0 – 2019-05-03
 ### Added
 - Nextcloud 17 support
