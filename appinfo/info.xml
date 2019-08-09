@@ -17,11 +17,11 @@
 	<screenshot>https://raw.githubusercontent.com/nextcloud/twofactor_u2f/4e0542d888236b7f212bed0b536244d08803466f/screenshots/settings.png</screenshot>
 
 	<dependencies>
-		<php min-version="7.1" max-version="7.3"></php>
+		<php min-version="7.1" max-version="7.3"/>
 		<database>sqlite</database>
 		<database>mysql</database>
 		<database>pgsql</database>
-		<nextcloud min-version="16" max-version="17" />
+		<nextcloud min-version="17" max-version="17" />
 	</dependencies>
 
 	<two-factor-providers>

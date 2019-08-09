@@ -14,8 +14,9 @@
 		"yubico/u2flib-server": "^1.0.1"
 	},
 	"require-dev": {
-		"christophwurst/nextcloud": "16.0.0",
-		"phpunit/phpunit": "^7.5.8"
+		"christophwurst/nextcloud": "^17.0.0-dev",
+		"phpunit/phpunit": "^7.5.8",
+		"roave/security-advisories": "dev-master"
 	},
 	"scripts": {
 		"lint": "find . -name \\*.php -not -path './vendor/*' -exec php -l \"{}\" \\;",

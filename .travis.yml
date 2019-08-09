@@ -36,10 +36,6 @@ matrix:
       env: "DB=mysql TEST_JS=TRUE"
     - php: 7.2
       env: "DB=pgsql"
-    - php: 7.1
-      env: "DB=mysql CORE_BRANCH=stable16"
-    - php: 7.2
-      env: "DB=mysql CORE_BRANCH=v16.0.0RC1"
   fast_finish: true
 
 branches:
