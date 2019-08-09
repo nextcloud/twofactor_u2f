@@ -60,6 +60,10 @@
       "lcov",
       "text-summary"
     ],
+    "extension": [
+      ".js",
+      ".vue"
+    ],
     "exclude": [
       "js",
       "src/tests",
