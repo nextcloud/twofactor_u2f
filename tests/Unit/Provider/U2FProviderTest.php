@@ -12,9 +12,11 @@
 
 namespace OCA\TwoFactorU2F\Tests\Unit\Provider;
 
+use OCA\TwoFactorU2F\Provider\U2FLoginProvider;
 use OCA\TwoFactorU2F\Provider\U2FProvider;
 use OCA\TwoFactorU2F\Service\U2FManager;
 use OCA\TwoFactorU2F\Settings\Personal;
+use OCP\AppFramework\IAppContainer;
 use OCP\IL10N;
 use OCP\IUser;
 use OCP\Template;
@@ -29,6 +31,9 @@ class U2FProviderTest extends TestCase {
 	/** @var U2FManager|MockObject */
 	private $manager;
 
+	/** @var IAppContainer|MockObject */
+	private $container;
+
 	/** @var U2FProvider */
 	private $provider;
 
@@ -37,8 +42,13 @@ class U2FProviderTest extends TestCase {
 
 		$this->l10n = $this->createMock(IL10N::class);
 		$this->manager = $this->createMock(U2FManager::class);
+		$this->container = $this->createMock(IAppContainer::class);
 
-		$this->provider = new U2FProvider($this->l10n, $this->manager);
+		$this->provider = new U2FProvider(
+			$this->l10n,
+			$this->manager,
+			$this->container
+		);
 	}
 
 	public function testGetId() {
@@ -146,6 +156,19 @@ class U2FProviderTest extends TestCase {
 			->with($user);
 
 		$this->provider->disableFor($user);
+	}
+
+	public function testGet() {
+		$user = $this->createMock(IUser::class);
+		$loginProvider = $this->createMock(U2FLoginProvider::class);
+		$this->container->expects($this->once())
+			->method('query')
+			->with(U2FLoginProvider::class)
+			->willReturn($loginProvider);
+
+		$result = $this->provider->getLoginSetup($user);
+
+		$this->assertSame($loginProvider, $result);
 	}
 
 }

@@ -19,10 +19,11 @@ require_once(__DIR__ . '/../../vendor/yubico/u2flib-server/src/u2flib_server/U2F
 use OCA\TwoFactorU2F\Service\U2FManager;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\JSONResponse;
+use OCP\Authentication\TwoFactorAuth\ALoginSetupController;
 use OCP\IRequest;
 use OCP\IUserSession;
 
-class SettingsController extends Controller {
+class SettingsController extends ALoginSetupController {
 
 	/** @var U2FManager */
 	private $manager;

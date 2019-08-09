@@ -1,7 +1,9 @@
-/*
- * @copyright 2018 Christoph Wurst <christoph@winzerhof-wurst.at>
+<?php declare(strict_types=1);
+
+/**
+ * @copyright 2019 Christoph Wurst <christoph@winzerhof-wurst.at>
  *
- * @author 2018 Christoph Wurst <christoph@winzerhof-wurst.at>
+ * @author 2019 Christoph Wurst <christoph@winzerhof-wurst.at>
  *
  * @license GNU AGPL version 3 or any later version
  *
@@ -19,25 +21,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-require('jsdom-global')()
+script('twofactor_u2f', 'login-setup');
 
-const t = (app, str) => str
+?>
 
-require('vue').mixin({
-	methods: {
-		t
-	}
-})
-
-global.expect = require('chai').expect
-global.OC = {
-	getCurrentUser: () => {
-		return { uid: false }
-	},
-}
-global.t = t
-
-// https://github.com/vuejs/vue-test-utils/issues/936
-// better fix for "TypeError: Super expression must either be null or
-// a function" than pinning an old version of prettier.
-window.Date = Date
+<div id="twofactor-u2f-login-setup"></div>

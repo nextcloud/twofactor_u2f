@@ -1,7 +1,9 @@
-/*
- * @copyright 2018 Christoph Wurst <christoph@winzerhof-wurst.at>
+<?php declare(strict_types=1);
+
+/**
+ * @copyright 2019 Christoph Wurst <christoph@winzerhof-wurst.at>
  *
- * @author 2018 Christoph Wurst <christoph@winzerhof-wurst.at>
+ * @author 2019 Christoph Wurst <christoph@winzerhof-wurst.at>
  *
  * @license GNU AGPL version 3 or any later version
  *
@@ -19,25 +21,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-require('jsdom-global')()
+namespace OCA\TwoFactorU2F\Provider;
 
-const t = (app, str) => str
+use OCA\TwoFactorU2F\AppInfo\Application;
+use OCP\Authentication\TwoFactorAuth\ILoginSetupProvider;
+use OCP\Template;
 
-require('vue').mixin({
-	methods: {
-		t
+class U2FLoginProvider implements ILoginSetupProvider {
+
+	/**
+	 * @return Template
+	 */
+	public function getBody(): Template {
+		return new Template(Application::APP_ID, 'loginsetup');
 	}
-})
 
-global.expect = require('chai').expect
-global.OC = {
-	getCurrentUser: () => {
-		return { uid: false }
-	},
 }
-global.t = t
-
-// https://github.com/vuejs/vue-test-utils/issues/936
-// better fix for "TypeError: Super expression must either be null or
-// a function" than pinning an old version of prettier.
-window.Date = Date
