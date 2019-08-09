@@ -32,3 +32,8 @@ require('vue').mixin({
 global.expect = require('chai').expect
 global.OC = {}
 global.t = t
+
+// https://github.com/vuejs/vue-test-utils/issues/936
+// better fix for "TypeError: Super expression must either be null or
+// a function" than pinning an old version of prettier.
+window.Date = Date
