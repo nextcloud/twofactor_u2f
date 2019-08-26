@@ -16,16 +16,18 @@ namespace OCA\TwoFactorU2F\Provider;
 
 use OCA\TwoFactorU2F\Service\U2FManager;
 use OCA\TwoFactorU2F\Settings\Personal;
+use OCP\AppFramework\IAppContainer;
+use OCP\Authentication\TwoFactorAuth\IActivatableAtLogin;
 use OCP\Authentication\TwoFactorAuth\IDeactivatableByAdmin;
+use OCP\Authentication\TwoFactorAuth\ILoginSetupProvider;
 use OCP\Authentication\TwoFactorAuth\IPersonalProviderSettings;
-use OCP\Authentication\TwoFactorAuth\IProvider;
 use OCP\Authentication\TwoFactorAuth\IProvidesIcons;
 use OCP\Authentication\TwoFactorAuth\IProvidesPersonalSettings;
 use OCP\IL10N;
 use OCP\IUser;
 use OCP\Template;
 
-class U2FProvider implements IProvider, IProvidesIcons, IProvidesPersonalSettings, IDeactivatableByAdmin {
+class U2FProvider implements IActivatableAtLogin, IProvidesIcons, IProvidesPersonalSettings, IDeactivatableByAdmin {
 
 	/** @var IL10N */
 	private $l10n;
@@ -33,9 +35,15 @@ class U2FProvider implements IProvider, IProvidesIcons, IProvidesPersonalSetting
 	/** @var U2FManager */
 	private $manager;
 
-	public function __construct(IL10N $l10n, U2FManager $manager) {
+	/** @var IAppContainer */
+	private $container;
+
+	public function __construct(IL10N $l10n,
+								U2FManager $manager,
+								IAppContainer $container) {
 		$this->l10n = $l10n;
 		$this->manager = $manager;
+		$this->container = $container;
 	}
 
 	/**
@@ -103,6 +111,15 @@ class U2FProvider implements IProvider, IProvidesIcons, IProvidesPersonalSetting
 	 */
 	public function disableFor(IUser $user) {
 		$this->manager->removeAllDevices($user);
+	}
+
+	/**
+	 * @param IUser $user
+	 *
+	 * @return ILoginSetupProvider
+	 */
+	public function getLoginSetup(IUser $user): ILoginSetupProvider {
+		return $this->container->query(U2FLoginProvider::class);
 	}
 
 }

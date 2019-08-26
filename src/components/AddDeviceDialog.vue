@@ -56,14 +56,24 @@
 	import confirmPassword from 'nextcloud-password-confirmation'
 	import u2f from 'u2f-api'
 
+	import logger from '../logger'
+
 	import {
 		startRegistration,
 		finishRegistration
 	} from '../services/RegistrationService'
 
 	const logAndPass = (text) => (data) => {
-		console.debug(text)
+		logger.debug(text)
 		return data
+	}
+
+	/**
+	 * Tap into a promise without losing the value
+	 */
+	const tap = cb => val => {
+		cb(val)
+		return val
 	}
 
 	const RegistrationSteps = Object.freeze({
@@ -94,23 +104,23 @@
 					.then(this.getRegistrationData)
 					.then(this.register)
 					.then(() => this.step = RegistrationSteps.NAMING)
-					.catch(console.error.bind(this))
+					.catch(logger.error.bind(logger))
 			},
 
 			getRegistrationData () {
 				return startRegistration()
 					.catch(err => {
-						console.error('Error getting u2f registration data from server', err)
+						logger.error('Error getting u2f registration data from server', err)
 						throw new Error(t('twofactor_u2f', 'Server error while trying to add U2F device'))
 					})
 			},
 
 			register ({req, sigs}) {
-				console.debug('starting u2f registration')
+				logger.debug('starting registration')
 
 				return u2f.register([req], sigs)
 					.then(data => {
-						console.debug('u2f registration was successful', data)
+						logger.debug('registration was successful', data)
 
 						if (data.errorCode && data.errorCode !== 0) {
 							return this.rejectRegistration(data)
@@ -118,6 +128,7 @@
 
 						this.registrationData = data
 					})
+					.catch(e => this.rejectRegistration(e))
 			},
 
 			rejectRegistration (data) {
@@ -148,24 +159,29 @@
 			submit () {
 				this.step = RegistrationSteps.PERSIST
 
+				logger.debug('persisting registration on server')
+
 				return confirmPassword()
 					.then(logAndPass('confirmed password'))
 					.then(this.saveRegistrationData)
 					.then(logAndPass('registration data saved'))
+					.then(tap(() => this.$emit('add')))
 					.then(() => this.reset())
 					.then(logAndPass('app reset'))
-					.catch(console.error.bind(this))
+					.catch(logger.error.bind(logger))
 			},
 
 			saveRegistrationData () {
 				const data = this.registrationData
 				data.name = this.name
 
+				logger.debug('saving registration data', {data})
+
 				return finishRegistration(data)
 					.then(device => this.$store.commit('addDevice', device))
 					.then(logAndPass('new device added to store'))
 					.catch(err => {
-						console.error('Error persisting u2f registration', err)
+						logger.error('Error persisting registration', err)
 						throw new Error(t('twofactor_u2f', 'Server error while trying to complete U2F device registration'))
 					})
 			},

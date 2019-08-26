@@ -24,8 +24,10 @@ use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class Application extends App {
 
+	const APP_ID = 'twofactor_u2f';
+
 	public function __construct(array $urlParams = []) {
-		parent::__construct('twofactor_u2f', $urlParams);
+		parent::__construct(self::APP_ID, $urlParams);
 
 		$container = $this->getContainer();
 		/** @var EventDispatcherInterface $eventDispatcher */

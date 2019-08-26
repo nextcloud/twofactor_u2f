@@ -1,7 +1,7 @@
 /*
- * @copyright 2018 Christoph Wurst <christoph@winzerhof-wurst.at>
+ * @copyright 2019 Christoph Wurst <christoph@winzerhof-wurst.at>
  *
- * @author 2018 Christoph Wurst <christoph@winzerhof-wurst.at>
+ * @author 2019 Christoph Wurst <christoph@winzerhof-wurst.at>
  *
  * @license GNU AGPL version 3 or any later version
  *
@@ -19,25 +19,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-require('jsdom-global')()
+import Vue from 'vue'
 
-const t = (app, str) => str
+import Nextcloud from './mixins/Nextcloud'
+import store from './store'
 
-require('vue').mixin({
-	methods: {
-		t
-	}
-})
+Vue.mixin(Nextcloud)
 
-global.expect = require('chai').expect
-global.OC = {
-	getCurrentUser: () => {
-		return { uid: false }
+import LoginSetup from './components/LoginSetup'
+
+const View = Vue.extend(LoginSetup)
+new View({
+	propsData: {
+		httpWarning: document.location.protocol !== 'https:',
 	},
-}
-global.t = t
-
-// https://github.com/vuejs/vue-test-utils/issues/936
-// better fix for "TypeError: Super expression must either be null or
-// a function" than pinning an old version of prettier.
-window.Date = Date
+	store,
+}).$mount('#twofactor-u2f-login-setup')
