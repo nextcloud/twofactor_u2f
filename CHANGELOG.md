@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.0.0 – 2019-08-26
+### Added
+- Ability to set up during login
+### Changed
+- New and updated translations
+### Removed
+- Nextcloud 16 support
+
 ## 3.0.1 – 2019-08-06
 ### Added
 - `lodash` npm package vulnerability
