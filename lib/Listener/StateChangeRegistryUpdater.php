@@ -18,9 +18,10 @@ use OCA\TwoFactorU2F\Event\StateChanged;
 use OCA\TwoFactorU2F\Provider\U2FProvider;
 use OCA\TwoFactorU2F\Service\U2FManager;
 use OCP\Authentication\TwoFactorAuth\IRegistry;
-use Symfony\Component\EventDispatcher\Event;
+use OCP\EventDispatcher\Event;
+use OCP\EventDispatcher\IEventListener;
 
-class StateChangeRegistryUpdater implements IListener {
+class StateChangeRegistryUpdater implements IEventListener {
 
 	/** @var IRegistry */
 	private $providerRegistry;
@@ -37,7 +38,7 @@ class StateChangeRegistryUpdater implements IListener {
 		$this->manager = $manager;
 	}
 
-	public function handle(Event $event) {
+	public function handle(Event $event): void {
 		if ($event instanceof StateChanged) {
 			$devices = $this->manager->getDevices($event->getUser());
 			if ($event->isEnabled() && count($devices) === 1) {

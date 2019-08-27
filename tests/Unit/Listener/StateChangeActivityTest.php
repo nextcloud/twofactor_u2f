@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: christoph
- * Date: 31.07.18
- * Time: 07:48
- */
 
 namespace OCA\TwoFactorU2F\Tests\Unit\Listener;
 
@@ -13,10 +7,10 @@ use OCA\TwoFactorU2F\Event\StateChanged;
 use OCA\TwoFactorU2F\Listener\StateChangeActivity;
 use OCP\Activity\IEvent;
 use OCP\Activity\IManager;
+use OCP\EventDispatcher\Event;
 use OCP\IUser;
 use PHPUnit\Framework\TestCase;
 use PHPUnit_Framework_MockObject_MockObject;
-use Symfony\Component\EventDispatcher\Event;
 
 class StateChangeActivityTest extends TestCase {
 
@@ -35,7 +29,7 @@ class StateChangeActivityTest extends TestCase {
 	}
 
 	public function testHandleGenericEvent() {
-		$event = $this->createMock(Event::class);
+		$event = new Event();
 		$this->activityManager->expects($this->never())
 			->method('publish');
 
