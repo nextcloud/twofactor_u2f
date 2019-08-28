@@ -13,20 +13,20 @@ use OCA\TwoFactorU2F\Listener\StateChangeRegistryUpdater;
 use OCA\TwoFactorU2F\Provider\U2FProvider;
 use OCA\TwoFactorU2F\Service\U2FManager;
 use OCP\Authentication\TwoFactorAuth\IRegistry;
+use OCP\EventDispatcher\Event;
 use OCP\IUser;
+use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
-use PHPUnit_Framework_MockObject_MockObject;
-use Symfony\Component\EventDispatcher\Event;
 
 class StateChangeRegistryUpdaterTest extends TestCase {
 
-	/** @var IRegistry|PHPUnit_Framework_MockObject_MockObject */
+	/** @var IRegistry|MockObject */
 	private $providerRegistry;
 
-	/** @var U2FManager|PHPUnit_Framework_MockObject_MockObjec */
+	/** @var U2FManager|MockObject */
 	private $manager;
 
-	/** @var U2FProvider|PHPUnit_Framework_MockObject_MockObjec */
+	/** @var U2FProvider|MockObject */
 	private $provider;
 
 	/** @var StateChangeRegistryUpdater */
@@ -43,7 +43,7 @@ class StateChangeRegistryUpdaterTest extends TestCase {
 	}
 
 	public function testHandleGenericEvent() {
-		$event = $this->createMock(Event::class);
+		$event = new Event();
 		$this->providerRegistry->expects($this->never())
 			->method('enableProviderFor');
 		$this->providerRegistry->expects($this->never())

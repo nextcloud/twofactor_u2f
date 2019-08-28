@@ -20,6 +20,7 @@ use OCA\TwoFactorU2F\Listener\IListener;
 use OCA\TwoFactorU2F\Listener\StateChangeActivity;
 use OCA\TwoFactorU2F\Listener\StateChangeRegistryUpdater;
 use OCP\AppFramework\App;
+use OCP\EventDispatcher\IEventDispatcher;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class Application extends App {
@@ -30,29 +31,12 @@ class Application extends App {
 		parent::__construct(self::APP_ID, $urlParams);
 
 		$container = $this->getContainer();
-		/** @var EventDispatcherInterface $eventDispatcher */
-		$eventDispatcher = $container->getServer()->getEventDispatcher();
-		$eventDispatcher->addListener(StateChanged::class, function (StateChanged $event) use ($container) {
-			/** @var IListener[] $listeners */
-			$listeners = [
-				$container->query(StateChangeActivity::class),
-				$container->query(StateChangeRegistryUpdater::class),
-			];
 
-			foreach ($listeners as $listener) {
-				$listener->handle($event);
-			}
-		});
-		$eventDispatcher->addListener(DisabledByAdmin::class, function (DisabledByAdmin $event) use ($container) {
-			/** @var IListener[] $listeners */
-			$listeners = [
-				$container->query(StateChangeActivity::class),
-			];
-
-			foreach ($listeners as $listener) {
-				$listener->handle($event);
-			}
-		});
+		/** @var IEventDispatcher $eventDispatcher */
+		$eventDispatcher = $container->query(IEventDispatcher::class);
+		$eventDispatcher->addServiceListener(StateChanged::class, StateChangeActivity::class);
+		$eventDispatcher->addServiceListener(StateChanged::class, StateChangeRegistryUpdater::class);
+		$eventDispatcher->addServiceListener(DisabledByAdmin::class, StateChangeActivity::class);
 	}
 
 }
