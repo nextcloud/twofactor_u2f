@@ -6,7 +6,7 @@
   "dependencies": {
     "nextcloud-auth": "0.0.3",
     "nextcloud-axios": "^0.2.1",
-    "nextcloud-logger": "0.0.4",
+    "nextcloud-logger": "0.0.6",
     "nextcloud-password-confirmation": "^0.4.2",
     "nextcloud-router": "0.0.6",
     "nextcloud-vue": "^0.12.2",
