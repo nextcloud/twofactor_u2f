@@ -9,7 +9,7 @@
     "nextcloud-logger": "0.0.6",
     "nextcloud-password-confirmation": "^0.4.2",
     "nextcloud-router": "0.0.6",
-    "nextcloud-vue": "^0.12.2",
+    "nextcloud-vue": "^0.12.3",
     "u2f-api": "^1.1.1",
     "vue": "^2.6.10",
     "vue-click-outside": "^1.0.7",
