@@ -25,7 +25,6 @@ env:
   - PHP_COVERAGE=FALSE
   - TEST_JS=FALSE
   - CORE_BRANCH=master
-  matrix:
   - DB=sqlite
 
 matrix:
@@ -36,6 +35,8 @@ matrix:
       env: "DB=mysql TEST_JS=TRUE"
     - php: 7.2
       env: "DB=pgsql"
+    - php: 7.3
+      env: "CORE_BRANCH=v17.0.0beta4"
   fast_finish: true
 
 branches:
