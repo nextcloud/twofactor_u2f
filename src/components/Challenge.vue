@@ -42,11 +42,11 @@
 		</p>
 		<p id="u2f-info"
 		   v-else>
-			{{ t('mail', 'Plug in your U2F device and press the device button to authorize.') }}
+			{{ t('twofactor_u2f', 'Plug in your U2F device and press the device button to authorize.') }}
 		</p>
 		<p id="u2f-error"
 		   style="display: none">
-			<strong>{{ t('mail', 'An error occurred. Please try again.')}}</strong>
+			<strong>{{ t('twofactor_u2f', 'An error occurred. Please try again.')}}</strong>
 		</p>
 
 		<p v-if="notSupported">
