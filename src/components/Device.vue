@@ -37,7 +37,7 @@
 
 <script>
 	import ClickOutside from 'vue-click-outside'
-	import confirmPassword from 'nextcloud-password-confirmation'
+	import confirmPassword from '@nextcloud/password-confirmation'
 	import {PopoverMenu} from 'nextcloud-vue'
 
 	export default {

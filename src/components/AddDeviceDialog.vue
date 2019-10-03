@@ -53,7 +53,7 @@
 </template>
 
 <script>
-	import confirmPassword from 'nextcloud-password-confirmation'
+	import confirmPassword from '@nextcloud/password-confirmation'
 	import u2f from 'u2f-api'
 
 	import logger from '../logger'
