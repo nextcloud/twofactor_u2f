@@ -19,7 +19,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import store from './store'
 import Vue from 'vue'
 
 import Nextcloud from './mixins/Nextcloud'
@@ -38,6 +37,5 @@ new View({
 	propsData: {
 		req,
 		httpWarning: document.location.protocol !== 'https:',
-	},
-	store,
+	}
 }).$mount('#twofactor-u2f-challenge')
