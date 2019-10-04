@@ -29,16 +29,7 @@ use OCP\Template;
 
 class Personal implements IPersonalProviderSettings {
 
-	/** @var array */
-	private $devices;
-
-	public function __construct(array $devices) {
-		$this->devices = $devices;
-	}
-
 	public function getBody(): Template {
-		$template = new Template('twofactor_u2f', 'personal');
-		$template->assign('state', json_encode($this->devices));
-		return $template;
+		return new Template('twofactor_u2f', 'personal');
 	}
 }
