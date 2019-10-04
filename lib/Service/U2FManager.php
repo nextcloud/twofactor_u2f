@@ -21,6 +21,7 @@ use OCA\TwoFactorU2F\Db\Registration;
 use OCA\TwoFactorU2F\Db\RegistrationMapper;
 use OCA\TwoFactorU2F\Event\DisabledByAdmin;
 use OCA\TwoFactorU2F\Event\StateChanged;
+use OCP\EventDispatcher\IEventDispatcher;
 use OCP\ILogger;
 use OCP\IRequest;
 use OCP\ISession;
@@ -43,14 +44,14 @@ class U2FManager {
 	/** @var IRequest */
 	private $request;
 
-	/** @var EventDispatcherInterface */
+	/** @var IEventDispatcher */
 	private $eventDispatcher;
 
 	public function __construct(RegistrationMapper $mapper,
 								ISession $session,
 								ILogger $logger,
 								IRequest $request,
-								EventDispatcherInterface $eventDispatcher) {
+								IEventDispatcher $eventDispatcher) {
 		$this->mapper = $mapper;
 		$this->session = $session;
 		$this->logger = $logger;

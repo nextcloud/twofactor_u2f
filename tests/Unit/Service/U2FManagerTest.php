@@ -17,14 +17,13 @@ use OCA\TwoFactorU2F\Db\RegistrationMapper;
 use OCA\TwoFactorU2F\Event\DisabledByAdmin;
 use OCA\TwoFactorU2F\Event\StateChanged;
 use OCA\TwoFactorU2F\Service\U2FManager;
-use OCP\Activity\IEvent;
+use OCP\EventDispatcher\IEventDispatcher;
 use OCP\ILogger;
 use OCP\IRequest;
 use OCP\ISession;
 use OCP\IUser;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class U2FManagerTest extends TestCase {
 
@@ -43,7 +42,7 @@ class U2FManagerTest extends TestCase {
 	/** @var U2FManager */
 	private $manager;
 
-	/** @var EventDispatcherInterface */
+	/** @var IEventDispatcher */
 	private $eventDispatcher;
 
 	protected function setUp() {
@@ -53,7 +52,7 @@ class U2FManagerTest extends TestCase {
 		$this->session = $this->createMock(ISession::class);
 		$this->logger = $this->createMock(ILogger::class);
 		$this->request = $this->createMock(IRequest::class);
-		$this->eventDispatcher = $this->createMock(EventDispatcherInterface::class);
+		$this->eventDispatcher = $this->createMock(IEventDispatcher::class);
 
 		$this->manager = new U2FManager($this->mapper, $this->session, $this->logger, $this->request, $this->eventDispatcher);
 	}
