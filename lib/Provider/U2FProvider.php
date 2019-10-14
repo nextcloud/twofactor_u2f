@@ -23,6 +23,7 @@ use OCP\Authentication\TwoFactorAuth\ILoginSetupProvider;
 use OCP\Authentication\TwoFactorAuth\IPersonalProviderSettings;
 use OCP\Authentication\TwoFactorAuth\IProvidesIcons;
 use OCP\Authentication\TwoFactorAuth\IProvidesPersonalSettings;
+use OCP\IInitialStateService;
 use OCP\IL10N;
 use OCP\IUser;
 use OCP\Template;
@@ -38,12 +39,17 @@ class U2FProvider implements IActivatableAtLogin, IProvidesIcons, IProvidesPerso
 	/** @var IAppContainer */
 	private $container;
 
+	/** @var IInitialStateService */
+	private $initialStateService;
+
 	public function __construct(IL10N $l10n,
 								U2FManager $manager,
-								IAppContainer $container) {
+								IAppContainer $container,
+								IInitialStateService $initialStateService) {
 		$this->l10n = $l10n;
 		$this->manager = $manager;
 		$this->container = $container;
+		$this->initialStateService = $initialStateService;
 	}
 
 	/**
@@ -93,7 +99,8 @@ class U2FProvider implements IActivatableAtLogin, IProvidesIcons, IProvidesPerso
 	}
 
 	public function getPersonalSettings(IUser $user): IPersonalProviderSettings {
-		return new Personal($this->manager->getDevices($user));
+		$this->initialStateService->provideInitialState('twofactor_u2f', 'devices', $this->manager->getDevices($user));
+		return new Personal();
 	}
 
 	public function getLightIcon(): String {

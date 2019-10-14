@@ -17,6 +17,7 @@ use OCA\TwoFactorU2F\Provider\U2FProvider;
 use OCA\TwoFactorU2F\Service\U2FManager;
 use OCA\TwoFactorU2F\Settings\Personal;
 use OCP\AppFramework\IAppContainer;
+use OCP\IInitialStateService;
 use OCP\IL10N;
 use OCP\IUser;
 use OCP\Template;
@@ -34,6 +35,9 @@ class U2FProviderTest extends TestCase {
 	/** @var IAppContainer|MockObject */
 	private $container;
 
+	/** @var IInitialStateService|MockObject */
+	private $initialState;
+
 	/** @var U2FProvider */
 	private $provider;
 
@@ -43,11 +47,13 @@ class U2FProviderTest extends TestCase {
 		$this->l10n = $this->createMock(IL10N::class);
 		$this->manager = $this->createMock(U2FManager::class);
 		$this->container = $this->createMock(IAppContainer::class);
+		$this->initialState = $this->createMock(IInitialStateService::class);
 
 		$this->provider = new U2FProvider(
 			$this->l10n,
 			$this->manager,
-			$this->container
+			$this->container,
+			$this->initialState
 		);
 	}
 
@@ -141,8 +147,18 @@ class U2FProviderTest extends TestCase {
 	}
 
 	public function testGetPersonalSettings() {
-		$expected = new Personal([]);
+		$expected = new Personal();
+		$this->initialState->expects($this->once())
+			->method('provideInitialState')
+			->with(
+				'twofactor_u2f',
+				'devices',
+				['my', 'devices']
+			);
+
 		$user = $this->createMock(IUser::class);
+		$this->manager->method('getDevices')
+			->willReturn(['my', 'devices']);
 
 		$settings = $this->provider->getPersonalSettings($user);
 
