@@ -2,9 +2,9 @@ sudo: required
 dist: trusty
 language: php
 php:
-  - 7.1
   - 7.2
   - 7.3
+  - 7.4snapshot
 
 addons:
   # Server requires PostgreSQL >= 9.5
@@ -26,17 +26,22 @@ env:
   - TEST_JS=FALSE
   - CORE_BRANCH=master
   - DB=sqlite
+  - PATCH_VERSION_CHECK=FALSE
 
 matrix:
   include:
-    - php: 7.1
-      env: "DB=mysql PHP_COVERAGE=TRUE"
-    - php: 7.1
-      env: "DB=mysql TEST_JS=TRUE"
     - php: 7.2
+      env: "DB=mysql PHP_COVERAGE=TRUE"
+    - php: 7.2
+      env: "DB=mysql TEST_JS=TRUE"
+    - php: 7.3
       env: "DB=pgsql"
     - php: 7.3
-      env: "CORE_BRANCH=v17.0.0beta4"
+      env: "CORE_BRANCH=stable17"
+    - php: 7.3
+      env: "CORE_BRANCH=v17.0.0"
+    - php: nightly
+      env: "PATCH_VERSION_CHECK=TRUE"
   fast_finish: true
 
 branches:
@@ -70,6 +75,8 @@ before_install:
 
   - cd ..
   - git clone https://github.com/nextcloud/server.git --recursive --depth 1 -b $CORE_BRANCH core
+  - if [[ "$PATCH_VERSION_CHECK" = "TRUE" ]]; then echo "<?php" > core/lib/versioncheck.php; fi
+  - if [[ "$PATCH_VERSION_CHECK" = "TRUE" ]]; then  sed -ri 's/(<php min\-version="[0-9\.]+") max\-version="[0-9\.]+"/\1/g' twofactor_u2f/appinfo/info.xml; fi
   - mv twofactor_u2f core/apps/
 
 before_script:
