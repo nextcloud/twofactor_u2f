@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 5.0.0 – 2019-12-02
+### Added
+- Nextcloud 18 support
+- php7.4 support
+### Changed
+- New and updated translations
+- Updated dependencies
+### Fixed
+- Npm dependency vulnerability
+- Unnecessarily big challenge bundle
+### Removed
+- php7.1 support
+
 ## 4.0.0 – 2019-08-26
 ### Added
 - Ability to set up during login
