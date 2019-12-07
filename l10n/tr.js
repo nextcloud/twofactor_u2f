@@ -13,7 +13,7 @@ OC.L10N.register(
     "Please plug in your U2F device and press the device button to authorize." : "Lütfen U2F aygıtınızı takın ve kimliğinizi doğrulamak için aygıt üzerindeki düğmeye tıklayın.",
     "Name your device" : "Aygıtınıza bir ad verin",
     "Add" : "Ekle",
-    "Adding your device …" : "Aygıtınız ekleniyor…",
+    "Adding your device …" : "Aygıtınız ekleniyor …",
     "Server error while trying to add U2F device" : "U2F aygıtı eklenirken sunucu sorunu çıktı",
     "U2F device is already registered (error code {errorCode})" : "U2F aygıtı zaten kaydedilmiş (hata kodu {errorCode})",
     "U2F device registration timeout reached (error code {errorCode})" : "U2F aygıtı kayıt işlemi zaman aşımına uğradı (hata kodu {errorCode})",
