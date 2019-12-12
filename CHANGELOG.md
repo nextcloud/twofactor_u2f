@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 5.0.1 – 2019-12-12
+### Changed
+- New and updated translations
+- Updated dependencies
+### Fixed
+- JavaScript vulnerabilities in `handlebars`, `mem` and `serialize-javascript` dependency
+
 ## 5.0.0 – 2019-12-02
 ### Added
 - Nextcloud 18 support
