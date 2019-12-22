@@ -5,13 +5,21 @@ OC.L10N.register(
     "You removed an U2F hardware token" : "Ju hoqët një U2F hardware token",
     "U2F device" : "Pajisje U2F",
     "Authenticate with an U2F device" : "Verifikoni me një pajisje U2F",
+    "Add U2F device" : "Shto pajisjen U2F",
+    "Please plug in your U2F device and press the device button to authorize." : "Ju lutemi futni pajisjen tuaj U2F dhe shtypni butonin e pajisjes për të autorizuar.",
     "Name your device" : "Emërtoni pajisjen tuaj",
     "Add" : "Shto",
     "Adding your device …" : "Shtoni pajisjen tuaj ...",
+    "Server error while trying to add U2F device" : "Gabim serveri gjatë përpjekjes për të shtuar pajisjen U2F",
+    "U2F device registration failed (error code {errorCode})" : "Regjistrimi i pajisjes U2F dështoi (gabim kodi {gabimKodi})",
+    "Server error while trying to complete U2F device registration" : "Gabim serveri gjatë përpjekjes për të plotësuar regjistrimin e pajisjes U2F",
     "An error occurred: {msg}" : "Ndodhi një gabim: {msg}",
     "Retry" : "Riprovoni",
     "An error occurred. Please try again." : "Ndodhi një problem.Ju lutem provoni përsëri.",
+    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome është i vetmi shfletues që suporton paisjet UF2. Do t'ju duhet të instaloni shtesën \"U2F Support Add-on\" në Firefox që të përdorni U2F.",
     "Unnamed device" : "Paisje pa emër",
-    "Remove" : "Hiq"
+    "Remove" : "Hiq",
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Asnjë pajisje U2F e konfiguruar. Ju nuk po përdorni U2F si faktor të dytë në këtë moment.",
+    "The following devices are configured for U2F second-factor authentication:" : "Pajisjet në vijim janë konfiguruar për identifikimin me dy faktor U2F:"
 },
 "nplurals=2; plural=(n != 1);");

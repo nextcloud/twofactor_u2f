@@ -9,9 +9,11 @@
     "Name your device" : "Ime naprave",
     "Add" : "Dodaj",
     "Adding your device …" : "Poteka dodajanje naprave ..",
+    "Server error while trying to add U2F device" : "Napaka strežnika med dodajanjem U2F naprave",
     "Retry" : "Poskusi  znova",
     "An error occurred. Please try again." : "Prišlo je do napake. Poskusite znova.",
     "Unnamed device" : "Neimenovana naprava",
-    "Remove" : "Odstrani"
+    "Remove" : "Odstrani",
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Ni nastavljenih naprav U2F. Trenutno U2F ni uporabljen kot drug faktor."
 },"pluralForm" :"nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);"
 }

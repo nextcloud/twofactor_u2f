@@ -2,6 +2,7 @@ OC.L10N.register(
     "twofactor_u2f",
     {
     "Name your device" : "اسم جهازك",
+    "Add" : "إضافة",
     "Retry" : "أعد المحاولة",
     "An error occurred. Please try again." : "طرأ هناك خطأ. الرجاء إعادة المحاولة.",
     "Remove" : "حذف"

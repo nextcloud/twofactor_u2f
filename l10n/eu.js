@@ -4,6 +4,7 @@ OC.L10N.register(
     "U2F device" : "U2F gailua",
     "Name your device" : "Izendatu zure gailua",
     "Add" : "Gehitu",
+    "Retry" : "Saiatu berriro",
     "Unnamed device" : "Izen gabeko gailua",
     "Remove" : "Kendu"
 },
