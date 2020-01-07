@@ -116,7 +116,11 @@
 			},
 
 			register ({req, sigs}) {
-				logger.debug('starting registration')
+				logger.debug('starting registration', {appId: req.appId})
+
+				if (location.protocol === 'https:' && req.appId.startsWith('http:')) {
+					logger.warn('Server generated a U2F App ID that starts with HTTP but you\'re connected via HTTPS. Set your overwrites https://docs.nextcloud.com/server/stable/admin_manual/configuration_server/reverse_proxy_configuration.html#overwrite-parameters')
+				}
 
 				return u2f.register([req], sigs)
 					.then(data => {
@@ -151,7 +155,7 @@
 						// 2 - BAD_REQUEST
 						// 3 - CONFIGURATION_UNSUPPORTED
 						Promise.reject(new Error(t('twofactor_u2f', 'U2F device registration failed (error code {errorCode})', {
-							errorCode: data.errorCode
+							errorCode: data.errorCode || 'unknown'
 						})));
 				}
 			},
