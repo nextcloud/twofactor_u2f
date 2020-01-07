@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 5.0.2 – 2020-01-07
+### Added
+- Warning if protocol and/or appId protocols do not match
+### Changed
+- New and updated translations
+- Updated dependencies
+
 ## 5.0.1 – 2019-12-12
 ### Changed
 - New and updated translations
