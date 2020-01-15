@@ -38,7 +38,7 @@
 <script>
 	import ClickOutside from 'vue-click-outside'
 	import confirmPassword from '@nextcloud/password-confirmation'
-	import { PopoverMenu } from 'nextcloud-vue/dist/Components/PopoverMenu'
+	import { PopoverMenu } from '@nextcloud/vue/dist/Components/PopoverMenu'
 
 	export default {
 		name: 'Device',
