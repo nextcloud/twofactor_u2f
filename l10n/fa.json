@@ -1,5 +1,6 @@
 { "translations": {
     "Add" : "افزودن",
+    "Retry" : "تلاش دوباره",
     "Remove" : "برداشتن"
 },"pluralForm" :"nplurals=2; plural=(n > 1);"
 }
