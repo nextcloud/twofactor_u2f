@@ -42,7 +42,7 @@ matrix:
     - php: 7.3
       env: "CORE_BRANCH=stable17"
     - php: 7.3
-      env: "CORE_BRANCH=v17.0.0"
+      env: "CORE_BRANCH=stable18"
     - php: nightly
       env: "PATCH_VERSION_CHECK=TRUE"
   fast_finish: true
