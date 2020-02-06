@@ -43,3 +43,5 @@ to set up a development version of this app.
 Every device supporting U2F should work fine. The following devices are known to work:
 
 * [Nitrokey FIDO U2F](https://shop.nitrokey.com/shop/product/nitrokey-fido-u2f-20)
+* [SoloKey](https://github.com/solokeys/solo)
+  * HW version 2.1V
