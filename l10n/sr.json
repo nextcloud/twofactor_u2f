@@ -14,7 +14,7 @@
     "Adding your device …" : "Додајем Ваш уређај…",
     "Server error while trying to add U2F device" : "Серверска грешка приликом додавања U2F уређаја",
     "U2F device is already registered (error code {errorCode})" : "U2F уређај је већ регистрован (код грешке {errorCode})",
-    "U2F device registration timeout reached (error code {errorCode})" : "Истекло време за регистрацију U2F уређаја (код грешке {errorCode})",
+    "U2F device registration timeout reached (error code {errorCode})" : "Рок за регистрацију У2Ф уређаја је истекао (код грешке {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "РегистрацијаU2F уређаја није успела (код грешке {errorCode})",
     "Server error while trying to complete U2F device registration" : "Серверска грешка приликом довршавања регистрације U2F уређаја",
     "An error occurred: {msg}" : "Догодила се грешка: {msg}",
