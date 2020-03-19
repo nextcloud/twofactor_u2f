@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 5.1.0 – 2020-03-19
+### Added
+- Nextcloud 19 support
+### Changed
+- New and updated translations
+- Updated dependencies
+
 ## 5.0.2 – 2020-01-07
 ### Added
 - Warning if protocol and/or appId protocols do not match
