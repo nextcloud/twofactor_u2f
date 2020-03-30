@@ -45,3 +45,4 @@ Every device supporting U2F should work fine. The following devices are known to
 * [Nitrokey FIDO U2F](https://shop.nitrokey.com/shop/product/nitrokey-fido-u2f-20)
 * [SoloKey](https://github.com/solokeys/solo)
   * HW version 2.1V
+* [Yubikey 5C](https://www.yubico.com/product/yubikey-5c)
