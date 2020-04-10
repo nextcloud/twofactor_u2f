@@ -27,6 +27,6 @@
     "Unnamed device" : "Naamloos apparaat",
     "Remove" : "Verwijderen",
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Geen U2F apparaten ingesteld. Je gebruikt U2F niet als tweede factor op het moment.",
-    "The following devices are configured for U2F second-factor authentication:" : "De volgende apparaten zijn ingesteld voor U2F twee-factor authenticatie:"
+    "The following devices are configured for U2F second-factor authentication:" : "De volgende toestellen zijn ingesteld voor U2F twee-factor authenticatie:"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
