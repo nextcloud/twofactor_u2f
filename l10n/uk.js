@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Add U2F device" : "Додати U2F пристрій",
     "Add" : "Додати",
+    "Retry" : "Ще раз",
     "Unnamed device" : "Неназваний пристрій",
     "Remove" : "Видалити",
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Жодний U2F пристрій не налаштований. Ви не використовуєте U2F наразі.",
