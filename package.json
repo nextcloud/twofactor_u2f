@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
     "@vue/babel-preset-app": "^4.2.3",
     "@vue/test-utils": "^1.0.0-beta.32",
     "babel-loader": "^8.0.6",
