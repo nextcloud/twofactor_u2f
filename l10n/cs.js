@@ -26,7 +26,7 @@ OC.L10N.register(
     "Your browser does not support U2F." : "Váš prohlížeč nepodporuje U2F.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome je jediný prohlížeč podporující U2F přístroje. Je třeba nainstalovat „U2F Support Add-on“ pro Firefox pro použití U2F.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "K tomuto webu přistupujete přes nezabezpečené připojení. Prohlížeče proto mohou odmítnout U2F ověřování.",
-    "Unnamed device" : "Nenazvané zařízení",
+    "Unnamed device" : "Nepojmenované zařízení",
     "Remove" : "Odstranit",
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Nejsou nastavená žádná U2F zařízení. V tuto chvíli nepoužíváte U2F jako druhý faktor.",
     "The following devices are configured for U2F second-factor authentication:" : "Následující zařízení jsou nastavena jako druhý stupeň ověřování pomocí U2F:"
