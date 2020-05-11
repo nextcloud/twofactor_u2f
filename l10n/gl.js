@@ -1,8 +1,8 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
-    "You added an U2F hardware token" : "Vostede engadiu unha marca U2F de hardware",
-    "You removed an U2F hardware token" : "Vostede retirou unha marca U2F de hardware",
+    "You added an U2F hardware token" : "Vostede engadiu unha testemuña U2F de hardware",
+    "You removed an U2F hardware token" : "Vostede retirou unha testemuña U2F de hardware",
     "U2F disabled by an admin" : "U2F desactivado por un administrador",
     "U2F device" : "Dispositivo U2F",
     "Authenticate with an U2F device" : "Autenticar cun dispositivo U2F",
