@@ -1,6 +1,9 @@
 { "translations": {
+    "Name your device" : "Има на вашиот уред",
     "Add" : "Додади",
+    "Adding your device …" : "Додавање на вашиот уред ...",
     "Retry" : "Обидете се повторно",
+    "Unnamed device" : "Уреди без име",
     "Remove" : "Отстрани"
 },"pluralForm" :"nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;"
 }
