@@ -23,7 +23,7 @@
     "An error occurred. Please try again." : "Ett fel har inträffat. Vänligen försök igen.",
     "Your browser does not support U2F." : "Din webbläsare stödjer inte U2F.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome är den enda webbläsaren som är tillåter U2F-enheter. Du måste installera \"U2F Support Add-On\" tillägget i Firefox för att använda U2F.",
-    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Du har tillgång till sidan från en osäker anslutning. Webbläsare kanske därför nekar U2F-autentisering.",
+    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Du har åtkomst till sidan från en osäker anslutning. Webbläsare kanske därför nekar U2F-autentisering.",
     "Unnamed device" : "Namnlös enhet",
     "Remove" : "Ta bort",
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Inga U2F-enheter är konfigurerade. Du använder inte U2F tvåfaktorautentisering just nu.",

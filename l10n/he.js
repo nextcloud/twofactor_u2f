@@ -12,6 +12,8 @@ OC.L10N.register(
     "U2F device is already registered (error code {errorCode})" : "התקן ה־U2F כבר רשום (קוד שגיאה {errorCode})",
     "Server error while trying to complete U2F device registration" : "התקבלה שגיאת שרת בעת הניסיון להשלים את הרשמת התקן ה־U2F",
     "Retry" : "ניסיון חוזר",
+    "An error occurred. Please try again." : "אירעה שגיאה. נא לנסות שוב.",
+    "Your browser does not support U2F." : "הדפדפן שלך אינו תומך ב־U2F.",
     "Unnamed device" : "התקן ללא שם",
     "Remove" : "הסרה"
 },
