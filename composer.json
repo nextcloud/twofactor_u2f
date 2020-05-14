@@ -19,7 +19,7 @@
 		"roave/security-advisories": "dev-master"
 	},
 	"scripts": {
-		"lint": "find . -name \\*.php -not -path './vendor/*' -exec php -l \"{}\" \\;",
+		"lint": "find . -name \\*.php -not -path './vendor/*' -print0 | xargs -0 -n1 php -l",
 		"test": "phpunit -c tests/phpunit.xml",
 		"test:acceptance": "phpunit -c tests/phpunit.xml tests/Acceptance",
 		"test:unit": "phpunit -c tests/phpunit.xml tests/Unit",
