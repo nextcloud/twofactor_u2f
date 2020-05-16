@@ -2,7 +2,9 @@ OC.L10N.register(
     "twofactor_u2f",
     {
     "Add U2F device" : "Додати U2F пристрій",
+    "Name your device" : "Дайте назву вашому пристрою",
     "Add" : "Додати",
+    "Adding your device …" : "Додавання вашого пристрою...",
     "Retry" : "Ще раз",
     "Unnamed device" : "Неназваний пристрій",
     "Remove" : "Видалити",
