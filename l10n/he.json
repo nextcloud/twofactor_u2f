@@ -22,7 +22,11 @@
     "Plug in your U2F device and press the device button to authorize." : "נא לחבר את התקן ה־U2F שלך וללחוץ על כפתור ההתקן כדי לבצע אימות.",
     "An error occurred. Please try again." : "אירעה שגיאה. נא לנסות שוב.",
     "Your browser does not support U2F." : "הדפדפן שלך אינו תומך ב־U2F.",
+    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome הוא הדפדפן היחידי שתומך בהתקני U2F. עליך להתקין את „תוספת תמיכה ב־U2F” ב־Firefox כדי להשתמש ב־U2F.",
+    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "בחרת לגשת לאתר דרך חיבור בלתי מאובטח. דפדפנים עשויים לסרב לאימות U2F.",
     "Unnamed device" : "התקן ללא שם",
-    "Remove" : "הסרה"
+    "Remove" : "הסרה",
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "לא מוגדרים התקני U2F. נכון לעכשיו אינך עושה שימוש ב־U2F לאימות דו־שלבי נכון לעכשיו.",
+    "The following devices are configured for U2F second-factor authentication:" : "ההתקנים הבאים מוגדרים לטובת אימות דו־שלבי עם U2F:"
 },"pluralForm" :"nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;"
 }
