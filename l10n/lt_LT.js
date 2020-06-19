@@ -6,6 +6,7 @@ OC.L10N.register(
     "U2F disabled by an admin" : "Administratorius išjungė U2F",
     "U2F device" : "U2F įrenginys",
     "Add U2F device" : "Pridėti U2F įrenginį",
+    "Name your device" : "Pavadinkite savo įrenginį",
     "Add" : "Pridėti",
     "Adding your device …" : "Pridedamas jūsų įrenginys …",
     "Server error while trying to add U2F device" : "Serverio klaida, bandant pridėti U2F įrenginį",
