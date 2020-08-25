@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f170c991f1ae52a84c199fd257595c8d",
+    "content-hash": "cff6cb0ce9549d1f459b7581ac9963d4",
     "packages": [
         {
             "name": "paragonie/random_compat",
@@ -92,16 +92,16 @@
     "packages-dev": [
         {
             "name": "christophwurst/nextcloud",
-            "version": "v17.0.2",
+            "version": "v18.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ChristophWurst/nextcloud_composer.git",
-                "reference": "25aeb8ea0623e54da9ef26daefecff8b9c576df3"
+                "reference": "2cbf4d9b33e6c63ded02df1532728a712b1580cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ChristophWurst/nextcloud_composer/zipball/25aeb8ea0623e54da9ef26daefecff8b9c576df3",
-                "reference": "25aeb8ea0623e54da9ef26daefecff8b9c576df3",
+                "url": "https://api.github.com/repos/ChristophWurst/nextcloud_composer/zipball/2cbf4d9b33e6c63ded02df1532728a712b1580cf",
+                "reference": "2cbf4d9b33e6c63ded02df1532728a712b1580cf",
                 "shasum": ""
             },
             "require": {
@@ -110,7 +110,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "17.0.0-dev"
+                    "dev-master": "18.0.0-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -124,7 +124,7 @@
                 }
             ],
             "description": "Composer package containing Nextcloud's public API (classes, interfaces)",
-            "time": "2019-12-19T08:20:46+00:00"
+            "time": "2020-08-24T12:42:23+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -315,18 +315,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "email": "sebastian@phpeople.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpeople.de"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Library for handling version information and constraints",
@@ -596,8 +596,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
@@ -647,8 +647,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "FilterIterator implementation that filters files based on a list of suffixes.",
@@ -738,8 +738,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Utility class for timing",
@@ -1828,5 +1828,6 @@
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.1.0"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }
