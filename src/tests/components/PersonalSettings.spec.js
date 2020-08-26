@@ -55,13 +55,13 @@ describe('Device component', () => {
 	})
 
 	it('shows no info text if devices are configured', () => {
-		const settings = shallowMount(PersonalSettings, {
-			store,
-			localVue
-		})
 		store.state.devices.push({
 			id: 1,
 			name: 'a'
+		})
+		const settings = shallowMount(PersonalSettings, {
+			store,
+			localVue
 		})
 
 		expect(settings.text()).to.not.contain('No U2F devices configured')
