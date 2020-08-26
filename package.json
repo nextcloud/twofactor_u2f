@@ -21,7 +21,7 @@
     "@babel/preset-env": "^7.8.7",
     "@vue/babel-preset-app": "^4.2.3",
     "@vue/test-utils": "^1.0.0-beta.32",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "^8.1.0",
     "babel-plugin-istanbul": "^6.0.0",
     "chai": "^4.2.0",
     "coveralls": "^3.0.9",
