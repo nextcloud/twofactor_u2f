@@ -25,7 +25,7 @@
     "babel-plugin-istanbul": "^6.0.0",
     "chai": "^4.2.0",
     "coveralls": "^3.1.0",
-    "css-loader": "^4.2.2",
+    "css-loader": "^4.3.0",
     "file-loader": "^6.1.0",
     "istanbul-instrumenter-loader": "^3.0.1",
     "jsdom": "^16.4.0",
