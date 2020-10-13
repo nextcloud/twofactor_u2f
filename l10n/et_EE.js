@@ -1,6 +1,7 @@
 OC.L10N.register(
     "twofactor_u2f",
     {
+    "U2F device" : "U2F seade",
     "Add U2F device" : "Lisa U2F seade",
     "Add" : "Lisa",
     "Retry" : "Proovi uuesti",
