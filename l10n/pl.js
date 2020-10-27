@@ -13,7 +13,7 @@ OC.L10N.register(
     "Please plug in your U2F device and press the device button to authorize." : "Podłącz urządzenie U2F i naciśnij przycisk urządzenia w celu autoryzacji.",
     "Name your device" : "Nazwa twojego urządzenia",
     "Add" : "Dodaj",
-    "Adding your device …" : "Dodawanie urządzenia ...",
+    "Adding your device …" : "Dodawanie urządzenia…",
     "Server error while trying to add U2F device" : "Błąd serwera podczas próby dodania urządzenia U2F",
     "U2F device is already registered (error code {errorCode})" : "Urządzenie U2F jest już zarejestrowane (kod błędu {errorCode})",
     "U2F device registration timeout reached (error code {errorCode})" : "Osiągnięty limit czasu na urządzenie U2F (kod błędu {errorCode})",
