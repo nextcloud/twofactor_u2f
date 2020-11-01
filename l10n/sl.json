@@ -12,6 +12,7 @@
     "Server error while trying to add U2F device" : "Napaka strežnika med dodajanjem U2F naprave",
     "Retry" : "Poskusi  znova",
     "An error occurred. Please try again." : "Prišlo je do napake. Poskusite znova.",
+    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Za dostop do strani je uporabljena ne-varna povezava. Brskalniki lahko v tem primeru zavrnejo overitev U2F.",
     "Unnamed device" : "Neimenovana naprava",
     "Remove" : "Odstrani",
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Ni nastavljenih naprav U2F. Trenutno U2F ni uporabljen kot drug faktor."
