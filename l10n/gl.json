@@ -23,7 +23,7 @@
     "An error occurred. Please try again." : "Produciuse un erro. Ténteo de novo.",
     "Your browser does not support U2F." : "O seu navegador non é compatíbel co U2F.",
     "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome é o único navegador que admite dispositivos U2F. Vostede necesita instalar «U2F Support Add-on» no Firefox para usar U2F. ",
-    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Está accedendo a este sitio mediante unha conexión insegura. Algúns navegadores, polo tanto, poderían rexeitar a autenticación U2F. ",
+    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Está accedendo a este sitio mediante unha conexión insegura. Algúns navegadores, daquela, poderían rexeitar a autenticación U2F. ",
     "Unnamed device" : "Dispositivo sen nome",
     "Remove" : "Retirar",
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Non hai dispositivos U2F configurados. Vostede, de momento, non está a usar U2F como un segundo factor.",
