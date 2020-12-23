@@ -23,12 +23,10 @@ declare(strict_types=1);
 
 namespace OCA\TwoFactorU2F\Settings;
 
-use function json_encode;
 use OCP\Authentication\TwoFactorAuth\IPersonalProviderSettings;
 use OCP\Template;
 
 class Personal implements IPersonalProviderSettings {
-
 	public function getBody(): Template {
 		return new Template('twofactor_u2f', 'personal');
 	}

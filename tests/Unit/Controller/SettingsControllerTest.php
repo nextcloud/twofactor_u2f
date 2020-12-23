@@ -102,5 +102,4 @@ class SettingsControllerTest extends TestCase {
 
 		$this->assertEquals(new JSONResponse([]), $resp);
 	}
-
 }

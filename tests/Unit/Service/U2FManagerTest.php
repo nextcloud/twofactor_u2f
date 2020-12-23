@@ -136,5 +136,4 @@ class U2FManagerTest extends TestCase {
 
 		$this->manager->startRegistration($user);
 	}
-
 }

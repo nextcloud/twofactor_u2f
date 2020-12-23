@@ -87,5 +87,4 @@ class Setting implements ISetting {
 	public function isDefaultEnabledStream() {
 		return true;
 	}
-
 }

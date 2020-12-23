@@ -186,5 +186,4 @@ class U2FProviderTest extends TestCase {
 
 		$this->assertSame($loginProvider, $result);
 	}
-
 }

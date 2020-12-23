@@ -44,7 +44,7 @@ class StateChangeRegistryUpdater implements IEventListener {
 			if ($event->isEnabled() && count($devices) === 1) {
 				// The first device was enabled -> enable provider for this user
 				$this->providerRegistry->enableProviderFor($this->provider, $event->getUser());
-			} else if (!$event->isEnabled() && empty($devices)) {
+			} elseif (!$event->isEnabled() && empty($devices)) {
 				// The last device was removed -> disable provider for this user
 				$this->providerRegistry->disableProviderFor($this->provider, $event->getUser());
 			}

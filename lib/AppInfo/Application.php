@@ -16,16 +16,13 @@ namespace OCA\TwoFactorU2F\AppInfo;
 
 use OCA\TwoFactorU2F\Event\DisabledByAdmin;
 use OCA\TwoFactorU2F\Event\StateChanged;
-use OCA\TwoFactorU2F\Listener\IListener;
 use OCA\TwoFactorU2F\Listener\StateChangeActivity;
 use OCA\TwoFactorU2F\Listener\StateChangeRegistryUpdater;
 use OCP\AppFramework\App;
 use OCP\EventDispatcher\IEventDispatcher;
-use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class Application extends App {
-
-	const APP_ID = 'twofactor_u2f';
+	public const APP_ID = 'twofactor_u2f';
 
 	public function __construct(array $urlParams = []) {
 		parent::__construct(self::APP_ID, $urlParams);
@@ -38,5 +35,4 @@ class Application extends App {
 		$eventDispatcher->addServiceListener(StateChanged::class, StateChangeRegistryUpdater::class);
 		$eventDispatcher->addServiceListener(DisabledByAdmin::class, StateChangeActivity::class);
 	}
-
 }

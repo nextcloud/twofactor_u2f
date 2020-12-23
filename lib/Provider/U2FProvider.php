@@ -108,7 +108,8 @@ class U2FProvider implements IActivatableAtLogin, IProvidesIcons, IProvidesPerso
 	}
 
 	public function getDarkIcon(): String {
-		return image_path('twofactor_u2f', 'app-dark.svg');;
+		return image_path('twofactor_u2f', 'app-dark.svg');
+		;
 	}
 
 	/**
@@ -128,5 +129,4 @@ class U2FProvider implements IActivatableAtLogin, IProvidesIcons, IProvidesPerso
 	public function getLoginSetup(IUser $user): ILoginSetupProvider {
 		return $this->container->query(U2FLoginProvider::class);
 	}
-
 }
