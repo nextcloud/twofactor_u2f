@@ -1,0 +1,61 @@
+name: Test
+
+on: [push, pull_request]
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php-version: [7.3, 7.4]
+        nextcloud-version: ['stable20', 'master']
+        include:
+          - php-version: 7.2
+            nextcloud-version: 'stable18'
+          - php-version: 7.3
+            nextcloud-version: 'stable19'
+    name: Nextcloud ${{ matrix.nextcloud-version }} php${{ matrix.php-version }} unit tests
+    steps:
+    - name: Set up php${{ matrix.php-version }}
+      uses: shivammathur/setup-php@master
+      with:
+        php-version: ${{ matrix.php-version }}
+        extensions: ctype,curl,dom,gd,iconv,intl,json,mbstring,openssl,posix,sqlite,xml,zip
+        coverage: xdebug
+    - name: Checkout Nextcloud
+      run: git clone https://github.com/nextcloud/server.git --recursive --depth 1 -b ${{ matrix.nextcloud-version }} nextcloud
+    - name: Install Nextcloud
+      run: php -f nextcloud/occ maintenance:install --database-name oc_autotest --database-user oc_autotest --admin-user admin --admin-pass admin --database sqlite --database-pass=''
+    - name: Checkout app
+      uses: actions/checkout@master
+      with:
+        path: nextcloud/apps/twofactor_u2f
+    - name: Install dependencies
+      working-directory: nextcloud/apps/twofactor_u2f
+      run: composer install
+    - name: Run tests
+      working-directory: nextcloud/apps/twofactor_u2f
+      run: composer run test:unit
+    - name: Report coverage
+      uses: codecov/codecov-action@v1
+      if: ${{ always() }}
+      with:
+        file: ./nextcloud/apps/twofactor_u2f/tests/clover.unit.xml
+        flags: unittests
+        fail_ci_if_error: true
+
+  frontend-unit-test:
+      runs-on: ubuntu-latest
+      name: Front-end unit tests
+      steps:
+          - uses: actions/checkout@master
+          - name: Set up Node
+            uses: actions/setup-node@v1
+            with:
+                node-version: 12.x
+          - name: npm install
+            run: npm install
+          - name: run tests
+            run: npm run test
+      env:
+          CI: true

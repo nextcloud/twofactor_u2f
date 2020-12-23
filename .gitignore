@@ -9,4 +9,4 @@
 /vendor
 composer.phar
 
-/tests/clover.xml
+/tests/clover*.xml

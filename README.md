@@ -1,7 +1,6 @@
 # U2F second factor provider for Nextcloud
 
 ![Downloads](https://img.shields.io/github/downloads/nextcloud/twofactor_u2f/total.svg)
-![Build Status](https://api.travis-ci.org/nextcloud/twofactor_u2f.svg?branch=master)
 ![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/badges/quality-score.png?b=master)
 ![JavaScript Coverage Status](https://coveralls.io/repos/github/nextcloud/twofactor_u2f/badge.svg?branch=master)
 

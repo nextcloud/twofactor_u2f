@@ -54,19 +54,3 @@ jobs:
               path: nextcloud/apps/twofactor_u2f
         - name: Run tests
           run: php -f nextcloud/occ app:check-code twofactor_u2f
-
-  node-linters:
-    runs-on: ubuntu-latest
-    name: ESLint
-    steps:
-    - uses: actions/checkout@master
-    - name: Set up Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12.x
-    - name: npm install
-      run: npm ci
-    - name: eslint
-      run: npm run lint
-    env:
-      CI: true
