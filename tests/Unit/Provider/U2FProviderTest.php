@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * Nextcloud - U2F 2FA
  *
@@ -19,6 +21,7 @@ use OCA\TwoFactorU2F\Settings\Personal;
 use OCP\AppFramework\IAppContainer;
 use OCP\IInitialStateService;
 use OCP\IL10N;
+use OCP\IURLGenerator;
 use OCP\IUser;
 use OCP\Template;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -35,24 +38,29 @@ class U2FProviderTest extends TestCase {
 	/** @var IAppContainer|MockObject */
 	private $container;
 
+	/** @var IURLGenerator|MockObject */
+	private $urlGenerator;
+
 	/** @var IInitialStateService|MockObject */
 	private $initialState;
 
 	/** @var U2FProvider */
 	private $provider;
 
-	protected function setUp() {
+	protected function setUp(): void {
 		parent::setUp();
 
 		$this->l10n = $this->createMock(IL10N::class);
 		$this->manager = $this->createMock(U2FManager::class);
 		$this->container = $this->createMock(IAppContainer::class);
+		$this->urlGenerator = $this->createMock(IURLGenerator::class);
 		$this->initialState = $this->createMock(IInitialStateService::class);
 
 		$this->provider = new U2FProvider(
 			$this->l10n,
 			$this->manager,
 			$this->container,
+			$this->urlGenerator,
 			$this->initialState
 		);
 	}
@@ -131,19 +139,25 @@ class U2FProviderTest extends TestCase {
 	}
 
 	public function testGetGetLightIcon() {
-		$expected = image_path('twofactor_u2f', 'app-dark.svg');
+		$this->urlGenerator->expects($this->once())
+			->method('imagePath')
+			->with('twofactor_u2f', 'app.svg')
+			->willReturn('/apps/twofactor_u2f/img/app.svg');
 
-		$icon = $this->provider->getDarkIcon();
+		$icon = $this->provider->getLightIcon();
 
-		$this->assertEquals($expected, $icon);
+		$this->assertEquals('/apps/twofactor_u2f/img/app.svg', $icon);
 	}
 
 	public function testGetDarkIcon() {
-		$expected = image_path('twofactor_u2f', 'app-dark.svg');
+		$this->urlGenerator->expects($this->once())
+			->method('imagePath')
+			->with('twofactor_u2f', 'app-dark.svg')
+			->willReturn('/apps/twofactor_u2f/img/app-dark.svg');
 
 		$icon = $this->provider->getDarkIcon();
 
-		$this->assertEquals($expected, $icon);
+		$this->assertEquals('/apps/twofactor_u2f/img/app-dark.svg', $icon);
 	}
 
 	public function testGetPersonalSettings() {

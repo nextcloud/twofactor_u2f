@@ -14,15 +14,16 @@
 		"yubico/u2flib-server": "^1.0.1"
 	},
 	"require-dev": {
-		"christophwurst/nextcloud": "^18.0.0",
 		"phpunit/phpunit": "^7.5.8",
 		"roave/security-advisories": "dev-master",
-		"nextcloud/coding-standard": "^0.3.0"
+		"nextcloud/coding-standard": "^0.3.0",
+		"psalm/phar": "^4.3"
 	},
 	"scripts": {
+		"lint": "find . -name \\*.php -not -path './vendor/*' -print0 | xargs -0 -n1 php -l",
 		"cs:check": "php-cs-fixer fix --dry-run --diff",
 		"cs:fix": "php-cs-fixer fix",
-		"lint": "find . -name \\*.php -not -path './vendor/*' -print0 | xargs -0 -n1 php -l",
+		"psalm": "psalm.phar",
 		"test": "phpunit -c tests/phpunit.xml",
 		"test:acceptance": "phpunit -c tests/phpunit.xml tests/Acceptance",
 		"test:unit": "phpunit -c tests/phpunit.xml tests/Unit",

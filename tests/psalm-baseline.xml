@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="4.3.1@2feba22a005a18bf31d4c7b9bdb9252c73897476">
+  <file src="lib/AppInfo/Application.php">
+    <MissingDependency occurrences="3">
+      <code>DisabledByAdmin</code>
+      <code>StateChanged</code>
+      <code>StateChanged</code>
+    </MissingDependency>
+  </file>
+  <file src="lib/Event/DisabledByAdmin.php">
+    <MissingDependency occurrences="1">
+      <code>StateChanged</code>
+    </MissingDependency>
+  </file>
+  <file src="lib/Event/StateChanged.php">
+    <MissingDependency occurrences="1">
+      <code>Event</code>
+    </MissingDependency>
+  </file>
+  <file src="lib/Listener/StateChangeActivity.php">
+    <MissingDependency occurrences="1">
+      <code>StateChanged</code>
+    </MissingDependency>
+  </file>
+  <file src="lib/Listener/StateChangeRegistryUpdater.php">
+    <MissingDependency occurrences="1">
+      <code>StateChanged</code>
+    </MissingDependency>
+  </file>
+  <file src="lib/Provider/U2FLoginProvider.php">
+    <MissingDependency occurrences="1">
+      <code>Template</code>
+    </MissingDependency>
+  </file>
+  <file src="lib/Provider/U2FProvider.php">
+    <MissingDependency occurrences="2">
+      <code>Template</code>
+      <code>Template</code>
+    </MissingDependency>
+  </file>
+  <file src="lib/Service/U2FManager.php">
+    <MissingDependency occurrences="6">
+      <code>DisabledByAdmin</code>
+      <code>DisabledByAdmin</code>
+      <code>StateChanged</code>
+      <code>StateChanged</code>
+      <code>StateChanged</code>
+      <code>StateChanged</code>
+    </MissingDependency>
+  </file>
+  <file src="lib/Settings/Personal.php">
+    <MissingDependency occurrences="2">
+      <code>Template</code>
+      <code>Template</code>
+    </MissingDependency>
+  </file>
+</files>

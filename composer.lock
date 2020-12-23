@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31370218877c7ce709a24241434002ad",
+    "content-hash": "b3c4e35d51207bee186bcbaa09044146",
     "packages": [
         {
             "name": "paragonie/random_compat",
@@ -90,42 +90,6 @@
         }
     ],
     "packages-dev": [
-        {
-            "name": "christophwurst/nextcloud",
-            "version": "v18.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ChristophWurst/nextcloud_composer.git",
-                "reference": "2cbf4d9b33e6c63ded02df1532728a712b1580cf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ChristophWurst/nextcloud_composer/zipball/2cbf4d9b33e6c63ded02df1532728a712b1580cf",
-                "reference": "2cbf4d9b33e6c63ded02df1532728a712b1580cf",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "18.0.0-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "AGPL-3.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Christoph Wurst",
-                    "email": "christoph@winzerhof-wurst.at"
-                }
-            ],
-            "description": "Composer package containing Nextcloud's public API (classes, interfaces)",
-            "time": "2020-08-24T12:42:23+00:00"
-        },
         {
             "name": "composer/semver",
             "version": "3.2.4",
@@ -1351,6 +1315,37 @@
                 "xunit"
             ],
             "time": "2020-01-08T08:45:45+00:00"
+        },
+        {
+            "name": "psalm/phar",
+            "version": "4.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/psalm/phar.git",
+                "reference": "f61d8f0eaaf5f7c26f1269ddeaf1fbe29dff1bee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/psalm/phar/zipball/f61d8f0eaaf5f7c26f1269ddeaf1fbe29dff1bee",
+                "reference": "f61d8f0eaaf5f7c26f1269ddeaf1fbe29dff1bee",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "conflict": {
+                "vimeo/psalm": "*"
+            },
+            "bin": [
+                "psalm.phar"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Composer-based Psalm Phar",
+            "time": "2020-12-03T21:44:12+00:00"
         },
         {
             "name": "psr/container",
