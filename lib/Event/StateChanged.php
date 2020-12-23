@@ -45,5 +45,4 @@ class StateChanged extends Event {
 	public function isEnabled(): bool {
 		return $this->enabled;
 	}
-
 }

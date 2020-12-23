@@ -10,15 +10,18 @@
 		}
 	],
 	"require": {
-		"php": ">=7.1.0",
+		"php": ">=7.2.0",
 		"yubico/u2flib-server": "^1.0.1"
 	},
 	"require-dev": {
 		"christophwurst/nextcloud": "^18.0.0",
 		"phpunit/phpunit": "^7.5.8",
-		"roave/security-advisories": "dev-master"
+		"roave/security-advisories": "dev-master",
+		"nextcloud/coding-standard": "^0.3.0"
 	},
 	"scripts": {
+		"cs:check": "php-cs-fixer fix --dry-run --diff",
+		"cs:fix": "php-cs-fixer fix",
 		"lint": "find . -name \\*.php -not -path './vendor/*' -print0 | xargs -0 -n1 php -l",
 		"test": "phpunit -c tests/phpunit.xml",
 		"test:acceptance": "phpunit -c tests/phpunit.xml tests/Acceptance",
@@ -30,7 +33,7 @@
 		"optimize-autoloader": true,
 		"classmap-authoritative": true,
 		"platform": {
-			"php": "7.1.0"
+			"php": "7.2.0"
 		}
 	}
 }

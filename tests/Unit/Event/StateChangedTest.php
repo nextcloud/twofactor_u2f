@@ -19,7 +19,6 @@ use OCP\IUser;
 use PHPUnit\Framework\TestCase;
 
 class StateChangedTest extends TestCase {
-
 	public function testEnabledState() {
 		$user = $this->createMock(IUser::class);
 
@@ -37,5 +36,4 @@ class StateChangedTest extends TestCase {
 		$this->assertFalse($event->isEnabled());
 		$this->assertSame($user, $event->getUser());
 	}
-
 }

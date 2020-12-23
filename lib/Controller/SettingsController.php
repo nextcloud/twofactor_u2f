@@ -17,7 +17,6 @@ namespace OCA\TwoFactorU2F\Controller;
 require_once(__DIR__ . '/../../vendor/yubico/u2flib-server/src/u2flib_server/U2F.php');
 
 use OCA\TwoFactorU2F\Service\U2FManager;
-use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\JSONResponse;
 use OCP\Authentication\TwoFactorAuth\ALoginSetupController;
 use OCP\IRequest;
@@ -76,5 +75,4 @@ class SettingsController extends ALoginSetupController {
 	public function remove(int $id): JSONResponse {
 		return new JSONResponse($this->manager->removeDevice($this->userSession->getUser(), $id));
 	}
-
 }

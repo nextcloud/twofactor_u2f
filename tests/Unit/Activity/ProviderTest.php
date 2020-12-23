@@ -32,7 +32,6 @@ use OCP\L10N\IFactory;
 use PHPUnit\Framework\TestCase;
 
 class ProviderTest extends TestCase {
-
 	private $l10n;
 	private $urlGenerator;
 	private $logger;
@@ -103,5 +102,4 @@ class ProviderTest extends TestCase {
 
 		$this->provider->parse($lang, $event);
 	}
-
 }

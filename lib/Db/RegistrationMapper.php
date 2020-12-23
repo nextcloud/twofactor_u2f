@@ -20,7 +20,6 @@ use OCP\IDBConnection;
 use OCP\IUser;
 
 class RegistrationMapper extends QBMapper {
-
 	public function __construct(IDBConnection $db) {
 		parent::__construct($db, 'twofactor_u2f_registrations');
 	}
@@ -53,5 +52,4 @@ class RegistrationMapper extends QBMapper {
 			->where($qb->expr()->eq('user_id', $qb->createNamedParameter($user->getUID())));
 		return $this->findEntities($qb);
 	}
-
 }

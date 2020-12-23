@@ -26,7 +26,6 @@ use OCP\ILogger;
 use OCP\IRequest;
 use OCP\ISession;
 use OCP\IUser;
-use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use u2flib_server\Error;
 use u2flib_server\U2F;
 
@@ -163,7 +162,7 @@ class U2FManager {
 			return false;
 		}
 
-		$regs = array_filter($registrations, function($registration) use ($reg) {
+		$regs = array_filter($registrations, function ($registration) use ($reg) {
 			return $registration->keyHandle === $reg->keyHandle;
 		});
 		$origReg = reset($regs);
@@ -172,5 +171,4 @@ class U2FManager {
 		$this->mapper->update($registration);
 		return true;
 	}
-
 }

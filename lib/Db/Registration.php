@@ -32,7 +32,6 @@ use OCP\AppFramework\Db\Entity;
  * @method void setName(string $name)
  */
 class Registration extends Entity implements JsonSerializable {
-
 	protected $userId;
 	protected $keyHandle;
 	protected $publicKey;
@@ -51,5 +50,4 @@ class Registration extends Entity implements JsonSerializable {
 			'name' => $this->getName(),
 		];
 	}
-
 }
