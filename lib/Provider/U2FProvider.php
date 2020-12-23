@@ -14,6 +14,7 @@ declare(strict_types=1);
 
 namespace OCA\TwoFactorU2F\Provider;
 
+use OCA\TwoFactorU2F\AppInfo\Application;
 use OCA\TwoFactorU2F\Service\U2FManager;
 use OCA\TwoFactorU2F\Settings\Personal;
 use OCP\AppFramework\IAppContainer;
@@ -25,6 +26,7 @@ use OCP\Authentication\TwoFactorAuth\IProvidesIcons;
 use OCP\Authentication\TwoFactorAuth\IProvidesPersonalSettings;
 use OCP\IInitialStateService;
 use OCP\IL10N;
+use OCP\IURLGenerator;
 use OCP\IUser;
 use OCP\Template;
 
@@ -39,16 +41,21 @@ class U2FProvider implements IActivatableAtLogin, IProvidesIcons, IProvidesPerso
 	/** @var IAppContainer */
 	private $container;
 
+	/** @var IURLGenerator */
+	private $urlGenerator;
+
 	/** @var IInitialStateService */
 	private $initialStateService;
 
 	public function __construct(IL10N $l10n,
 								U2FManager $manager,
 								IAppContainer $container,
+								IURLGenerator $urlGenerator,
 								IInitialStateService $initialStateService) {
 		$this->l10n = $l10n;
 		$this->manager = $manager;
 		$this->container = $container;
+		$this->urlGenerator = $urlGenerator;
 		$this->initialStateService = $initialStateService;
 	}
 
@@ -104,12 +111,11 @@ class U2FProvider implements IActivatableAtLogin, IProvidesIcons, IProvidesPerso
 	}
 
 	public function getLightIcon(): String {
-		return image_path('twofactor_u2f', 'app.svg');
+		return $this->urlGenerator->imagePath(Application::APP_ID, 'app.svg');
 	}
 
 	public function getDarkIcon(): String {
-		return image_path('twofactor_u2f', 'app-dark.svg');
-		;
+		return $this->urlGenerator->imagePath(Application::APP_ID, 'app-dark.svg');
 	}
 
 	/**
