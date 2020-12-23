@@ -10,7 +10,7 @@
 		}
 	],
 	"require": {
-		"php": ">=7.2.0",
+		"php": ">=7.3.0",
 		"yubico/u2flib-server": "^1.0.1"
 	},
 	"require-dev": {
@@ -33,7 +33,7 @@
 		"optimize-autoloader": true,
 		"classmap-authoritative": true,
 		"platform": {
-			"php": "7.2.0"
+			"php": "7.3.0"
 		}
 	}
 }

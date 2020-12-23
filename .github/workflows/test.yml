@@ -9,11 +9,6 @@ jobs:
       matrix:
         php-version: [7.3, 7.4]
         nextcloud-version: ['stable20', 'master']
-        include:
-          - php-version: 7.2
-            nextcloud-version: 'stable18'
-          - php-version: 7.3
-            nextcloud-version: 'stable19'
     name: Nextcloud ${{ matrix.nextcloud-version }} php${{ matrix.php-version }} unit tests
     steps:
     - name: Set up php${{ matrix.php-version }}
