@@ -24,13 +24,11 @@
 		<span class="icon-u2f-device"></span>
 		{{name || t('twofactor_u2f', 'Unnamed device') }}
 		<span class="more">
-		    <a class="icon icon-more"
-			   v-on:click.stop="togglePopover"></a>
-		    <div class="popovermenu"
-				 :class="{open: showPopover}"
-				 v-click-outside="hidePopover">
-				<PopoverMenu :menu="menu"/>
-		    </div>
+			<Actions :forceMenu="true">
+				<ActionButton icon="icon-delete" @click="onDelete">
+					{{ t('twofactor_u2f', 'Remove') }}
+				</ActionButton>
+			</Actions>
 		</span>
 	</div>
 </template>
@@ -38,7 +36,8 @@
 <script>
 	import ClickOutside from 'vue-click-outside'
 	import confirmPassword from '@nextcloud/password-confirmation'
-	import { PopoverMenu } from '@nextcloud/vue/dist/Components/PopoverMenu'
+	import Actions from '@nextcloud/vue/dist/Components/Actions'
+	import ActionButton from '@nextcloud/vue/dist/Components/ActionButton'
 
 	export default {
 		name: 'Device',
@@ -47,34 +46,20 @@
 			name: String,
 		},
 		components: {
-			PopoverMenu
+			ActionButton,
+			Actions,
 		},
 		directives: {
 			ClickOutside
 		},
-		data () {
-			return {
-				showPopover: false,
-				menu: [
-					{
-						text: t('twofactor_u2f', 'Remove'),
-						icon: 'icon-delete',
-						action: () => {
-							confirmPassword()
-								.then(() => this.$store.dispatch('removeDevice', this.id))
-								.catch(console.error.bind(this))
-						}
-					}
-				]
-			}
-		},
 		methods: {
-			togglePopover () {
-				this.showPopover = !this.showPopover
-			},
-
-			hidePopover () {
-				this.showPopover = false
+			async onDelete() {
+				await confirmPassword()
+				try {
+					await this.$store.dispatch('removeDevice', this.id)
+				} catch (e) {
+					console.error('could not delete device', e)
+				}
 			}
 		}
 	}
@@ -97,11 +82,6 @@
 		padding-left: 20px;
 		vertical-align: middle;
 		opacity: .7;
-	}
-
-	.u2f-device .popovermenu {
-		right: -12px;
-		top: 42px;
 	}
 
 	.icon-u2f-device {

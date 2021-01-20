@@ -57,42 +57,4 @@ describe('Device component', () => {
 
 		expect(device.text()).to.have.string('Unnamed device')
 	})
-
-	it('has a closed popover menu by default', () => {
-		const device = shallowMount(Device, {
-			store,
-			localVue
-		})
-
-		expect(device.contains('.popovermenu.open')).to.be.false
-	})
-
-	it('opens popover menu on click', done => {
-		const device = shallowMount(Device, {
-			store,
-			localVue
-		})
-
-		device.find('.icon-more').trigger('click')
-
-		localVue.nextTick(() => {
-			expect(device.vm.showPopover).to.be.true
-			done()
-		})
-	})
-
-	it('closed popover menu on second click', done => {
-		const device = shallowMount(Device, {
-			store,
-			localVue
-		})
-		device.vm.showPopover = true
-
-		device.find('.icon-more').trigger('click')
-
-		localVue.nextTick(() => {
-			expect(device.vm.showPopover).to.be.false
-			done()
-		})
-	})
 })
