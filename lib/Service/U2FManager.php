@@ -97,7 +97,7 @@ class U2FManager {
 	public function startRegistration(IUser $user): array {
 		$u2f = $this->getU2f();
 		$data = $u2f->getRegisterData($this->getRegistrations($user));
-		list($req, $sigs) = $data;
+		[$req, $sigs] = $data;
 
 		$this->logger->debug(json_encode($req));
 		$this->logger->debug(json_encode($sigs));
