@@ -45,7 +45,7 @@ class U2FManagerTest extends TestCase {
 	/** @var IEventDispatcher */
 	private $eventDispatcher;
 
-	protected function setUp() {
+	protected function setUp(): void {
 		parent::setUp();
 
 		$this->mapper = $this->createMock(RegistrationMapper::class);

@@ -32,7 +32,7 @@ class StateChangeRegistryUpdaterTest extends TestCase {
 	/** @var StateChangeRegistryUpdater */
 	private $listener;
 
-	protected function setUp() {
+	protected function setUp(): void {
 		parent::setUp();
 
 		$this->providerRegistry = $this->createMock(IRegistry::class);
