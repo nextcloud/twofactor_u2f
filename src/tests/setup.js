@@ -34,6 +34,9 @@ global.OC = {
 	getCurrentUser: () => {
 		return { uid: false }
 	},
+	isUserAdmin() {
+		return false
+	}
 }
 global.t = t
 
