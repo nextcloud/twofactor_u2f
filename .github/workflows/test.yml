@@ -7,8 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php-version: [7.3, 7.4]
-        nextcloud-version: ['stable20', 'master']
+        php-version: [7.3, 7.4, 8.0]
+        nextcloud-version: ['master']
+        include:
+          - php-version: 7.4
+            nextcloud-version: stable20
     name: Nextcloud ${{ matrix.nextcloud-version }} php${{ matrix.php-version }} unit tests
     steps:
     - name: Set up php${{ matrix.php-version }}
