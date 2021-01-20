@@ -36,6 +36,9 @@ global.OC = {
 	},
 	isUserAdmin() {
 		return false
+	},
+	getLanguage() {
+		return 'en'
 	}
 }
 global.t = t
