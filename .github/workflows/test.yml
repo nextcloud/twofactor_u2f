@@ -28,6 +28,10 @@ jobs:
     - name: Install dependencies
       working-directory: nextcloud/apps/twofactor_u2f
       run: composer install
+    - name: Fix php-parser on stable20 incompatibility with phpunit 9.3+
+      if: ${{ matrix.nextcloud-version == 'stable20' }}
+      working-directory: nextcloud/3rdparty
+      run: composer require nikic/php-parser:4.10
     - name: Run tests
       working-directory: nextcloud/apps/twofactor_u2f
       run: composer run test:unit
