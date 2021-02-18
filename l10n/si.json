@@ -1,0 +1,6 @@
+{ "translations": {
+    "Add" : "එකතු කරන්න",
+    "Retry" : "නැවත උත්සාහ කරන්න",
+    "Remove" : "ඉවත් කරන්න"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
