@@ -1,5 +1,6 @@
 { "translations": {
     "Add" : "Apondre",
+    "An error occurred. Please try again." : "Una error s'es producha. Mercé d'ensajar tornamai.",
     "Remove" : "Suprimir"
 },"pluralForm" :"nplurals=2; plural=(n > 1);"
 }
