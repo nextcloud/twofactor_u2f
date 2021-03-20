@@ -6,9 +6,9 @@ OC.L10N.register(
     "U2F disabled by an admin" : "被系統管理員停用U2F功能",
     "U2F device" : "U2F裝置",
     "Authenticate with an U2F device" : "使用U2F裝置進行驗證",
-    "Two-Factor U2F" : "兩階段驗證U2F裝置",
-    "U2F two-factor provider" : "U2F驗證供應商",
-    "A two-factor provider for U2F devices" : "U2F兩階段驗證裝置供應商",
+    "Two-Factor U2F" : "雙重認證U2F裝置",
+    "U2F two-factor provider" : "U2F 雙重認證供應商",
+    "A two-factor provider for U2F devices" : "U2F 雙重認證裝置供應商",
     "Add U2F device" : "新增U2F裝置",
     "Please plug in your U2F device and press the device button to authorize." : "請接入您的U2F裝置並按下裝置上按鍵進行驗證",
     "Name your device" : "請命名您的裝置以利辨識",
@@ -28,7 +28,7 @@ OC.L10N.register(
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "您正使用不安全的連線。瀏覽器可能會因此拒絕U2F驗證",
     "Unnamed device" : "未命名的裝置",
     "Remove" : "移除",
-    "No U2F devices configured. You are not using U2F as second factor at the moment." : "尚未設定U2F裝置，您現階段無法使用U2F進行兩階段驗證。",
-    "The following devices are configured for U2F second-factor authentication:" : "下列裝置已被設定為U2F兩階段驗證使用。"
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "尚未設定U2F裝置，您現階段無法使用U2F進行雙重認證。",
+    "The following devices are configured for U2F second-factor authentication:" : "下列裝置已被設定為U2F雙重認證使用。"
 },
 "nplurals=1; plural=0;");
