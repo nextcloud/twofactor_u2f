@@ -16,7 +16,7 @@ OC.L10N.register(
     "Adding your device …" : "正在新增你的裝置…",
     "Server error while trying to add U2F device" : "在新增U2F裝置時伺服器發生錯誤",
     "U2F device is already registered (error code {errorCode})" : "U2F裝置已經註冊(錯誤代碼 {errorCode})",
-    "U2F device registration timeout reached (error code {errorCode})" : "U2F裝置註冊已逾時 (錯誤代碼 {errorCode})",
+    "U2F device registration timeout reached (error code {errorCode})" : "U2F裝置註冊已逾時（錯誤代碼 {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "U2F裝置註冊失敗(錯誤代碼 {errorCode})",
     "Server error while trying to complete U2F device registration" : "嘗試完成U2F裝置註冊時發生伺服器錯誤。",
     "An error occurred: {msg}" : "發生錯誤：{msg}",
