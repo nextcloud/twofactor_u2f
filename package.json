@@ -23,7 +23,7 @@
     "@vue/test-utils": "^1.1.2",
     "babel-loader": "^8.2.2",
     "babel-plugin-istanbul": "^6.0.0",
-    "chai": "^4.2.0",
+    "chai": "^4.3.4",
     "coveralls": "^3.1.0",
     "css-loader": "^5.0.1",
     "file-loader": "^6.2.0",
