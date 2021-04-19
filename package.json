@@ -20,7 +20,7 @@
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.15",
     "@vue/babel-preset-app": "^4.5.12",
-    "@vue/test-utils": "^1.1.2",
+    "@vue/test-utils": "^1.1.4",
     "babel-loader": "^8.2.2",
     "babel-plugin-istanbul": "^6.0.0",
     "chai": "^4.3.4",
