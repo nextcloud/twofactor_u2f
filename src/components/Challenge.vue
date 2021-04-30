@@ -52,7 +52,7 @@
 		<p v-if="notSupported">
 			<em>
 			{{ t('twofactor_u2f', 'Your browser does not support U2F.') }}
-			{{ t('twofactor_u2f', 'Chrome is the only browser that supports U2F devices. You need to install the "U2F Support Add-on" on Firefox to use U2F.') }}
+			{{ t('twofactor_u2f', 'Please use an up-to-date browser that supports U2F devices, such as Chrome, Edge, Firefox, Opera or Safari.') }}
 			</em>
 		</p>
 		<p v-else-if="httpWarning"
