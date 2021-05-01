@@ -24,7 +24,6 @@ OC.L10N.register(
     "Plug in your U2F device and press the device button to authorize." : "Priklopite napravo U2F in pritisnite na gumb na napravi za overitev povezave.",
     "An error occurred. Please try again." : "Prišlo je do napake. Poskusite znova.",
     "Your browser does not support U2F." : "Spletni brskalnik ne podpira overitve U2F.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Trenutno je brskalnik Chrome edini, ki podpira naprave U2F. Za uporabo z brskalnikom Firefox je treba namestiti razširitev »U2F Support Add-on«.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Za dostop do strani je uporabljena ne-varna povezava. Brskalniki lahko v tem primeru zavrnejo overitev U2F.",
     "Unnamed device" : "Neimenovana naprava",
     "Remove" : "Odstrani",

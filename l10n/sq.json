@@ -14,7 +14,6 @@
     "An error occurred: {msg}" : "Ndodhi një gabim: {msg}",
     "Retry" : "Riprovoni",
     "An error occurred. Please try again." : "Ndodhi një problem.Ju lutem provoni përsëri.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome është i vetmi shfletues që suporton paisjet UF2. Do t'ju duhet të instaloni shtesën \"U2F Support Add-on\" në Firefox që të përdorni U2F.",
     "Unnamed device" : "Paisje pa emër",
     "Remove" : "Hiq",
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Asnjë pajisje U2F e konfiguruar. Ju nuk po përdorni U2F si faktor të dytë në këtë moment.",

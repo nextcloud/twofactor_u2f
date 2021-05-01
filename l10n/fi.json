@@ -22,7 +22,6 @@
     "Plug in your U2F device and press the device button to authorize." : "Yhdistä U2F-laitteesi ja paina laitteen painiketta valtuuttaaksesi.",
     "An error occurred. Please try again." : "Tapahtui virhe. Yritä myöhemmin uudelleen.",
     "Your browser does not support U2F." : "Selaimesi ei tue U2F:ta.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome on ainoa U2F-laitteita tukeva selain. Jos käytät Firefoxia, asenna \"U2F Support Add-on\"-laajennus käyttääksesi U2F:ta.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Olet yhteydessä tähän sivustoon salaamattomalla yhteydellä. Selaimet saattavat sen vuoksi kieltäytyä U2F-tunnistautumisesta.",
     "Unnamed device" : "Nimetön laite",
     "Remove" : "Poista",

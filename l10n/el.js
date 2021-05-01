@@ -24,7 +24,6 @@ OC.L10N.register(
     "Plug in your U2F device and press the device button to authorize." : "Συνδέστε την U2F συσκευή και πατήστε το κουμπί συσκευής για εξουσιοδότηση.",
     "An error occurred. Please try again." : "Παρουσιάστηκε σφάλμα. Παρακαλώ προσπαθήστε ξανά.",
     "Your browser does not support U2F." : "Ο περιηγητής σας δεν υποστηρίζει U2F.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Ο Chrome είναι ο μόνος περιηγητής που υποστηρίζει U2F συσκευές. Χρειάζεται να εγκαταστήσετε το \"U2F Support Add-on\" στον Firefox για να χρησιμοποιήσετε U2F.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Εισέρχεστε στον ιστότοπο μέσω μη ασφαλούς σύνδεσης. Συνεπώς, οι φυλλομετρητές ενδέχεται να αρνηθούν τον έλεγχο ταυτότητας U2F.",
     "Unnamed device" : "Ανώνυμη συσκευή",
     "Remove" : "Αφαίρεση",

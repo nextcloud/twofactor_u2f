@@ -24,7 +24,6 @@ OC.L10N.register(
     "Plug in your U2F device and press the device button to authorize." : "Утакните Ваш U2F уређај и притисните дугме на уређају да се пријавите.",
     "An error occurred. Please try again." : "Десила се грешка. Покушајте поново.",
     "Your browser does not support U2F." : "Ваш веб читач не подржава U2F.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Хром веб читач је једини веб читач који подржава U2F уређаје. На Фајерфоксу морате да инсталирајте \"U2F Support Add-on\" додатак да бисте користили U2F.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Приступате овом сајту преко небезбедне конекције. Веб читач може због тога да одбије U2F пријављивање.",
     "Unnamed device" : "Неименовани уређај",
     "Remove" : "Уклони",

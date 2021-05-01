@@ -22,7 +22,6 @@
     "Plug in your U2F device and press the device button to authorize." : "Connecteu el vostre dispositiu U2F i premeu el botó del dispositiu per autoritzar.",
     "An error occurred. Please try again." : "S'ha produït un error. Si us plau, torneu-ho a provar.",
     "Your browser does not support U2F." : "El vostre navegador no suporta U2F.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome és l'únic navegador que suporta dispositius U2F. Necessiteu instal·lar el \"complement de suport U2F\" al Firefox per utilitzar U2F.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Esteu accedint a aquest lloc mitjançant una connexió insegura. Per tant, els navegadors poden negar l’autenticació U2F.",
     "Unnamed device" : "Dispositiu sense nom",
     "Remove" : "Suprimeix",

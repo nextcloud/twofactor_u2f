@@ -22,7 +22,6 @@
     "Plug in your U2F device and press the device button to authorize." : "Plug in your U2F device and press the device button to authorise.",
     "An error occurred. Please try again." : "An error occurred. Please try again.",
     "Your browser does not support U2F." : "Your browser does not support U2F.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication.",
     "Unnamed device" : "Unnamed device",
     "Remove" : "Remove",

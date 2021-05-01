@@ -13,7 +13,6 @@
     "Server error while trying to complete U2F device registration" : "U2F მოწყობილობის რეგისტრაციისას სერვერთან წარმოიშვა შეცდომა",
     "Retry" : "ვცადოთ ახლიდან",
     "An error occurred. Please try again." : "გამოჩნდა შეცდომა. გთხოვთ სცადოთ ახლიდან.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome-ი ერთადერთი ბრაუზერია რომელიც მხარს უჭერს U2F მოწყობილობებს. Firefox-ით U2F-ით სარგებლობისთვის საჭიროა დააყენოთ \"U2F-ს მხარდაჭერის დანამატი\".",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "ამ საიტს უკავშირდებით დაუცველი კავშირით. ბრაუზერებმა შეიძლება უარყონ U2F აუტენტიფიკაცია.",
     "Unnamed device" : "უსახელო მოწყობილობა",
     "Remove" : "გაუქმება",

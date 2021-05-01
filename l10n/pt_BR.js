@@ -24,7 +24,6 @@ OC.L10N.register(
     "Plug in your U2F device and press the device button to authorize." : "Abra seu dispositivo U2F e pressione autorize.",
     "An error occurred. Please try again." : "Ocorreu um erro. Tente novamente.",
     "Your browser does not support U2F." : "Seu navegador não suporta U2F.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "O Chrome é o único navegador que suporta dispositivos U2F nativamente. Você precisa instalar o \"Suplemento de Suporte U2F\" no Firefox para usar o U2F.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Você está acessando este site por meio de uma conexão insegura. Portanto, os navegadores podem recusar a autenticação U2F.",
     "Unnamed device" : "Dispositivo sem nome",
     "Remove" : "Remover",

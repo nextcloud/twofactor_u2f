@@ -11,7 +11,6 @@
     "Server error while trying to complete U2F device registration" : "Fallu del sirvidor entrín se tentaba de completar el rexistru del preséu U2F",
     "Retry" : "Retentar",
     "An error occurred. Please try again." : "Asocedió un fallu. Volvi tentalo, por favor.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome ye l'únicu restolador que sofita preseos U2F. Precises instalar «U2F Support Add-on» en Firefox pa usar U2F.",
     "Unnamed device" : "Preséu ensin nomar",
     "Remove" : "Desaniciar"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"

@@ -24,7 +24,6 @@ OC.L10N.register(
     "Plug in your U2F device and press the device button to authorize." : "Sartu zure U2F gailua eta sakatu gailuaren botoia baimena emateko.",
     "An error occurred. Please try again." : "Akats bat gertatu da. Saiatu berriro mesedez.",
     "Your browser does not support U2F." : "Zure arakatzaileak ez du U2F onartzen.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome U2F gailuak onartzen dituen arakatzaile bakarra da. \"U2F laguntza gehigarria\" Firefoxen instalatu behar duzu U2F erabiltzeko.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Gune honetara konexio ez seguru batetik a sartzen ari zara. Baliteke, beraz, nabigatzaileek U2F autentifikazioari uko egitea.",
     "Unnamed device" : "Izen gabeko gailua",
     "Remove" : "Kendu",

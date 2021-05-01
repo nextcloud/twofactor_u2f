@@ -12,7 +12,6 @@ OC.L10N.register(
     "Server error while trying to complete U2F device registration" : "Servera kļūda mēģinot pabeigt U2F ierīces reģistrācija",
     "Retry" : "Mēģināt vēlreiz",
     "An error occurred. Please try again." : "Notika kļūda. Mēģini vēlreiz.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome ir vienīgā pārlūkprogramma, kas atbalsta U2F ierīces Jums jāinstalē \"U2F Support Add-on\" Firefox lai lietotu U2F.",
     "Remove" : "Izņemt"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);");

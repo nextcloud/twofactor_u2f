@@ -13,7 +13,6 @@
     "Server error while trying to complete U2F device registration" : "Serverfejl ved U2F enhed registrering",
     "Retry" : "Prøv igen",
     "An error occurred. Please try again." : "En fejl opstod. Prøv venligst igen.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome er den eneste browser der understøtter U2F enheder. Du er nød til at installere \"U2F Support Add-on\" i Firefox for at bruge U2F.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Du tilgår denne side via en usikker forbindelse. Browseren vil derfor måske nægte dig at bruge U2F godkendelse.",
     "Unnamed device" : "Unavngiven enhed",
     "Remove" : "Fjern",

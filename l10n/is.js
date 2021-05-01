@@ -24,7 +24,6 @@ OC.L10N.register(
     "Plug in your U2F device and press the device button to authorize." : "Stingdu U2F-tækinu þínu í samband og ýttu á tækishnappinn til að auðkenna.",
     "An error occurred. Please try again." : "Villa kom upp. Endilega reyndu aftur.",
     "Your browser does not support U2F." : "Vafrinn þinn styður ekki U2F.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome er eini vafrinn sem styður U2F-tæki beint. Á Firefox verður þú að setja upp viðbótina \"U2F Support Add-on\" til að geta notað U2F.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Þú tengist þessu vefsvæði í gegnum óörugga tengingu. Vafrar gætu því hafnað U2F-auðkenningunni.",
     "Unnamed device" : "Nafnlaust tæki",
     "Remove" : "Fjarlægja",

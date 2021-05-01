@@ -17,7 +17,6 @@ OC.L10N.register(
     "Server error while trying to complete U2F device registration" : "Se presentó un error del servidor al tratar de completar el registro del dispositivo U2F",
     "Retry" : "Reintentar",
     "An error occurred. Please try again." : "Se presentó un error. Por favor vuelve a intentarlo.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "Chrome es el único navegador que soporta dispositivos U2F. Necesitas instalar el \"Complemento de Soporte U2F\" en Firefox para usar U2F. ",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Estás accediendo a este sitio vía una conexión insegura. Los navegadores pueden llegar a reusar la autenticación U2F.",
     "Unnamed device" : "Dispositivo sin nombre",
     "Remove" : "Eliminar",

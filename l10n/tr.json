@@ -22,7 +22,6 @@
     "Plug in your U2F device and press the device button to authorize." : "U2F aygıtınızı takın ve kimliğinizi doğrulamak için aygıt üzerindeki düğmeye tıklayın.",
     "An error occurred. Please try again." : "Bir sorun çıktı. Lütfen yeniden deneyin.",
     "Your browser does not support U2F." : "Web tarayıcınız U2F desteklemiyor.",
-    "Chrome is the only browser that supports U2F devices. You need to install the \"U2F Support Add-on\" on Firefox to use U2F." : "U2F aygıtı yalnız Chrome web tarayıcısı tarafından desteklenir. Firefox üzerinde U2F kullanabilmek için \"U2F Support eklentisini\" kurmalısınız.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Bu site ile bağlantınız güvenli değil. Bu nedenle tarayıcılar yeniden U2F kimlik doğrulaması isteyebilir.",
     "Unnamed device" : "Adsız aygıt",
     "Remove" : "Kaldır",
