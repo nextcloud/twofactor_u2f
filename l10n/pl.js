@@ -24,6 +24,7 @@ OC.L10N.register(
     "Plug in your U2F device and press the device button to authorize." : "Podłącz urządzenie U2F i naciśnij przycisk urządzenia w celu autoryzacji.",
     "An error occurred. Please try again." : "Wystąpił błąd. Spróbuj ponownie.",
     "Your browser does not support U2F." : "Twoja przeglądarka nie obsługuje U2F.",
+    "Please use an up-to-date browser that supports U2F devices, such as Chrome, Edge, Firefox, Opera or Safari." : "Użyj aktualnej przeglądarki obsługującej urządzenia U2F, takiej jak Chrome, Edge, Firefox, Opera lub Safari.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Uzyskujesz dostęp do tej witryny przez niezabezpieczone połączenie. Przeglądarki mogą zatem odmówić uwierzytelnienia U2F.",
     "Unnamed device" : "Nienazwane urządzenie",
     "Remove" : "Usuń",

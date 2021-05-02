@@ -24,6 +24,7 @@ OC.L10N.register(
     "Plug in your U2F device and press the device button to authorize." : "接入您的U2F裝置並按下裝置上按鍵進行驗證",
     "An error occurred. Please try again." : "發生錯誤，請再試一次。",
     "Your browser does not support U2F." : "您的瀏覽器不支援U2F協定",
+    "Please use an up-to-date browser that supports U2F devices, such as Chrome, Edge, Firefox, Opera or Safari." : "請使用支持U2F設備的最新瀏覽器，例如Chrome，Edge，Firefox，Opera或Safari。",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "您正使用不安全的連線。瀏覽器可能會因此拒絕U2F驗證",
     "Unnamed device" : "未命名的裝置",
     "Remove" : "移除",
