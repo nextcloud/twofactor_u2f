@@ -24,6 +24,7 @@ OC.L10N.register(
     "Plug in your U2F device and press the device button to authorize." : "U2F aygıtınızı takın ve kimliğinizi doğrulamak için aygıt üzerindeki düğmeye tıklayın.",
     "An error occurred. Please try again." : "Bir sorun çıktı. Lütfen yeniden deneyin.",
     "Your browser does not support U2F." : "Web tarayıcınız U2F desteklemiyor.",
+    "Please use an up-to-date browser that supports U2F devices, such as Chrome, Edge, Firefox, Opera or Safari." : "Lütfen Chrome, Edge, Firefox, Opera ya da Safari gibi U2F aygıtlarını destekleyen güncel bir web tarayıcısı kullanın.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Bu site ile bağlantınız güvenli değil. Bu nedenle tarayıcılar yeniden U2F kimlik doğrulaması isteyebilir.",
     "Unnamed device" : "Adsız aygıt",
     "Remove" : "Kaldır",
