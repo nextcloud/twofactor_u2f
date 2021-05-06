@@ -24,6 +24,7 @@ OC.L10N.register(
     "Plug in your U2F device and press the device button to authorize." : "Sartu zure U2F gailua eta sakatu gailuaren botoia baimena emateko.",
     "An error occurred. Please try again." : "Akats bat gertatu da. Saiatu berriro mesedez.",
     "Your browser does not support U2F." : "Zure arakatzaileak ez du U2F onartzen.",
+    "Please use an up-to-date browser that supports U2F devices, such as Chrome, Edge, Firefox, Opera or Safari." : "Mesedez erabili U2F gailuak onartzen dituen nabigatzaile eguneratu bat, Chrome, Edge, Firefox, Opera edo Safari bezala.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Gune honetara konexio ez seguru batetik a sartzen ari zara. Baliteke, beraz, nabigatzaileek U2F autentifikazioari uko egitea.",
     "Unnamed device" : "Izen gabeko gailua",
     "Remove" : "Kendu",
