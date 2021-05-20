@@ -8,16 +8,20 @@
 
 # Requirements
 In order to use this app for authentication, you have to use a browser that supports the U2F standard:
-* Google Chrome
+
+* Apple Safari
 * Chromium
-* Firefox
+* Google Chrome
+* Mozilla Firefox
   * V67 or newer
   * V57 to V66: After activation of `security.webauth.u2f` in `about:config`
   * V56 or before: In combination with [this extension](https://addons.mozilla.org/en-US/firefox/addon/u2f-support-add-on/)
 * Opera
 
 ## Login with external apps
-Once you enable U2F with Two Factor U2F, your aplications (for example your Android app or your GNOME app) will need to login using device passwords. To manage it, [know more here](https://docs.nextcloud.com/server/11/user_manual/session_management.html#managing-devices)
+Once you enable U2F with Two Factor U2F, your applications (for example your GNOME app) will need to login using device passwords. Which can be managed in your security settings.
+
+Official aplications such as the Android or IOS clients and desktop clients can use much safer tokens to login. Apps will automatically redirect you to a browser window to login as usual.
 
 ## Development Setup
 
@@ -39,9 +43,12 @@ to set up a development version of this app.
 
 ## Supported devices
 
+As this App implements the U2F standard,
 Every device supporting U2F should work fine. The following devices are known to work:
 
+* [Google Titan Security Key](https://support.google.com/titansecuritykey/answer/9115487?hl=en)
+* [GoTrust IdenKey](https://www.gotrustid.com/idem-key)
 * [Nitrokey FIDO U2F](https://shop.nitrokey.com/shop/product/nitrokey-fido-u2f-20)
 * [SoloKey](https://github.com/solokeys/solo)
   * HW version 2.1V
-* [Yubikey 5C](https://www.yubico.com/product/yubikey-5c)
+* [Yubikey 4 & 5 Series](https://www.yubico.com/products/yubikey-5-overview/)
