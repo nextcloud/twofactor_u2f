@@ -9,8 +9,10 @@
 # Requirements
 In order to use this app for authentication, you have to use a browser that supports the U2F standard:
 
+* Brave Browser
 * Chromium
 * Google Chrome
+* Microsoft Edge
 * Mozilla Firefox
   * V67 or newer
   * V57 to V66: After activation of `security.webauth.u2f` in `about:config`
