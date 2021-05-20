@@ -8,16 +8,18 @@
 
 # Requirements
 In order to use this app for authentication, you have to use a browser that supports the U2F standard:
-* Google Chrome
+
+* Apple Safari
 * Chromium
-* Firefox
+* Google Chrome
+* Mozilla Firefox
   * V67 or newer
   * V57 to V66: After activation of `security.webauth.u2f` in `about:config`
   * V56 or before: In combination with [this extension](https://addons.mozilla.org/en-US/firefox/addon/u2f-support-add-on/)
 * Opera
 
 ## Login with external apps
-Once you enable U2F with Two Factor U2F, your aplications (for example your GNOME app) will need to login using device passwords. Which can be managed in your security settings.
+Once you enable U2F with Two Factor U2F, your applications (for example your GNOME app) will need to login using device passwords. Which can be managed in your security settings.
 
 Official aplications such as the Android or IOS clients and desktop clients can use much safer tokens to login. Apps will automatically redirect you to a browser window to login as usual.
 
