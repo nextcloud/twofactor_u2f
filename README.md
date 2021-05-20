@@ -17,7 +17,9 @@ In order to use this app for authentication, you have to use a browser that supp
 * Opera
 
 ## Login with external apps
-Once you enable U2F with Two Factor U2F, your aplications (for example your Android app or your GNOME app) will need to login using device passwords. To manage it, [know more here](https://docs.nextcloud.com/server/11/user_manual/session_management.html#managing-devices)
+Once you enable U2F with Two Factor U2F, your aplications (for example your GNOME app) will need to login using device passwords. Which can be managed in your security settings.
+
+Official aplications such as the Android or IOS clients and desktop clients can use much safer tokens to login. Apps will automatically redirect you to a browser window to login as usual.
 
 ## Development Setup
 
@@ -44,4 +46,4 @@ Every device supporting U2F should work fine. The following devices are known to
 * [Nitrokey FIDO U2F](https://shop.nitrokey.com/shop/product/nitrokey-fido-u2f-20)
 * [SoloKey](https://github.com/solokeys/solo)
   * HW version 2.1V
-* [Yubikey 5C](https://www.yubico.com/product/yubikey-5c)
+* [Yubikey 4 & 5 Series](https://www.yubico.com/products/yubikey-5-overview/)
