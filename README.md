@@ -9,7 +9,6 @@
 # Requirements
 In order to use this app for authentication, you have to use a browser that supports the U2F standard:
 
-* Apple Safari
 * Chromium
 * Google Chrome
 * Mozilla Firefox
