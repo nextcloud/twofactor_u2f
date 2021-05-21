@@ -22,7 +22,7 @@ In order to use this app for authentication, you have to use a browser that supp
 ## Login with external apps
 Once you enable U2F with Two Factor U2F, your applications (for example your GNOME app) will need to login using device passwords. Which can be managed in your security settings.
 
-Official aplications such as the Android or IOS clients and desktop clients can use much safer tokens to login. Apps will automatically redirect you to a browser window to login as usual.
+Official applications such as the Android or IOS clients and desktop clients can use much safer tokens to login. Apps will automatically redirect you to a browser window to login as usual.
 
 ## Development Setup
 
