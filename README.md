@@ -59,5 +59,5 @@ Every device supporting U2F should work fine. The following devices are known to
 * The U2F Standard only works over the HTTPS protocol so make sure the following options are set in your config.php file
 
 ```php
-'overwriteprotocol' => 'https'
+'overwriteprotocol' => 'https',
 ```
