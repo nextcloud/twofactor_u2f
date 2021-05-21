@@ -48,8 +48,16 @@ As this App implements the U2F standard,
 Every device supporting U2F should work fine. The following devices are known to work:
 
 * [Google Titan Security Key](https://support.google.com/titansecuritykey/answer/9115487?hl=en)
-* [GoTrust IdenKey](https://www.gotrustid.com/idem-key)
+* [GoTrust IdemKey](https://www.gotrustid.com/idem-key)
 * [Nitrokey FIDO U2F](https://shop.nitrokey.com/shop/product/nitrokey-fido-u2f-20)
 * [SoloKey](https://github.com/solokeys/solo)
   * HW version 2.1V
 * [Yubikey 4 & 5 Series](https://www.yubico.com/products/yubikey-5-overview/)
+
+## Notes
+
+* The U2F Standard only works over the HTTPS protocol so make sure the following options are set in your config.php file
+
+```php
+'overwriteprotocol' => 'https'
+```
