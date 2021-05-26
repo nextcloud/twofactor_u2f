@@ -22,6 +22,7 @@
     "Plug in your U2F device and press the device button to authorize." : "Yhdistä U2F-laitteesi ja paina laitteen painiketta valtuuttaaksesi.",
     "An error occurred. Please try again." : "Tapahtui virhe. Yritä myöhemmin uudelleen.",
     "Your browser does not support U2F." : "Selaimesi ei tue U2F:ta.",
+    "Please use an up-to-date browser that supports U2F devices, such as Chrome, Edge, Firefox, Opera or Safari." : "Käytä ajantasaista selainta (kuten Chrome, Edge, Firefox, Opera, Safari), joka tukee U2F-laitteita.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Olet yhteydessä tähän sivustoon salaamattomalla yhteydellä. Selaimet saattavat sen vuoksi kieltäytyä U2F-tunnistautumisesta.",
     "Unnamed device" : "Nimetön laite",
     "Remove" : "Poista",
