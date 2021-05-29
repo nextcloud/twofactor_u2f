@@ -23,7 +23,7 @@ OC.L10N.register(
     "Retry" : "再試行",
     "Plug in your U2F device and press the device button to authorize." : "U2Fデバイスを接続し、デバイスボタンを押して認証します。",
     "An error occurred. Please try again." : "エラーが発生しました。もう一度実行してください。",
-    "Your browser does not support U2F." : "あなたのブラウザはU2Fに対応していません。",
+    "Your browser does not support U2F." : "お使いのブラウザーはU2Fに対応していません。",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "あなたは安全ではない接続を経由してアクセスしています。ブラウザーはU2F認証を拒否する可能性があります。",
     "Unnamed device" : "名称設定されていないデバイス",
     "Remove" : "削除",
