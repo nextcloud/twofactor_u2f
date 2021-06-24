@@ -4,7 +4,7 @@
 	<name>Two-Factor U2F</name>
 	<summary>U2F two-factor provider</summary>
 	<description>A two-factor provider for U2F devices</description>
-	<version>6.2.0</version>
+	<version>6.3.0-alpha.1</version>
 	<licence>agpl</licence>
 	<author>Christoph Wurst</author>
 	<namespace>TwoFactorU2F</namespace>
@@ -21,7 +21,7 @@
 		<database>sqlite</database>
 		<database>mysql</database>
 		<database>pgsql</database>
-		<nextcloud min-version="20" max-version="22" />
+		<nextcloud min-version="20" max-version="23" />
 	</dependencies>
 
 	<two-factor-providers>
