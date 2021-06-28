@@ -24,6 +24,7 @@ OC.L10N.register(
     "Plug in your U2F device and press the device button to authorize." : "Csatlakoztassa az U2F eszközt, és nyomja meg az eszköz gombját a hitelesítéshez.",
     "An error occurred. Please try again." : "Hiba történt. Kérjük, próbálja meg újra.",
     "Your browser does not support U2F." : "A böngészője nem támogatja az U2F-et",
+    "Please use an up-to-date browser that supports U2F devices, such as Chrome, Edge, Firefox, Opera or Safari." : "Kérem használjon modern böngészőt ami támogatja az U2F eszközöket, mint például a Chrome, Edge, Firefox, Opera vagy Safari.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Nem biztonságos kapcsolaton keresztül éred el ezt az oldalt. Emiatt a böngészők megtagadhatják a U2F kétfaktoros azonosítás használatát.",
     "Unnamed device" : "Név nélküli eszköz",
     "Remove" : "Eltávolítás",
