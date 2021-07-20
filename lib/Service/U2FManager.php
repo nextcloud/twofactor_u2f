@@ -59,7 +59,7 @@ class U2FManager {
 	}
 
 	private function getU2f(): U2F {
-		$url = $this->request->getServerProtocol() . '://' . $this->request->getServerHost();
+		$url = $this->request->getHttpProtocol() . '://' . $this->request->getServerHost();
 		return new U2F($url);
 	}
 
