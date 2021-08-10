@@ -22,6 +22,7 @@
     "Plug in your U2F device and press the device button to authorize." : "Priključite svoj U2F uređaj i pritisnite gumb na uređaju za autorizaciju korisnika.",
     "An error occurred. Please try again." : "Došlo je do pogreške. Pokušajte ponovo.",
     "Your browser does not support U2F." : "Vaš preglednik ne podržava U2F.",
+    "Please use an up-to-date browser that supports U2F devices, such as Chrome, Edge, Firefox, Opera or Safari." : "Koristite se ažuriranim preglednikom koji podržava U2F uređaje, kao što su Chrome, Edge, Firefox, Opera ili Safari.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Ovom web-mjestu pristupate putem nesigurne veze. Stoga bi preglednici mogli odbiti U2F autentifikaciju.",
     "Unnamed device" : "Neimenovani uređaj",
     "Remove" : "Ukloni",

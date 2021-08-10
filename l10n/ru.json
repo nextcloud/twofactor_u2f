@@ -22,6 +22,7 @@
     "Plug in your U2F device and press the device button to authorize." : "Для авторизации подключите своё U2F устройство и нажмите на нём кнопку.",
     "An error occurred. Please try again." : "Произошла ошибка. Попробуйте ещё раз.",
     "Your browser does not support U2F." : "Используемый браузер не поддерживает U2F.",
+    "Please use an up-to-date browser that supports U2F devices, such as Chrome, Edge, Firefox, Opera or Safari." : "Пожалуйста, используйте обновленный браузер поддерживающий U2F устройства, такой как Chrome, Edge, Firefox, Opera или Safari. ",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Соединение с сайтом не защищено, браузеры могут не разрешить двухфакторную аутентификацию.",
     "Unnamed device" : "Безымянное устройство",
     "Remove" : "Удалить",
