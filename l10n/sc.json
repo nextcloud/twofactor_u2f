@@ -1,6 +1,32 @@
 { "translations": {
+    "You added an U2F hardware token" : "As agiuntu unu token hardware U2F",
+    "You removed an U2F hardware token" : "As bogadu unu token hardware U2F",
+    "U2F disabled by an admin" : "U2F disativadu dae un'amministradore",
+    "U2F device" : "Dispositivu U2F",
+    "Authenticate with an U2F device" : "Identìfica·ti cun unu dispositivu U2F",
+    "Two-Factor U2F" : "U2F a duos fatores",
+    "U2F two-factor provider" : "Frunidore a duos fatores pro U2F",
+    "A two-factor provider for U2F devices" : "Unu frunidore a duos fatores pro dispositivos U2F",
+    "Add U2F device" : "Agiunghe dispositivu U2F",
+    "Please plug in your U2F device and press the device button to authorize." : "Collega su dispositivu U2F e incarca su butone de su dispositivu pro dare su permissu.",
+    "Name your device" : "Nùmene de su dispositivu tuo",
     "Add" : "Agiunghe",
+    "Adding your device …" : "Agiunta de su dispositivu tuo...",
+    "Server error while trying to add U2F device" : "Errore de su serbidore in su tentatviu de agiùnghere su dispositivu U2F",
+    "U2F device is already registered (error code {errorCode})" : "Su dispositivu U2F est giai registradu (còdighe de errore {errorCode})",
+    "U2F device registration timeout reached (error code {errorCode})" : "Sighidu su tempus màssimu de registratzione de su dispositivu U2F (còdighe de errore {errorCode})",
+    "U2F device registration failed (error code {errorCode})" : "Registrazione de su dispositivu U2F faddida (còdighe de errore {errorCode})",
+    "Server error while trying to complete U2F device registration" : "Errore de su serbidore in su tentativu de cumpletare sa registratzione de su dispositivu U2F",
+    "An error occurred: {msg}" : "B'at àpidu un'errore: {msg}",
     "Retry" : "Torra a proare",
-    "Remove" : "Boga"
+    "Plug in your U2F device and press the device button to authorize." : "Collega su dispositivu tuo U2F e incarca su butone de su dispositivu pro dare su permissu.",
+    "An error occurred. Please try again." : "B'at àpidu un'errore. Torra a proare.",
+    "Your browser does not support U2F." : "Su navigadore tuo non suportat U2F.",
+    "Please use an up-to-date browser that supports U2F devices, such as Chrome, Edge, Firefox, Opera or Safari." : "Imprea unu navigadore agiornadu chi suportet is dispositivos U2F, comente a Chrome, Edge, Firefox, Opera o Safari.",
+    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Ses intrende a custu situ tràmite una connessione non segura, Is navigadores si diant pòdere refudare s'autenticatzione U2F.",
+    "Unnamed device" : "Dispositivu sena nùmene",
+    "Remove" : "Boga",
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Perunu dispositivu U2F cunfiguradu. Pro immoe, non ses impreende U2F comente segundu fatore. ",
+    "The following devices are configured for U2F second-factor authentication:" : "Is dispositivos in fatu sunt cunfigurados pro s'autenticatzione cun su segundu fatore U2F:"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
