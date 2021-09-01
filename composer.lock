@@ -1535,16 +1535,16 @@
         },
         {
             "name": "psalm/phar",
-            "version": "4.7.3",
+            "version": "4.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/psalm/phar.git",
-                "reference": "eff44deec44175700382fdc0f3bdeb99aaec1b61"
+                "reference": "05aeae540e7567d7f5de77a0ce200e33e94295ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/psalm/phar/zipball/eff44deec44175700382fdc0f3bdeb99aaec1b61",
-                "reference": "eff44deec44175700382fdc0f3bdeb99aaec1b61",
+                "url": "https://api.github.com/repos/psalm/phar/zipball/05aeae540e7567d7f5de77a0ce200e33e94295ca",
+                "reference": "05aeae540e7567d7f5de77a0ce200e33e94295ca",
                 "shasum": ""
             },
             "require": {
@@ -1564,9 +1564,9 @@
             "description": "Composer-based Psalm Phar",
             "support": {
                 "issues": "https://github.com/psalm/phar/issues",
-                "source": "https://github.com/psalm/phar/tree/4.7.3"
+                "source": "https://github.com/psalm/phar/tree/4.9.3"
             },
-            "time": "2021-05-24T04:13:35+00:00"
+            "time": "2021-08-15T01:17:47+00:00"
         },
         {
             "name": "psr/container",
@@ -4464,5 +4464,5 @@
     "platform-overrides": {
         "php": "7.3.0"
     },
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
