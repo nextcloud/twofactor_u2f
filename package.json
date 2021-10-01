@@ -17,7 +17,7 @@
     "vuex": "^3.6.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.3",
+    "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
     "@vue/babel-preset-app": "^4.5.12",
     "@vue/test-utils": "^1.1.4",
