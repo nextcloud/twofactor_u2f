@@ -19,7 +19,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
-    "@vue/babel-preset-app": "^4.5.12",
+    "@vue/babel-preset-app": "^4.5.13",
     "@vue/test-utils": "^1.1.4",
     "babel-loader": "^8.2.2",
     "babel-plugin-istanbul": "^6.0.0",
