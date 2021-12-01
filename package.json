@@ -28,7 +28,7 @@
 		"css-loader": "^5.2.7",
 		"file-loader": "^6.2.0",
 		"istanbul-instrumenter-loader": "^3.0.1",
-		"jsdom": "^18.0.1",
+		"jsdom": "^18.1.1",
 		"jsdom-global": "^3.0.2",
 		"mocha": "^5.2.0",
 		"mocha-webpack": "^2.0.0-beta.0",
