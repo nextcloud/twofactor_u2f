@@ -24,6 +24,7 @@ OC.L10N.register(
     "Plug in your U2F device and press the device button to authorize." : "Koble til U2F-enheten din og trykk på enhetsknappen for å godkjenne.",
     "An error occurred. Please try again." : "Det oppstod en feil. Prøv igjen.",
     "Your browser does not support U2F." : "Nettleseren din støtter ikke U2F.",
+    "Please use an up-to-date browser that supports U2F devices, such as Chrome, Edge, Firefox, Opera or Safari." : "Bruk en oppdatert nettleser som støtter U2F-enheter, som Chrome, Edge, Firefox, Opera eller Safari.",
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Du surfer denne siden via en usikker tilkobling. Nettlesere kan derfor nekte U2F-identitetsbekreftelsen.",
     "Unnamed device" : "Ikke navngitt enhet",
     "Remove" : "Fjern",
