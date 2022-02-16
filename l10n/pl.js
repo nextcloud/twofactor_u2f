@@ -28,7 +28,7 @@ OC.L10N.register(
     "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Uzyskujesz dostęp do tej witryny przez niezabezpieczone połączenie. Przeglądarki mogą zatem odmówić uwierzytelnienia U2F.",
     "Unnamed device" : "Nienazwane urządzenie",
     "Remove" : "Usuń",
-    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Nie skonfigurowano urządzeń U2F. W tej chwili nie używasz U2F do uwierzytelnienia dwuskładnikowego.",
+    "No U2F devices configured. You are not using U2F as second factor at the moment." : "Brak skonfigurowanych urządzeń U2F. W tej chwili nie używasz U2F do uwierzytelnienia dwuskładnikowego.",
     "The following devices are configured for U2F second-factor authentication:" : "Następujące urządzenia są skonfigurowane do uwierzytelniania dwuskładnikowego U2F:"
 },
 "nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);");
