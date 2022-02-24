@@ -19,7 +19,7 @@ OC.L10N.register(
     "U2F device registration timeout reached (error code {errorCode})" : "Zeitüberschreitung bei der Registrierung des U2F-Gerätes (Fehlercode {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "Registrierung des U2F-Gerätes fehlgeschlagen (Fehlercode {errorCode}) ",
     "Server error while trying to complete U2F device registration" : "Server-Fehler beim Versuch, die U2F-Geräte-Registrierung abzuschließen.",
-    "An error occurred: {msg}" : "Fehler aufgetreten: {msg}",
+    "An error occurred: {msg}" : "Es ist ein Fehler aufgetreten: {msg}",
     "Retry" : "Wiederholen",
     "Plug in your U2F device and press the device button to authorize." : "Bitte verbinden Sie Ihr U2F-Gerät und drücken Sie den Geräteknopf zur Authentifizierung.",
     "An error occurred. Please try again." : "Es ist ein Fehler aufgetreten. Bitte erneut versuchen.",
