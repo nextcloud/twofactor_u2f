@@ -17,7 +17,7 @@
     "U2F device registration timeout reached (error code {errorCode})" : "Zeitüberschreitung bei der Registrierung des U2F-Gerätes (error code {errorCode})",
     "U2F device registration failed (error code {errorCode})" : "Registrierung des U2F-Gerätes fehlgeschlagen (Fehler-Code  {errorCode})",
     "Server error while trying to complete U2F device registration" : "Server-Fehler beim Versuch die U2F-Geräte-Registrierung abzuschließen",
-    "An error occurred: {msg}" : "Fehler aufgetreten: {msg}",
+    "An error occurred: {msg}" : "Ein Fehler ist aufgetreten: {msg}",
     "Retry" : "Wiederholen",
     "Plug in your U2F device and press the device button to authorize." : "Bitte verbinde Dein U2F-Gerät und drücke den Geräteknopf, um Dich zu authentifizieren.",
     "An error occurred. Please try again." : "Es ist ein Fehler aufgetreten. Bitte versuche es noch einmal.",
