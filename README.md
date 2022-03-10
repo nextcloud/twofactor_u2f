@@ -14,9 +14,6 @@ In order to use this app for authentication, you have to use a browser that supp
 * Google Chrome
 * Microsoft Edge
 * Mozilla Firefox
-  * V67 or newer
-  * V57 to V66: After activation of `security.webauth.u2f` in `about:config`
-  * V56 or before: In combination with [this extension](https://addons.mozilla.org/en-US/firefox/addon/u2f-support-add-on/)
 * Opera
 
 ## Login with external apps
