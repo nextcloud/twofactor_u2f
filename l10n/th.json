@@ -1,5 +1,8 @@
 { "translations": {
+    "Name your device" : "ตั้งชื่ออุปกรณ์ของคุณ",
     "Add" : "เพิ่ม",
+    "Adding your device …" : "กำลังเพิ่มอุปกรณ์ …",
+    "Unnamed device" : "อุปกรณ์ไม่มีชื่อ",
     "Remove" : "ลบออก"
 },"pluralForm" :"nplurals=1; plural=0;"
 }
