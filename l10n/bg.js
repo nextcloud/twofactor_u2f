@@ -8,7 +8,7 @@ OC.L10N.register(
     "Authenticate with an U2F device" : "Удостоверяване с U2F приложение",
     "Two-Factor U2F" : "Двустепенно U2F",
     "U2F two-factor provider" : "Доставчик на двустепенно U2F",
-    "A two-factor provider for U2F devices" : "Ддвустепенен доставчик за U2F устройства",
+    "A two-factor provider for U2F devices" : "Двустепенен доставчик за U2F устройства",
     "Add U2F device" : "Добавяне на U2F устройство",
     "Please plug in your U2F device and press the device button to authorize." : "Моля, включете вашето U2F устройство и натиснете бутона на устройството, за да упълномощите.",
     "Name your device" : "Име на устройството",
