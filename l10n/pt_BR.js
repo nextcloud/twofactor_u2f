@@ -31,4 +31,4 @@ OC.L10N.register(
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Nenhum dispositivo U2F configurado. Você não está usando o U2F como segundo fator no momento.",
     "The following devices are configured for U2F second-factor authentication:" : "Os seguintes dispositivos estão configurados para autenticação de segundo fator U2F:"
 },
-"nplurals=2; plural=(n > 1);");
+"nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
