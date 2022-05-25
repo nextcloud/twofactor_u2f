@@ -3,8 +3,6 @@
     "You removed an U2F hardware token" : "Eliminaste una ficha U2F física",
     "U2F device" : "dispositivo U2F",
     "Authenticate with an U2F device" : "Autenticar con un dispositivo U2F",
-    "U2F two-factor provider" : "Proveedor U2F de dos-factores",
-    "A two-factor provider for U2F devices" : "Un proveedor de dos-factoress para dispositivos U2F",
     "Add U2F device" : "Agregar dispositivo U2F",
     "Please plug in your U2F device and press the device button to authorize." : "Por favor conecta tu dispositivo U2F y presiona el botón del dispositivo para autorizar. ",
     "Add" : "Agregar",

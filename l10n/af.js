@@ -3,8 +3,6 @@ OC.L10N.register(
     {
     "U2F device" : "U2F-toestel",
     "Authenticate with an U2F device" : "Magtig met ’n U2F-toestel",
-    "U2F two-factor provider" : "U2F-tweefaktorverskaffer",
-    "A two-factor provider for U2F devices" : "’n Tweefaktorverskaffer vir U2F-toestelle",
     "Add U2F device" : "Voeg U2F-toestel toe",
     "Please plug in your U2F device and press the device button to authorize." : "Prop asseblief u U2F-toestel in en druk die toestelknop om te magtig.",
     "Add" : "Voeg by",
