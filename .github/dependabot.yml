@@ -6,7 +6,7 @@ updates:
     interval: monthly
     time: "03:00"
     timezone: Europe/Paris
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 0
   labels:
   - 3. to review
   - dependencies
@@ -16,4 +16,4 @@ updates:
     interval: monthly
     time: "03:00"
     timezone: Europe/Paris
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 0
