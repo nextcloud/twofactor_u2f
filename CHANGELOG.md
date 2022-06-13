@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 6.3.1 – 2022-06-13
+### Changed
+- App is now officially deprecated. Two-Factor WebAuthn can be used as replacement
+- Updated dependencies
+
 ## 6.3.0 – 2021-12-01
 ### Added
 - Nextcloud 23 support

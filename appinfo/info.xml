@@ -4,7 +4,7 @@
 	<name>⚠️ Deprecated ⚠️ Two-Factor U2F</name>
 	<summary>U2F two-factor provider (deprecated)</summary>
 	<description>Deprecated two-factor provider for U2F devices. The Two-Factor WebAuthn provider replaces this app.</description>
-	<version>6.3.0</version>
+	<version>6.3.1</version>
 	<licence>agpl</licence>
 	<author>Christoph Wurst</author>
 	<namespace>TwoFactorU2F</namespace>
