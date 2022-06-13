@@ -1,4 +1,6 @@
-# U2F second factor provider for Nextcloud
+# ⚠️ Deprecated ⚠️ U2F second factor provider for Nextcloud
+
+⚠️ The U2F standard has been deprecated and therefore this app will be discontinued. The [Two-Factor WebAuthn](https://apps.nextcloud.com/apps/twofactor_webauthn) app can be used as a replacement. [Here](https://github.com/nextcloud/twofactor_webauthn#migration-from-two-factor-u2f) you can find migration instructions.
 
 ![Downloads](https://img.shields.io/github/downloads/nextcloud/twofactor_u2f/total.svg)
 ![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nextcloud/twofactor_u2f/badges/quality-score.png?b=master)
