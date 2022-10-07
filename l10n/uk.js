@@ -2,7 +2,7 @@ OC.L10N.register(
     "twofactor_u2f",
     {
     "You added an U2F hardware token" : "Ви додали апаратний маркер U2F",
-    "You removed an U2F hardware token" : "Ви видалили апаратний маркер U2F",
+    "You removed an U2F hardware token" : "Ви вилучили апаратний токен U2F",
     "U2F disabled by an admin" : "U2F вимкнено адміністратором",
     "U2F device" : "пристрій U2F",
     "Authenticate with an U2F device" : "Автентифікація за допомогою пристрою U2F",
