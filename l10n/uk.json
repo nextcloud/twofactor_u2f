@@ -23,7 +23,7 @@
     "An error occurred. Please try again." : "Сталась помилка. Будь ласка спробуйте ще раз.",
     "Your browser does not support U2F." : "Ваш браузер не підтримує U2F.",
     "Please use an up-to-date browser that supports U2F devices, such as Chrome, Edge, Firefox, Opera or Safari." : "Будь ласка, використовуйте оновлений браузер, який підтримує такі пристрої U2F, як Chrome, Edge, Firefox, Opera або Safari.",
-    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Ви заходите на цей сайт через незахищене з’єднання. Тому браузери можуть відмовити в автентифікації U2F.",
+    "You are accessing this site via an insecure connection. Browsers might therefore refuse the U2F authentication." : "Ви заходите на цей сайт через незахищене з’єднання. Бравзери можуть відмовити в автентифікації U2F.",
     "Unnamed device" : "Неназваний пристрій",
     "Remove" : "Вилучити",
     "No U2F devices configured. You are not using U2F as second factor at the moment." : "Жодний U2F пристрій не налаштований. Ви не використовуєте U2F наразі.",
