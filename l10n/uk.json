@@ -8,7 +8,7 @@
     "U2F two-factor provider (deprecated)" : "Двофакторний постачальник U2F (не підтримується)",
     "Deprecated two-factor provider for U2F devices. The Two-Factor WebAuthn provider replaces this app." : "Застарілий двофакторний постачальник для пристроїв U2F. Провайдер Two-Factor WebAuthn замінює цю програму.",
     "Add U2F device" : "Додати U2F пристрій",
-    "Please plug in your U2F device and press the device button to authorize." : "Будь ласка, підключіть свій пристрій U2F і натисніть кнопку пристрою для авторизації.",
+    "Please plug in your U2F device and press the device button to authorize." : "Будь ласка, приєднайте ваш пристрій U2F та натисніть на кнопку пристрою для авторизації.",
     "Name your device" : "Дайте назву вашому пристрою",
     "Add" : "Додати",
     "Adding your device …" : "Додавання вашого пристрою...",
